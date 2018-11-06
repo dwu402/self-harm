@@ -1,14 +1,16 @@
 import click
+import numpy as np
 import model
 import fitter
 
 
 @click.command()
-def main():
-    model_function = model.get_model('model_file')
+@click.option('-f', '--model-file', help='path to the model file')
+def main(model_file):
+    model_function = model.get_model(model_file)
     model_context = {
         'initial_values': [0, 1],
-        'time_span': model.np.linspace(0, 10, 10000),
+        'time_span': np.linspace(0, 10, 10000),
         'parameters': [2, 3]
     }
     model_results = model.integrate_model(model_function, model_context)

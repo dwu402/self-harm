@@ -1,10 +1,22 @@
-import numpy as np
+from pathlib import Path
+from importlib import util as importutil
 import scipy.integrate as spi
 
 
 def get_model(model_file):
     """ get_model returns the model function defined in an arbitrary file """
-    return __import__(model_file).model
+    model_name = Path(model_file).stem
+    try:
+        model_spec = importutil.spec_from_file_location(model_name, model_file)
+        if model_spec is None:
+            raise ImportError
+        model_module = importutil.module_from_spec(model_spec)
+        model_spec.loader.exec_module(model_module)
+    except ImportError:
+        print(model_file, "not found")
+        raise ImportError
+
+    return model_module.model
 
 
 def integrate_model(model_function, model_context):

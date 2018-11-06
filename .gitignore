@@ -1,2 +1,6 @@
 *__pycache__
+.spyproject/
+.vscode/
+*.swp
+.~lock.*
 data/auto-got-*

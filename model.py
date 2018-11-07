@@ -1,5 +1,6 @@
 from pathlib import Path
 from importlib import util as importutil
+import numpy as np
 import scipy.integrate as spi
 import ast
 
@@ -33,7 +34,8 @@ def get_context(context_file):
         "parameters": []
     }
 
-    context['time_span'] = file_contents[0].split()
+    t0, t1, step = file_contents[0].split()
+    context['time_span'] = np.linspace(float(t0), float(t1), float(step))
     context['initial_values'] = file_contents[1].split()
     for line in file_contents[2:]:
         parsed_line = line.split()
@@ -63,4 +65,4 @@ def integrate_model(model_function, model_context):
     time_span = model_context['time_span']
     parameters = model_context['parameters']
 
-    return spi.odeint(model_function, initial_values, time_span, args=(parameters,))
+    return spi.odeint(model_function, initial_values, time_span, args=(parameters,), full_output=1)

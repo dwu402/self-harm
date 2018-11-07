@@ -6,13 +6,10 @@ import fitter
 
 @click.command()
 @click.option('-f', '--model-file', help='path to the model file')
-def main(model_file):
+@click.option('-p', '--parameter-file', help='path to the parameter file')
+def main(model_file, parameter_file):
     model_function = model.get_model(model_file)
-    model_context = {
-        'initial_values': [0, 1],
-        'time_span': np.linspace(0, 10, 10000),
-        'parameters': [2, 3]
-    }
+    model_context = model.get_context(parameter_file)
     model_results = model.integrate_model(model_function, model_context)
     fitter.plot_results(model_results)
 

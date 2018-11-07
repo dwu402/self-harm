@@ -6,6 +6,11 @@ def draw_r(r_range):
     return np.random.uniform(r_range[0], r_range[-1])
 
 
+def is_autumn(time):
+    """Determines whether or not it is autumn"""
+    return True
+
+
 def model(x, t, p):
     """Returns the rate of change of an influenza model
 
@@ -34,6 +39,7 @@ def model(x, t, p):
     # calculate some parameters
     beta = r_zero_min + \
         np.exp(-180*q + np.log(r_zero_max - r_zero_min)) * (mu + alpha)
+    v = is_autumn(t) * eps*nu
 
     # extract and name the state variables
     s = x[0]
@@ -41,10 +47,10 @@ def model(x, t, p):
     r = x[2]
 
     # specify the the rate of change
-    dxdt = np.empty([3, 1])
+    dxdt = np.empty([3])
 
-    dxdt[0] = mu - (mu + eps*nu)*s + gamma*r - beta*s*i
+    dxdt[0] = mu - (mu + v)*s + gamma*r - beta*s*i
     dxdt[1] = beta*s*i - (alpha + mu)*i
-    dxdt[2] = alpha*i + eps*nu*s - (gamma + mu)*r
+    dxdt[2] = alpha*i + v*s - (gamma + mu)*r
 
     return dxdt

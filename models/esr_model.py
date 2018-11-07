@@ -11,15 +11,15 @@ def is_autumn(time):
     return True
 
 
-def model(x, t, p):
+def model(t, x, p):
     """Returns the rate of change of an influenza model
 
     Uses the model proposed in "Modelling the Impacts of Climate
     Change On Infectious Diseases in New Zealand" by Tompkins et al.
 
     Inputs
-    x (list<float>[3]): state of the population
     t (float): time
+    x (list<float>[3]): state of the population
     p (list<>): parameters
         Expected parameters:
             [float, float, float, float, float,

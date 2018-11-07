@@ -1,5 +1,4 @@
 import click
-import numpy as np
 import model
 import fitter
 
@@ -14,8 +13,7 @@ def main(model_file, parameter_file):
     model_context = model.get_context(parameter_file)
     model_results = model.integrate_model(model_function, model_context)
     
-    print(model_results[0])
-    fitter.plot_results(model_results[0])
+    fitter.plot_results(model_results['y'])
 
 if __name__ == "__main__":
     main()

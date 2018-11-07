@@ -36,7 +36,7 @@ def get_context(context_file):
 
     t0, t1, step = file_contents[0].split()
     context['time_span'] = np.linspace(float(t0), float(t1), float(step))
-    context['initial_values'] = file_contents[1].split()
+    context['initial_values'] = [float(value) for value in file_contents[1].split()]
     for line in file_contents[2:]:
         parsed_line = line.split()
         ptype = parsed_line[0]
@@ -49,6 +49,8 @@ def get_context(context_file):
             context['parameters'].append(ast.literal_eval(pval))
         elif ptype == 'function':
             context['parameters'].append(import_module_from_file(pval).pfun)
+
+    print(context)
 
     return context
 

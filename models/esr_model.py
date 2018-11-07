@@ -37,8 +37,8 @@ def model(x, t, p):
     q = p[7](t)  # specific humidity
 
     # calculate some parameters
-    beta = r_zero_min + \
-        np.exp(-180*q + np.log(r_zero_max - r_zero_min)) * (mu + alpha)
+    beta = (r_zero_min +
+            np.exp(-180*q + np.log(r_zero_max - r_zero_min))) * (mu + alpha)
     v = is_autumn(t) * eps*nu
 
     # extract and name the state variables

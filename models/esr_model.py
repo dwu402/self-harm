@@ -43,9 +43,7 @@ def model(t, x, p):
     v = is_autumn(t) * eps*nu
 
     # extract and name the state variables
-    s = x[0]
-    i = x[1]
-    r = x[2]
+    s, i, r = x
 
     # specify the the rate of change
     dxdt = np.empty([3])

@@ -1,5 +1,5 @@
 import numpy.random as rand
 
 
-def pfun(t):
+def humidity(t):
     return rand.rand()

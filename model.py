@@ -47,7 +47,9 @@ def get_context(context_file):
         elif ptype == 'list':
             context['parameters'].append(ast.literal_eval(pval))
         elif ptype == 'function':
-            context['parameters'].append(import_module_from_file(pval).pfun)
+            fn_file, fn_name = pval.split()
+            fn_module = import_module_from_file(fn_file)
+            context['parameters'].append(getattr(fn_module, fn_name))
 
     return context
 
@@ -77,7 +79,7 @@ def integrate_model(model_function, model_context):
     step = 0
     while integrator.successful() and step < steps:
         step += 1
-        result = integrator.integrate(integrator.t + dt) 
+        result = integrator.integrate(integrator.t + dt)
         results['t'].append(integrator.t)
         results['y'].append(result)
 

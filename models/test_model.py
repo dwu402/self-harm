@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def model(x, t, p):
+def model(t, x, p):
     dx = np.zeros(2)
     r = p[0]
     k = p[1]

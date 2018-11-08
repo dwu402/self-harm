@@ -8,7 +8,8 @@ def draw_r(r_range):
 
 def is_autumn(time):
     """Determines whether or not it is autumn"""
-    return True
+    month = np.mod(time*12, 12)
+    return month >= 3 and month < 6
 
 
 def model(t, x, p):

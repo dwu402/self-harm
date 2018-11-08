@@ -1,0 +1,15 @@
+0 50 1000
+0.2 0 0
+float 0.3
+float 1
+float 0.7
+float 1
+float 2
+float 2
+float 3
+float 1
+float 1
+float 0
+float 1
+float 1
+float 1

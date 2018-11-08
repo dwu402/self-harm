@@ -40,13 +40,13 @@ def get_context(context_file):
         parsed_line = line.split()
         ptype = parsed_line[0]
         pval = ' '.join(parsed_line[1:])
-        if ptype == 'string':
+        if ptype in ('s', 'string'):
             context['parameters'].append(pval)
-        elif ptype in ('float', 'int'):
+        elif ptype in ('f', 'float', 'i', 'int'):
             context['parameters'].append(float(pval))
-        elif ptype == 'list':
+        elif ptype in ('l', 'list'):
             context['parameters'].append(ast.literal_eval(pval))
-        elif ptype == 'function':
+        elif ptype in ('fn', 'function'):
             fn_file, fn_name = pval.split()
             fn_module = import_module_from_file(fn_file)
             context['parameters'].append(getattr(fn_module, fn_name))

@@ -16,4 +16,4 @@ def main(model_file, parameter_file):
     fitter.plot_results(model_results['y'])
 
 if __name__ == "__main__":
-    main(["-f", "models/generic_immune_model.py", "-p", "parameters/generic_immune_parameters.txt"])
+    main()

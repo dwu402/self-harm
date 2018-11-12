@@ -1,8 +1,7 @@
 from pathlib import Path
 from importlib import util as importutil
-import numpy as np
-import scipy.integrate as spi
 import ast
+import scipy.integrate as spi
 
 
 def import_module_from_file(file_name):
@@ -25,8 +24,8 @@ def get_context(context_file):
     """Return the running context for the model"""
     if not Path(context_file).exists():
         raise FileNotFoundError
-    with open(context_file) as cf:
-        file_contents = cf.read().splitlines()
+    with open(context_file) as cf_handle:
+        file_contents = cf_handle.read().splitlines()
 
     context = {
         "time_span": [],
@@ -70,7 +69,7 @@ def integrate_model(model_function, model_context):
     integrator.set_f_params(parameters).set_initial_value(initial_values, time_span[0])
 
     steps = int(time_span[2])
-    dt = (time_span[1] - time_span[0]) / time_span[2]
+    time_step = (time_span[1] - time_span[0]) / time_span[2]
 
     results = {
         't': [time_span[0]],
@@ -79,7 +78,7 @@ def integrate_model(model_function, model_context):
     step = 0
     while integrator.successful() and step < steps:
         step += 1
-        result = integrator.integrate(integrator.t + dt)
+        result = integrator.integrate(integrator.t + time_step)
         results['t'].append(integrator.t)
         results['y'].append(result)
 

@@ -5,10 +5,10 @@ import fitter
 import display
 
 
-def standard_integrate(model, context):
+def standard_integrate(model_function, context):
     """Integrates a model with the provided parameters"""
-    results = model.integrate_model(model,
-                                    context['inital_values'],
+    results = model.integrate_model(model_function,
+                                    context['initial_values'],
                                     context['time_span'],
                                     context['parameters'])
     return results

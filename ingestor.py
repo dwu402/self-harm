@@ -5,7 +5,7 @@ import pandas as pd
 
 def check_file(file_name):
     if not Path(file_name).exists():
-        raise FileNotFoundError
+        raise FileNotFoundError(file_name + " not found.")
 
 def import_module_from_file(file_name):
     """helper function to import an arbitrary file as module"""

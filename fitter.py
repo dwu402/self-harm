@@ -50,7 +50,7 @@ def wrap_function(context):
                                                      context['initial_values'],
                                                      context['time_span'],
                                                      p)
-    wrapped_fn = lambda p: context['error_function'](fn_with_only_p(p))
+    wrapped_fn = lambda p: context['error_function'](context['data'], fn_with_only_p(p))
     return wrapped_fn
 
 
@@ -75,6 +75,8 @@ def fitter(context):
             raise Exception("Fitting not successful")
         return_obj.push_success(res['fun'], res['x'])
     except Exception as exception:
+        if res is None:
+            res = dict()
         if 'fun' not in res.keys():
             res['fun'] = None
         if 'x' not in res.keys():

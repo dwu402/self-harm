@@ -87,11 +87,15 @@ def get_data(context):
 
     context['data'] = context['parse_data'](raw_data)
 
+def fn_from_file(file, function_name):
+    """Helper function to get a function from a py file"""
+    return getattr(import_module_from_file(file), function_name)
+
 def get_config(context, config_file):
     """Parses the configuration file into the context"""
     check_file(config_file)
-    with open(config_file, 'r') as cf:
-        configs = cf.read().splitlines()
+    with open(config_file, 'r') as config_file_contents:
+        configs = config_file_contents.read().splitlines()
         for config in configs:
             config_values = config.split()
             config_type = config_values.pop(0)
@@ -106,9 +110,9 @@ def get_config(context, config_file):
             elif config_type in ['df', 'data_file']:
                 context['data_file'] = str(config_values[0])
             elif config_type in ['pd', 'parse_data']:
-                context['parse_data'] = getattr(import_module_from_file(config_values[0]), config_values[1])
+                context['parse_data'] = fn_from_file(config_values[0], config_values[1])
             elif config_type in ['ef', 'error_function']:
-                context['error_function'] = getattr(import_module_from_file(config_values[0]), config_values[1])
+                context['error_function'] = fn_from_file(config_values[0], config_values[1])
             else:
                 error_string = "Unhandled config type: " + str(config_type)
                 raise TypeError(error_string)

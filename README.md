@@ -6,12 +6,10 @@ This is a repository that contains skeleton code for fitting an arbitrary ODE mo
 python ./main.py --help
 ```
 
-| Flag |                        |
-|------|------------------------|
-|  -f  | Whether or not to fit  |
-|  -m  | Path to model file     |
-|  -p  | Path to parameter file |
-|  -d  | Path to data file      |
+| Flag |                            |
+|------|----------------------------|
+|  -f  | Whether or not to fit      |
+|  -c  | Path to configuration file |
 
 ## Getting Data
 Due to the potential size of the data, we do not want to pollute the repository with data files.

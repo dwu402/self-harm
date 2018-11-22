@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import click
 import ingestor
 import model
@@ -15,7 +16,7 @@ def standard_integrate(model_function, context):
 
 def model_fit(model, context):
     """Perform parameter fitting on a model"""
-    fitting_results = fitter.fitter()
+    fitting_results = fitter.fitter(model, context)
     return fitting_results
 
 
@@ -23,7 +24,8 @@ def model_fit(model, context):
 @click.option('-f', '--fit-model', is_flag=True, help='whether or not to execute fitting')
 @click.option('-m', '--model-file', help='path to the model file')
 @click.option('-p', '--parameter-file', help='path to the parameter file')
-def main(fit_model, model_file, parameter_file):
+@click.option('-d', '--data-file', help='path to the data file')
+def main(fit_model, model_file, parameter_file, data_file):
     """Control Function for Workflow"""
 
     model_function = ingestor.get_model(model_file)
@@ -32,6 +34,7 @@ def main(fit_model, model_file, parameter_file):
         model_results = standard_integrate(model_function, model_context)
         display.plot_trajectory(model_results['y'])
         return
+    model_context['data'] = ingestor.get_data(data_file)
     fitting_results = model_fit(model_function, model_context)
     display.display_parameters(fitting_results)
 

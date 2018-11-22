@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 def plot_trajectory(results):
     plt.plot(results)
+    plt.show()
 
 def display_parameters(parameter_obj):
     if parameter_obj.is_success():

@@ -1,7 +1,7 @@
 from pathlib import Path
 from importlib import util as importutil
 import ast
-
+import pandas as pd
 
 def import_module_from_file(file_name):
     """helper function to import an arbitrary file as module"""
@@ -56,3 +56,14 @@ def get_model(model_file):
     """Return the model function defined in an arbitrary file"""
     model_module = import_module_from_file(model_file)
     return model_module.model
+
+def get_data(data_file):
+    """Return the data for fitting from an arbitrary file"""
+    df_extension = data_file.split('.')[-1].lower()
+    print(df_extension)
+    if df_extension == 'xlsx':
+        return pd.read_excel(data_file)
+    elif df_extension == "csv":
+        return pd.read_csv(data_file)
+    else:
+        print("Filetype not supported")

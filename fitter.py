@@ -1,3 +1,8 @@
+import numpy as np
+from scipy import optimize as sciopt
+import model
+
+
 class FitterReturnObject:
     """A class that defines the object that is returned from fitting"""
     def __init__(self):
@@ -39,10 +44,30 @@ class FitterReturnObject:
         self.push_result(value, parameters)
 
 
-def fitter():
+def wrap_function(model_function, context):
+    """Wraps a function so that the only input arguments are the parameters"""
+    wrapped_fn = lambda p: model.integrate_model(model_function, context['initial_values'], context['time_span'], p)
+
+    return wrapped_fn
+
+
+def fitter(model_function, context):
+    """Perform parameter estimation for a model"""
     return_obj = FitterReturnObject()
+
+    # create the list of initial parameters
+    # default to zero is TypeError
+    p_0 = []
+    for param in context['parameters']:
+        try:
+            float_of_p = float(param)
+            p_0.append(float_of_p)
+        except TypeError as _:
+            p_0.append(0)
+
     try:
-        print("debug")
+        res = sciopt.minimize(wrap_function(model_function, context), p_0,
+                        method="nelder-mead", options={'disp':True})
         return_obj.push_success(0, [])
     except Exception as exception:
         return_obj.push_failure(exception, 0, [])

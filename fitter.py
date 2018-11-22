@@ -71,8 +71,14 @@ def fitter(context):
     try:
         res = sciopt.minimize(wrap_function(context), p_0,
                         method="nelder-mead", options={'disp':True})
-        return_obj.push_success(0, [])
+        if not res.success:
+            raise Exception("Fitting not successful")
+        return_obj.push_success(res['fun'], res['x'])
     except Exception as exception:
-        return_obj.push_failure(exception, 0, [])
+        if 'fun' not in res.keys():
+            res['fun'] = None
+        if 'x' not in res.keys():
+            res['x'] = None
+        return_obj.push_failure(exception, res['fun'], res['x'])
 
     return return_obj

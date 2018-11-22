@@ -44,14 +44,17 @@ class FitterReturnObject:
         self.push_result(value, parameters)
 
 
-def wrap_function(model_function, context):
+def wrap_function(context):
     """Wraps a function so that the only input arguments are the parameters"""
-    fn_with_only_p = lambda p: model.integrate_model(model_function, context['initial_values'], context['time_span'], p)
+    fn_with_only_p = lambda p: model.integrate_model(context['model'],
+                                                     context['initial_values'],
+                                                     context['time_span'],
+                                                     p)
     wrapped_fn = lambda p: context['error_function'](fn_with_only_p(p))
     return wrapped_fn
 
 
-def fitter(model_function, context):
+def fitter(context):
     """Perform parameter estimation for a model"""
     return_obj = FitterReturnObject()
 
@@ -66,7 +69,7 @@ def fitter(model_function, context):
             p_0.append(0)
 
     try:
-        res = sciopt.minimize(wrap_function(model_function, context), p_0,
+        res = sciopt.minimize(wrap_function(context), p_0,
                         method="nelder-mead", options={'disp':True})
         return_obj.push_success(0, [])
     except Exception as exception:

@@ -46,8 +46,8 @@ class FitterReturnObject:
 
 def wrap_function(model_function, context):
     """Wraps a function so that the only input arguments are the parameters"""
-    wrapped_fn = lambda p: model.integrate_model(model_function, context['initial_values'], context['time_span'], p)
-
+    fn_with_only_p = lambda p: model.integrate_model(model_function, context['initial_values'], context['time_span'], p)
+    wrapped_fn = lambda p: context['error_function'](fn_with_only_p(p))
     return wrapped_fn
 
 

@@ -67,3 +67,5 @@ def get_data(data_file):
         return pd.read_csv(data_file)
     else:
         print("Filetype not supported")
+
+def get_config(context, config_file):

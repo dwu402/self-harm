@@ -61,8 +61,6 @@ def get_parameters(context):
             error_string = "Unhandled parameter type: " + str(ptype)
             raise TypeError(error_string)
 
-    return context
-
 
 def get_model(context):
     """Return the model function defined in an arbitrary file"""
@@ -85,7 +83,7 @@ def get_data(context):
         raw_data = []
         raise TypeError(error_string)
 
-    context['data'] = context['parse_data'](raw_data)
+    context['parse_data'](context, raw_data)
 
 def fn_from_file(file, function_name):
     """Helper function to get a function from a py file"""

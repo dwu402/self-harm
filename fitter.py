@@ -6,6 +6,7 @@ import model
 class FitterReturnObject:
     """A class that defines the object that is returned from fitting"""
     def __init__(self):
+        self.error = None
         self.error_string = ""
         self.value_string = ""
         self.parameter_string = ""
@@ -25,14 +26,15 @@ class FitterReturnObject:
 
     def push_error(self, error):
         self.success_flag = False
-        self.error_string += error
+        self.error = error
+        self.error_string += str(error)
         self.error_string += "\n"
 
     def push_result(self, value, parameters):
         self.value_string = str(value)
         self.parameter_string = ""
         for parameter in parameters:
-            pstring = "".join((parameter['name'], ": ", str(parameter['value']), "\n"))
+            pstring = "".join((str(parameter), "\n"))
             self.parameter_string += pstring
 
     def push_failure(self, error, value, parameters):
@@ -68,6 +70,7 @@ def fitter(context):
         except TypeError as _:
             p_0.append(0)
 
+    res = None
     try:
         res = sciopt.minimize(wrap_function(context), p_0,
                         method="nelder-mead", options={'disp':True})

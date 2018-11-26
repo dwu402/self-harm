@@ -48,6 +48,7 @@ def treat_data(context, raw_data):
 
 def error_fn(data, fit):
     # for now, we'll do a naive least squares regression
+    
     fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]), kind='cubic')
-    fit_z = interp1d(fit['t'], np.array([z[1] for z in fit['y']]), kind='cubic')
+    fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]), kind='cubic')
     return np.linalg.norm([(data['x'] - fit_x(data['t']))**2 + (data['z'] - fit_z(data['t']))**2])

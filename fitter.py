@@ -72,8 +72,8 @@ def fitter(context):
 
     res = None
     try:
-        res = sciopt.minimize(wrap_function(context), p_0,
-                        method="nelder-mead", options={'disp':True})
+        res = sciopt.minimize(wrap_function(context), p_0, method="nelder-mead",
+                              options={'disp':True, 'maxfev':1e6})
         if not res.success:
             raise Exception("Fitting not successful")
         return_obj.push_success(res['fun'], res['x'])

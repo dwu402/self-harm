@@ -83,7 +83,7 @@ def fitter(context):
         if 'fun' not in res.keys():
             res['fun'] = None
         if 'x' not in res.keys():
-            res['x'] = None
+            res['x'] = []
         return_obj.push_failure(exception, res['fun'], res['x'])
 
     return return_obj

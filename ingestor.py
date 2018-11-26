@@ -47,7 +47,9 @@ def get_parameters(context):
         parsed_line = line.split()
         ptype = parsed_line[0]
         pval = ' '.join(parsed_line[1:])
-        if ptype in ('s', 'string'):
+        if ptype == "#":
+            continue
+        elif ptype in ('s', 'string'):
             context['parameters'].append(pval)
         elif ptype in ('f', 'float', 'i', 'int'):
             context['parameters'].append(float(pval))
@@ -97,7 +99,9 @@ def get_config(context, config_file):
         for config in configs:
             config_values = config.split()
             config_type = config_values.pop(0)
-            if config_type in ['ts', 'time_span']:
+            if config_type == "#":
+                continue
+            elif config_type in ['ts', 'time_span']:
                 context['time_span'] = [float(value) for value in config_values]
             elif config_type in ['iv', 'initial_values']:
                 context['initial_values'] = [float(value) for value in config_values]

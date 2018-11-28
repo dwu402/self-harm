@@ -23,7 +23,7 @@ def model_fit(context):
 
 
 @click.command()
-@click.option('-a', '--action', default='integrate', help='action to take: integrate, show-data, fit')
+@click.option('-a', '--action', default='integrate', help='action to take: [i]ntegrate, [s]how-data, [f]it')
 @click.option('-c', '--config-file', help='path to the config file')
 def main(action, config_file):
     """Control Function for Workflow"""
@@ -31,13 +31,13 @@ def main(action, config_file):
     ingestor.get_config(model_context, config_file)
     ingestor.get_model(model_context)
     ingestor.get_parameters(model_context)
-    if action == 'integrate':
+    if action in ['i', 'integrate']:
         model_results = standard_integrate(model_context)
         display.plot_trajectory(model_results)
-    elif action == 'show-data':
+    elif action in ['s', 'show-data']:
         ingestor.get_data(model_context)
         display.show_data(model_context)
-    elif action == 'fit':
+    elif action in ['f', 'fit']:
         ingestor.get_data(model_context)
         fitting_results = model_fit(model_context)
         display.display_parameters(fitting_results)

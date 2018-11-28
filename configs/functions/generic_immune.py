@@ -3,19 +3,14 @@ from scipy.interpolate import interp1d
 from matplotlib import pyplot as plt
 
 def select_data(raw_data):
-    mouse_number = 1
     data_cols = {
         't': 'Day Post Infection',
         'x': 'PD',
         'z': 'RBC'
     }
-
-    mouse = raw_data['Mouse'].unique()[mouse_number]
-    mouse_data = raw_data[raw_data['Mouse'] == mouse].reset_index()
-
     clean_data = dict.fromkeys(data_cols.keys())
     for key in data_cols:
-        clean_data[key] = mouse_data[data_cols[key]]
+        clean_data[key] = raw_data[data_cols[key]]
 
     return clean_data
 

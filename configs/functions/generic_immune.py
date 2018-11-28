@@ -48,6 +48,9 @@ def treat_data(context, raw_data):
     context['initial_values'] = [clean_data['x'][0], 0, clean_data['z'][0]]
     context['data'] = clean_data
 
+    print("Time span of fitting: ", context['time_span'])
+    print("Initial values: ", context['initial_values'])
+
 
 def error_fn(data, fit):
     beta = 0.25

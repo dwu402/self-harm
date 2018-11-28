@@ -4,7 +4,9 @@ import ingestor
 import model
 import fitter
 import display
+import warnings
 
+warnings.filterwarnings("error")
 
 def standard_integrate(context):
     """Integrates a model with the provided parameters"""
@@ -25,7 +27,6 @@ def model_fit(context):
 @click.option('-c', '--config-file', help='path to the config file')
 def main(fit_model, config_file):
     """Control Function for Workflow"""
-
     model_context = ingestor.initialise_context()
     ingestor.get_config(model_context, config_file)
     ingestor.get_model(model_context)

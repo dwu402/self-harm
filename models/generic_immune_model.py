@@ -8,7 +8,7 @@ def model(time, state, parameters):
     Inputs:
     time: time
     state: state vector
-    parameters: parameters (r,k,p,u,v,s,n,f,g,h,j,l)
+    parameters: parameters (r,k,p,s,d,f,g,h,j,l)
     """
     dxdt = np.empty(3)
 

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 
 def plot_trajectory(results):
-    plt.plot(results)
+    plt.plot(results['t'], results['y'])
     plt.show()
 
 def display_parameters(parameter_obj):
@@ -16,3 +16,6 @@ def display_parameters(parameter_obj):
     print(parameter_obj.get_value())
     print("Parameter Values:")
     print(parameter_obj.get_parameters())
+
+def show_data(context):
+    context['data_visualisation'](context['data'])

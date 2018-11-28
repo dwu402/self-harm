@@ -115,6 +115,8 @@ def get_config(context, config_file):
                 context['parse_data'] = fn_from_file(config_values[0], config_values[1])
             elif config_type in ['ef', 'error_function']:
                 context['error_function'] = fn_from_file(config_values[0], config_values[1])
+            elif config_type in ['dv', 'data_visualisation']:
+                context['data_visualisation'] = fn_from_file(config_values[0], config_values[1])
             else:
                 error_string = "Unhandled config type: " + str(config_type)
                 raise TypeError(error_string)

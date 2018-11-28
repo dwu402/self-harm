@@ -1,9 +1,9 @@
 import numpy as np
 from scipy.interpolate import interp1d
-
+from matplotlib import pyplot as plt
 
 def select_data(raw_data):
-    mouse_number = 0
+    mouse_number = 1
     data_cols = {
         't': 'Day Post Infection',
         'x': 'PD',
@@ -11,7 +11,7 @@ def select_data(raw_data):
     }
 
     mouse = raw_data['Mouse'].unique()[mouse_number]
-    mouse_data = raw_data[raw_data['Mouse'] == mouse]
+    mouse_data = raw_data[raw_data['Mouse'] == mouse].reset_index()
 
     clean_data = dict.fromkeys(data_cols.keys())
     for key in data_cols:
@@ -28,6 +28,7 @@ def scale_data(data):
         scaled_vals = [(val - first_val)/max_dist for val in data[col]]
         data[col] = np.array(scaled_vals)
 
+
 def threshold_data(data):
     """Throw out data that is below a certain RBC threshold"""
     threshold_value = 0.25
@@ -35,6 +36,7 @@ def threshold_data(data):
     thresholded_index = next((values.index(x) for x in values if x > threshold_value), 0)
     for col in data.keys():
         data[col] = np.array(data[col][thresholded_index:])
+
 
 def treat_data(context, raw_data):
     clean_data = select_data(raw_data)
@@ -46,9 +48,20 @@ def treat_data(context, raw_data):
     context['initial_values'] = [clean_data['x'][0], 0, clean_data['z'][0]]
     context['data'] = clean_data
 
+
 def error_fn(data, fit):
-    # for now, we'll do a naive least squares regression
-    
-    fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]), kind='cubic')
-    fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]), kind='cubic')
-    return np.linalg.norm([(data['x'] - fit_x(data['t']))**2 + (data['z'] - fit_z(data['t']))**2])
+    beta = 0.25
+
+    fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]))
+    fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]))
+    distance = np.linalg.norm([(data['x'] - fit_x(data['t']))**2 + (data['z'] - fit_z(data['t']))**2])
+    regularisation = np.linalg.norm(data['x']**2 + data['z']**2)
+    return distance + beta*regularisation
+
+
+def data_plot(data):
+    print('plotting data')
+    x = data['t']
+    ys = [(data['x'][i], data['z'][i]) for i in range(len(x))]
+    plt.plot(x, ys)
+    plt.show()

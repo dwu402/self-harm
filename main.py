@@ -1,10 +1,10 @@
 #!/usr/bin/env python
+import warnings
 import click
 import ingestor
 import model
 import fitter
 import display
-import warnings
 
 warnings.filterwarnings("error")
 

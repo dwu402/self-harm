@@ -25,7 +25,8 @@ def model_fit(context):
 @click.command()
 @click.option('-a', '--action', default='integrate', help='action to take: [i]ntegrate, [s]how-data, [f]it')
 @click.option('-c', '--config-file', help='path to the config file')
-def main(action, config_file):
+@click.option('-o', '--output-file', help='path to output results to')
+def main(action, config_file, output_file):
     """Control Function for Workflow"""
     model_context = ingestor.initialise_context()
     ingestor.get_config(model_context, config_file)
@@ -41,6 +42,7 @@ def main(action, config_file):
         ingestor.get_data(model_context)
         fitting_results = model_fit(model_context)
         display.display_parameters(fitting_results)
+        display.write_results(fitting_results, output_file)
     else:
         print('Action not found: ', action)
 

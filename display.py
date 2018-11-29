@@ -19,3 +19,7 @@ def display_parameters(parameter_obj):
 
 def show_data(context):
     context['data_visualisation'](context['data'])
+
+def write_results(parameter_obj, filename):
+    with open(filename, 'w') as fh:
+        fh.write(parameter_obj.get_parameters())

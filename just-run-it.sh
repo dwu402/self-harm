@@ -23,6 +23,7 @@ if [ "$1" == "-h" ] ; then
   echo "MODEL FILE       | Path to file containing the model"
   echo "GUESS FILE       | Path to file containing initial parameter guess"
   echo "FUNCTIONS FILE   | Path to file containing data ingestion functions"
+  echo "OUTPUT_DIRECTORY | Path to the directory to hold the fitting results"
   echo ""
   echo "Report bugs to dwu402@aucklanduni.ac.nz"
   exit 0
@@ -64,9 +65,17 @@ if $BUILD ; then
   fi
 
   if $PROMPTING || [ -z "$5" ] ; then
-    FUNCTIONS=$(read -p "Please enter the path to the file containg the data ingestion functions: ")
+    FUNCTIONS=$(read -p "Please enter the path to the file containing the data ingestion functions: ")
   else
     FUNCTIONS=$5
+  fi
+
+  if $PROMPTING ; then
+    OUTPUTDIR=$(read -p "Please enter the path to the outputs directory: ")
+  elif [ -z "$6" ] ; then
+      OUTPUTDIR="outputs"
+  else
+    OUTPUTDIR=$6
   fi
 # ARGUMENT PARSING END #
 
@@ -95,8 +104,14 @@ fi
 # WRANGLING END #
 
 # FITTING START #
+if [ ! -d "$OUTPUTDIR" ] ; then
+  mkdir "$OUTPUTDIR"
+fi
+
 for config in $DIR/*.config; do
-  python main.py -a f -c $config
+  filebase=$(echo "$config" | awk -F "/" '{print $NF}')
+  outputfile="$OUTPUTDIR/${filebase%.*}.out"
+  python main.py -a f -c $config -o $outputfile
 done
 # FITTING END #
 

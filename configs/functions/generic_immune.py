@@ -26,7 +26,7 @@ def scale_data(data):
 
 def threshold_data(data):
     """Throw out data that is below a certain RBC threshold"""
-    threshold_value = 0.25
+    threshold_value = 0.1
     values = list(data['x'])
     thresholded_index = next((values.index(x) for x in values if x > threshold_value), 0)
     for col in data.keys():
@@ -48,7 +48,7 @@ def treat_data(context, raw_data):
 
 
 def error_fn(data, fit):
-    beta = 0.25
+    beta = 0.5
 
     fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]))
     fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]))

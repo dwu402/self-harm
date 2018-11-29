@@ -40,3 +40,6 @@ It will prompt for arguments, or they can specified as in the help
 ```bash
 ./just-run-it.sh -h
 ```
+
+## Visualisation Tools
+`./view.py` visualises the results of just-run-it as a bar graph

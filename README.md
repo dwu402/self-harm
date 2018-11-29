@@ -27,3 +27,16 @@ In a virtual environment, you can run:
 pip install -r requirements.txt
 ```
 to setup the environment for this project
+
+## Just Run It
+After sourcing the data, you can automatically run fitting using the `just-run-it` utility script.
+
+```bash
+./just-run-it.sh
+```
+
+It will prompt for arguments, or they can specified as in the help
+
+```bash
+./just-run-it.sh -h
+```

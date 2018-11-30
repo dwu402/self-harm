@@ -10,10 +10,10 @@ if [ $# -eq 0 ] ; then
   PROMPTING=true
 fi
 
-if [ "$1" == "-h" ] ; then
-  echo "Usage: just-run-it.sh [-h | -f | CONFIG_DIRECTORY] [DATA_FILE MODEL_FILE GUESS_FILE FUNCTIONS_FILE]"
+if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+  echo "Usage: just-run-it.sh [-h/--help | -f | CONFIG_DIRECTORY] [DATA_FILE MODEL_FILE GUESS_FILE FUNCTIONS_FILE]"
   echo ""
-  echo "-h               | Shows this help"
+  echo "-h --help        | Shows this help"
   echo "-f               | Performs automated fitting/config building"
   echo ""
   echo "Positional Arguments: "

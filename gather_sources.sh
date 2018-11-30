@@ -5,8 +5,8 @@ mkdir $DATADIR
 cd $DATADIR
 
 if [ "$#" -ne 1 ]; then
-  echo "Defaulting to sources.txt"
-  SOURCES="sources.txt"
+  echo "Defaulting to data/sources.txt"
+  SOURCES="data/sources.txt"
 else
   SOURCES=$1
 fi

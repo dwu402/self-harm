@@ -6,16 +6,19 @@ This is a repository that contains skeleton code for fitting an arbitrary ODE mo
 python ./main.py --help
 ```
 
-| Flag |                            |
-|------|----------------------------|
-|  -f  | Whether or not to fit      |
-|  -c  | Path to configuration file |
+| Flag |                                  |
+|------|----------------------------------|
+|  -f  | Whether or not to fit            |
+|  -v  | Write fitting results to console |
+|  -vv | As above, and also plot          |
+|  -c  | Path to configuration file       |
+|  -o  | Path to an output file           |
 
 ## Getting Data
 Due to the potential size of the data, we do not want to pollute the repository with data files.
 We have, however, written a file to automatically retrieve the data files relevant to each model.
 ```
-./gather_sources.sh
+./gather_sources.sh data/sources.txt
 ```
 This will save the data files in a file named after the datetime you trigger the command.
 
@@ -38,7 +41,7 @@ After sourcing the data, you can automatically run fitting using the `just-run-i
 It will prompt for arguments, or they can specified as in the help
 
 ```bash
-./just-run-it.sh -h
+./just-run-it.sh --help
 ```
 
 ## Visualisation Tools

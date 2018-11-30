@@ -1,3 +1,4 @@
+import copy
 import numpy as np
 from scipy import optimize as sciopt
 import model
@@ -56,6 +57,15 @@ def wrap_function(context):
     return wrapped_fn
 
 
+def resample(context):
+    resample_parameter = 2
+    n_points = len(context['data']['t'])
+    sample_indices = np.random.choice(np.arange(n_points), n_points - resample_parameter)
+    for column in context['data']:
+        context['data'][column] = [context['data'][column][idx] for idx in sample_indices]
+    return context
+
+
 def fitter(context):
     """Perform parameter estimation for a model"""
     return_obj = FitterReturnObject()
@@ -71,8 +81,10 @@ def fitter(context):
             p_0.append(0)
 
     res = None
+    new_context = copy.deepcopy(context)
+    new_context = resample(new_context)
     try:
-        res = sciopt.minimize(wrap_function(context), p_0, method="nelder-mead",
+        res = sciopt.minimize(wrap_function(new_context), p_0, method="nelder-mead",
                               options={'disp':True, 'maxfev':1e6})
         if not res.success:
             raise Exception("Fitting not successful")

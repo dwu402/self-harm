@@ -30,9 +30,8 @@ def show_trajectory_and_fitting_results(context, fitting_results):
                                         context['time_span'],
                                         parameters)
     canvas = display.new_canvas()
-    display.plot_trajectory(fitted_traj, canvas)
-    display.show_data(context, canvas)
-    display.plt.show()
+    display.plot_trajectory(fitted_traj, canvas, show=False)
+    display.show_data(context, canvas, show=True)
 
 
 @click.command()

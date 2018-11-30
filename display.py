@@ -8,17 +8,18 @@ def new_canvas():
 
 def show_canvas(canvas):
     canvas['fig'].show()
+    plt.show()
 
 
-def generic_plot(x, y, canvas=None, show=True):
+def generic_plot(x, y, canvas=None, show=True, style='-'):
     if not canvas:
         canvas = new_canvas()
-    canvas['ax'].plot(x, y)
+    canvas['ax'].plot(x, y, style)
     if show:
         show_canvas(canvas)
 
-def plot_trajectory(results, canvas=None):
-    generic_plot(results['t'], results['y'], canvas)
+def plot_trajectory(results, canvas=None, show=True):
+    generic_plot(results['t'], results['y'], canvas, show, style='-')
 
 
 def display_parameters(parameter_obj):
@@ -33,9 +34,9 @@ def display_parameters(parameter_obj):
     print("Parameter Values:")
     print(parameter_obj.get_parameters())
 
-def show_data(context, canvas=None):
+def show_data(context, canvas=None, show=True):
     data_to_visualise = context['data_visualisation'](context['data'])
-    generic_plot(data_to_visualise['x'], data_to_visualise['y'], canvas)
+    generic_plot(data_to_visualise['x'], data_to_visualise['y'], canvas, show, style='-o')
 
 def write_results(parameter_obj, filename):
     with open(filename, 'w') as fh:

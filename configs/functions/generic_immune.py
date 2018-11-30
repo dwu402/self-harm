@@ -58,8 +58,6 @@ def error_fn(data, fit):
 
 
 def data_plot(data):
-    print('plotting data')
     x = data['t']
     ys = [(data['x'][i], data['z'][i]) for i in range(len(x))]
-    plt.plot(x, ys)
-    plt.show()
+    return {'x': x, 'y': ys}

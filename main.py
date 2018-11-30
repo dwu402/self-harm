@@ -22,11 +22,25 @@ def model_fit(context):
     return fitting_results
 
 
+def show_trajectory_and_fitting_results(context, fitting_results):
+    parameter_strings = fitting_results.get_parameters().strip().split('\n')
+    parameters = [float(p) for p in parameter_strings]
+    fitted_traj = model.integrate_model(context['model'],
+                                        context['initial_values'],
+                                        context['time_span'],
+                                        parameters)
+    canvas = display.new_canvas()
+    display.plot_trajectory(fitted_traj, canvas)
+    display.show_data(context, canvas)
+    display.plt.show()
+
+
 @click.command()
 @click.option('-a', '--action', default='integrate', help='action to take: [i]ntegrate, [s]how-data, [f]it')
+@click.option('-v', '--verbose', count=True, help='whether or not to be verbose in output (fitting only)')
 @click.option('-c', '--config-file', help='path to the config file')
 @click.option('-o', '--output-file', help='path to output results to')
-def main(action, config_file, output_file):
+def main(action, verbose, config_file, output_file):
     """Control Function for Workflow"""
     model_context = ingestor.initialise_context()
     ingestor.get_config(model_context, config_file)
@@ -41,8 +55,13 @@ def main(action, config_file, output_file):
     elif action in ['f', 'fit']:
         ingestor.get_data(model_context)
         fitting_results = model_fit(model_context)
-        display.display_parameters(fitting_results)
-        display.write_results(fitting_results, output_file)
+        if verbose or not output_file:
+            display.display_parameters(fitting_results)
+        if output_file:
+            display.write_results(fitting_results, output_file)
+        if verbose > 1:
+            show_trajectory_and_fitting_results(model_context, fitting_results)
+
     else:
         print('Action not found: ', action)
 

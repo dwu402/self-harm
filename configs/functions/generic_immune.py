@@ -1,6 +1,5 @@
 import numpy as np
 from scipy.interpolate import interp1d
-from matplotlib import pyplot as plt
 
 def select_data(raw_data):
     data_cols = {
@@ -26,11 +25,11 @@ def scale_data(data):
 
 def threshold_data(data):
     """Throw out data that is below a certain RBC threshold"""
-    threshold_value = 0.1
+    threshold_value = 0.01
     values = list(data['x'])
-    thresholded_index = next((values.index(x) for x in values if x > threshold_value), 0)
+    accepted_values = [v > threshold_value for v in values]
     for col in data.keys():
-        data[col] = np.array(data[col][thresholded_index:])
+        data[col] = np.array([i for i,j in zip(data[col], accepted_values) if j])
 
 
 def treat_data(context, raw_data):
@@ -47,17 +46,18 @@ def treat_data(context, raw_data):
     print("Initial values: ", context['initial_values'])
 
 
-def error_fn(data, fit):
-    beta = 0.5
+def error_fn(data, fit, parameters):
+    beta = 0.25
 
     fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]))
     fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]))
-    distance = np.linalg.norm([(data['x'] - fit_x(data['t']))**2 + (data['z'] - fit_z(data['t']))**2])
-    regularisation = np.linalg.norm(data['x']**2 + data['z']**2)
+    distance = np.linalg.norm([(data['x'] - fit_x(data['t'])) + (data['z'] - fit_z(data['t']))])
+    regularisation = np.linalg.norm(parameters) + np.linalg.norm([p for p in parameters if p < 0])
     return distance + beta*regularisation
 
 
 def data_plot(data):
     x = data['t']
     ys = [(data['x'][i], data['z'][i]) for i in range(len(x))]
-    return {'x': x, 'y': ys}
+
+    return {'x': data['x'], 'y': data['z']}

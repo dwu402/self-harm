@@ -96,6 +96,7 @@ pf $PARAMPATH
 df $datafile
 ts $ICS
 iv $ICS
+rf 10
 pd $FUNCTIONS treat_data
 ef $FUNCTIONS error_fn
 dv $FUNCTIONS data_plot" > "$configpath"
@@ -111,7 +112,7 @@ fi
 for config in $DIR/*.config; do
   filebase=$(echo "$config" | awk -F "/" '{print $NF}')
   outputfile="$OUTPUTDIR/${filebase%.*}.out"
-  python main.py -a f -c $config -o $outputfile
+  python main.py -a f -v -c $config -o $outputfile
 done
 # FITTING END #
 

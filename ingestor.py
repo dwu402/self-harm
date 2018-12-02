@@ -105,6 +105,9 @@ def get_config(context, config_file):
                 context['time_span'] = [float(value) for value in config_values]
             elif config_type in ['iv', 'initial_values']:
                 context['initial_values'] = [float(value) for value in config_values]
+            elif config_type in ['rf', 'refits']:
+                assert len(config_values) == 1
+                context['refits'] = int(config_values[0])
             elif config_type in ['mf', 'model_file']:
                 context['model_file'] = str(config_values[0])
             elif config_type in ['pf', 'parameter_file']:

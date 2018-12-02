@@ -18,12 +18,23 @@ def standard_integrate(context):
 
 def model_fit(context):
     """Perform parameter fitting on a model"""
-    fitting_results = fitter.fitter(context)
-    return fitting_results
+    loops = context['refits']
+    fitter_results = fitter.FitterReturnCollection()
+    for i in range(loops):
+        fitter_results.add_result(fitter.fitter(context))
+    return fitter_results
+
+
+def compare_data_and_model(context, model_results):
+    """Shows the trajectory from parameters vs data"""
+    canvas = display.new_canvas()
+    display.plot_trajectory(model_results, canvas, show=False)
+    display.show_data(context, canvas, show=True)
 
 
 def show_trajectory_and_fitting_results(context, fitting_results):
-    parameter_strings = fitting_results.get_parameters().strip().split('\n')
+    """WIP. Will show the fitting results next to the data"""
+    parameter_strings = fitting_results.get_parameters()
     parameters = [float(p) for p in parameter_strings]
     fitted_traj = model.integrate_model(context['model'],
                                         context['initial_values'],
@@ -35,7 +46,7 @@ def show_trajectory_and_fitting_results(context, fitting_results):
 
 
 @click.command()
-@click.option('-a', '--action', default='integrate', help='action to take: [i]ntegrate, [s]how-data, [f]it')
+@click.option('-a', '--action', default='integrate', help='action to take: [i]ntegrate, [s]how-data, [c]ompare, [f]it')
 @click.option('-v', '--verbose', count=True, help='whether or not to be verbose in output (fitting only)')
 @click.option('-c', '--config-file', help='path to the config file')
 @click.option('-o', '--output-file', help='path to output results to')
@@ -51,6 +62,10 @@ def main(action, verbose, config_file, output_file):
     elif action in ['s', 'show-data']:
         ingestor.get_data(model_context)
         display.show_data(model_context)
+    elif action in ['c', 'compare']:
+        model_results = standard_integrate(model_context)
+        ingestor.get_data(model_context)
+        compare_data_and_model(model_context, model_results)
     elif action in ['f', 'fit']:
         ingestor.get_data(model_context)
         fitting_results = model_fit(model_context)

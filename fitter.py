@@ -1,7 +1,63 @@
-import copy
 import numpy as np
 from scipy import optimize as sciopt
 import model
+
+
+class FitterReturnCollection:
+    """A class that defines the object that contains multiple FitterReturnObjects"""
+    def __init__(self):
+        self.results = []
+        self.failures = []
+        self.parameters = []
+
+    def is_individual(self):
+        return False
+
+    def add_result(self, result):
+        if result.is_success():
+            self.results.append(result)
+        else:
+            self.failures.append(result)
+
+
+    def build_parameters(self):
+        self.parameters = np.array([r.get_parameters() for r in self.results])
+
+    def get_mean_parameters(self):
+        self.build_parameters()
+        return np.mean(self.parameters, axis=0)
+
+    def get_var_parameters(self):
+        self.build_parameters()
+        return np.var(self.parameters, axis=0)
+
+    def get_parameters(self):
+        self.build_parameters()
+        return self.parameters
+
+    def get_parameter_string(self):
+        return str(self.get_parameters())
+
+    def get_errors(self):
+        error_list = [r.get_errors() for r in self.failures]
+        return error_list
+
+    def is_success(self):
+        return not self.failures
+
+    def get_statistics(self):
+        if not self.results:
+            return "No results found."
+
+        statistics = []
+
+        means = self.get_mean_parameters()
+        variances = self.get_var_parameters()
+
+        for parameter in range(len(means)):
+            statistics.append(f"{means[parameter]} ~({np.sqrt(variances[parameter])})")
+
+        return statistics
 
 
 class FitterReturnObject:
@@ -9,9 +65,12 @@ class FitterReturnObject:
     def __init__(self):
         self.error = None
         self.error_string = ""
-        self.value_string = ""
-        self.parameter_string = ""
+        self.value = None
+        self.parameters = []
         self.success_flag = False
+
+    def is_individual(self):
+        return True
 
     def is_success(self):
         return self.success_flag
@@ -19,11 +78,14 @@ class FitterReturnObject:
     def get_errors(self):
         return self.error_string
 
-    def get_value(self):
-        return self.value_string
+    def get_value_string(self):
+        return str(self.value)
 
     def get_parameters(self):
-        return self.parameter_string
+        return self.parameters
+
+    def get_parameter_string(self):
+        return '\n'.join(self.get_parameters)
 
     def push_error(self, error):
         self.success_flag = False
@@ -32,11 +94,8 @@ class FitterReturnObject:
         self.error_string += "\n"
 
     def push_result(self, value, parameters):
-        self.value_string = str(value)
-        self.parameter_string = ""
-        for parameter in parameters:
-            pstring = "".join((str(parameter), "\n"))
-            self.parameter_string += pstring
+        self.value = value
+        self.parameters = np.array(parameters)
 
     def push_failure(self, error, value, parameters):
         self.push_error(error)
@@ -53,17 +112,23 @@ def wrap_function(context):
                                                      context['initial_values'],
                                                      context['time_span'],
                                                      p)
-    wrapped_fn = lambda p: context['error_function'](context['data'], fn_with_only_p(p))
+    wrapped_fn = lambda p: context['error_function'](resample(context['data'], context['seed']),
+                                                     fn_with_only_p(p), p)
     return wrapped_fn
 
 
-def resample(context):
-    resample_parameter = 2
-    n_points = len(context['data']['t'])
-    sample_indices = np.random.choice(np.arange(n_points), n_points - resample_parameter)
-    for column in context['data']:
-        context['data'][column] = [context['data'][column][idx] for idx in sample_indices]
-    return context
+def resample(data, seed):
+    new_data = dict()
+    for column in data:
+        new_data[column] = np.array([data[column][idx] for idx in seed])
+    return new_data
+
+
+def generate_resampling_seed(context):
+    resampling_parameter = 2
+    total_length = len(context['data']['t'])
+    n_points = total_length - resampling_parameter
+    context['seed'] = sorted(np.random.choice(np.arange(total_length), size=n_points, replace=False))
 
 
 def fitter(context):
@@ -81,10 +146,9 @@ def fitter(context):
             p_0.append(0)
 
     res = None
-    new_context = copy.deepcopy(context)
-    new_context = resample(new_context)
+    generate_resampling_seed(context)
     try:
-        res = sciopt.minimize(wrap_function(new_context), p_0, method="nelder-mead",
+        res = sciopt.minimize(wrap_function(context), p_0, method="nelder-mead",
                               options={'disp':True, 'maxfev':1e6})
         if not res.success:
             raise Exception("Fitting not successful")

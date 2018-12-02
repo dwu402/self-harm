@@ -2,6 +2,7 @@ import numpy as np
 from scipy.interpolate import interp1d
 
 def select_data(raw_data):
+    """Map the data columns to model state variables"""
     data_cols = {
         't': 'Day Post Infection',
         'x': 'PD',
@@ -29,10 +30,11 @@ def threshold_data(data):
     values = list(data['x'])
     accepted_values = [v > threshold_value for v in values]
     for col in data.keys():
-        data[col] = np.array([i for i,j in zip(data[col], accepted_values) if j])
+        data[col] = np.array([i for i, j in zip(data[col], accepted_values) if j])
 
 
 def treat_data(context, raw_data):
+    """Select, scale and treshold data; define context based on data"""
     clean_data = select_data(raw_data)
     scale_data(clean_data)
     threshold_data(clean_data)
@@ -47,6 +49,7 @@ def treat_data(context, raw_data):
 
 
 def error_fn(data, fit, parameters):
+    """Objective function to minimize"""
     beta = 0.25
 
     fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]))
@@ -57,6 +60,7 @@ def error_fn(data, fit, parameters):
 
 
 def data_plot(data):
+    """Data visualisation function"""
     x = data['t']
     ys = [(data['x'][i], data['z'][i]) for i in range(len(x))]
 

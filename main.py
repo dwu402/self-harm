@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+"""Module responsible for defining workflows in the application"""
 import warnings
 import click
 import ingestor

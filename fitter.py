@@ -1,3 +1,4 @@
+"""Module responsible for perfomring parameter inference/fitting"""
 import numpy as np
 from scipy import optimize as sciopt
 import model

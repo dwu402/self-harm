@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+"""Helper application that views results"""
 import glob
 import warnings
 from pathlib import Path

@@ -1,3 +1,4 @@
+"""Module responsible for evaluating a model"""
 import scipy.integrate as spi
 
 

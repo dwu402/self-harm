@@ -1,3 +1,4 @@
+"""Module responsible for reading in configuration files and parsing them into the context"""
 from pathlib import Path
 from importlib import util as importutil
 import ast

@@ -40,7 +40,7 @@ def treat_data(context, raw_data):
     threshold_data(clean_data)
 
     # Modify the time span of integration to match the data
-    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1], len(clean_data['t'])]
+    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*1.5, len(clean_data['t'])*2]
     context['initial_values'] = [clean_data['x'][0], 0, clean_data['z'][0]]
     context['data'] = clean_data
 
@@ -55,7 +55,7 @@ def error_fn(data, fit, parameters):
     fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]))
     fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]))
     distance = np.linalg.norm([(data['x'] - fit_x(data['t'])) + (data['z'] - fit_z(data['t']))])
-    regularisation = np.linalg.norm(parameters) + np.linalg.norm([p for p in parameters if p < 0])
+    regularisation = np.linalg.norm(parameters) * (2 if any([p < 0 for p in parameters]) else 1)
     return distance + beta*regularisation
 
 

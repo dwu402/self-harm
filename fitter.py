@@ -20,7 +20,6 @@ class FitterReturnCollection:
         else:
             self.failures.append(result)
 
-
     def build_parameters(self):
         self.parameters = np.array([r.get_parameters() for r in self.results])
 

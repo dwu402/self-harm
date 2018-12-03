@@ -35,9 +35,6 @@ class FitterReturnCollection:
         self.build_parameters()
         return self.parameters
 
-    def get_parameter_string(self):
-        return str(self.get_parameters())
-
     def get_errors(self):
         error_list = [r.get_errors() for r in self.failures]
         return error_list
@@ -84,9 +81,6 @@ class FitterReturnObject:
     def get_parameters(self):
         return self.parameters
 
-    def get_parameter_string(self):
-        return '\n'.join(self.get_parameters)
-
     def push_error(self, error):
         self.success_flag = False
         self.error = error
@@ -95,7 +89,7 @@ class FitterReturnObject:
 
     def push_result(self, value, parameters):
         self.value = value
-        self.parameters = np.array(parameters)
+        self.parameters = np.array(np.abs(parameters))
 
     def push_failure(self, error, value, parameters):
         self.push_error(error)
@@ -149,7 +143,7 @@ def fitter(context):
     generate_resampling_seed(context)
     try:
         res = sciopt.minimize(wrap_function(context), p_0, method="nelder-mead",
-                              options={'disp':True, 'maxfev':1e6})
+                              options={'disp':True, 'maxfev':1e6, 'adaptive':True})
         if not res.success:
             raise Exception("Fitting not successful")
         return_obj.push_success(res['fun'], res['x'])

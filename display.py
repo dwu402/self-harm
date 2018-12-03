@@ -61,4 +61,8 @@ def show_data(context, canvas=None, show=True):
 def write_results(parameter_obj, filename):
     """Writes the parameter values from fitting into a file"""
     with open(filename, 'w') as fh:
-        fh.write(parameter_obj.get_parameter_string())
+        parameter_sets = parameter_obj.get_parameters()
+        for parameter_set in parameter_sets:
+            fh.write('---\n')
+            for parameter_value in parameter_set:
+                fh.write('f ' + str(parameter_value) + '\n')

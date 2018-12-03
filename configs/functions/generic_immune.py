@@ -26,7 +26,7 @@ def scale_data(data):
 
 def threshold_data(data):
     """Throw out data that is below a certain RBC threshold"""
-    threshold_value = 0.01
+    threshold_value = 0.001
     values = list(data['x'])
     accepted_values = [v > threshold_value for v in values]
     for col in data.keys():
@@ -55,7 +55,7 @@ def error_fn(data, fit, parameters):
     fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]))
     fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]))
     distance = np.linalg.norm([(data['x'] - fit_x(data['t'])) + (data['z'] - fit_z(data['t']))])
-    regularisation = np.linalg.norm(parameters) * (2 if any([p < 0 for p in parameters]) else 1)
+    regularisation = np.linalg.norm(parameters)
     return distance + beta*regularisation
 
 

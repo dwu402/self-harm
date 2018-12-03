@@ -64,8 +64,8 @@ def main(action, verbose, config_file, output_file):
         ingestor.get_data(model_context)
         display.show_data(model_context)
     elif action in ['c', 'compare']:
-        model_results = standard_integrate(model_context)
         ingestor.get_data(model_context)
+        model_results = standard_integrate(model_context)
         compare_data_and_model(model_context, model_results)
     elif action in ['f', 'fit']:
         ingestor.get_data(model_context)

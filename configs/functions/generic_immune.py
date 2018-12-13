@@ -27,7 +27,7 @@ def scale_data(data):
 
 def threshold_data(data):
     """Throw out data that is below a certain RBC threshold"""
-    threshold_value = 0.000
+    threshold_value = 0.001
     values = list(data['x'])
     accepted_values = [v > threshold_value for v in values]
     for col in data.keys():

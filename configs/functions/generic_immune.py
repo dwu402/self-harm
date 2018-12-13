@@ -1,5 +1,6 @@
 import numpy as np
 from scipy.interpolate import interp1d
+import ot
 
 def select_data(raw_data):
     """Map the data columns to model state variables"""
@@ -26,7 +27,7 @@ def scale_data(data):
 
 def threshold_data(data):
     """Throw out data that is below a certain RBC threshold"""
-    threshold_value = 0.001
+    threshold_value = 0.000
     values = list(data['x'])
     accepted_values = [v > threshold_value for v in values]
     for col in data.keys():
@@ -54,7 +55,14 @@ def error_fn(data, fit, parameters):
 
     fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]))
     fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]))
-    distance = np.linalg.norm([(data['x'] - fit_x(data['t'])) + (data['z'] - fit_z(data['t']))])
+    # distance = np.linalg.norm([(data['x'] - fit_x(data['t'])) + (data['z'] - fit_z(data['t']))])
+
+    data_points = np.column_stack((data['x'], data['z']))
+    fitted_points = np.column_stack((fit_x(data['t']), fit_z(data['t'])))
+    loss_matrix = ot.dist(data_points, fitted_points)
+    data_weights = np.ones((len(data_points),)) / len(data_points)
+    fit_weights = np.ones((len(fitted_points),)) / len(fitted_points)
+    distance = ot.emd2(data_weights, fit_weights, loss_matrix)
     regularisation = np.linalg.norm(parameters)
     return distance + beta*regularisation
 

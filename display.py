@@ -32,6 +32,7 @@ def plot_trajectory(results, canvas=None, show=True):
     x = [r[0] for r in results['y']]
     z = [r[2] for r in results['y']]
     # test end
+
     generic_plot(x, z, canvas, show, style='-')
 
 

@@ -23,7 +23,9 @@ if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
   echo "MODEL FILE       | Path to file containing the model"
   echo "GUESS FILE       | Path to file containing initial parameter guess"
   echo "FUNCTIONS FILE   | Path to file containing data ingestion functions"
-  echo "OUTPUT_DIRECTORY | Path to the directory to hold the fitting results"
+  echo "OUTPUT DIRECTORY | Path to the directory to hold the fitting results"
+  echo "REFITTING VALUE  | Number of times to refit the data (default: 10)"
+  echo "REGULARISATION   | Regularisation parameter (default: 0.015)"
   echo ""
   echo "Report bugs to dwu402@aucklanduni.ac.nz"
   exit 0
@@ -77,6 +79,18 @@ if $BUILD ; then
   else
     OUTPUTDIR=$6
   fi
+
+  if [ -z "$7" ] ; then
+    REFITS="10"
+  else
+    REFITS=$7
+  fi
+
+  if [ -z "$8" ] ; then
+    REGULARISATION="0.015"
+  else
+    REGULARISATION=$8
+  fi
 # ARGUMENT PARSING END #
 
 # WRANGLING START #
@@ -96,7 +110,8 @@ pf $PARAMPATH
 df $datafile
 ts $ICS
 iv $ICS
-rf 10
+rf $REFITS
+rg $REGULARISATION
 pd $FUNCTIONS treat_data
 ef $FUNCTIONS error_fn
 dv $FUNCTIONS data_plot" > "$configpath"

@@ -107,7 +107,9 @@ def wrap_function(context):
                                                      context['time_span'],
                                                      p)
     wrapped_fn = lambda p: context['error_function'](resample(context['data'], context['seed']),
-                                                     fn_with_only_p(p), p)
+                                                     fn_with_only_p(p),
+                                                     p,
+                                                     context['regularisation'])
     return wrapped_fn
 
 

@@ -41,7 +41,7 @@ def treat_data(context, raw_data):
     threshold_data(clean_data)
 
     # Modify the time span of integration to match the data
-    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*1.5, len(clean_data['t'])*2]
+    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*1.2, len(clean_data['t'])*2]
     context['initial_values'] = [clean_data['x'][0], 0, clean_data['z'][0]]
     context['data'] = clean_data
 
@@ -49,9 +49,9 @@ def treat_data(context, raw_data):
     print("Initial values: ", context['initial_values'])
 
 
-def error_fn(data, fit, parameters):
+def error_fn(data, fit, parameters, regularisation):
     """Objective function to minimize"""
-    beta = 0.25
+    beta = regularisation
 
     fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]))
     fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]))
@@ -62,7 +62,7 @@ def error_fn(data, fit, parameters):
     loss_matrix = ot.dist(data_points, fitted_points)
     data_weights = np.ones((len(data_points),)) / len(data_points)
     fit_weights = np.ones((len(fitted_points),)) / len(fitted_points)
-    distance = ot.emd2(data_weights, fit_weights, loss_matrix)
+    distance = ot.emd2(data_weights, fit_weights, loss_matrix) # solves the optimal transport problem, returns minimum loss
     regularisation = np.linalg.norm(parameters)
     return distance + beta*regularisation
 

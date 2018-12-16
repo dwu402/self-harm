@@ -82,7 +82,6 @@ class FitterReturnObject:
         return self.parameters
 
     def push_error(self, error):
-        self.success_flag = False
         self.error = error
         self.error_string += str(error)
         self.error_string += "\n"
@@ -92,6 +91,7 @@ class FitterReturnObject:
         self.parameters = np.array(np.abs(parameters))
 
     def push_failure(self, error, value, parameters):
+        self.success_flag = False
         self.push_error(error)
         self.push_result(value, parameters)
 

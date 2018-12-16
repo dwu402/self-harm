@@ -33,10 +33,19 @@ def compare_data_and_model(context, model_results):
     display.show_data(context, canvas, show=True)
 
 
+def output_results(fitting_results, verbose, output_file):
+    if verbose or not output_file:
+        display.display_parameters(fitting_results)
+    if output_file:
+        display.write_results(fitting_results, output_file)
+    if verbose > 1:
+        show_trajectory_and_fitting_results(model_context, fitting_results)
+
+
+
 def show_trajectory_and_fitting_results(context, fitting_results):
     """WIP. Will show the fitting results next to the data"""
-    parameter_strings = fitting_results.get_parameters()
-    parameters = [float(p) for p in parameter_strings]
+    parameters = fitting_results.get_parameters()
     fitted_traj = model.integrate_model(context['model'],
                                         context['initial_values'],
                                         context['time_span'],
@@ -70,12 +79,7 @@ def main(action, verbose, config_file, output_file):
     elif action in ['f', 'fit']:
         ingestor.get_data(model_context)
         fitting_results = model_fit(model_context)
-        if verbose or not output_file:
-            display.display_parameters(fitting_results)
-        if output_file:
-            display.write_results(fitting_results, output_file)
-        if verbose > 1:
-            show_trajectory_and_fitting_results(model_context, fitting_results)
+        output_results(fitting_results, verbose, output_file)
 
     else:
         print('Action not found: ', action)

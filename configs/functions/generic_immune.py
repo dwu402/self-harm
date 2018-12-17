@@ -49,13 +49,12 @@ def treat_data(context, raw_data):
     print("Initial values: ", context['initial_values'])
 
 
-def error_fn(data, fit, parameters, regularisation):
+def error_fn(data, fit, parameters, regularisation, detailed=False):
     """Objective function to minimize"""
     beta = regularisation
 
     fit_x = interp1d(fit['t'], np.array([x[0] for x in fit['y']]))
     fit_z = interp1d(fit['t'], np.array([z[2] for z in fit['y']]))
-    # distance = np.linalg.norm([(data['x'] - fit_x(data['t'])) + (data['z'] - fit_z(data['t']))])
 
     data_points = np.column_stack((data['x'], data['z']))
     fitted_points = np.column_stack((fit_x(data['t']), fit_z(data['t'])))
@@ -64,6 +63,8 @@ def error_fn(data, fit, parameters, regularisation):
     fit_weights = np.ones((len(fitted_points),)) / len(fitted_points)
     distance = ot.emd2(data_weights, fit_weights, loss_matrix) # solves the optimal transport problem, returns minimum loss
     regularisation = np.linalg.norm(parameters)
+    if detailed:
+        return distance, regularisation
     return distance + beta*regularisation
 
 

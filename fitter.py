@@ -121,7 +121,7 @@ def resample(data, seed):
 
 
 def generate_resampling_seed(context):
-    resampling_parameter = 2
+    resampling_parameter = 0
     total_length = len(context['data']['t'])
     n_points = total_length - resampling_parameter
     context['seed'] = sorted(np.random.choice(np.arange(total_length), size=n_points, replace=False))

@@ -67,3 +67,11 @@ def write_results(parameter_obj, filename):
             fh.write('---\n')
             for parameter_value in parameter_set:
                 fh.write('f ' + str(parameter_value) + '\n')
+
+def write_details(details, filename):
+    """Writes details for L-Curve analysis"""
+    with open(filename, 'a') as fh:
+        fh.write('Beta Value: ' + str(details[0]) + '\n')
+        fh.write('Residual: ' + str(details[1]) + '\n')
+        fh.write('Regularisation: ' + str(details[2]) + '\n')
+        fh.write('---\n')

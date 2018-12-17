@@ -33,15 +33,13 @@ def compare_data_and_model(context, model_results):
     display.show_data(context, canvas, show=True)
 
 
-def output_results(fitting_results, verbose, output_file):
+def output_results(model_context, fitting_results, verbose, output_file):
     if verbose or not output_file:
         display.display_parameters(fitting_results)
     if output_file:
         display.write_results(fitting_results, output_file)
     if verbose > 1:
         show_trajectory_and_fitting_results(model_context, fitting_results)
-
-
 
 def show_trajectory_and_fitting_results(context, fitting_results):
     """WIP. Will show the fitting results next to the data"""
@@ -53,6 +51,28 @@ def show_trajectory_and_fitting_results(context, fitting_results):
     canvas = display.new_canvas()
     display.plot_trajectory(fitted_traj, canvas, show=False)
     display.show_data(context, canvas, show=True)
+
+
+def get_and_write_details(context, results, verbose, output_file):
+    parameters = results.get_parameters()[0]
+    model_trajectory = model.integrate_model(context['model'],
+                                             context['initial_values'],
+                                             context['time_span'],
+                                             parameters)
+    residual, regularisation = context['error_function'](context['data'],
+                                                         model_trajectory,
+                                                         parameters,
+                                                         context['regularisation'],
+                                                         detailed=True)
+    if verbose or not output_file:
+        display.display_parameters(results)
+        print('Objective function breakdown')
+        print('Residual:       ' + str(residual))
+        print('Regularisation: ' + str(regularisation))
+    if output_file:
+        display.write_details((context['regularisation'], residual, regularisation), output_file)
+
+
 
 
 @click.command()
@@ -79,8 +99,12 @@ def main(action, verbose, config_file, output_file):
     elif action in ['f', 'fit']:
         ingestor.get_data(model_context)
         fitting_results = model_fit(model_context)
-        output_results(fitting_results, verbose, output_file)
-
+        output_results(model_context, fitting_results, verbose, output_file)
+    elif action in ['lcurve']:
+        ingestor.get_data(model_context)
+        model_context['refits'] = 1
+        fitting_results = model_fit(model_context)
+        get_and_write_details(model_context, fitting_results, verbose, output_file)
     else:
         print('Action not found: ', action)
 

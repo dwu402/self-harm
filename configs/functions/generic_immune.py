@@ -43,7 +43,7 @@ def treat_data(context, raw_data):
     threshold_data(clean_data)
 
     # Modify the time span of integration to match the data
-    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*2, len(clean_data['t'])*2]
+    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*1.125, len(clean_data['t'])*2]
     context['initial_values'] = [clean_data['x'][0], 0, clean_data['z'][0]]
     context['data'] = clean_data
 

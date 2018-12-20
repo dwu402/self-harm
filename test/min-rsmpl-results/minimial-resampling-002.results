@@ -1,0 +1,289 @@
+Time span of fitting:  [5, 16, 10]
+Initial values:  [0.027359383084243575, 0, -0.18222222222222217]
+Optimization terminated successfully.
+         Current function value: 1.497486
+         Iterations: 1269
+         Function evaluations: 1916
+Optimization terminated successfully.
+         Current function value: 1.370181
+         Iterations: 2620
+         Function evaluations: 3780
+Optimization terminated successfully.
+         Current function value: 1.439945
+         Iterations: 1663
+         Function evaluations: 2433
+Fitting unsuccessful
+Errors:
+['A value in x_new is above the interpolation range.\n', 'A value in x_new is above the interpolation range.\n', 'A value in x_new is above the interpolation range.\n', 'A value in x_new is above the interpolation range.\n', 'A value in x_new is above the interpolation range.\n', 'A value in x_new is above the interpolation range.\n', 'A value in x_new is above the interpolation range.\n']
+Parameter Statistics
+['0.8036981805095552 ~(0.08536351156048999)', '0.6586933060040071 ~(0.695874720817258)', '0.5268661317403245 ~(0.20637237834721087)', '0.2202187551206819 ~(0.18711481980047404)', '1.3809372290513202 ~(0.4374620127288149)', '0.8500618186759606 ~(0.6017919450437923)', '0.3537264780769777 ~(0.16111060227141114)', '0.07482204608227501 ~(0.10429351397728659)', '1.1972390604523717 ~(0.11726567163717252)', '0.752835212319951 ~(0.4640145123368356)']
+Time span of fitting:  [6, 11, 6]
+Initial values:  [0.1504661708258221, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 0.932629
+         Iterations: 1981
+         Function evaluations: 2878
+Optimization terminated successfully.
+         Current function value: 0.656071
+         Iterations: 2533
+         Function evaluations: 3612
+Optimization terminated successfully.
+         Current function value: 0.674740
+         Iterations: 2081
+         Function evaluations: 3076
+Optimization terminated successfully.
+         Current function value: 0.810110
+         Iterations: 1523
+         Function evaluations: 2299
+Optimization terminated successfully.
+         Current function value: 0.573363
+         Iterations: 1865
+         Function evaluations: 2730
+Optimization terminated successfully.
+         Current function value: 0.857311
+         Iterations: 1163
+         Function evaluations: 1701
+Optimization terminated successfully.
+         Current function value: 0.857311
+         Iterations: 1163
+         Function evaluations: 1701
+Optimization terminated successfully.
+         Current function value: 0.724573
+         Iterations: 1163
+         Function evaluations: 1740
+Optimization terminated successfully.
+         Current function value: 0.680691
+         Iterations: 781
+         Function evaluations: 1215
+Optimization terminated successfully.
+         Current function value: 0.724573
+         Iterations: 1163
+         Function evaluations: 1740
+Fitting is successful
+Parameter Statistics
+['0.9238470602235994 ~(0.23082025643990492)', '0.7742893811106565 ~(0.5025239857410766)', '1.028452143875282 ~(0.5677183498110496)', '0.5336103936269456 ~(0.5338738868713441)', '0.46723648202902685 ~(0.30774322227375334)', '0.8988947509150893 ~(0.47656978859096505)', '0.40100447446668464 ~(0.4436195102080362)', '0.18451366953546638 ~(0.31892636820386233)', '0.5773788843392733 ~(0.23425225560702062)', '0.704155896478204 ~(0.7669687357965389)']
+Time span of fitting:  [6, 17, 8]
+Initial values:  [0.04415593558279366, 0, 0.4153846153846151]
+Optimization terminated successfully.
+         Current function value: 1.133289
+         Iterations: 1901
+         Function evaluations: 2823
+Optimization terminated successfully.
+         Current function value: 1.231614
+         Iterations: 1380
+         Function evaluations: 2050
+Optimization terminated successfully.
+         Current function value: 1.114836
+         Iterations: 1981
+         Function evaluations: 2870
+Optimization terminated successfully.
+         Current function value: 1.241422
+         Iterations: 1309
+         Function evaluations: 1946
+Optimization terminated successfully.
+         Current function value: 1.078019
+         Iterations: 1886
+         Function evaluations: 2755
+Optimization terminated successfully.
+         Current function value: 1.298285
+         Iterations: 2134
+         Function evaluations: 3121
+Optimization terminated successfully.
+         Current function value: 1.039329
+         Iterations: 1233
+         Function evaluations: 1824
+Optimization terminated successfully.
+         Current function value: 1.174504
+         Iterations: 833
+         Function evaluations: 1273
+Optimization terminated successfully.
+         Current function value: 1.127619
+         Iterations: 1085
+         Function evaluations: 1623
+Optimization terminated successfully.
+         Current function value: 1.078019
+         Iterations: 1886
+         Function evaluations: 2755
+Fitting is successful
+Parameter Statistics
+['0.8991341976698296 ~(0.29925248449687375)', '1.0755472778314634 ~(0.8276299731980366)', '0.8303399301552897 ~(0.3209695800116431)', '0.8498776380400654 ~(0.4399535943754658)', '0.28009502422852867 ~(0.3646353783591663)', '0.4341767935073733 ~(0.44542932001667135)', '0.2958604876936357 ~(0.5245174799944321)', '0.5206744772208455 ~(0.49219862708374396)', '1.3749863096182668 ~(0.2856010615782196)', '0.5507590593754226 ~(0.5770989355025561)']
+Time span of fitting:  [5, 8, 3]
+Initial values:  [0.0267848640539079, 0, -0.2899543378995433]
+Optimization terminated successfully.
+         Current function value: 0.311676
+         Iterations: 1751
+         Function evaluations: 2530
+Optimization terminated successfully.
+         Current function value: 0.311676
+         Iterations: 1751
+         Function evaluations: 2530
+Optimization terminated successfully.
+         Current function value: 0.240756
+         Iterations: 1813
+         Function evaluations: 2655
+Optimization terminated successfully.
+         Current function value: 0.240756
+         Iterations: 1813
+         Function evaluations: 2655
+Optimization terminated successfully.
+         Current function value: 0.240756
+         Iterations: 1813
+         Function evaluations: 2655
+Optimization terminated successfully.
+         Current function value: 0.240756
+         Iterations: 1813
+         Function evaluations: 2655
+Optimization terminated successfully.
+         Current function value: 0.311676
+         Iterations: 1751
+         Function evaluations: 2530
+Optimization terminated successfully.
+         Current function value: 0.240756
+         Iterations: 1813
+         Function evaluations: 2655
+Optimization terminated successfully.
+         Current function value: 0.240756
+         Iterations: 1813
+         Function evaluations: 2655
+Optimization terminated successfully.
+         Current function value: 0.499622
+         Iterations: 2410
+         Function evaluations: 3394
+Fitting is successful
+Parameter Statistics
+['0.30781321104150144 ~(0.25854764233967237)', '0.04921731778356046 ~(0.1476519194107607)', '0.5002755885557332 ~(0.13582086228313645)', '0.09215300815700182 ~(0.07741338641208331)', '0.48580415895984536 ~(0.1167453099537535)', '0.2515246636872703 ~(0.37315094809472416)', '0.48813468531986903 ~(0.11765569036794703)', '0.18754963350379547 ~(0.22530929889699688)', '0.1396889582114596 ~(0.17375961578913054)', '0.2814511104777357 ~(0.18433850815656613)']
+Time span of fitting:  [4, 11, 8]
+Initial values:  [0.022303936706019115, 0, 0.003159557661927263]
+Optimization terminated successfully.
+         Current function value: 1.230990
+         Iterations: 2393
+         Function evaluations: 3431
+Optimization terminated successfully.
+         Current function value: 1.258587
+         Iterations: 2268
+         Function evaluations: 3302
+Optimization terminated successfully.
+         Current function value: 1.017863
+         Iterations: 1200
+         Function evaluations: 1790
+Optimization terminated successfully.
+         Current function value: 1.205477
+         Iterations: 1945
+         Function evaluations: 2844
+Optimization terminated successfully.
+         Current function value: 1.430220
+         Iterations: 963
+         Function evaluations: 1478
+Optimization terminated successfully.
+         Current function value: 1.205477
+         Iterations: 1945
+         Function evaluations: 2844
+Optimization terminated successfully.
+         Current function value: 1.297095
+         Iterations: 2965
+         Function evaluations: 4177
+Optimization terminated successfully.
+         Current function value: 1.230990
+         Iterations: 2393
+         Function evaluations: 3431
+Optimization terminated successfully.
+         Current function value: 0.816077
+         Iterations: 1111
+         Function evaluations: 1716
+Optimization terminated successfully.
+         Current function value: 1.017863
+         Iterations: 1200
+         Function evaluations: 1790
+Fitting is successful
+Parameter Statistics
+['1.0209900433555683 ~(0.3439610664567602)', '0.4311149256856252 ~(0.451391139708653)', '1.4675425189452052 ~(0.9830020722196188)', '0.2523163077197818 ~(0.2718810006924866)', '0.8928613401561085 ~(0.5352409216385126)', '0.6828686798663995 ~(0.28391192870972554)', '0.22856741542530318 ~(0.17094280257018926)', '0.3776623582008711 ~(0.45331657883729576)', '1.0249010965653802 ~(0.5816350676354656)', '0.48552364521923275 ~(0.20722307247027355)']
+Time span of fitting:  [4, 9, 6]
+Initial values:  [0.03149448637089392, 0, 0.08807339449541275]
+Optimization terminated successfully.
+         Current function value: 0.751295
+         Iterations: 1620
+         Function evaluations: 2412
+Optimization terminated successfully.
+         Current function value: 1.177657
+         Iterations: 3403
+         Function evaluations: 4859
+Optimization terminated successfully.
+         Current function value: 0.815288
+         Iterations: 1203
+         Function evaluations: 1797
+Optimization terminated successfully.
+         Current function value: 1.177657
+         Iterations: 3403
+         Function evaluations: 4859
+Optimization terminated successfully.
+         Current function value: 0.735350
+         Iterations: 912
+         Function evaluations: 1356
+Optimization terminated successfully.
+         Current function value: 0.815288
+         Iterations: 1203
+         Function evaluations: 1797
+Optimization terminated successfully.
+         Current function value: 1.335988
+         Iterations: 1220
+         Function evaluations: 1863
+Optimization terminated successfully.
+         Current function value: 0.885394
+         Iterations: 1902
+         Function evaluations: 2885
+Optimization terminated successfully.
+         Current function value: 1.177657
+         Iterations: 3403
+         Function evaluations: 4859
+Optimization terminated successfully.
+         Current function value: 0.885394
+         Iterations: 1902
+         Function evaluations: 2885
+Fitting is successful
+Parameter Statistics
+['0.9140722698548791 ~(0.44671116963554935)', '0.42238705489451644 ~(0.19958845849028134)', '0.8817949562773271 ~(0.5009843781350682)', '0.4952998793499718 ~(0.43520806072971774)', '0.1672319003806573 ~(0.2646249180007771)', '1.0450075549368107 ~(0.4463312505765816)', '0.2362623379694591 ~(0.21986439232934799)', '0.08683985693225163 ~(0.1293993797818776)', '0.6402418538116521 ~(0.18690207402389947)', '0.6234375610038734 ~(0.404397546810574)']
+Time span of fitting:  [4, 9, 6]
+Initial values:  [0.014307146261527636, 0, -0.027642276422764213]
+Optimization terminated successfully.
+         Current function value: 0.856324
+         Iterations: 1667
+         Function evaluations: 2504
+Optimization terminated successfully.
+         Current function value: 1.379999
+         Iterations: 1497
+         Function evaluations: 2328
+Optimization terminated successfully.
+         Current function value: 1.315453
+         Iterations: 1280
+         Function evaluations: 1931
+Optimization terminated successfully.
+         Current function value: 0.857616
+         Iterations: 2044
+         Function evaluations: 2994
+Optimization terminated successfully.
+         Current function value: 1.329818
+         Iterations: 1626
+         Function evaluations: 2486
+Optimization terminated successfully.
+         Current function value: 1.126242
+         Iterations: 2136
+         Function evaluations: 3102
+Optimization terminated successfully.
+         Current function value: 1.084704
+         Iterations: 1235
+         Function evaluations: 1894
+Optimization terminated successfully.
+         Current function value: 1.329818
+         Iterations: 1626
+         Function evaluations: 2486
+Optimization terminated successfully.
+         Current function value: 1.006236
+         Iterations: 978
+         Function evaluations: 1520
+Optimization terminated successfully.
+         Current function value: 1.172308
+         Iterations: 1132
+         Function evaluations: 1811
+Fitting is successful
+Parameter Statistics
+['0.7617780077123524 ~(0.3712530681466013)', '0.3642215866148158 ~(0.3589824097236639)', '0.9497998280864985 ~(0.4887047957748285)', '0.1699113427927501 ~(0.25133195280808995)', '0.2945774250011886 ~(0.47966808440439346)', '0.8442346466682199 ~(0.36653288356689473)', '0.03470575765866154 ~(0.10113539069916955)', '0.3655763687769111 ~(0.22662801222258763)', '1.0720949287796533 ~(0.5172595066384298)', '0.5379800757954714 ~(0.5788798448196627)']

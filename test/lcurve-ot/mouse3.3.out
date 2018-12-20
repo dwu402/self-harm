@@ -1,0 +1,4004 @@
+Beta Value: 0.0
+Residual: 0.02414911777057829
+Regularisation: 3.5303312183089295
+---
+Beta Value: 0.001
+Residual: 0.02857479372662412
+Regularisation: 9.066286598367142
+---
+Beta Value: 0.002
+Residual: 0.027134558881482636
+Regularisation: 5.855684980896192
+---
+Beta Value: 0.003
+Residual: 0.03734267113051013
+Regularisation: 4.110588203689781
+---
+Beta Value: 0.004
+Residual: 0.03472447357393031
+Regularisation: 5.477795204804429
+---
+Beta Value: 0.005
+Residual: 0.02890767708669203
+Regularisation: 1.7639650311052586
+---
+Beta Value: 0.006
+Residual: 0.039113083937932114
+Regularisation: 3.567889050806448
+---
+Beta Value: 0.007
+Residual: 0.029794979071274676
+Regularisation: 1.612375372007832
+---
+Beta Value: 0.008
+Residual: 0.02710875690028746
+Regularisation: 2.304188718991835
+---
+Beta Value: 0.009
+Residual: 0.030061414981349555
+Regularisation: 1.5803107273673662
+---
+Beta Value: 0.01
+Residual: 0.030578098920768414
+Regularisation: 1.5177636268147396
+---
+Beta Value: 0.011
+Residual: 0.03075944832636895
+Regularisation: 1.5004822869407817
+---
+Beta Value: 0.012
+Residual: 0.03102311642403024
+Regularisation: 1.48488838263112
+---
+Beta Value: 0.013
+Residual: 0.031047770313848082
+Regularisation: 1.477208500341058
+---
+Beta Value: 0.014
+Residual: 0.031194826730260063
+Regularisation: 1.465973988617028
+---
+Beta Value: 0.015
+Residual: 0.03052074118140345
+Regularisation: 1.5495967963663544
+---
+Beta Value: 0.016
+Residual: 0.031468919606862274
+Regularisation: 1.447648455135916
+---
+Beta Value: 0.017
+Residual: 0.031555994641031766
+Regularisation: 1.441733941838105
+---
+Beta Value: 0.018
+Residual: 0.031702433174777736
+Regularisation: 1.4340776167646727
+---
+Beta Value: 0.019
+Residual: 0.048012526972849995
+Regularisation: 1.356856338349049
+---
+Beta Value: 0.02
+Residual: 0.048142414518792406
+Regularisation: 1.3155751369317088
+---
+Beta Value: 0.021
+Residual: 0.031960832122068634
+Regularisation: 1.4204772177277123
+---
+Beta Value: 0.022
+Residual: 0.032065348511774366
+Regularisation: 1.4161112485896443
+---
+Beta Value: 0.023
+Residual: 0.03209681508655955
+Regularisation: 1.41426940490337
+---
+Beta Value: 0.024
+Residual: 0.03217398161803902
+Regularisation: 1.410986392864949
+---
+Beta Value: 0.025
+Residual: 0.0322388541553851
+Regularisation: 1.4083376731209012
+---
+Beta Value: 0.026
+Residual: 0.03233268884963298
+Regularisation: 1.405223138519185
+---
+Beta Value: 0.027
+Residual: 0.03232569907710956
+Regularisation: 1.4053131293746717
+---
+Beta Value: 0.028
+Residual: 0.03245060882861447
+Regularisation: 1.4003138424146817
+---
+Beta Value: 0.029
+Residual: 0.032512887322406724
+Regularisation: 1.398138300393892
+---
+Beta Value: 0.03
+Residual: 0.032590089176380115
+Regularisation: 1.3957190431940452
+---
+Beta Value: 0.031
+Residual: 0.03263285165645636
+Regularisation: 1.394317479923428
+---
+Beta Value: 0.032
+Residual: 0.03269478743040627
+Regularisation: 1.392154198228958
+---
+Beta Value: 0.033
+Residual: 0.032752425143840413
+Regularisation: 1.390380394257708
+---
+Beta Value: 0.034
+Residual: 0.03281489888045082
+Regularisation: 1.3886848013428803
+---
+Beta Value: 0.035
+Residual: 0.0328700612667824
+Regularisation: 1.3870853711605173
+---
+Beta Value: 0.036
+Residual: 0.032901746204972646
+Regularisation: 1.3868963198572504
+---
+Beta Value: 0.037
+Residual: 0.032970828400376906
+Regularisation: 1.3841301715670493
+---
+Beta Value: 0.038
+Residual: 0.03302580146962721
+Regularisation: 1.382658535600147
+---
+Beta Value: 0.039
+Residual: 0.03308171894994229
+Regularisation: 1.381357009770125
+---
+Beta Value: 0.04
+Residual: 0.0343684060895823
+Regularisation: 1.3844162404256213
+---
+Beta Value: 0.041
+Residual: 0.033181347299341
+Regularisation: 1.3787188656141771
+---
+Beta Value: 0.042
+Residual: 0.03323386890626698
+Regularisation: 1.3780654456215173
+---
+Beta Value: 0.043
+Residual: 0.033277270624300394
+Regularisation: 1.3765785345931367
+---
+Beta Value: 0.044
+Residual: 0.033346580379110015
+Regularisation: 1.3749913543041115
+---
+Beta Value: 0.045
+Residual: 0.033355840613102664
+Regularisation: 1.3746392362704356
+---
+Beta Value: 0.046
+Residual: 0.03343381209838607
+Regularisation: 1.3729130875674556
+---
+Beta Value: 0.047
+Residual: 0.03348179791363536
+Regularisation: 1.3718824276280455
+---
+Beta Value: 0.048
+Residual: 0.03353097847645443
+Regularisation: 1.370848278630458
+---
+Beta Value: 0.049
+Residual: 0.033576347254531104
+Regularisation: 1.3699143571211305
+---
+Beta Value: 0.05
+Residual: 0.033632427210922265
+Regularisation: 1.3688031319507492
+---
+Beta Value: 0.051
+Residual: 0.03364482205769236
+Regularisation: 1.368537776410793
+---
+Beta Value: 0.052
+Residual: 0.03372887643566519
+Regularisation: 1.366899121631145
+---
+Beta Value: 0.053
+Residual: 0.03376726409145548
+Regularisation: 1.366168189460554
+---
+Beta Value: 0.054
+Residual: 0.03382134919985739
+Regularisation: 1.3651585300171571
+---
+Beta Value: 0.055
+Residual: 0.021187045607366024
+Regularisation: 1.5474222455649693
+---
+Beta Value: 0.056
+Residual: 0.03391416487193106
+Regularisation: 1.3634732521884736
+---
+Beta Value: 0.057
+Residual: 0.03394835413588847
+Regularisation: 1.362869420423679
+---
+Beta Value: 0.058
+Residual: 0.03400275251886198
+Regularisation: 1.361919585809458
+---
+Beta Value: 0.059
+Residual: 0.03405456983432953
+Regularisation: 1.3610500534317902
+---
+Beta Value: 0.06
+Residual: 0.03410269286395242
+Regularisation: 1.3602235437166499
+---
+Beta Value: 0.061
+Residual: 0.03431255434891743
+Regularisation: 1.3568719139529353
+---
+Beta Value: 0.062
+Residual: 0.03419483716978261
+Regularisation: 1.3587115528072558
+---
+Beta Value: 0.063
+Residual: 0.03425064475830001
+Regularisation: 1.3578181726585388
+---
+Beta Value: 0.064
+Residual: 0.034298338700519695
+Regularisation: 1.3570673892113265
+---
+Beta Value: 0.065
+Residual: 0.034333138041089686
+Regularisation: 1.3565287819141838
+---
+Beta Value: 0.066
+Residual: 0.034392803345532116
+Regularisation: 1.3556233108878097
+---
+Beta Value: 0.067
+Residual: 0.03444256447427071
+Regularisation: 1.3548653583216468
+---
+Beta Value: 0.068
+Residual: 0.034484027396290855
+Regularisation: 1.3542509363721713
+---
+Beta Value: 0.069
+Residual: 0.034555855053978304
+Regularisation: 1.3532045854539863
+---
+Beta Value: 0.07
+Residual: 0.03457679406482079
+Regularisation: 1.3529185899979872
+---
+Beta Value: 0.071
+Residual: 0.03463480469029581
+Regularisation: 1.3520754884486808
+---
+Beta Value: 0.072
+Residual: 0.03470989344861715
+Regularisation: 1.3510337350306
+---
+Beta Value: 0.073
+Residual: 0.03473978061080075
+Regularisation: 1.350614803361366
+---
+Beta Value: 0.074
+Residual: 0.03464587741176424
+Regularisation: 1.3739406962455116
+---
+Beta Value: 0.075
+Residual: 0.0348476531179653
+Regularisation: 1.3491587078307725
+---
+Beta Value: 0.076
+Residual: 0.03498853688560008
+Regularisation: 1.3473309894876218
+---
+Beta Value: 0.077
+Residual: 0.03496472405163345
+Regularisation: 1.3476272667094131
+---
+Beta Value: 0.078
+Residual: 0.03504256284408568
+Regularisation: 1.3466362397318186
+---
+Beta Value: 0.079
+Residual: 0.035051891918620605
+Regularisation: 1.346505281696383
+---
+Beta Value: 0.08
+Residual: 0.0350799535979344
+Regularisation: 1.3461665382155772
+---
+Beta Value: 0.081
+Residual: 0.035081880470746125
+Regularisation: 1.346205043287124
+---
+Beta Value: 0.082
+Residual: 0.03522803509899971
+Regularisation: 1.3443232431597743
+---
+Beta Value: 0.083
+Residual: 0.03530000296509286
+Regularisation: 1.3434564599419334
+---
+Beta Value: 0.084
+Residual: 0.03531946998442411
+Regularisation: 1.343222553829483
+---
+Beta Value: 0.085
+Residual: 0.022462564185579296
+Regularisation: 1.5288661345304588
+---
+Beta Value: 0.086
+Residual: 0.03541462669611658
+Regularisation: 1.3421083316225024
+---
+Beta Value: 0.087
+Residual: 0.035480808798329586
+Regularisation: 1.3413354397969566
+---
+Beta Value: 0.088
+Residual: 0.03552593647893345
+Regularisation: 1.3408191064962625
+---
+Beta Value: 0.089
+Residual: 0.02264331433089648
+Regularisation: 1.5267895353339889
+---
+Beta Value: 0.09
+Residual: 0.022690943657698668
+Regularisation: 1.5262578859378673
+---
+Beta Value: 0.091
+Residual: 0.02273304178741015
+Regularisation: 1.5257927754734606
+---
+Beta Value: 0.092
+Residual: 0.02282977643534986
+Regularisation: 1.524772954091355
+---
+Beta Value: 0.093
+Residual: 0.02282430098794265
+Regularisation: 1.5248007082627086
+---
+Beta Value: 0.094
+Residual: 0.03587762560389704
+Regularisation: 1.336949346539394
+---
+Beta Value: 0.095
+Residual: 0.022922573989579476
+Regularisation: 1.5237550681413015
+---
+Beta Value: 0.096
+Residual: 0.022969899337667302
+Regularisation: 1.5232595084113232
+---
+Beta Value: 0.097
+Residual: 0.036054794584124986
+Regularisation: 1.335093941436749
+---
+Beta Value: 0.098
+Residual: 0.03608465798617224
+Regularisation: 1.3347886222377179
+---
+Beta Value: 0.099
+Residual: 0.03619633804664849
+Regularisation: 1.333658359457765
+---
+Beta Value: 0.1
+Residual: 0.02316992458092533
+Regularisation: 1.5217669555205167
+---
+Beta Value: 0.101
+Residual: 0.03629359873437366
+Regularisation: 1.3326813646990145
+---
+Beta Value: 0.102
+Residual: 0.03635769332016031
+Regularisation: 1.3320504422662818
+---
+Beta Value: 0.103
+Residual: 0.03657174007262591
+Regularisation: 1.3301342413789647
+---
+Beta Value: 0.104
+Residual: 0.036467788247726576
+Regularisation: 1.330979743121796
+---
+Beta Value: 0.105
+Residual: 0.02340703366173074
+Regularisation: 1.518907033430201
+---
+Beta Value: 0.106
+Residual: 0.023465571082416363
+Regularisation: 1.5183513093327283
+---
+Beta Value: 0.107
+Residual: 0.02350887923675031
+Regularisation: 1.5179453359748993
+---
+Beta Value: 0.108
+Residual: 0.02358609494574008
+Regularisation: 1.51722727038345
+---
+Beta Value: 0.109
+Residual: 0.023619614924565074
+Regularisation: 1.516918648925253
+---
+Beta Value: 0.11
+Residual: 0.023680451299370055
+Regularisation: 1.5163840960739199
+---
+Beta Value: 0.111
+Residual: 0.023731534245646054
+Regularisation: 1.5159038214153588
+---
+Beta Value: 0.112
+Residual: 0.03703655529201835
+Regularisation: 1.3257146365547825
+---
+Beta Value: 0.113
+Residual: 0.03711903461060248
+Regularisation: 1.3249825229307364
+---
+Beta Value: 0.114
+Residual: 0.037176779856979016
+Regularisation: 1.324474351612323
+---
+Beta Value: 0.115
+Residual: 0.03726859176216064
+Regularisation: 1.3236820029388034
+---
+Beta Value: 0.116
+Residual: 0.03730424733349979
+Regularisation: 1.3233658874156389
+---
+Beta Value: 0.117
+Residual: 0.03738296275640037
+Regularisation: 1.3226898361788337
+---
+Beta Value: 0.118
+Residual: 0.05627253451917147
+Regularisation: 1.1417070060737955
+---
+Beta Value: 0.119
+Residual: 0.02411075876047326
+Regularisation: 1.5126186610607728
+---
+Beta Value: 0.12
+Residual: 0.03763739373895845
+Regularisation: 1.32054899206227
+---
+Beta Value: 0.121
+Residual: 0.024287451325146238
+Regularisation: 1.5111195321550213
+---
+Beta Value: 0.122
+Residual: 0.024330273623415232
+Regularisation: 1.5107665227347074
+---
+Beta Value: 0.123
+Residual: 0.03781414383528006
+Regularisation: 1.3190971225854062
+---
+Beta Value: 0.124
+Residual: 0.024426907616779802
+Regularisation: 1.5099806364531523
+---
+Beta Value: 0.125
+Residual: 0.03796330361713552
+Regularisation: 1.3178940359724851
+---
+Beta Value: 0.126
+Residual: 0.02456613683849787
+Regularisation: 1.5088671152687363
+---
+Beta Value: 0.127
+Residual: 0.038110032420849385
+Regularisation: 1.316729490556954
+---
+Beta Value: 0.128
+Residual: 0.03820526061601147
+Regularisation: 1.3159826104441226
+---
+Beta Value: 0.129
+Residual: 0.024700074798182432
+Regularisation: 1.5078181071316332
+---
+Beta Value: 0.13
+Residual: 0.038339358403185746
+Regularisation: 1.3149437029047197
+---
+Beta Value: 0.131
+Residual: 0.024805320407707665
+Regularisation: 1.5070031722278587
+---
+Beta Value: 0.132
+Residual: 0.03871750022574908
+Regularisation: 1.3121474968929456
+---
+Beta Value: 0.133
+Residual: 0.03856241281214393
+Regularisation: 1.3132431584510165
+---
+Beta Value: 0.134
+Residual: 0.03930887582350148
+Regularisation: 1.3078929946997717
+---
+Beta Value: 0.135
+Residual: 0.025082543119919767
+Regularisation: 1.5049129503906202
+---
+Beta Value: 0.136
+Residual: 0.03884717192095163
+Regularisation: 1.3111224446467173
+---
+Beta Value: 0.137
+Residual: 0.03891504869938565
+Regularisation: 1.3106267432459628
+---
+Beta Value: 0.138
+Residual: 0.038999852903448
+Regularisation: 1.3100075271802782
+---
+Beta Value: 0.139
+Residual: 0.03911045305097892
+Regularisation: 1.309209526497818
+---
+Beta Value: 0.14
+Residual: 0.039016310566733575
+Regularisation: 1.3099414241431206
+---
+Beta Value: 0.141
+Residual: 0.025458030964901502
+Regularisation: 1.5021880329682324
+---
+Beta Value: 0.142
+Residual: 0.039366535653028806
+Regularisation: 1.307386896237244
+---
+Beta Value: 0.143
+Residual: 0.039337833951298064
+Regularisation: 1.3076011879178429
+---
+Beta Value: 0.144
+Residual: 0.03940539852227285
+Regularisation: 1.307238235113422
+---
+Beta Value: 0.145
+Residual: 0.025668152720228186
+Regularisation: 1.5007203519091588
+---
+Beta Value: 0.146
+Residual: 0.03972870441612421
+Regularisation: 1.3048724875949658
+---
+Beta Value: 0.147
+Residual: 0.03884313821695109
+Regularisation: 1.317604380646638
+---
+Beta Value: 0.148
+Residual: 0.0258998223259167
+Regularisation: 1.4991287800850706
+---
+Beta Value: 0.149
+Residual: 0.025973038652747554
+Regularisation: 1.498634475194438
+---
+Beta Value: 0.15
+Residual: 0.026038697537774692
+Regularisation: 1.4981952168989985
+---
+Beta Value: 0.151
+Residual: 0.02611549773256853
+Regularisation: 1.4976835967071145
+---
+Beta Value: 0.152
+Residual: 0.040240596281480245
+Regularisation: 1.3014323669091847
+---
+Beta Value: 0.153
+Residual: 0.04024108709237579
+Regularisation: 1.3014708682925886
+---
+Beta Value: 0.154
+Residual: 0.02638093999815426
+Regularisation: 1.495957473040404
+---
+Beta Value: 0.155
+Residual: 0.0405418209465094
+Regularisation: 1.2994679624273646
+---
+Beta Value: 0.156
+Residual: 0.04060529830738594
+Regularisation: 1.2990614767560702
+---
+Beta Value: 0.157
+Residual: 0.040753169853085906
+Regularisation: 1.2981209051253373
+---
+Beta Value: 0.158
+Residual: 0.040632399560165906
+Regularisation: 1.2991048704204047
+---
+Beta Value: 0.159
+Residual: 0.04101260759834571
+Regularisation: 1.2964920863844906
+---
+Beta Value: 0.16
+Residual: 0.026732151497179474
+Regularisation: 1.4937183427213967
+---
+Beta Value: 0.161
+Residual: 0.026798729040039444
+Regularisation: 1.4933031427124435
+---
+Beta Value: 0.162
+Residual: 0.04114587326054304
+Regularisation: 1.2958531860226972
+---
+Beta Value: 0.163
+Residual: 0.04118044798147269
+Regularisation: 1.2954500064831973
+---
+Beta Value: 0.164
+Residual: 0.04127152021063104
+Regularisation: 1.2948977467398266
+---
+Beta Value: 0.165
+Residual: 0.021893798606609886
+Regularisation: 1.6999817991304667
+---
+Beta Value: 0.166
+Residual: 0.027167067215294056
+Regularisation: 1.4910499389344771
+---
+Beta Value: 0.167
+Residual: 0.027232649047979493
+Regularisation: 1.4906560249065182
+---
+Beta Value: 0.168
+Residual: 0.041668837648931034
+Regularisation: 1.2924943848640082
+---
+Beta Value: 0.169
+Residual: 0.041750253272907045
+Regularisation: 1.2920112155929266
+---
+Beta Value: 0.17
+Residual: 0.027449580706334607
+Regularisation: 1.4893680187905047
+---
+Beta Value: 0.171
+Residual: 0.028226507648182148
+Regularisation: 1.4849796934823967
+---
+Beta Value: 0.172
+Residual: 0.02759915325486152
+Regularisation: 1.4885045227976788
+---
+Beta Value: 0.173
+Residual: 0.027686404949279545
+Regularisation: 1.4879870798503565
+---
+Beta Value: 0.174
+Residual: 0.027732510395920465
+Regularisation: 1.4877220809030516
+---
+Beta Value: 0.175
+Residual: 0.027770692921028257
+Regularisation: 1.4875041208622939
+---
+Beta Value: 0.176
+Residual: 0.027785351073794835
+Regularisation: 1.4874203363646625
+---
+Beta Value: 0.177
+Residual: 0.04253011898175706
+Regularisation: 1.2875025045433572
+---
+Beta Value: 0.178
+Residual: 0.04253258552413128
+Regularisation: 1.2874973902953781
+---
+Beta Value: 0.179
+Residual: 0.04261429386339193
+Regularisation: 1.28704626767083
+---
+Beta Value: 0.18
+Residual: 0.04268720269567448
+Regularisation: 1.286625080307729
+---
+Beta Value: 0.181
+Residual: 0.028301656174702674
+Regularisation: 1.4845115874212844
+---
+Beta Value: 0.182
+Residual: 0.02838148777031256
+Regularisation: 1.4840718100425223
+---
+Beta Value: 0.183
+Residual: 0.028460413330750008
+Regularisation: 1.4836395973769279
+---
+Beta Value: 0.184
+Residual: 0.04321334092969095
+Regularisation: 1.2837180114472766
+---
+Beta Value: 0.185
+Residual: 0.04338395992011521
+Regularisation: 1.2828164906407724
+---
+Beta Value: 0.186
+Residual: 0.04349813300675643
+Regularisation: 1.2821821774294477
+---
+Beta Value: 0.187
+Residual: 0.0287781791115059
+Regularisation: 1.481921787781914
+---
+Beta Value: 0.188
+Residual: 0.024340434895818202
+Regularisation: 1.6860491577531507
+---
+Beta Value: 0.189
+Residual: 0.028775392554851002
+Regularisation: 1.4819794941442384
+---
+Beta Value: 0.19
+Residual: 0.029030642511251304
+Regularisation: 1.480582823205935
+---
+Beta Value: 0.191
+Residual: 0.029109734545786074
+Regularisation: 1.4801681619336575
+---
+Beta Value: 0.192
+Residual: 0.024812070661131322
+Regularisation: 1.6835725093907554
+---
+Beta Value: 0.193
+Residual: 0.02491841071652757
+Regularisation: 1.6830198369825082
+---
+Beta Value: 0.194
+Residual: 0.025009045372708837
+Regularisation: 1.6825519814931367
+---
+Beta Value: 0.195
+Residual: 0.02509295477867644
+Regularisation: 1.6821202417362386
+---
+Beta Value: 0.196
+Residual: 0.044511705309976626
+Regularisation: 1.276888760885166
+---
+Beta Value: 0.197
+Residual: 0.04462151120612343
+Regularisation: 1.2763354296993472
+---
+Beta Value: 0.198
+Residual: 0.044466793119187026
+Regularisation: 1.2771314447583835
+---
+Beta Value: 0.199
+Residual: 0.04479985294051544
+Regularisation: 1.2754400784238331
+---
+Beta Value: 0.2
+Residual: 0.044920061675389145
+Regularisation: 1.2748273430055674
+---
+Beta Value: 0.201
+Residual: 0.025716870873501087
+Regularisation: 1.6789727761042357
+---
+Beta Value: 0.202
+Residual: 0.030039611559881982
+Regularisation: 1.4754343505735046
+---
+Beta Value: 0.203
+Residual: 0.030153001795949326
+Regularisation: 1.4748798182889946
+---
+Beta Value: 0.204
+Residual: 0.03023938349772005
+Regularisation: 1.4744506345763473
+---
+Beta Value: 0.205
+Residual: 0.03031612761831109
+Regularisation: 1.4740752952657932
+---
+Beta Value: 0.206
+Residual: 0.030391766955367792
+Regularisation: 1.4737071592418154
+---
+Beta Value: 0.207
+Residual: 0.03385373705479548
+Regularisation: 1.4647331747080106
+---
+Beta Value: 0.208
+Residual: 0.03025882376657371
+Regularisation: 1.4744226586889129
+---
+Beta Value: 0.209
+Residual: 0.030695852444430766
+Regularisation: 1.4723441501739294
+---
+Beta Value: 0.21
+Residual: 0.030785267988832837
+Regularisation: 1.471817610221394
+---
+Beta Value: 0.211
+Residual: 0.03084564401032476
+Regularisation: 1.4715292546328156
+---
+Beta Value: 0.212
+Residual: 0.030968093789724045
+Regularisation: 1.4709506780266788
+---
+Beta Value: 0.213
+Residual: 0.031031916827924402
+Regularisation: 1.470650203893426
+---
+Beta Value: 0.214
+Residual: 0.031144048662028533
+Regularisation: 1.4701256303580805
+---
+Beta Value: 0.215
+Residual: 0.031203737838929442
+Regularisation: 1.469847213720309
+---
+Beta Value: 0.216
+Residual: 0.02751346895564279
+Regularisation: 1.6703401663019606
+---
+Beta Value: 0.217
+Residual: 0.031416810756044536
+Regularisation: 1.468860079907301
+---
+Beta Value: 0.218
+Residual: 0.0314786631421459
+Regularisation: 1.4685760416257196
+---
+Beta Value: 0.219
+Residual: 0.03158546634199539
+Regularisation: 1.4680872551571855
+---
+Beta Value: 0.22
+Residual: 0.0316034186089378
+Regularisation: 1.4680170185196828
+---
+Beta Value: 0.221
+Residual: 0.03179422646990089
+Regularisation: 1.4671367584316082
+---
+Beta Value: 0.222
+Residual: 0.0318669511522259
+Regularisation: 1.4668086902691215
+---
+Beta Value: 0.223
+Residual: 0.031970501739293083
+Regularisation: 1.4663438297534688
+---
+Beta Value: 0.224
+Residual: 0.03209041840529292
+Regularisation: 1.4658056241394932
+---
+Beta Value: 0.225
+Residual: 0.03239712231666788
+Regularisation: 1.4645129763609894
+---
+Beta Value: 0.226
+Residual: 0.028848319232109922
+Regularisation: 1.664278701668988
+---
+Beta Value: 0.227
+Residual: 0.028991968190840708
+Regularisation: 1.6636409150170812
+---
+Beta Value: 0.228
+Residual: 0.03257696234404765
+Regularisation: 1.4636604846592205
+---
+Beta Value: 0.229
+Residual: 0.04685894647989882
+Regularisation: 1.267682938931041
+---
+Beta Value: 0.23
+Residual: 0.03270648818735413
+Regularisation: 1.463093633852299
+---
+Beta Value: 0.231
+Residual: 0.03264074449137782
+Regularisation: 1.4633880697784758
+---
+Beta Value: 0.232
+Residual: 0.03264969508917445
+Regularisation: 1.463351781649993
+---
+Beta Value: 0.233
+Residual: 0.032826796121946486
+Regularisation: 1.462580165021936
+---
+Beta Value: 0.234
+Residual: 0.04918476133809898
+Regularisation: 1.2551961620233374
+---
+Beta Value: 0.235
+Residual: 0.05229901573965936
+Regularisation: 1.2438236140605716
+---
+Beta Value: 0.236
+Residual: 0.0333330392138021
+Regularisation: 1.4604089757876948
+---
+Beta Value: 0.237
+Residual: 0.033406055479115224
+Regularisation: 1.4601000356268403
+---
+Beta Value: 0.238
+Residual: 0.03340455201499714
+Regularisation: 1.460120566635814
+---
+Beta Value: 0.239
+Residual: 0.03358371555523267
+Regularisation: 1.4593534974874425
+---
+Beta Value: 0.24
+Residual: 0.033707267968553084
+Regularisation: 1.4588372001269436
+---
+Beta Value: 0.241
+Residual: 0.03381618034621121
+Regularisation: 1.4583843065311062
+---
+Beta Value: 0.242
+Residual: 0.03387775561946798
+Regularisation: 1.458143426884164
+---
+Beta Value: 0.243
+Residual: 0.06440706374575991
+Regularisation: 1.0955109095493754
+---
+Beta Value: 0.244
+Residual: 0.05070630704403854
+Regularisation: 1.2488564233257988
+---
+Beta Value: 0.245
+Residual: 0.05067315669543144
+Regularisation: 1.2489791704957853
+---
+Beta Value: 0.246
+Residual: 0.05083067582555158
+Regularisation: 1.2483382158867171
+---
+Beta Value: 0.247
+Residual: 0.03445796923954341
+Regularisation: 1.4557539906826364
+---
+Beta Value: 0.248
+Residual: 0.03457104545858041
+Regularisation: 1.4552970326810244
+---
+Beta Value: 0.249
+Residual: 0.06492362650838156
+Regularisation: 1.0933900838164174
+---
+Beta Value: 0.25
+Residual: 0.05147226006437937
+Regularisation: 1.2457468200291533
+---
+Beta Value: 0.251
+Residual: 0.1505391298033859
+Regularisation: 0.5144343380473084
+---
+Beta Value: 0.252
+Residual: 0.051772162093088374
+Regularisation: 1.2445522694019087
+---
+Beta Value: 0.253
+Residual: 0.06529330464440923
+Regularisation: 1.0919330279852055
+---
+Beta Value: 0.254
+Residual: 0.06508876617554028
+Regularisation: 1.092750981505561
+---
+Beta Value: 0.255
+Residual: 0.03534440874543728
+Regularisation: 1.4522217833092321
+---
+Beta Value: 0.256
+Residual: 0.06547556596312408
+Regularisation: 1.0912041056330428
+---
+Beta Value: 0.257
+Residual: 0.05255140701703282
+Regularisation: 1.2414892182900243
+---
+Beta Value: 0.258
+Residual: 0.05275406551261307
+Regularisation: 1.2407056492890727
+---
+Beta Value: 0.259
+Residual: 0.065753213793083
+Regularisation: 1.0901336702057527
+---
+Beta Value: 0.26
+Residual: 0.05307788451780861
+Regularisation: 1.2394521529639155
+---
+Beta Value: 0.261
+Residual: 0.0652640366876322
+Regularisation: 1.0920809648492908
+---
+Beta Value: 0.262
+Residual: 0.05339554149014339
+Regularisation: 1.2382355496302415
+---
+Beta Value: 0.263
+Residual: 0.06597175341278538
+Regularisation: 1.0893021192357581
+---
+Beta Value: 0.264
+Residual: 0.03640863145654686
+Regularisation: 1.4481215281578315
+---
+Beta Value: 0.265
+Residual: 0.036496855136278275
+Regularisation: 1.4477882462988683
+---
+Beta Value: 0.266
+Residual: 0.036555978063930405
+Regularisation: 1.4475678663779812
+---
+Beta Value: 0.267
+Residual: 0.036745299767302564
+Regularisation: 1.4468535743075184
+---
+Beta Value: 0.268
+Residual: 0.06657337473231566
+Regularisation: 1.0870968208004461
+---
+Beta Value: 0.269
+Residual: 0.03696760351147723
+Regularisation: 1.4460238666269956
+---
+Beta Value: 0.27
+Residual: 0.03723227743037293
+Regularisation: 1.4450436847783914
+---
+Beta Value: 0.271
+Residual: 0.06669783994540911
+Regularisation: 1.086564793794369
+---
+Beta Value: 0.272
+Residual: 0.05575271541631463
+Regularisation: 1.2294395217516565
+---
+Beta Value: 0.273
+Residual: 0.0374986672920909
+Regularisation: 1.444063865778132
+---
+Beta Value: 0.274
+Residual: 0.05620328905217497
+Regularisation: 1.2277880384358884
+---
+Beta Value: 0.275
+Residual: 0.05615630760159293
+Regularisation: 1.2280711289327013
+---
+Beta Value: 0.276
+Residual: 0.06657540393610209
+Regularisation: 1.087241983199703
+---
+Beta Value: 0.277
+Residual: 0.07226662763412321
+Regularisation: 1.0668797090321458
+---
+Beta Value: 0.278
+Residual: 0.07245302689209084
+Regularisation: 1.0662038420002204
+---
+Beta Value: 0.279
+Residual: 0.056957884252194516
+Regularisation: 1.2250595386492944
+---
+Beta Value: 0.28
+Residual: 0.06744939370334957
+Regularisation: 1.0838356651919987
+---
+Beta Value: 0.281
+Residual: 0.1519821261729924
+Regularisation: 0.5089912026509394
+---
+Beta Value: 0.282
+Residual: 0.05783836292560379
+Regularisation: 1.2219170685166525
+---
+Beta Value: 0.283
+Residual: 0.07309891396032839
+Regularisation: 1.0639188870960476
+---
+Beta Value: 0.284
+Residual: 0.07170011953211852
+Regularisation: 1.0700884427040405
+---
+Beta Value: 0.285
+Residual: 0.07303775800523542
+Regularisation: 1.0641333667558586
+---
+Beta Value: 0.286
+Residual: 0.06796981305278037
+Regularisation: 1.0819954429765564
+---
+Beta Value: 0.287
+Residual: 0.07280202882291573
+Regularisation: 1.0649774678962982
+---
+Beta Value: 0.288
+Residual: 0.06825978795053635
+Regularisation: 1.0809883623861525
+---
+Beta Value: 0.289
+Residual: 0.06823867980813512
+Regularisation: 1.0810604815937548
+---
+Beta Value: 0.29
+Residual: 0.06802641076849776
+Regularisation: 1.0819298160442283
+---
+Beta Value: 0.291
+Residual: 0.06907089578314186
+Regularisation: 1.0785494484607998
+---
+Beta Value: 0.292
+Residual: 0.06845980133304738
+Regularisation: 1.0803022616896525
+---
+Beta Value: 0.293
+Residual: 0.0687862234886101
+Regularisation: 1.0792035421597708
+---
+Beta Value: 0.294
+Residual: 0.0687702752773608
+Regularisation: 1.0792739425035907
+---
+Beta Value: 0.295
+Residual: 0.07387628026177806
+Regularisation: 1.0612536351780564
+---
+Beta Value: 0.296
+Residual: 0.0688045468506925
+Regularisation: 1.079125410306768
+---
+Beta Value: 0.297
+Residual: 0.06893529625801145
+Regularisation: 1.0786849958763933
+---
+Beta Value: 0.298
+Residual: 0.0689898563860219
+Regularisation: 1.0785012852570692
+---
+Beta Value: 0.299
+Residual: 0.06904686822432926
+Regularisation: 1.0783147766726162
+---
+Beta Value: 0.3
+Residual: 0.07433119799496417
+Regularisation: 1.060366780574443
+---
+Beta Value: 0.301
+Residual: 0.07428553820165917
+Regularisation: 1.05987848788245
+---
+Beta Value: 0.302
+Residual: 0.07434960692295078
+Regularisation: 1.0596997231144047
+---
+Beta Value: 0.303
+Residual: 0.0744310262334601
+Regularisation: 1.0593960391325252
+---
+Beta Value: 0.304
+Residual: 0.06951244398740455
+Regularisation: 1.076765453418845
+---
+Beta Value: 0.305
+Residual: 0.07463975920546426
+Regularisation: 1.0587140053032722
+---
+Beta Value: 0.306
+Residual: 0.07533283464231157
+Regularisation: 1.0573769480369917
+---
+Beta Value: 0.307
+Residual: 0.07000949922475058
+Regularisation: 1.0751964314933764
+---
+Beta Value: 0.308
+Residual: 0.07480379488865745
+Regularisation: 1.0581734914912257
+---
+Beta Value: 0.309
+Residual: 0.07500959283520625
+Regularisation: 1.0575091445482274
+---
+Beta Value: 0.31
+Residual: 0.07500158016953909
+Regularisation: 1.0575318918641003
+---
+Beta Value: 0.311
+Residual: 0.07520336169547967
+Regularisation: 1.0568840251616063
+---
+Beta Value: 0.312
+Residual: 0.07016900572469045
+Regularisation: 1.074631594017937
+---
+Beta Value: 0.313
+Residual: 0.0755027805914492
+Regularisation: 1.055930190394834
+---
+Beta Value: 0.314
+Residual: 0.07537200154776294
+Regularisation: 1.0563419667661216
+---
+Beta Value: 0.315
+Residual: 0.07553258023476463
+Regularisation: 1.0558310057398068
+---
+Beta Value: 0.316
+Residual: 0.07552791020333373
+Regularisation: 1.0558468161499661
+---
+Beta Value: 0.317
+Residual: 0.07710182485500222
+Regularisation: 1.051143007526671
+---
+Beta Value: 0.318
+Residual: 0.15386184239530873
+Regularisation: 0.502704101646216
+---
+Beta Value: 0.319
+Residual: 0.0758152100511274
+Regularisation: 1.0549397290010536
+---
+Beta Value: 0.32
+Residual: 0.07588401585164238
+Regularisation: 1.0547253976288198
+---
+Beta Value: 0.321
+Residual: 0.07593157829536602
+Regularisation: 1.0546234203946359
+---
+Beta Value: 0.322
+Residual: 0.15411839177926628
+Regularisation: 0.5019098483374276
+---
+Beta Value: 0.323
+Residual: 0.0761453398763388
+Regularisation: 1.053912930164622
+---
+Beta Value: 0.324
+Residual: 0.07608876558669517
+Regularisation: 1.054120410738978
+---
+Beta Value: 0.325
+Residual: 0.07680787929782995
+Regularisation: 1.0534154335214332
+---
+Beta Value: 0.326
+Residual: 0.07640351199029959
+Regularisation: 1.0531151999075226
+---
+Beta Value: 0.327
+Residual: 0.07650055656498449
+Regularisation: 1.0528172762905634
+---
+Beta Value: 0.328
+Residual: 0.07660955934631117
+Regularisation: 1.0524854327683233
+---
+Beta Value: 0.329
+Residual: 0.07668904540111098
+Regularisation: 1.0522426930115705
+---
+Beta Value: 0.33
+Residual: 0.0770041856337248
+Regularisation: 1.0513188494936923
+---
+Beta Value: 0.331
+Residual: 0.07683555378800296
+Regularisation: 1.0518002607338421
+---
+Beta Value: 0.332
+Residual: 0.07692234247488537
+Regularisation: 1.051536817340946
+---
+Beta Value: 0.333
+Residual: 0.15457738140000912
+Regularisation: 0.5005123316408314
+---
+Beta Value: 0.334
+Residual: 0.0771197413317639
+Regularisation: 1.0509440337306741
+---
+Beta Value: 0.335
+Residual: 0.07728322448053498
+Regularisation: 1.050457126759279
+---
+Beta Value: 0.336
+Residual: 0.07729385984418498
+Regularisation: 1.0504242830450337
+---
+Beta Value: 0.337
+Residual: 0.07756135806502452
+Regularisation: 1.049636591429746
+---
+Beta Value: 0.338
+Residual: 0.07749717063286415
+Regularisation: 1.0498510874992935
+---
+Beta Value: 0.339
+Residual: 0.07819356996297909
+Regularisation: 1.0479485534402677
+---
+Beta Value: 0.34
+Residual: 0.07745785130110655
+Regularisation: 1.0499672738522696
+---
+Beta Value: 0.341
+Residual: 0.0773462686935597
+Regularisation: 1.0502778983859584
+---
+Beta Value: 0.342
+Residual: 0.07793839373254212
+Regularisation: 1.0485446478951481
+---
+Beta Value: 0.343
+Residual: 0.15503725533535923
+Regularisation: 0.4991382899047904
+---
+Beta Value: 0.344
+Residual: 0.15513252059946644
+Regularisation: 0.49886155531550014
+---
+Beta Value: 0.345
+Residual: 0.07829720741269232
+Regularisation: 1.0479443494705816
+---
+Beta Value: 0.346
+Residual: 0.07807986278087897
+Regularisation: 1.0481171911951686
+---
+Beta Value: 0.347
+Residual: 0.07824588651447571
+Regularisation: 1.0476444632880526
+---
+Beta Value: 0.348
+Residual: 0.07810177588329308
+Regularisation: 1.0480641687004018
+---
+Beta Value: 0.349
+Residual: 0.07853178589294366
+Regularisation: 1.046814224761169
+---
+Beta Value: 0.35
+Residual: 0.07869943090144954
+Regularisation: 1.0464565215229773
+---
+Beta Value: 0.351
+Residual: 0.07843833970998342
+Regularisation: 1.0472056303812949
+---
+Beta Value: 0.352
+Residual: 0.07877385486007464
+Regularisation: 1.046135094410641
+---
+Beta Value: 0.353
+Residual: 0.0788386444416549
+Regularisation: 1.0459414830001217
+---
+Beta Value: 0.354
+Residual: 0.07892346871356995
+Regularisation: 1.0456990432677622
+---
+Beta Value: 0.355
+Residual: 0.15574173831142188
+Regularisation: 0.4971150729058933
+---
+Beta Value: 0.356
+Residual: 0.07932339996307787
+Regularisation: 1.0445916989899853
+---
+Beta Value: 0.357
+Residual: 0.07943441821667994
+Regularisation: 1.0442650474513304
+---
+Beta Value: 0.358
+Residual: 0.15590921192531232
+Regularisation: 0.49664340214233105
+---
+Beta Value: 0.359
+Residual: 0.07962476900492521
+Regularisation: 1.0437589739596311
+---
+Beta Value: 0.36
+Residual: 0.15603221880853185
+Regularisation: 0.4963011907909616
+---
+Beta Value: 0.361
+Residual: 0.07958598335169248
+Regularisation: 1.0438527485462765
+---
+Beta Value: 0.362
+Residual: 0.07985470621440281
+Regularisation: 1.0431954157810652
+---
+Beta Value: 0.363
+Residual: 0.156217420796304
+Regularisation: 0.4957900228437125
+---
+Beta Value: 0.364
+Residual: 0.08010226238788415
+Regularisation: 1.0424279214608803
+---
+Beta Value: 0.365
+Residual: 0.08001516047087164
+Regularisation: 1.0426598252216508
+---
+Beta Value: 0.366
+Residual: 0.15630934048854667
+Regularisation: 0.4955498924911393
+---
+Beta Value: 0.367
+Residual: 0.08017703481076884
+Regularisation: 1.0422200575160556
+---
+Beta Value: 0.368
+Residual: 0.15643816092379542
+Regularisation: 0.4951868234218424
+---
+Beta Value: 0.369
+Residual: 0.08043300735052988
+Regularisation: 1.0415203634790582
+---
+Beta Value: 0.37
+Residual: 0.08056403295614054
+Regularisation: 1.0411654258835732
+---
+Beta Value: 0.371
+Residual: 0.08057695268525376
+Regularisation: 1.041137390477389
+---
+Beta Value: 0.372
+Residual: 0.08082516447389214
+Regularisation: 1.0404643296323304
+---
+Beta Value: 0.373
+Residual: 0.08079393847886429
+Regularisation: 1.0405486890708822
+---
+Beta Value: 0.374
+Residual: 0.08208995227882274
+Regularisation: 1.037888900031241
+---
+Beta Value: 0.375
+Residual: 0.08095613347802161
+Regularisation: 1.0401128531242279
+---
+Beta Value: 0.376
+Residual: 0.08117941751497419
+Regularisation: 1.0395195904625512
+---
+Beta Value: 0.377
+Residual: 0.08139351724685591
+Regularisation: 1.0389535068065758
+---
+Beta Value: 0.378
+Residual: 0.0814585174366981
+Regularisation: 1.0387745395141776
+---
+Beta Value: 0.379
+Residual: 0.08160483269045155
+Regularisation: 1.0383880085603319
+---
+Beta Value: 0.38
+Residual: 0.08166795365818481
+Regularisation: 1.0382220105082007
+---
+Beta Value: 0.381
+Residual: 0.08211351896332736
+Regularisation: 1.0370632085882523
+---
+Beta Value: 0.382
+Residual: 0.08196568713895545
+Regularisation: 1.0374403730735904
+---
+Beta Value: 0.383
+Residual: 0.08210046316963511
+Regularisation: 1.037088290912434
+---
+Beta Value: 0.384
+Residual: 0.08221166896855628
+Regularisation: 1.0367977632132808
+---
+Beta Value: 0.385
+Residual: 0.08236337670880563
+Regularisation: 1.0364038950049466
+---
+Beta Value: 0.386
+Residual: 0.08352109449906026
+Regularisation: 1.0334617386646399
+---
+Beta Value: 0.387
+Residual: 0.15745837227033388
+Regularisation: 0.4924892400461152
+---
+Beta Value: 0.388
+Residual: 0.08270888024049791
+Regularisation: 1.0355089278922294
+---
+Beta Value: 0.389
+Residual: 0.08301688273074007
+Regularisation: 1.034739869295791
+---
+Beta Value: 0.39
+Residual: 0.08506713059747864
+Regularisation: 1.030530167799265
+---
+Beta Value: 0.391
+Residual: 0.15765080769875392
+Regularisation: 0.491991640908084
+---
+Beta Value: 0.392
+Residual: 0.08404260265777047
+Regularisation: 1.0328453413434922
+---
+Beta Value: 0.393
+Residual: 0.1578261024388965
+Regularisation: 0.4919692562612371
+---
+Beta Value: 0.394
+Residual: 0.1578485774201338
+Regularisation: 0.4961332055222335
+---
+Beta Value: 0.395
+Residual: 0.15791472713319082
+Regularisation: 0.4932057767638022
+---
+Beta Value: 0.396
+Residual: 0.08393244017800552
+Regularisation: 1.0323879489792422
+---
+Beta Value: 0.397
+Residual: 0.0838441076533593
+Regularisation: 1.0326133615987587
+---
+Beta Value: 0.398
+Residual: 0.08364562243491164
+Regularisation: 1.033162184711902
+---
+Beta Value: 0.399
+Residual: 0.08741814066237237
+Regularisation: 1.0261328187592655
+---
+Beta Value: 0.4
+Residual: 0.0799866853417977
+Regularisation: 1.0433429830202057
+---
+Beta Value: 0.401
+Residual: 0.08735117278085838
+Regularisation: 1.0241462630387554
+---
+Beta Value: 0.402
+Residual: 0.15819519510343896
+Regularisation: 0.4907463231695521
+---
+Beta Value: 0.403
+Residual: 0.08624770100448519
+Regularisation: 1.0266824137361161
+---
+Beta Value: 0.404
+Residual: 0.1583176225674628
+Regularisation: 0.4903357171341922
+---
+Beta Value: 0.405
+Residual: 0.0851463150974702
+Regularisation: 1.029358671231091
+---
+Beta Value: 0.406
+Residual: 0.15832943051860326
+Regularisation: 0.49028370183728937
+---
+Beta Value: 0.407
+Residual: 0.08545859476272105
+Regularisation: 1.0285895547344621
+---
+Beta Value: 0.408
+Residual: 0.15859682213501433
+Regularisation: 0.4896242640312198
+---
+Beta Value: 0.409
+Residual: 0.08576476411623733
+Regularisation: 1.0278387850283994
+---
+Beta Value: 0.41
+Residual: 0.08593774656416107
+Regularisation: 1.0274167234971745
+---
+Beta Value: 0.411
+Residual: 0.08647272270540415
+Regularisation: 1.0264398309598912
+---
+Beta Value: 0.412
+Residual: 0.08627294006868771
+Regularisation: 1.026610580188747
+---
+Beta Value: 0.413
+Residual: 0.08789834461989803
+Regularisation: 1.0227220209266172
+---
+Beta Value: 0.414
+Residual: 0.08719142527284654
+Regularisation: 1.0244669810684612
+---
+Beta Value: 0.415
+Residual: 0.1589338772069802
+Regularisation: 0.4888052674680773
+---
+Beta Value: 0.416
+Residual: 0.15902460631736778
+Regularisation: 0.48858672410390375
+---
+Beta Value: 0.417
+Residual: 0.1590694825924931
+Regularisation: 0.4884798778046782
+---
+Beta Value: 0.418
+Residual: 0.15914155716291484
+Regularisation: 0.48830658228981083
+---
+Beta Value: 0.419
+Residual: 0.08649641695677912
+Regularisation: 1.026256705202933
+---
+Beta Value: 0.42
+Residual: 0.1592333586323642
+Regularisation: 0.4880874591522443
+---
+Beta Value: 0.421
+Residual: 0.08784229212790502
+Regularisation: 1.0228430318343673
+---
+Beta Value: 0.422
+Residual: 0.1593636109189091
+Regularisation: 0.4878326930435265
+---
+Beta Value: 0.423
+Residual: 0.15965778319195215
+Regularisation: 0.48769685126585416
+---
+Beta Value: 0.424
+Residual: 0.15940019115496093
+Regularisation: 0.48769935967018024
+---
+Beta Value: 0.425
+Residual: 0.08837871950031989
+Regularisation: 1.0215718168586936
+---
+Beta Value: 0.426
+Residual: 0.08849147520114048
+Regularisation: 1.021307000026128
+---
+Beta Value: 0.427
+Residual: 0.1596438699266787
+Regularisation: 0.48711915138841566
+---
+Beta Value: 0.428
+Residual: 0.08773357115350276
+Regularisation: 1.0232131967956366
+---
+Beta Value: 0.429
+Residual: 0.08928506014676159
+Regularisation: 1.0194527943103249
+---
+Beta Value: 0.43
+Residual: 0.08927336709968182
+Regularisation: 1.0194795326404031
+---
+Beta Value: 0.431
+Residual: 0.0893074780665677
+Regularisation: 1.0194054614175572
+---
+Beta Value: 0.432
+Residual: 0.1599160932209339
+Regularisation: 0.4866320814548962
+---
+Beta Value: 0.433
+Residual: 0.08981294850189502
+Regularisation: 1.018228782564631
+---
+Beta Value: 0.434
+Residual: 0.1600107593314758
+Regularisation: 0.48626691509060543
+---
+Beta Value: 0.435
+Residual: 0.09057280147308061
+Regularisation: 1.0164867121845083
+---
+Beta Value: 0.436
+Residual: 0.08998672684092728
+Regularisation: 1.0179025563739585
+---
+Beta Value: 0.437
+Residual: 0.16019342694807592
+Regularisation: 0.4858478454438383
+---
+Beta Value: 0.438
+Residual: 0.1602501361664655
+Regularisation: 0.4857185291311425
+---
+Beta Value: 0.439
+Residual: 0.1602917162655626
+Regularisation: 0.4856233037938825
+---
+Beta Value: 0.44
+Residual: 0.16037810644082526
+Regularisation: 0.48542732641400216
+---
+Beta Value: 0.441
+Residual: 0.16040907968016588
+Regularisation: 0.48535663486730624
+---
+Beta Value: 0.442
+Residual: 0.16049021494639767
+Regularisation: 0.4851769760274709
+---
+Beta Value: 0.443
+Residual: 0.1604464958765596
+Regularisation: 0.48527538493684313
+---
+Beta Value: 0.444
+Residual: 0.1605729161397237
+Regularisation: 0.4849867537564031
+---
+Beta Value: 0.445
+Residual: 0.09224462157907995
+Regularisation: 1.0126905609441426
+---
+Beta Value: 0.446
+Residual: 0.16068377053791674
+Regularisation: 0.4847374287013801
+---
+Beta Value: 0.447
+Residual: 0.16073614984477028
+Regularisation: 0.4846201591695988
+---
+Beta Value: 0.448
+Residual: 0.1608013834697227
+Regularisation: 0.48447523469081494
+---
+Beta Value: 0.449
+Residual: 0.16085299889411822
+Regularisation: 0.4843594482498808
+---
+Beta Value: 0.45
+Residual: 0.16091501434561037
+Regularisation: 0.4842213837788322
+---
+Beta Value: 0.451
+Residual: 0.09340127505002727
+Regularisation: 1.0101071927628835
+---
+Beta Value: 0.452
+Residual: 0.16100793892273635
+Regularisation: 0.48401532811656567
+---
+Beta Value: 0.453
+Residual: 0.16109886522972497
+Regularisation: 0.48381464666388546
+---
+Beta Value: 0.454
+Residual: 0.16118804072177173
+Regularisation: 0.4836194827284405
+---
+Beta Value: 0.455
+Residual: 0.16122788282497683
+Regularisation: 0.4835311277246202
+---
+Beta Value: 0.456
+Residual: 0.16119678972069643
+Regularisation: 0.48360130133947854
+---
+Beta Value: 0.457
+Residual: 0.16131840432954628
+Regularisation: 0.4833324416714656
+---
+Beta Value: 0.458
+Residual: 0.1613690831378837
+Regularisation: 0.4832577333389692
+---
+Beta Value: 0.459
+Residual: 0.16142489949277594
+Regularisation: 0.48310020592810765
+---
+Beta Value: 0.46
+Residual: 0.16146960777974037
+Regularisation: 0.4830024884634131
+---
+Beta Value: 0.461
+Residual: 0.1615418387722094
+Regularisation: 0.4828455844337742
+---
+Beta Value: 0.462
+Residual: 0.1615868312337746
+Regularisation: 0.48274851077924785
+---
+Beta Value: 0.463
+Residual: 0.16166658609211942
+Regularisation: 0.4825757930666365
+---
+Beta Value: 0.464
+Residual: 0.16170248347484062
+Regularisation: 0.4824983153253298
+---
+Beta Value: 0.465
+Residual: 0.16176886880329888
+Regularisation: 0.4824644695336796
+---
+Beta Value: 0.466
+Residual: 0.16182652921295135
+Regularisation: 0.48223169731296645
+---
+Beta Value: 0.467
+Residual: 0.1617778741596791
+Regularisation: 0.48233834446308993
+---
+Beta Value: 0.468
+Residual: 0.16204499541621842
+Regularisation: 0.4817703069329836
+---
+Beta Value: 0.469
+Residual: 0.16199776410783834
+Regularisation: 0.4818653546031499
+---
+Beta Value: 0.47
+Residual: 0.16226687925314923
+Regularisation: 0.481359271231096
+---
+Beta Value: 0.471
+Residual: 0.16210938616373857
+Regularisation: 0.4816278924094554
+---
+Beta Value: 0.472
+Residual: 0.16217904472109915
+Regularisation: 0.481480432900657
+---
+Beta Value: 0.473
+Residual: 0.16224132104348088
+Regularisation: 0.48134846046918056
+---
+Beta Value: 0.474
+Residual: 0.16222963407270513
+Regularisation: 0.48137595369585046
+---
+Beta Value: 0.475
+Residual: 0.16254613234203272
+Regularisation: 0.48070961209922136
+---
+Beta Value: 0.476
+Residual: 0.1623862311600469
+Regularisation: 0.4810431563305621
+---
+Beta Value: 0.477
+Residual: 0.16248393283584528
+Regularisation: 0.48083819057723876
+---
+Beta Value: 0.478
+Residual: 0.1625058118393808
+Regularisation: 0.48079370723684034
+---
+Beta Value: 0.479
+Residual: 0.1625468093436369
+Regularisation: 0.48070715790345325
+---
+Beta Value: 0.48
+Residual: 0.1626295380661226
+Regularisation: 0.4805358675043529
+---
+Beta Value: 0.481
+Residual: 0.16267594040620606
+Regularisation: 0.48043737729793135
+---
+Beta Value: 0.482
+Residual: 0.16274070594418022
+Regularisation: 0.48030281902806854
+---
+Beta Value: 0.483
+Residual: 0.16272312234982808
+Regularisation: 0.48034162088342314
+---
+Beta Value: 0.484
+Residual: 0.1628500593231092
+Regularisation: 0.48007880507707235
+---
+Beta Value: 0.485
+Residual: 0.16292832323606407
+Regularisation: 0.4799147852184645
+---
+Beta Value: 0.486
+Residual: 0.16298943228626897
+Regularisation: 0.47978897143548066
+---
+Beta Value: 0.487
+Residual: 0.16306721615607467
+Regularisation: 0.4796291915746213
+---
+Beta Value: 0.488
+Residual: 0.16296810277231963
+Regularisation: 0.4798370200768962
+---
+Beta Value: 0.489
+Residual: 0.16304625114832874
+Regularisation: 0.479677709066503
+---
+Beta Value: 0.49
+Residual: 0.163235369916287
+Regularisation: 0.47928528445981333
+---
+Beta Value: 0.491
+Residual: 0.16330370498360378
+Regularisation: 0.4791468674945486
+---
+Beta Value: 0.492
+Residual: 0.16333039252448647
+Regularisation: 0.4790917114555162
+---
+Beta Value: 0.493
+Residual: 0.16355015215974053
+Regularisation: 0.47883520710062427
+---
+Beta Value: 0.494
+Residual: 0.16345007400269532
+Regularisation: 0.4788489446630781
+---
+Beta Value: 0.495
+Residual: 0.1635968910163175
+Regularisation: 0.478554781567028
+---
+Beta Value: 0.496
+Residual: 0.1635633958774819
+Regularisation: 0.47862061330528577
+---
+Beta Value: 0.497
+Residual: 0.1636279520929648
+Regularisation: 0.47848992767107346
+---
+Beta Value: 0.498
+Residual: 0.16369518754450124
+Regularisation: 0.4783548586985717
+---
+Beta Value: 0.499
+Residual: 0.16377482748401148
+Regularisation: 0.47819514195897256
+---
+Beta Value: 0.5
+Residual: 0.16364305520673594
+Regularisation: 0.4784619705193179
+---
+Beta Value: 0.501
+Residual: 0.16386696050188257
+Regularisation: 0.47801091623398795
+---
+Beta Value: 0.502
+Residual: 0.16402850353169654
+Regularisation: 0.47769125103248583
+---
+Beta Value: 0.503
+Residual: 0.1639960338950531
+Regularisation: 0.4777538802344295
+---
+Beta Value: 0.504
+Residual: 0.16405232157649666
+Regularisation: 0.4776421811588697
+---
+Beta Value: 0.505
+Residual: 0.1641149975670083
+Regularisation: 0.47751787699131
+---
+Beta Value: 0.506
+Residual: 0.16418941987214142
+Regularisation: 0.4773713715580446
+---
+Beta Value: 0.507
+Residual: 0.1641873311844062
+Regularisation: 0.47738331011087887
+---
+Beta Value: 0.508
+Residual: 0.16426316973143254
+Regularisation: 0.4772257503043923
+---
+Beta Value: 0.509
+Residual: 0.1643276824074114
+Regularisation: 0.4770984490539083
+---
+Beta Value: 0.51
+Residual: 0.1643900871550685
+Regularisation: 0.4769760204757441
+---
+Beta Value: 0.511
+Residual: 0.16447209478953262
+Regularisation: 0.4768242266214047
+---
+Beta Value: 0.512
+Residual: 0.1645164645248439
+Regularisation: 0.47673349264463777
+---
+Beta Value: 0.513
+Residual: 0.16459680809132768
+Regularisation: 0.47657174795240803
+---
+Beta Value: 0.514
+Residual: 0.16475132366852935
+Regularisation: 0.47629282206861384
+---
+Beta Value: 0.515
+Residual: 0.16471820299984338
+Regularisation: 0.4763359565022029
+---
+Beta Value: 0.516
+Residual: 0.16463939751140955
+Regularisation: 0.47649176673549803
+---
+Beta Value: 0.517
+Residual: 0.16476275795763734
+Regularisation: 0.47625277562215823
+---
+Beta Value: 0.518
+Residual: 0.16488168471464779
+Regularisation: 0.4760190089502807
+---
+Beta Value: 0.519
+Residual: 0.16494839720218404
+Regularisation: 0.475890419555454
+---
+Beta Value: 0.52
+Residual: 0.16498696533912968
+Regularisation: 0.4758162773692569
+---
+Beta Value: 0.521
+Residual: 0.1650412028501053
+Regularisation: 0.4757407997525691
+---
+Beta Value: 0.522
+Residual: 0.16512724684006305
+Regularisation: 0.47554675202373964
+---
+Beta Value: 0.523
+Residual: 0.16516788037738184
+Regularisation: 0.47547016384978763
+---
+Beta Value: 0.524
+Residual: 0.16528544780482624
+Regularisation: 0.4752462621116076
+---
+Beta Value: 0.525
+Residual: 0.1652980646112689
+Regularisation: 0.475221989864
+---
+Beta Value: 0.526
+Residual: 0.16534573027760666
+Regularisation: 0.47512974413279785
+---
+Beta Value: 0.527
+Residual: 0.16543921212524135
+Regularisation: 0.47495196584806726
+---
+Beta Value: 0.528
+Residual: 0.16551001418636502
+Regularisation: 0.4748219764646147
+---
+Beta Value: 0.529
+Residual: 0.16553774874630184
+Regularisation: 0.4747815695964169
+---
+Beta Value: 0.53
+Residual: 0.16559688913089496
+Regularisation: 0.47469561460343207
+---
+Beta Value: 0.531
+Residual: 0.16569275769279673
+Regularisation: 0.4744727584600711
+---
+Beta Value: 0.532
+Residual: 0.16595413955783192
+Regularisation: 0.4739840806547369
+---
+Beta Value: 0.533
+Residual: 0.16583126295213374
+Regularisation: 0.4742126418507333
+---
+Beta Value: 0.534
+Residual: 0.16583851577603045
+Regularisation: 0.4741996890423962
+---
+Beta Value: 0.535
+Residual: 0.16598231950631423
+Regularisation: 0.47393036317438547
+---
+Beta Value: 0.536
+Residual: 0.16601735565276643
+Regularisation: 0.473865042931512
+---
+Beta Value: 0.537
+Residual: 0.16600698816791584
+Regularisation: 0.4738924480400749
+---
+Beta Value: 0.538
+Residual: 0.1661006927127695
+Regularisation: 0.4737095782537471
+---
+Beta Value: 0.539
+Residual: 0.16616901396786404
+Regularisation: 0.4735826522024434
+---
+Beta Value: 0.54
+Residual: 0.1662510800977465
+Regularisation: 0.47343099452259146
+---
+Beta Value: 0.541
+Residual: 0.1661646673274235
+Regularisation: 0.47359740321825883
+---
+Beta Value: 0.542
+Residual: 0.1663355294082075
+Regularisation: 0.4732775879967798
+---
+Beta Value: 0.543
+Residual: 0.16645848221802578
+Regularisation: 0.47305405549651336
+---
+Beta Value: 0.544
+Residual: 0.1664676255859321
+Regularisation: 0.47303119733253407
+---
+Beta Value: 0.545
+Residual: 0.166509037776928
+Regularisation: 0.47295577314263837
+---
+Beta Value: 0.546
+Residual: 0.16647118064491276
+Regularisation: 0.4730255493919685
+---
+Beta Value: 0.547
+Residual: 0.16655310736387494
+Regularisation: 0.4728744916264495
+---
+Beta Value: 0.548
+Residual: 0.1666638985643862
+Regularisation: 0.47267196776523074
+---
+Beta Value: 0.549
+Residual: 0.16679452424912694
+Regularisation: 0.47243272554632
+---
+Beta Value: 0.55
+Residual: 0.1668504365047378
+Regularisation: 0.4723309101659792
+---
+Beta Value: 0.551
+Residual: 0.16678872710475384
+Regularisation: 0.47244764989397775
+---
+Beta Value: 0.552
+Residual: 0.16697972087418023
+Regularisation: 0.472096580558533
+---
+Beta Value: 0.553
+Residual: 0.16705788994574702
+Regularisation: 0.47195480302568876
+---
+Beta Value: 0.554
+Residual: 0.1671037271686322
+Regularisation: 0.47187189996652745
+---
+Beta Value: 0.555
+Residual: 0.16717537411792424
+Regularisation: 0.4717426684044902
+---
+Beta Value: 0.556
+Residual: 0.16692021135904633
+Regularisation: 0.4722286667493053
+---
+Beta Value: 0.557
+Residual: 0.167296871442919
+Regularisation: 0.4715241332064629
+---
+Beta Value: 0.558
+Residual: 0.16738797758287094
+Regularisation: 0.4713704605810259
+---
+Beta Value: 0.559
+Residual: 0.1674142743443342
+Regularisation: 0.47131376864057545
+---
+Beta Value: 0.56
+Residual: 0.16753153560146614
+Regularisation: 0.4711049792941598
+---
+Beta Value: 0.561
+Residual: 0.1675209830253957
+Regularisation: 0.4711231391077505
+---
+Beta Value: 0.562
+Residual: 0.1676592168792864
+Regularisation: 0.4708770702193399
+---
+Beta Value: 0.563
+Residual: 0.1676739028422071
+Regularisation: 0.47085163488272874
+---
+Beta Value: 0.564
+Residual: 0.16785783547832622
+Regularisation: 0.47052658969045236
+---
+Beta Value: 0.565
+Residual: 0.16782528712516648
+Regularisation: 0.47058267799605413
+---
+Beta Value: 0.566
+Residual: 0.1678645385105334
+Regularisation: 0.4705129941894873
+---
+Beta Value: 0.567
+Residual: 0.16792460786924596
+Regularisation: 0.4704069236950406
+---
+Beta Value: 0.568
+Residual: 0.16934802823552902
+Regularisation: 0.46796366167753023
+---
+Beta Value: 0.569
+Residual: 0.16804722509104122
+Regularisation: 0.4701918110997162
+---
+Beta Value: 0.57
+Residual: 0.16968492341195698
+Regularisation: 0.4673575682955748
+---
+Beta Value: 0.571
+Residual: 0.16819081674904174
+Regularisation: 0.46993884256382207
+---
+Beta Value: 0.572
+Residual: 0.16829618409848182
+Regularisation: 0.4697547664275016
+---
+Beta Value: 0.573
+Residual: 0.16833060016465087
+Regularisation: 0.4696945221446184
+---
+Beta Value: 0.574
+Residual: 0.16837762424831756
+Regularisation: 0.46962551823720744
+---
+Beta Value: 0.575
+Residual: 0.16845595438866898
+Regularisation: 0.4694761449857136
+---
+Beta Value: 0.576
+Residual: 0.16858245388442178
+Regularisation: 0.46925788369973886
+---
+Beta Value: 0.577
+Residual: 0.1700685431771726
+Regularisation: 0.4666891187940509
+---
+Beta Value: 0.578
+Residual: 0.1686448699959099
+Regularisation: 0.46914848566555617
+---
+Beta Value: 0.579
+Residual: 0.170201735307973
+Regularisation: 0.4664585269683133
+---
+Beta Value: 0.58
+Residual: 0.1687460550485499
+Regularisation: 0.4689789483079672
+---
+Beta Value: 0.581
+Residual: 0.16896821917433624
+Regularisation: 0.4685918986628803
+---
+Beta Value: 0.582
+Residual: 0.17042845304535936
+Regularisation: 0.466066818900699
+---
+Beta Value: 0.583
+Residual: 0.17042022684670824
+Regularisation: 0.466081328593484
+---
+Beta Value: 0.584
+Residual: 0.17054025622838112
+Regularisation: 0.465875086394441
+---
+Beta Value: 0.585
+Residual: 0.1707037147252452
+Regularisation: 0.4655960049985179
+---
+Beta Value: 0.586
+Residual: 0.17069837217307587
+Regularisation: 0.4656052474164068
+---
+Beta Value: 0.587
+Residual: 0.17071997682799472
+Regularisation: 0.46556927099757006
+---
+Beta Value: 0.588
+Residual: 0.1708234704980999
+Regularisation: 0.4653920253633398
+---
+Beta Value: 0.589
+Residual: 0.17087908489689374
+Regularisation: 0.46529841400305566
+---
+Beta Value: 0.59
+Residual: 0.17091922857697253
+Regularisation: 0.4652293445993972
+---
+Beta Value: 0.591
+Residual: 0.17098938876291866
+Regularisation: 0.46511040909567214
+---
+Beta Value: 0.592
+Residual: 0.1710212068204329
+Regularisation: 0.46505975252938736
+---
+Beta Value: 0.593
+Residual: 0.17111507749371715
+Regularisation: 0.46489819868382704
+---
+Beta Value: 0.594
+Residual: 0.17112146227381797
+Regularisation: 0.46488770599501045
+---
+Beta Value: 0.595
+Residual: 0.17135519817466702
+Regularisation: 0.4644954127218894
+---
+Beta Value: 0.596
+Residual: 0.1713096609330726
+Regularisation: 0.4645708418575701
+---
+Beta Value: 0.597
+Residual: 0.17129387575207114
+Regularisation: 0.46459892822337256
+---
+Beta Value: 0.598
+Residual: 0.1714733643312369
+Regularisation: 0.46430308479339677
+---
+Beta Value: 0.599
+Residual: 0.17149230554961725
+Regularisation: 0.46426507168581826
+---
+Beta Value: 0.6
+Residual: 0.17170475369491792
+Regularisation: 0.46392689684443006
+---
+Beta Value: 0.601
+Residual: 0.17162341581569884
+Regularisation: 0.4640471189164942
+---
+Beta Value: 0.602
+Residual: 0.34371924272857135
+Regularisation: 8.546445650712943e-05
+---
+Beta Value: 0.603
+Residual: 0.17175624641667214
+Regularisation: 0.463825887556744
+---
+Beta Value: 0.604
+Residual: 0.1718668177627422
+Regularisation: 0.4636431003646943
+---
+Beta Value: 0.605
+Residual: 0.17187725127162595
+Regularisation: 0.46362572503685856
+---
+Beta Value: 0.606
+Residual: 0.1720050280872955
+Regularisation: 0.4634150743188975
+---
+Beta Value: 0.607
+Residual: 0.1719712731069283
+Regularisation: 0.46347094770132174
+---
+Beta Value: 0.608
+Residual: 0.1720805547932504
+Regularisation: 0.4632902802582295
+---
+Beta Value: 0.609
+Residual: 0.1721250163992246
+Regularisation: 0.46321751436711817
+---
+Beta Value: 0.61
+Residual: 0.17219591427418177
+Regularisation: 0.4631009291375774
+---
+Beta Value: 0.611
+Residual: 0.17224799741664018
+Regularisation: 0.46301564851970056
+---
+Beta Value: 0.612
+Residual: 0.17233027201264908
+Regularisation: 0.46288097138111
+---
+Beta Value: 0.613
+Residual: 0.17249690718479893
+Regularisation: 0.46261201966123605
+---
+Beta Value: 0.614
+Residual: 0.17246417909167994
+Regularisation: 0.4626626385114081
+---
+Beta Value: 0.615
+Residual: 0.1725675290085233
+Regularisation: 0.4624943765642836
+---
+Beta Value: 0.616
+Residual: 0.1725599376279755
+Regularisation: 0.4625070425407496
+---
+Beta Value: 0.617
+Residual: 0.17221718166764394
+Regularisation: 0.4630699681394043
+---
+Beta Value: 0.618
+Residual: 0.1726815214106261
+Regularisation: 0.46231014352787025
+---
+Beta Value: 0.619
+Residual: 0.17275684460588953
+Regularisation: 0.46218802716612584
+---
+Beta Value: 0.62
+Residual: 0.17267073201080482
+Regularisation: 0.4623282202894712
+---
+Beta Value: 0.621
+Residual: 0.17258269232340512
+Regularisation: 0.46247627403278074
+---
+Beta Value: 0.622
+Residual: 0.17293518700880692
+Regularisation: 0.46190190552707056
+---
+Beta Value: 0.623
+Residual: 0.17310609726496762
+Regularisation: 0.46162520688304304
+---
+Beta Value: 0.624
+Residual: 0.34371670176852986
+Regularisation: 9.120882008540915e-05
+---
+Beta Value: 0.625
+Residual: 0.17313955298466105
+Regularisation: 0.46157181025900273
+---
+Beta Value: 0.626
+Residual: 0.17327461125878432
+Regularisation: 0.46135544895667774
+---
+Beta Value: 0.627
+Residual: 0.17333750272959178
+Regularisation: 0.4612552439909718
+---
+Beta Value: 0.628
+Residual: 0.1733499618032294
+Regularisation: 0.4612362031023619
+---
+Beta Value: 0.629
+Residual: 0.17335952570926294
+Regularisation: 0.46122437384675957
+---
+Beta Value: 0.63
+Residual: 0.17393966340556913
+Regularisation: 0.460365889423933
+---
+Beta Value: 0.631
+Residual: 0.17362579512378412
+Regularisation: 0.4607969803396361
+---
+Beta Value: 0.632
+Residual: 0.17469445836504385
+Regularisation: 0.46001762849609035
+---
+Beta Value: 0.633
+Residual: 0.1736064843775929
+Regularisation: 0.4608352153910758
+---
+Beta Value: 0.634
+Residual: 0.1737337814699698
+Regularisation: 0.4606265030217324
+---
+Beta Value: 0.635
+Residual: 0.34371821684063864
+Regularisation: 7.301765460068878e-05
+---
+Beta Value: 0.636
+Residual: 0.3437179537669328
+Regularisation: 7.27780377843722e-05
+---
+Beta Value: 0.637
+Residual: 0.3437198968084232
+Regularisation: 8.505399934187675e-05
+---
+Beta Value: 0.638
+Residual: 0.1740516295749416
+Regularisation: 0.46012806949834295
+---
+Beta Value: 0.639
+Residual: 0.1742092593422568
+Regularisation: 0.45988469826349226
+---
+Beta Value: 0.64
+Residual: 0.3437225709098001
+Regularisation: 9.45056461983103e-05
+---
+Beta Value: 0.641
+Residual: 0.17349440273839853
+Regularisation: 0.4611562712635432
+---
+Beta Value: 0.642
+Residual: 0.34371773103258124
+Regularisation: 9.861516628173764e-05
+---
+Beta Value: 0.643
+Residual: 0.17436229293452904
+Regularisation: 0.4596415136626167
+---
+Beta Value: 0.644
+Residual: 0.17444418744074117
+Regularisation: 0.45951334269103106
+---
+Beta Value: 0.645
+Residual: 0.17453814447401406
+Regularisation: 0.4593672334022155
+---
+Beta Value: 0.646
+Residual: 0.1745294219821989
+Regularisation: 0.45938128283381285
+---
+Beta Value: 0.647
+Residual: 0.17465924868406502
+Regularisation: 0.45918167773044843
+---
+Beta Value: 0.648
+Residual: 0.17481672391842076
+Regularisation: 0.45893702963218874
+---
+Beta Value: 0.649
+Residual: 0.1753084549626013
+Regularisation: 0.45821808523100466
+---
+Beta Value: 0.65
+Residual: 0.17489831658063534
+Regularisation: 0.4588109401398584
+---
+Beta Value: 0.651
+Residual: 0.1751709858786621
+Regularisation: 0.45839570228829185
+---
+Beta Value: 0.652
+Residual: 0.17503022279061253
+Regularisation: 0.4586133902713928
+---
+Beta Value: 0.653
+Residual: 0.17510403995848886
+Regularisation: 0.4584959011769698
+---
+Beta Value: 0.654
+Residual: 0.17514174779581015
+Regularisation: 0.45843928542261636
+---
+Beta Value: 0.655
+Residual: 0.17523030617197657
+Regularisation: 0.45831134358296016
+---
+Beta Value: 0.656
+Residual: 0.3437184877750275
+Regularisation: 8.04357988296029e-05
+---
+Beta Value: 0.657
+Residual: 0.17544653297597146
+Regularisation: 0.45797321618436976
+---
+Beta Value: 0.658
+Residual: 0.17543440198132057
+Regularisation: 0.45799189309220667
+---
+Beta Value: 0.659
+Residual: 0.17555316673879964
+Regularisation: 0.457811709718579
+---
+Beta Value: 0.66
+Residual: 0.17555956494213792
+Regularisation: 0.4578019502021188
+---
+Beta Value: 0.661
+Residual: 0.17559727730678984
+Regularisation: 0.4577459298274567
+---
+Beta Value: 0.662
+Residual: 0.1757027285316395
+Regularisation: 0.4575846693611672
+---
+Beta Value: 0.663
+Residual: 0.17563834802661724
+Regularisation: 0.4576969213244046
+---
+Beta Value: 0.664
+Residual: 0.1760611465255401
+Regularisation: 0.4570475117047465
+---
+Beta Value: 0.665
+Residual: 0.17593366666456542
+Regularisation: 0.45723623472375374
+---
+Beta Value: 0.666
+Residual: 0.3437171919541363
+Regularisation: 6.525809413748423e-05
+---
+Beta Value: 0.667
+Residual: 0.1758020149961994
+Regularisation: 0.457447602274507
+---
+Beta Value: 0.668
+Residual: 0.17622483248235235
+Regularisation: 0.4568001867990344
+---
+Beta Value: 0.669
+Residual: 0.17623523227212656
+Regularisation: 0.4567840718104963
+---
+Beta Value: 0.67
+Residual: 0.1763029432188966
+Regularisation: 0.45668295823571725
+---
+Beta Value: 0.671
+Residual: 0.17641945761947928
+Regularisation: 0.45650932314214115
+---
+Beta Value: 0.672
+Residual: 0.17650422502417962
+Regularisation: 0.45638671055851693
+---
+Beta Value: 0.673
+Residual: 0.1754124326923136
+Regularisation: 0.45812148027179855
+---
+Beta Value: 0.674
+Residual: 0.17655734821611405
+Regularisation: 0.4563049922902883
+---
+Beta Value: 0.675
+Residual: 0.17667056585456709
+Regularisation: 0.45613629692830476
+---
+Beta Value: 0.676
+Residual: 0.17670131218855484
+Regularisation: 0.45609077929758635
+---
+Beta Value: 0.677
+Residual: 0.17679946497065366
+Regularisation: 0.4559456841814695
+---
+Beta Value: 0.678
+Residual: 0.17681819955052902
+Regularisation: 0.4559180549071051
+---
+Beta Value: 0.679
+Residual: 0.17638498750750795
+Regularisation: 0.4565723712574278
+---
+Beta Value: 0.68
+Residual: 0.1770365924714727
+Regularisation: 0.45559613935262677
+---
+Beta Value: 0.681
+Residual: 0.17705534832898787
+Regularisation: 0.45558286663880915
+---
+Beta Value: 0.682
+Residual: 0.17761404474601916
+Regularisation: 0.45475340699752537
+---
+Beta Value: 0.683
+Residual: 0.17672004852980194
+Regularisation: 0.4560667550283507
+---
+Beta Value: 0.684
+Residual: 0.17737279004086048
+Regularisation: 0.45510379877580737
+---
+Beta Value: 0.685
+Residual: 0.17734244538299562
+Regularisation: 0.4551481369912858
+---
+Beta Value: 0.686
+Residual: 0.17747171378148713
+Regularisation: 0.4549590457511448
+---
+Beta Value: 0.687
+Residual: 0.17754685764244335
+Regularisation: 0.45484963210201607
+---
+Beta Value: 0.688
+Residual: 0.17760474705378623
+Regularisation: 0.4547654197338094
+---
+Beta Value: 0.689
+Residual: 0.17770037138290096
+Regularisation: 0.4546779005916534
+---
+Beta Value: 0.69
+Residual: 0.17778676238164787
+Regularisation: 0.4545066979014446
+---
+Beta Value: 0.691
+Residual: 0.1777206394875531
+Regularisation: 0.45460000253292043
+---
+Beta Value: 0.692
+Residual: 0.17794763536194746
+Regularisation: 0.45426879889691224
+---
+Beta Value: 0.693
+Residual: 0.3437183396797931
+Regularisation: 8.838427951547507e-05
+---
+Beta Value: 0.694
+Residual: 0.3437198037684665
+Regularisation: 8.287883299770455e-05
+---
+Beta Value: 0.695
+Residual: 0.34371625979298925
+Regularisation: 0.0001535107982000737
+---
+Beta Value: 0.696
+Residual: 0.1782469091362719
+Regularisation: 0.4538375710615337
+---
+Beta Value: 0.697
+Residual: 0.17709331620553465
+Regularisation: 0.45557988206633687
+---
+Beta Value: 0.698
+Residual: 0.17795877559008852
+Regularisation: 0.45426185370663313
+---
+Beta Value: 0.699
+Residual: 0.17844208824231877
+Regularisation: 0.4535687222910082
+---
+Beta Value: 0.7
+Residual: 0.17852871699442446
+Regularisation: 0.45343391132042987
+---
+Beta Value: 0.701
+Residual: 0.17863746842769004
+Regularisation: 0.45327927781714916
+---
+Beta Value: 0.702
+Residual: 0.17863460541102127
+Regularisation: 0.4532836771299211
+---
+Beta Value: 0.703
+Residual: 0.17880989895894228
+Regularisation: 0.45303369838083984
+---
+Beta Value: 0.704
+Residual: 0.17880338388120978
+Regularisation: 0.45304278348809335
+---
+Beta Value: 0.705
+Residual: 0.17895487295953638
+Regularisation: 0.4528335081521594
+---
+Beta Value: 0.706
+Residual: 0.17918329843785452
+Regularisation: 0.4525064963849826
+---
+Beta Value: 0.707
+Residual: 0.17905576954058858
+Regularisation: 0.4526847478407535
+---
+Beta Value: 0.708
+Residual: 0.17914271383436356
+Regularisation: 0.45256182907144976
+---
+Beta Value: 0.709
+Residual: 0.17921758715417577
+Regularisation: 0.4524561452517809
+---
+Beta Value: 0.71
+Residual: 0.17928739367755364
+Regularisation: 0.45235773944594865
+---
+Beta Value: 0.711
+Residual: 0.17918054409750458
+Regularisation: 0.4525164272334791
+---
+Beta Value: 0.712
+Residual: 0.17945736139763566
+Regularisation: 0.4521186703412207
+---
+Beta Value: 0.713
+Residual: 0.1795135703030524
+Regularisation: 0.4520398034762471
+---
+Beta Value: 0.714
+Residual: 0.1797011494448028
+Regularisation: 0.4517781416322004
+---
+Beta Value: 0.715
+Residual: 0.17969137851255507
+Regularisation: 0.45179076564898024
+---
+Beta Value: 0.716
+Residual: 0.17932173353666264
+Regularisation: 0.45231375438409654
+---
+Beta Value: 0.717
+Residual: 0.17922954141542938
+Regularisation: 0.4524694609018763
+---
+Beta Value: 0.718
+Residual: 0.17974895484080597
+Regularisation: 0.45171246210592625
+---
+Beta Value: 0.719
+Residual: 0.1799980221103174
+Regularisation: 0.45136305422643136
+---
+Beta Value: 0.72
+Residual: 0.18007142941922408
+Regularisation: 0.45126106425488555
+---
+Beta Value: 0.721
+Residual: 0.18016962727713437
+Regularisation: 0.45112476386919464
+---
+Beta Value: 0.722
+Residual: 0.18025598979729854
+Regularisation: 0.45100513448068363
+---
+Beta Value: 0.723
+Residual: 0.18030943873560668
+Regularisation: 0.4509311940099755
+---
+Beta Value: 0.724
+Residual: 0.18035133935016315
+Regularisation: 0.4508732858781625
+---
+Beta Value: 0.725
+Residual: 0.3437165578667435
+Regularisation: 8.96060479263826e-05
+---
+Beta Value: 0.726
+Residual: 0.18054746988408593
+Regularisation: 0.45060247130747644
+---
+Beta Value: 0.727
+Residual: 0.3437179757285003
+Regularisation: 9.558238763859317e-05
+---
+Beta Value: 0.728
+Residual: 0.3437185016108988
+Regularisation: 7.68666576259773e-05
+---
+Beta Value: 0.729
+Residual: 0.18079218391674115
+Regularisation: 0.45026595196153335
+---
+Beta Value: 0.73
+Residual: 0.18087791514281254
+Regularisation: 0.45014842838183045
+---
+Beta Value: 0.731
+Residual: 0.18097469094842705
+Regularisation: 0.4500164242249818
+---
+Beta Value: 0.732
+Residual: 0.18104976984583343
+Regularisation: 0.44991328246975754
+---
+Beta Value: 0.733
+Residual: 0.18060598544162815
+Regularisation: 0.45053890665827
+---
+Beta Value: 0.734
+Residual: 0.18095375790277057
+Regularisation: 0.4500786976658153
+---
+Beta Value: 0.735
+Residual: 0.1813054444548503
+Regularisation: 0.449564683232822
+---
+Beta Value: 0.736
+Residual: 0.18122411512465741
+Regularisation: 0.4497198250933841
+---
+Beta Value: 0.737
+Residual: 0.18146548580010854
+Regularisation: 0.4493472065845713
+---
+Beta Value: 0.738
+Residual: 0.18226902401848358
+Regularisation: 0.4482702292217255
+---
+Beta Value: 0.739
+Residual: 0.1816433580484322
+Regularisation: 0.44910623740189537
+---
+Beta Value: 0.74
+Residual: 0.1817299841210996
+Regularisation: 0.4489891210545984
+---
+Beta Value: 0.741
+Residual: 0.18178983054490208
+Regularisation: 0.44890832403761355
+---
+Beta Value: 0.742
+Residual: 0.18190272228266993
+Regularisation: 0.44875620969143076
+---
+Beta Value: 0.743
+Residual: 0.18196084071140345
+Regularisation: 0.4486777490615756
+---
+Beta Value: 0.744
+Residual: 0.1820715642913792
+Regularisation: 0.44852957849772496
+---
+Beta Value: 0.745
+Residual: 0.1822651367152333
+Regularisation: 0.44829240621580724
+---
+Beta Value: 0.746
+Residual: 0.1822907016644977
+Regularisation: 0.44823678821493074
+---
+Beta Value: 0.747
+Residual: 0.18229482239431674
+Regularisation: 0.44823393196599415
+---
+Beta Value: 0.748
+Residual: 0.18250913494648585
+Regularisation: 0.4479594079449179
+---
+Beta Value: 0.749
+Residual: 0.1825290718951843
+Regularisation: 0.44791782096123495
+---
+Beta Value: 0.75
+Residual: 0.3437180435983757
+Regularisation: 8.981337162415326e-05
+---
+Beta Value: 0.751
+Residual: 0.3437217717960943
+Regularisation: 7.176344244064632e-05
+---
+Beta Value: 0.752
+Residual: 0.34371696709483013
+Regularisation: 8.180711440583758e-05
+---
+Beta Value: 0.753
+Residual: 0.3437179290722838
+Regularisation: 7.64736698308928e-05
+---
+Beta Value: 0.754
+Residual: 0.3437173884952046
+Regularisation: 8.007953340833439e-05
+---
+Beta Value: 0.755
+Residual: 0.34372197755640854
+Regularisation: 7.096013369151178e-05
+---
+Beta Value: 0.756
+Residual: 0.34371945071044163
+Regularisation: 8.44219441182475e-05
+---
+Beta Value: 0.757
+Residual: 0.3437210020038889
+Regularisation: 8.180158507248014e-05
+---
+Beta Value: 0.758
+Residual: 0.343716328159045
+Regularisation: 8.057512192867022e-05
+---
+Beta Value: 0.759
+Residual: 0.3437198263746989
+Regularisation: 9.011291384546692e-05
+---
+Beta Value: 0.76
+Residual: 0.18345968634980706
+Regularisation: 0.4466835419301074
+---
+Beta Value: 0.761
+Residual: 0.1834409229455629
+Regularisation: 0.4467088745196928
+---
+Beta Value: 0.762
+Residual: 0.18360274677664615
+Regularisation: 0.4464955854706576
+---
+Beta Value: 0.763
+Residual: 0.1837170012087707
+Regularisation: 0.44634606469406496
+---
+Beta Value: 0.764
+Residual: 0.1838055353739679
+Regularisation: 0.4462298393837359
+---
+Beta Value: 0.765
+Residual: 0.1830546894812175
+Regularisation: 0.4474149218809206
+---
+Beta Value: 0.766
+Residual: 0.1808099752609684
+Regularisation: 0.450743921445828
+---
+Beta Value: 0.767
+Residual: 0.184068435257799
+Regularisation: 0.44588635991236814
+---
+Beta Value: 0.768
+Residual: 0.18414970998582594
+Regularisation: 0.4457805137466239
+---
+Beta Value: 0.769
+Residual: 0.3439248869509623
+Regularisation: 0.001636784868248943
+---
+Beta Value: 0.77
+Residual: 0.18397469260959165
+Regularisation: 0.4460450761925393
+---
+Beta Value: 0.771
+Residual: 0.18443520824474058
+Regularisation: 0.44540945827481243
+---
+Beta Value: 0.772
+Residual: 0.34371829769682677
+Regularisation: 6.707470030959303e-05
+---
+Beta Value: 0.773
+Residual: 0.18460346503723785
+Regularisation: 0.4451919989858679
+---
+Beta Value: 0.774
+Residual: 0.18555823969639287
+Regularisation: 0.4439841305585327
+---
+Beta Value: 0.775
+Residual: 0.34371910268388145
+Regularisation: 8.316033175549165e-05
+---
+Beta Value: 0.776
+Residual: 0.18487844521927224
+Regularisation: 0.4448364321377714
+---
+Beta Value: 0.777
+Residual: 0.18492699331172743
+Regularisation: 0.44477398341619545
+---
+Beta Value: 0.778
+Residual: 0.18509527295973086
+Regularisation: 0.44455746819600467
+---
+Beta Value: 0.779
+Residual: 0.3437245222064732
+Regularisation: 8.499380847432887e-05
+---
+Beta Value: 0.78
+Residual: 0.34371797363485873
+Regularisation: 9.800725860831819e-05
+---
+Beta Value: 0.781
+Residual: 0.34371797363485873
+Regularisation: 9.800725860831819e-05
+---
+Beta Value: 0.782
+Residual: 0.18514433340591457
+Regularisation: 0.44449560106325653
+---
+Beta Value: 0.783
+Residual: 0.18526702340784776
+Regularisation: 0.4443402705324789
+---
+Beta Value: 0.784
+Residual: 0.34371739711605204
+Regularisation: 8.645876499576593e-05
+---
+Beta Value: 0.785
+Residual: 0.3437217992872436
+Regularisation: 8.821902400649585e-05
+---
+Beta Value: 0.786
+Residual: 0.3437176486978322
+Regularisation: 8.483289666333283e-05
+---
+Beta Value: 0.787
+Residual: 0.18595608809049186
+Regularisation: 0.4434576767643882
+---
+Beta Value: 0.788
+Residual: 0.18597995390510225
+Regularisation: 0.4434280253398781
+---
+Beta Value: 0.789
+Residual: 0.1861866603063891
+Regularisation: 0.44316621816811785
+---
+Beta Value: 0.79
+Residual: 0.18622361730574857
+Regularisation: 0.44311851365601373
+---
+Beta Value: 0.791
+Residual: 0.18588457209407386
+Regularisation: 0.44356019800075136
+---
+Beta Value: 0.792
+Residual: 0.1864305035439539
+Regularisation: 0.4428573297862755
+---
+Beta Value: 0.793
+Residual: 0.18618788803746017
+Regularisation: 0.4431653955884244
+---
+Beta Value: 0.794
+Residual: 0.18642438344670115
+Regularisation: 0.44286775397873596
+---
+Beta Value: 0.795
+Residual: 0.18709519767648183
+Regularisation: 0.44202282244415925
+---
+Beta Value: 0.796
+Residual: 0.18693560871283865
+Regularisation: 0.4422218919206604
+---
+Beta Value: 0.797
+Residual: 0.18690667743785888
+Regularisation: 0.44225786820828944
+---
+Beta Value: 0.798
+Residual: 0.18708962900396342
+Regularisation: 0.4420288627517802
+---
+Beta Value: 0.799
+Residual: 0.18709213105071543
+Regularisation: 0.44202532908540143
+---
+Beta Value: 0.8
+Residual: 0.18727265288236183
+Regularisation: 0.44180044683806113
+---
+Beta Value: 0.801
+Residual: 0.18730693732884537
+Regularisation: 0.441756783666398
+---
+Beta Value: 0.802
+Residual: 0.18735639091798367
+Regularisation: 0.4416982242704582
+---
+Beta Value: 0.803
+Residual: 0.3437201070252749
+Regularisation: 7.621812748081548e-05
+---
+Beta Value: 0.804
+Residual: 0.18743848247568543
+Regularisation: 0.44159410948292127
+---
+Beta Value: 0.805
+Residual: 0.18772770461515537
+Regularisation: 0.4412328829160898
+---
+Beta Value: 0.806
+Residual: 0.3437182279230287
+Regularisation: 8.74736869237881e-05
+---
+Beta Value: 0.807
+Residual: 0.3437175053462799
+Regularisation: 6.067732707555824e-05
+---
+Beta Value: 0.808
+Residual: 0.18819874319805693
+Regularisation: 0.4406599772801729
+---
+Beta Value: 0.809
+Residual: 0.1884379520576085
+Regularisation: 0.4403584728325116
+---
+Beta Value: 0.81
+Residual: 0.18812105605208845
+Regularisation: 0.44074667962938496
+---
+Beta Value: 0.811
+Residual: 0.18828427857823773
+Regularisation: 0.44054387806576
+---
+Beta Value: 0.812
+Residual: 0.34371927739057795
+Regularisation: 7.837048131183404e-05
+---
+Beta Value: 0.813
+Residual: 0.18867273302714202
+Regularisation: 0.44006656978871167
+---
+Beta Value: 0.814
+Residual: 0.18868907713618124
+Regularisation: 0.44004565409389246
+---
+Beta Value: 0.815
+Residual: 0.18888676362028647
+Regularisation: 0.4398053331690877
+---
+Beta Value: 0.816
+Residual: 0.18931405297391
+Regularisation: 0.43928689710755686
+---
+Beta Value: 0.817
+Residual: 0.18883823850412243
+Regularisation: 0.4398686106258719
+---
+Beta Value: 0.818
+Residual: 0.18887326527889747
+Regularisation: 0.43981988055313614
+---
+Beta Value: 0.819
+Residual: 0.18959121794679845
+Regularisation: 0.4389645269944707
+---
+Beta Value: 0.82
+Residual: 0.3437197266743629
+Regularisation: 8.422475992331973e-05
+---
+Beta Value: 0.821
+Residual: 0.18922533449060333
+Regularisation: 0.4394031009320535
+---
+Beta Value: 0.822
+Residual: 0.18947238770919494
+Regularisation: 0.4390917440115239
+---
+Beta Value: 0.823
+Residual: 0.18952068751986
+Regularisation: 0.43903321609952645
+---
+Beta Value: 0.824
+Residual: 0.18985776839017962
+Regularisation: 0.4386203836893245
+---
+Beta Value: 0.825
+Residual: 0.34371711862058124
+Regularisation: 6.674762168867755e-05
+---
+Beta Value: 0.826
+Residual: 0.34371739783361777
+Regularisation: 7.600289076196114e-05
+---
+Beta Value: 0.827
+Residual: 0.3437204574790938
+Regularisation: 8.217976597494879e-05
+---
+Beta Value: 0.828
+Residual: 0.3437199714201987
+Regularisation: 9.80441392324302e-05
+---
+Beta Value: 0.829
+Residual: 0.1902838574503575
+Regularisation: 0.43810534473398083
+---
+Beta Value: 0.83
+Residual: 0.34371768410278586
+Regularisation: 8.774621511867236e-05
+---
+Beta Value: 0.831
+Residual: 0.1905530258549001
+Regularisation: 0.4377821742911428
+---
+Beta Value: 0.832
+Residual: 0.34371812064105645
+Regularisation: 6.879003632072686e-05
+---
+Beta Value: 0.833
+Residual: 0.34372013053828865
+Regularisation: 8.407339311610719e-05
+---
+Beta Value: 0.834
+Residual: 0.3437176530292829
+Regularisation: 7.091972983692382e-05
+---
+Beta Value: 0.835
+Residual: 0.3437176530292829
+Regularisation: 7.091972983692382e-05
+---
+Beta Value: 0.836
+Residual: 0.3437176530292829
+Regularisation: 7.091972983692382e-05
+---
+Beta Value: 0.837
+Residual: 0.19136340837083402
+Regularisation: 0.4368111120348481
+---
+Beta Value: 0.838
+Residual: 0.1912653449942289
+Regularisation: 0.43692865469635966
+---
+Beta Value: 0.839
+Residual: 0.19146021485509176
+Regularisation: 0.43669458306129366
+---
+Beta Value: 0.84
+Residual: 0.1915093271851292
+Regularisation: 0.43663631595496905
+---
+Beta Value: 0.841
+Residual: 0.19170037997471964
+Regularisation: 0.436408594282103
+---
+Beta Value: 0.842
+Residual: 0.19179126656137693
+Regularisation: 0.43630070595736015
+---
+Beta Value: 0.843
+Residual: 0.3437183559285871
+Regularisation: 6.627828295426755e-05
+---
+Beta Value: 0.844
+Residual: 0.3437185766936148
+Regularisation: 9.500623210554041e-05
+---
+Beta Value: 0.845
+Residual: 0.34372402962953524
+Regularisation: 8.421399603850017e-05
+---
+Beta Value: 0.846
+Residual: 0.19169298940465565
+Regularisation: 0.436418618736658
+---
+Beta Value: 0.847
+Residual: 0.19381005356730152
+Regularisation: 0.4339479848175121
+---
+Beta Value: 0.848
+Residual: 0.19258836164210333
+Regularisation: 0.43535738251883405
+---
+Beta Value: 0.849
+Residual: 0.19401968060940308
+Regularisation: 0.4336932463318865
+---
+Beta Value: 0.85
+Residual: 0.19287576750232668
+Regularisation: 0.4350189621470813
+---
+Beta Value: 0.851
+Residual: 0.192946809878923
+Regularisation: 0.4349354449928897
+---
+Beta Value: 0.852
+Residual: 0.19301843830642912
+Regularisation: 0.43485140523024274
+---
+Beta Value: 0.853
+Residual: 0.19446063627635413
+Regularisation: 0.4331945730516462
+---
+Beta Value: 0.854
+Residual: 0.19412328904965098
+Regularisation: 0.4335776477397173
+---
+Beta Value: 0.855
+Residual: 0.19392746211564926
+Regularisation: 0.43380825468975887
+---
+Beta Value: 0.856
+Residual: 0.1953603395734441
+Regularisation: 0.4321359622790088
+---
+Beta Value: 0.857
+Residual: 0.19566387702039542
+Regularisation: 0.4317943273341974
+---
+Beta Value: 0.858
+Residual: 0.1957015528612334
+Regularisation: 0.4317495480664499
+---
+Beta Value: 0.859
+Residual: 0.19506812709683968
+Regularisation: 0.4324880389545017
+---
+Beta Value: 0.86
+Residual: 0.3437197759546907
+Regularisation: 9.351740211160342e-05
+---
+Beta Value: 0.861
+Residual: 0.343720098957122
+Regularisation: 8.70497517052344e-05
+---
+Beta Value: 0.862
+Residual: 0.3437235422840146
+Regularisation: 8.971585167117058e-05
+---
+Beta Value: 0.863
+Residual: 0.1938959545686507
+Regularisation: 0.43383083016371815
+---
+Beta Value: 0.864
+Residual: 0.19483466191778226
+Regularisation: 0.4327353724041413
+---
+Beta Value: 0.865
+Residual: 0.19502568465779774
+Regularisation: 0.43251674237778404
+---
+Beta Value: 0.866
+Residual: 0.19514417220613858
+Regularisation: 0.43237748630934736
+---
+Beta Value: 0.867
+Residual: 0.19578535244645737
+Regularisation: 0.4316475814706361
+---
+Beta Value: 0.868
+Residual: 0.1953105607842145
+Regularisation: 0.4321856134432738
+---
+Beta Value: 0.869
+Residual: 0.19547205933652947
+Regularisation: 0.4319994956566189
+---
+Beta Value: 0.87
+Residual: 0.1956485368657876
+Regularisation: 0.43179772685215023
+---
+Beta Value: 0.871
+Residual: 0.19578804226659613
+Regularisation: 0.4316410403660179
+---
+Beta Value: 0.872
+Residual: 0.3437188497587789
+Regularisation: 8.37715980246781e-05
+---
+Beta Value: 0.873
+Residual: 0.3437188497587789
+Regularisation: 8.37715980246781e-05
+---
+Beta Value: 0.874
+Residual: 0.19626726021715654
+Regularisation: 0.431087018188282
+---
+Beta Value: 0.875
+Residual: 0.34371948298969135
+Regularisation: 8.746219314902524e-05
+---
+Beta Value: 0.876
+Residual: 0.343719745333432
+Regularisation: 0.00016263980936800096
+---
+Beta Value: 0.877
+Residual: 0.343719745333432
+Regularisation: 0.00016263980936800096
+---
+Beta Value: 0.878
+Residual: 0.34372132541086325
+Regularisation: 8.065057772719671e-05
+---
+Beta Value: 0.879
+Residual: 0.34372132541086325
+Regularisation: 8.065057772719671e-05
+---
+Beta Value: 0.88
+Residual: 0.3437195437658479
+Regularisation: 8.338844487197797e-05
+---
+Beta Value: 0.881
+Residual: 0.19925034643476297
+Regularisation: 0.4278641336300536
+---
+Beta Value: 0.882
+Residual: 0.1974132389255482
+Regularisation: 0.4297819220019841
+---
+Beta Value: 0.883
+Residual: 0.1994785047014561
+Regularisation: 0.42750606587642864
+---
+Beta Value: 0.884
+Residual: 0.19878258698943502
+Regularisation: 0.4282483348622922
+---
+Beta Value: 0.885
+Residual: 0.19836700290145687
+Regularisation: 0.42871179539169907
+---
+Beta Value: 0.886
+Residual: 0.34371976220191364
+Regularisation: 8.80676905649518e-05
+---
+Beta Value: 0.887
+Residual: 0.19821937199420944
+Regularisation: 0.4288705366671619
+---
+Beta Value: 0.888
+Residual: 0.19837992064854928
+Regularisation: 0.42868966867320907
+---
+Beta Value: 0.889
+Residual: 0.19853803728624603
+Regularisation: 0.4285116902624838
+---
+Beta Value: 0.89
+Residual: 0.19872662172164246
+Regularisation: 0.4283000389125961
+---
+Beta Value: 0.891
+Residual: 0.19889503804416878
+Regularisation: 0.42811061980702536
+---
+Beta Value: 0.892
+Residual: 0.198974867181822
+Regularisation: 0.42802118077322615
+---
+Beta Value: 0.893
+Residual: 0.19955428871600464
+Regularisation: 0.42737753323859756
+---
+Beta Value: 0.894
+Residual: 0.1993925082337971
+Regularisation: 0.42755326037714425
+---
+Beta Value: 0.895
+Residual: 0.19954008583427432
+Regularisation: 0.4273883145217934
+---
+Beta Value: 0.896
+Residual: 0.1988701045372794
+Regularisation: 0.42814796064882943
+---
+Beta Value: 0.897
+Residual: 0.19988731933773995
+Regularisation: 0.42700388824845387
+---
+Beta Value: 0.898
+Residual: 0.1998563843435327
+Regularisation: 0.4270373248549681
+---
+Beta Value: 0.899
+Residual: 0.20104573796312056
+Regularisation: 0.4257196149917811
+---
+Beta Value: 0.9
+Residual: 0.20045370540328317
+Regularisation: 0.42637040447545577
+---
+Beta Value: 0.901
+Residual: 0.20046385908734968
+Regularisation: 0.4263630415864652
+---
+Beta Value: 0.902
+Residual: 0.19994549358528946
+Regularisation: 0.42693997099838366
+---
+Beta Value: 0.903
+Residual: 0.20058522590510244
+Regularisation: 0.426225822821615
+---
+Beta Value: 0.904
+Residual: 0.2010832486248841
+Regularisation: 0.42567273101102154
+---
+Beta Value: 0.905
+Residual: 0.20146990980119958
+Regularisation: 0.4252449427349697
+---
+Beta Value: 0.906
+Residual: 0.20163698591858298
+Regularisation: 0.42506102441638527
+---
+Beta Value: 0.907
+Residual: 0.2031506860530438
+Regularisation: 0.42340096186419
+---
+Beta Value: 0.908
+Residual: 0.2015127692975398
+Regularisation: 0.4251987333894766
+---
+Beta Value: 0.909
+Residual: 0.20215644044134565
+Regularisation: 0.42448821293366346
+---
+Beta Value: 0.91
+Residual: 0.20234857939896203
+Regularisation: 0.42427689947740854
+---
+Beta Value: 0.911
+Residual: 0.20258701080637895
+Regularisation: 0.42401499966712297
+---
+Beta Value: 0.912
+Residual: 0.20274758202927867
+Regularisation: 0.4238390846098605
+---
+Beta Value: 0.913
+Residual: 0.343721897817325
+Regularisation: 8.17289236809693e-05
+---
+Beta Value: 0.914
+Residual: 0.343721897817325
+Regularisation: 8.17289236809693e-05
+---
+Beta Value: 0.915
+Residual: 0.343721897817325
+Regularisation: 8.17289236809693e-05
+---
+Beta Value: 0.916
+Residual: 0.20238035612976896
+Regularisation: 0.4242473729853975
+---
+Beta Value: 0.917
+Residual: 0.20021140213598135
+Regularisation: 0.42665467808941987
+---
+Beta Value: 0.918
+Residual: 0.19801515697360958
+Regularisation: 0.42914934923639547
+---
+Beta Value: 0.919
+Residual: 0.2018203078774454
+Regularisation: 0.4248613016143199
+---
+Beta Value: 0.92
+Residual: 0.3437186945435493
+Regularisation: 8.4134031456136e-05
+---
+Beta Value: 0.921
+Residual: 0.3437186945435493
+Regularisation: 8.4134031456136e-05
+---
+Beta Value: 0.922
+Residual: 0.34371885352031234
+Regularisation: 8.546741634370741e-05
+---
+Beta Value: 0.923
+Residual: 0.20556096505659807
+Regularisation: 0.4207749561053425
+---
+Beta Value: 0.924
+Residual: 0.20533384220453213
+Regularisation: 0.42102232680368773
+---
+Beta Value: 0.925
+Residual: 0.2045300524080748
+Regularisation: 0.42190939272522326
+---
+Beta Value: 0.926
+Residual: 0.2054980309840803
+Regularisation: 0.4208651684670139
+---
+Beta Value: 0.927
+Residual: 0.20623475186924403
+Regularisation: 0.420046943598595
+---
+Beta Value: 0.928
+Residual: 0.2060974502220795
+Regularisation: 0.42019689268623234
+---
+Beta Value: 0.929
+Residual: 0.3437205369561961
+Regularisation: 8.134591961264291e-05
+---
+Beta Value: 0.93
+Residual: 0.3437173531756199
+Regularisation: 7.975163078498066e-05
+---
+Beta Value: 0.931
+Residual: 0.2417219867422766
+Regularisation: 0.3823379190775751
+---
+Beta Value: 0.932
+Residual: 0.3437193354561891
+Regularisation: 8.556658655180912e-05
+---
+Beta Value: 0.933
+Residual: 0.21648423423015284
+Regularisation: 0.40916344446522235
+---
+Beta Value: 0.934
+Residual: 0.2067391852190571
+Regularisation: 0.4195098519629954
+---
+Beta Value: 0.935
+Residual: 0.20602628341625376
+Regularisation: 0.42027700439760973
+---
+Beta Value: 0.936
+Residual: 0.2086676210575241
+Regularisation: 0.4174361364241431
+---
+Beta Value: 0.937
+Residual: 0.2093588818767104
+Regularisation: 0.41669505049668026
+---
+Beta Value: 0.938
+Residual: 0.20969005535386978
+Regularisation: 0.416341794946145
+---
+Beta Value: 0.939
+Residual: 0.2100251613440271
+Regularisation: 0.4159847874213634
+---
+Beta Value: 0.94
+Residual: 0.20867653737477818
+Regularisation: 0.4174300258922797
+---
+Beta Value: 0.941
+Residual: 0.20849277406128386
+Regularisation: 0.4176274978808174
+---
+Beta Value: 0.942
+Residual: 0.21132635632635446
+Regularisation: 0.4146012710856312
+---
+Beta Value: 0.943
+Residual: 0.2117333444163455
+Regularisation: 0.41416945751722234
+---
+Beta Value: 0.944
+Residual: 0.21216618441688304
+Regularisation: 0.41371071984760993
+---
+Beta Value: 0.945
+Residual: 0.2126753320778988
+Regularisation: 0.413171852375215
+---
+Beta Value: 0.946
+Residual: 0.21319031738965408
+Regularisation: 0.41262728104940205
+---
+Beta Value: 0.947
+Residual: 0.2136511073430873
+Regularisation: 0.4121406667002058
+---
+Beta Value: 0.948
+Residual: 0.21049235836103378
+Regularisation: 0.41549338057533375
+---
+Beta Value: 0.949
+Residual: 0.21483860574291602
+Regularisation: 0.4108873874832474
+---
+Beta Value: 0.95
+Residual: 0.2159772312862967
+Regularisation: 0.4096876892727646
+---
+Beta Value: 0.951
+Residual: 0.2147631130712202
+Regularisation: 0.4109704646491631
+---
+Beta Value: 0.952
+Residual: 0.2182167175901554
+Regularisation: 0.4073330929038179
+---
+Beta Value: 0.953
+Residual: 0.34377132454125026
+Regularisation: 0.0004346078047479175
+---
+Beta Value: 0.954
+Residual: 0.34383864344842435
+Regularisation: 0.0009643180343139313
+---
+Beta Value: 0.955
+Residual: 0.3440886754972291
+Regularisation: 0.0029333157793605806
+---
+Beta Value: 0.956
+Residual: 0.34372200488517857
+Regularisation: 7.18226875847302e-05
+---
+Beta Value: 0.957
+Residual: 0.34371748005716085
+Regularisation: 9.59071739219206e-05
+---
+Beta Value: 0.958
+Residual: 0.34371950842939814
+Regularisation: 0.00011156942722401219
+---
+Beta Value: 0.959
+Residual: 0.21581853916648772
+Regularisation: 0.4098634885921831
+---
+Beta Value: 0.96
+Residual: 0.21636458914109488
+Regularisation: 0.40929791534491916
+---
+Beta Value: 0.961
+Residual: 0.21566993325744832
+Regularisation: 0.410015027859922
+---
+Beta Value: 0.962
+Residual: 0.21584601733690062
+Regularisation: 0.4098609361074303
+---
+Beta Value: 0.963
+Residual: 0.2159625869093371
+Regularisation: 0.409746358572642
+---
+Beta Value: 0.964
+Residual: 0.22332640126185996
+Regularisation: 0.401980411261333
+---
+Beta Value: 0.965
+Residual: 0.3437175208141939
+Regularisation: 8.013926772362307e-05
+---
+Beta Value: 0.966
+Residual: 0.21918859760563292
+Regularisation: 0.40631661755884074
+---
+Beta Value: 0.967
+Residual: 0.2222331682142736
+Regularisation: 0.40313816955365644
+---
+Beta Value: 0.968
+Residual: 0.3437193710643664
+Regularisation: 7.663353851069976e-05
+---
+Beta Value: 0.969
+Residual: 0.22277116030059854
+Regularisation: 0.4025561756278767
+---
+Beta Value: 0.97
+Residual: 0.3437176088368569
+Regularisation: 7.578185452007585e-05
+---
+Beta Value: 0.971
+Residual: 0.3438916956416369
+Regularisation: 0.0013750673350486453
+---
+Beta Value: 0.972
+Residual: 0.3437429607738154
+Regularisation: 0.00022884473736682037
+---
+Beta Value: 0.973
+Residual: 0.34372076701074045
+Regularisation: 7.930406377912173e-05
+---
+Beta Value: 0.974
+Residual: 0.34372209339778037
+Regularisation: 9.293443312051878e-05
+---
+Beta Value: 0.975
+Residual: 0.34372075681078473
+Regularisation: 9.53028675417077e-05
+---
+Beta Value: 0.976
+Residual: 0.34371723341106825
+Regularisation: 9.428525499395787e-05
+---
+Beta Value: 0.977
+Residual: 0.3437160415459078
+Regularisation: 8.21893900007315e-05
+---
+Beta Value: 0.978
+Residual: 0.34371801911038363
+Regularisation: 8.505085430802697e-05
+---
+Beta Value: 0.979
+Residual: 0.34372198615302674
+Regularisation: 8.654869570231548e-05
+---
+Beta Value: 0.98
+Residual: 0.34371902622335265
+Regularisation: 8.327923117096536e-05
+---
+Beta Value: 0.981
+Residual: 0.34371821327209345
+Regularisation: 8.086074673912756e-05
+---
+Beta Value: 0.982
+Residual: 0.3437230947753234
+Regularisation: 9.335961510904523e-05
+---
+Beta Value: 0.983
+Residual: 0.3437166679035261
+Regularisation: 7.400290158002812e-05
+---
+Beta Value: 0.984
+Residual: 0.3437177332144347
+Regularisation: 8.576823883551897e-05
+---
+Beta Value: 0.985
+Residual: 0.3437216353238723
+Regularisation: 9.190985801945005e-05
+---
+Beta Value: 0.986
+Residual: 0.3437177752154425
+Regularisation: 8.451968651043556e-05
+---
+Beta Value: 0.987
+Residual: 0.343717222057079
+Regularisation: 9.448623541876664e-05
+---
+Beta Value: 0.988
+Residual: 0.343721148200261
+Regularisation: 9.458887223621104e-05
+---
+Beta Value: 0.989
+Residual: 0.3437241556924006
+Regularisation: 7.997990204092754e-05
+---
+Beta Value: 0.99
+Residual: 0.34372014136204115
+Regularisation: 8.052775950814531e-05
+---
+Beta Value: 0.991
+Residual: 0.3437200972816869
+Regularisation: 8.044998585339783e-05
+---
+Beta Value: 0.992
+Residual: 0.3437215137232244
+Regularisation: 8.080229182531873e-05
+---
+Beta Value: 0.993
+Residual: 0.3437218586649128
+Regularisation: 6.98139123055289e-05
+---
+Beta Value: 0.994
+Residual: 0.3437199757141553
+Regularisation: 8.900913280059141e-05
+---
+Beta Value: 0.995
+Residual: 0.34371711755487167
+Regularisation: 8.401619821978689e-05
+---
+Beta Value: 0.996
+Residual: 0.3437180953207214
+Regularisation: 7.414337449123315e-05
+---
+Beta Value: 0.997
+Residual: 0.34371757099502576
+Regularisation: 7.36621342551807e-05
+---
+Beta Value: 0.998
+Residual: 0.34372268673203976
+Regularisation: 8.281860956750185e-05
+---
+Beta Value: 0.999
+Residual: 0.3437204574969374
+Regularisation: 6.561337074488844e-05
+---
+Beta Value: 1.0
+Residual: 0.3437191054163154
+Regularisation: 7.864197994309493e-05
+---

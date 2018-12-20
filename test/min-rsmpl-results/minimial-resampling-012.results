@@ -1,0 +1,315 @@
+Time span of fitting:  [5, 24.0, 20]
+Initial values:  [0.027359383084243575, 0, -0.18222222222222217]
+Optimization terminated successfully.
+         Current function value: 0.730160
+         Iterations: 3591
+         Function evaluations: 5299
+Optimization terminated successfully.
+         Current function value: 0.999037
+         Iterations: 736
+         Function evaluations: 1150
+Optimization terminated successfully.
+         Current function value: 0.977500
+         Iterations: 1293
+         Function evaluations: 1913
+Optimization terminated successfully.
+         Current function value: 0.788435
+         Iterations: 4360
+         Function evaluations: 6301
+Optimization terminated successfully.
+         Current function value: 0.697868
+         Iterations: 3803
+         Function evaluations: 5637
+Optimization terminated successfully.
+         Current function value: 1.205799
+         Iterations: 1049
+         Function evaluations: 1589
+Optimization terminated successfully.
+         Current function value: 1.065336
+         Iterations: 1393
+         Function evaluations: 2051
+Optimization terminated successfully.
+         Current function value: 0.877138
+         Iterations: 6816
+         Function evaluations: 10577
+Optimization terminated successfully.
+         Current function value: 0.787823
+         Iterations: 3002
+         Function evaluations: 4287
+Optimization terminated successfully.
+         Current function value: 0.992839
+         Iterations: 1818
+         Function evaluations: 2721
+Fitting is successful
+Parameter Statistics
+['0.8034916293457173 ~(0.7149777275042203)', '0.4687999901616906 ~(0.45820585503130185)', '0.6852526371086661 ~(0.6189358531518715)', '0.37552551106563614 ~(0.4130305914029239)', '0.010114030172270139 ~(0.030248121725842975)', '0.033794700577943766 ~(0.10135185124426493)', '0.18249202774626083 ~(0.1870196674119111)', '0.1452002197239385 ~(0.22404830009391188)', '0.27520748745060236 ~(0.38046758920859797)', '0.21930391813679462 ~(0.3162130515991351)']
+Time span of fitting:  [6, 16.5, 12]
+Initial values:  [0.1504661708258221, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 0.623385
+         Iterations: 500
+         Function evaluations: 858
+Optimization terminated successfully.
+         Current function value: 0.619571
+         Iterations: 3987
+         Function evaluations: 6227
+Optimization terminated successfully.
+         Current function value: 0.442843
+         Iterations: 3231
+         Function evaluations: 5008
+Optimization terminated successfully.
+         Current function value: 0.585248
+         Iterations: 5730
+         Function evaluations: 8594
+Optimization terminated successfully.
+         Current function value: 0.585248
+         Iterations: 5730
+         Function evaluations: 8594
+Optimization terminated successfully.
+         Current function value: 0.522164
+         Iterations: 2360
+         Function evaluations: 3554
+Optimization terminated successfully.
+         Current function value: 0.657129
+         Iterations: 1699
+         Function evaluations: 2674
+Optimization terminated successfully.
+         Current function value: 0.693804
+         Iterations: 6988
+         Function evaluations: 10182
+Optimization terminated successfully.
+         Current function value: 0.693804
+         Iterations: 6988
+         Function evaluations: 10182
+Optimization terminated successfully.
+         Current function value: 0.585248
+         Iterations: 5730
+         Function evaluations: 8594
+Fitting is successful
+Parameter Statistics
+['1.1068006044244272 ~(0.09019053954191067)', '0.5817877995073649 ~(0.3050612128437954)', '1.0726253499441678 ~(0.20987790753038663)', '0.331859124055411 ~(0.26463677046077555)', '0.24478465551730594 ~(0.17031468427356072)', '0.6997679519288981 ~(0.27731000778982695)', '0.6932085632502523 ~(0.5241026356648433)', '0.312336758544794 ~(0.2660329896269719)', '0.5732827908922806 ~(0.3329926372234951)', '0.5814884529593124 ~(0.4741211790901764)']
+Time span of fitting:  [6, 25.5, 16]
+Initial values:  [0.04415593558279366, 0, 0.4153846153846151]
+Optimization terminated successfully.
+         Current function value: 0.722950
+         Iterations: 2390
+         Function evaluations: 3540
+Optimization terminated successfully.
+         Current function value: 0.829966
+         Iterations: 3448
+         Function evaluations: 4917
+Optimization terminated successfully.
+         Current function value: 0.850002
+         Iterations: 2289
+         Function evaluations: 3332
+Optimization terminated successfully.
+         Current function value: 0.656442
+         Iterations: 4889
+         Function evaluations: 6972
+Optimization terminated successfully.
+         Current function value: 0.829675
+         Iterations: 1889
+         Function evaluations: 2741
+Optimization terminated successfully.
+         Current function value: 0.650175
+         Iterations: 7328
+         Function evaluations: 10575
+Optimization terminated successfully.
+         Current function value: 0.673073
+         Iterations: 1223
+         Function evaluations: 1915
+Optimization terminated successfully.
+         Current function value: 0.747819
+         Iterations: 4835
+         Function evaluations: 7095
+Optimization terminated successfully.
+         Current function value: 0.714314
+         Iterations: 2923
+         Function evaluations: 4489
+Optimization terminated successfully.
+         Current function value: 0.716601
+         Iterations: 3493
+         Function evaluations: 5106
+Fitting is successful
+Parameter Statistics
+['1.4549584910482618 ~(0.1739008930998106)', '1.129087463561467 ~(0.12161737352280674)', '1.3405252727283177 ~(0.14760090976103302)', '0.7571688985477787 ~(0.24894413418014394)', '0.006665694071620029 ~(0.01941616488406298)', '0.028361777465958027 ~(0.04949327880920453)', '0.4105847772390098 ~(0.2528288204846233)', '0.0304533157812991 ~(0.0821643923372816)', '0.5102252878065291 ~(0.2878121923236283)', '0.485971634279778 ~(0.19388455172479302)']
+Time span of fitting:  [5, 12.0, 6]
+Initial values:  [0.0267848640539079, 0, -0.2899543378995433]
+Optimization terminated successfully.
+         Current function value: 0.054280
+         Iterations: 1332
+         Function evaluations: 1975
+Optimization terminated successfully.
+         Current function value: 0.054280
+         Iterations: 1332
+         Function evaluations: 1975
+Optimization terminated successfully.
+         Current function value: 0.140199
+         Iterations: 2103
+         Function evaluations: 2997
+Optimization terminated successfully.
+         Current function value: 0.054280
+         Iterations: 1332
+         Function evaluations: 1975
+Optimization terminated successfully.
+         Current function value: 0.054280
+         Iterations: 1332
+         Function evaluations: 1975
+Optimization terminated successfully.
+         Current function value: 0.054280
+         Iterations: 1332
+         Function evaluations: 1975
+Optimization terminated successfully.
+         Current function value: 0.140199
+         Iterations: 2103
+         Function evaluations: 2997
+Optimization terminated successfully.
+         Current function value: 0.140199
+         Iterations: 2103
+         Function evaluations: 2997
+Optimization terminated successfully.
+         Current function value: 0.140199
+         Iterations: 2103
+         Function evaluations: 2997
+Optimization terminated successfully.
+         Current function value: 0.054280
+         Iterations: 1332
+         Function evaluations: 1975
+Fitting is successful
+Parameter Statistics
+['0.17432267925280995 ~(0.19566654598428465)', '0.0003398309746006277 ~(0.00036890887804070794)', '0.00026723196983023103 ~(0.00020928500790067062)', '0.0001412372008395845 ~(0.00016039293367351343)', '0.0007620503232657919 ~(0.0008998750903266781)', '0.00036031993821007555 ~(0.0003751548161460704)', '0.23050320494809737 ~(0.12027705664616761)', '0.00992481786534839 ~(0.007791364647045978)', '2.176627712496396e-07 ~(1.4834083580647002e-07)', '0.00041475598647648155 ~(0.0004590345493631254)']
+Time span of fitting:  [4, 16.5, 16]
+Initial values:  [0.022303936706019115, 0, 0.003159557661927263]
+Optimization terminated successfully.
+         Current function value: 0.847766
+         Iterations: 4654
+         Function evaluations: 7145
+Optimization terminated successfully.
+         Current function value: 0.687188
+         Iterations: 3214
+         Function evaluations: 5121
+Optimization terminated successfully.
+         Current function value: 0.840309
+         Iterations: 4451
+         Function evaluations: 6902
+Optimization terminated successfully.
+         Current function value: 0.686486
+         Iterations: 9156
+         Function evaluations: 13502
+Optimization terminated successfully.
+         Current function value: 0.573651
+         Iterations: 4127
+         Function evaluations: 6275
+Optimization terminated successfully.
+         Current function value: 0.871746
+         Iterations: 7369
+         Function evaluations: 10899
+Optimization terminated successfully.
+         Current function value: 0.878169
+         Iterations: 4954
+         Function evaluations: 7354
+Optimization terminated successfully.
+         Current function value: 0.744278
+         Iterations: 3964
+         Function evaluations: 6073
+Optimization terminated successfully.
+         Current function value: 0.712080
+         Iterations: 5717
+         Function evaluations: 8704
+Optimization terminated successfully.
+         Current function value: 0.823856
+         Iterations: 6518
+         Function evaluations: 9697
+Fitting is successful
+Parameter Statistics
+['1.5490370512579918 ~(0.20482280002267103)', '0.5643425730434501 ~(0.31566170136169047)', '1.132067349539843 ~(0.36612766979084177)', '0.5928852938593135 ~(0.5476622725317509)', '0.06653937862967445 ~(0.12124563139998365)', '0.4848502111969407 ~(0.232797693436786)', '0.18494654599632157 ~(0.1641400548788415)', '0.34433352615505697 ~(0.23678515120713853)', '0.4519661370088306 ~(0.32144424604559235)', '1.014059884268013 ~(0.5176524342972124)']
+Time span of fitting:  [4, 13.5, 12]
+Initial values:  [0.03149448637089392, 0, 0.08807339449541275]
+Optimization terminated successfully.
+         Current function value: 0.702648
+         Iterations: 1723
+         Function evaluations: 2526
+Optimization terminated successfully.
+         Current function value: 0.672534
+         Iterations: 7452
+         Function evaluations: 11235
+Optimization terminated successfully.
+         Current function value: 0.615644
+         Iterations: 1399
+         Function evaluations: 2169
+Optimization terminated successfully.
+         Current function value: 0.692225
+         Iterations: 2665
+         Function evaluations: 3950
+Optimization terminated successfully.
+         Current function value: 0.840285
+         Iterations: 1644
+         Function evaluations: 2426
+Optimization terminated successfully.
+         Current function value: 0.601751
+         Iterations: 8235
+         Function evaluations: 12098
+Optimization terminated successfully.
+         Current function value: 0.530290
+         Iterations: 4346
+         Function evaluations: 6348
+Optimization terminated successfully.
+         Current function value: 0.530290
+         Iterations: 4346
+         Function evaluations: 6348
+Optimization terminated successfully.
+         Current function value: 0.692225
+         Iterations: 2665
+         Function evaluations: 3950
+Optimization terminated successfully.
+         Current function value: 0.840285
+         Iterations: 1644
+         Function evaluations: 2426
+Fitting is successful
+Parameter Statistics
+['1.1455925959225068 ~(0.33703342009344667)', '0.4010671118800154 ~(0.4013729255386415)', '0.8130729278939448 ~(0.2893051894717775)', '0.2740562709541406 ~(0.2193443446302798)', '0.0063995200012799515 ~(0.019190541010680368)', '0.35429849962544224 ~(0.18029005528098183)', '0.034183782883985915 ~(0.0734683020937931)', '0.060099846355285404 ~(0.14635263214845842)', '0.5032481519625559 ~(0.2731092660258285)', '0.45854022244565795 ~(0.14771687891028032)']
+Time span of fitting:  [4, 13.5, 12]
+Initial values:  [0.014307146261527636, 0, -0.027642276422764213]
+Optimization terminated successfully.
+         Current function value: 0.597866
+         Iterations: 1264
+         Function evaluations: 1859
+Optimization terminated successfully.
+         Current function value: 0.788095
+         Iterations: 2147
+         Function evaluations: 3226
+Optimization terminated successfully.
+         Current function value: 0.915117
+         Iterations: 5863
+         Function evaluations: 8634
+Optimization terminated successfully.
+         Current function value: 0.915117
+         Iterations: 5863
+         Function evaluations: 8634
+Optimization terminated successfully.
+         Current function value: 0.915117
+         Iterations: 5863
+         Function evaluations: 8634
+Optimization terminated successfully.
+         Current function value: 0.603529
+         Iterations: 2474
+         Function evaluations: 3728
+Optimization terminated successfully.
+         Current function value: 0.510321
+         Iterations: 3639
+         Function evaluations: 5663
+Optimization terminated successfully.
+         Current function value: 0.602627
+         Iterations: 1476
+         Function evaluations: 2393
+Optimization terminated successfully.
+         Current function value: 0.839401
+         Iterations: 4590
+         Function evaluations: 7136
+Optimization terminated successfully.
+         Current function value: 0.659151
+         Iterations: 5327
+         Function evaluations: 8173
+Fitting is successful
+Parameter Statistics
+['1.2887678063371815 ~(0.28104361376676973)', '0.27998278220009143 ~(0.2738715340370873)', '0.7335709272100424 ~(0.358503687428061)', '0.23302711269499277 ~(0.3184874902304023)', '0.005902071402848328 ~(0.01085276775239583)', '0.5548306652179817 ~(0.40214525304020976)', '0.09925272843182883 ~(0.19829164100249524)', '0.08129819981601727 ~(0.14202700230805954)', '0.5502028421836234 ~(0.4551369546958822)', '0.4500885450021375 ~(0.24523483332970444)']

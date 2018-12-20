@@ -81,13 +81,13 @@ if $BUILD ; then
   fi
 
   if [ -z "$7" ] ; then
-    REFITS="10"
+    REFITS="1"
   else
     REFITS=$7
   fi
 
   if [ -z "$8" ] ; then
-    REGULARISATION="0.015"
+    REGULARISATION="0"
   else
     REGULARISATION=$8
   fi

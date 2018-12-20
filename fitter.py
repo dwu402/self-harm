@@ -142,11 +142,11 @@ def fitter(context):
             p_0.append(0)
 
     res = None
-    generate_resampling_seed(context)
     try:
-        res = sciopt.minimize(wrap_function(context), p_0, method="nelder-mead",
-                              options={'disp':True, 'maxfev':1e6, 'adaptive':True})
+        generate_resampling_seed(context)
+        res = sciopt.minimize(wrap_function(context), p_0, options={'disp':True, 'maxiter':1e6})
         if not res.success:
+            print(res)
             raise Exception("Fitting not successful")
         return_obj.push_success(res['fun'], res['x'])
     except Exception as exception:

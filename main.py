@@ -1,13 +1,10 @@
 #!/usr/bin/env python
 """Module responsible for defining workflows in the application"""
-import warnings
 import click
 import ingestor
 import model
 import fitter
 import display
-
-warnings.filterwarnings("error")
 
 def standard_integrate(context):
     """Integrates a model with the provided parameters"""
@@ -54,6 +51,8 @@ def show_trajectory_and_fitting_results(context, fitting_results):
 
 
 def get_and_write_details(context, results, verbose, output_file):
+    if verbose or not output_file:
+        display.display_parameters(results)
     parameters = results.get_parameters()[0]
     model_trajectory = model.integrate_model(context['model'],
                                              context['initial_values'],
@@ -65,7 +64,6 @@ def get_and_write_details(context, results, verbose, output_file):
                                                          context['regularisation'],
                                                          detailed=True)
     if verbose or not output_file:
-        display.display_parameters(results)
         print('Objective function breakdown')
         print('Residual:       ' + str(residual))
         print('Regularisation: ' + str(regularisation))

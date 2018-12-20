@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import click
 from matplotlib import pyplot as plt
+from matplotlib import colors
 import numpy as np
 
 @click.command()
@@ -19,13 +20,17 @@ def main(file):
 
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    plt.plot([r[1][0] for r in run_values], [r[1][1] for r in run_values],'-')
+    cmap = plt.cm.get_cmap('plasma')
+    sc = plt.scatter(x=[r[1][0] for r in run_values],
+                     y=[r[1][1] for r in run_values],
+                     c = [(r[0]) for r in run_values],
+                     norm=colors.LogNorm(),
+                     cmap=cmap)
     plt.title('L-Curve, Beta from {} to {}'.format(min([r[0] for r in run_values]),
                                                    max([r[0] for r in run_values])))
     plt.xlabel('Log Residual')
     plt.ylabel('Log Penalty')
-    # for point in run_values:
-    #     ax.annotate(str(point[0]), xy=point[1], textcoords='data')
+    plt.colorbar(sc)
     plt.show()
 
 if __name__=="__main__":

@@ -4,8 +4,7 @@ import scipy.integrate as spi
 
 def integrate_model(model_function, initial_values, time_span, parameters):
     """Integrates a target ODE according to the context"""
-
-    integrator = spi.ode(model_function).set_integrator('lsoda')
+    integrator = spi.ode(model_function).set_integrator('dopri5')
     integrator.set_f_params(parameters).set_initial_value(initial_values, time_span[0])
 
     steps = int(time_span[2])

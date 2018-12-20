@@ -136,7 +136,7 @@ def fitter(context):
     p_0 = []
     for param in context['parameters']:
         try:
-            float_of_p = float(param)
+            float_of_p = float(param) * (0.5*np.random.rand()+0.75)
             p_0.append(float_of_p)
         except TypeError as _:
             p_0.append(0)
@@ -144,7 +144,7 @@ def fitter(context):
     res = None
     try:
         generate_resampling_seed(context)
-        res = sciopt.minimize(wrap_function(context), p_0, method="Powell")
+        res = sciopt.minimize(wrap_function(context), p_0, method="Nelder-Mead", options={'disp':True, 'maxiter':1e5, 'maxfev':1e5})
         if not res.success:
             print(res)
             raise Exception("Fitting not successful")

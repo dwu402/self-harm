@@ -20,11 +20,12 @@ def select_data(raw_data):
 
 def scale_data(data):
     """Scale data onto the correct scale for the variable"""
-    for col in ['x', 'z']:
-        first_val = data[col][0]
-        max_dist = max(np.abs(data[col] - first_val))
-        scaled_vals = [(val - first_val)/max_dist for val in data[col]]
-        data[col] = np.array(scaled_vals)
+    # for col in ['x', 'z']:
+    #     first_val = data[col][0]
+    #     max_dist = max(np.abs(data[col] - first_val))
+    #     scaled_vals = [(val - first_val)/max_dist for val in data[col]]
+    #     data[col] = np.array(scaled_vals)
+    data['z'] = data['z'] - data['z'][0]
 
 
 def threshold_data(data):

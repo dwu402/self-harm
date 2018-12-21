@@ -6,7 +6,8 @@ import numpy as np
 
 @click.command()
 @click.option('-f', '--file', help='file to read results from')
-def main(file):
+@click.option('-s', '--show', is_flag=True, help='show')
+def main(file, show):
     with open(file) as fh:
         contents = fh.read()
     runs = [list(filter(None, run.strip().split('\n'))) for run in
@@ -31,7 +32,9 @@ def main(file):
     plt.xlabel('Log Residual')
     plt.ylabel('Log Penalty')
     plt.colorbar(sc)
-    plt.show()
+    if show:
+        plt.show()
+    return 0
 
 if __name__=="__main__":
     main() # pylint: disable=no-value-for-parameter

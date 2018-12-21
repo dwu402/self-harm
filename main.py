@@ -53,24 +53,27 @@ def show_trajectory_and_fitting_results(context, fitting_results):
 def get_and_write_details(context, results, verbose, output_file):
     if verbose or not output_file:
         display.display_parameters(results)
-    parameters = results.get_parameters()[0]
-    model_trajectory = model.integrate_model(context['model'],
-                                             context['initial_values'],
-                                             context['time_span'],
-                                             parameters)
-    residual, regularisation = context['error_function'](context['data'],
-                                                         model_trajectory,
-                                                         parameters,
-                                                         context['regularisation'],
-                                                         detailed=True)
-    if verbose or not output_file:
-        print('Objective function breakdown')
-        print('Residual:       ' + str(residual))
-        print('Regularisation: ' + str(regularisation))
-    if output_file:
-        display.write_details((context['regularisation'], residual, regularisation), output_file)
-
-
+    parameters = results.get_parameters()
+    if len(parameters) > 0:
+        parameters = parameters[0]
+        model_trajectory = model.integrate_model(context['model'],
+                                                 context['initial_values'],
+                                                 context['time_span'],
+                                                 parameters)
+        residual, regularisation = context['error_function'](context['data'],
+                                                             model_trajectory,
+                                                             parameters,
+                                                             context['regularisation'],
+                                                             detailed=True)
+        if verbose or not output_file:
+            print('Objective function breakdown')
+            print('Residual:       ' + str(residual))
+            print('Regularisation: ' + str(regularisation))
+        if output_file:
+            display.write_details((context['regularisation'], residual, regularisation), output_file)
+    else:
+        if verbose:
+            print('Fitting not complete')
 
 
 @click.command()

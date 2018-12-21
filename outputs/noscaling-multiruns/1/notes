@@ -1,0 +1,6 @@
+Was done w/ no regularisation
+Data was not scaled, just shifted in z to reflect assumption that z<0
+There's random starting points (0.75-1.25 of p_0)
+Batches of 30.
+
+We see large amounts of variance (potentially ill-posed)

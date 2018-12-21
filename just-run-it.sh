@@ -11,14 +11,14 @@ if [ $# -eq 0 ] ; then
 fi
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
-  echo "Usage: just-run-it.sh [-h/--help | -f | CONFIG_DIRECTORY] [DATA_FILE MODEL_FILE GUESS_FILE FUNCTIONS_FILE]"
+  echo "Usage: just-run-it.sh [-h/--help | -f | CONFIG_DIRECTORY] [OUTPUT_DIRECTORY] [DATA_FILE MODEL_FILE GUESS_FILE FUNCTIONS_FILE]"
   echo ""
   echo "-h --help        | Shows this help"
   echo "-f               | Performs automated fitting/config building"
   echo ""
   echo "Positional Arguments: "
   echo ""
-  echo "CONFIG DIRECTORY | Exisitng configuration directory (provided in lieu of -f)"
+  echo "CONFIG DIRECTORY | Existing configuration directory (provided in lieu of -f)"
   echo "DATA FILE        | Path to file containing the data to wrangle"
   echo "MODEL FILE       | Path to file containing the model"
   echo "GUESS FILE       | Path to file containing initial parameter guess"
@@ -47,37 +47,37 @@ else
   BUILD=false
 fi
 
+if $PROMPTING ; then
+  OUTPUTDIR=$(read -p "Please enter the path to the outputs directory: ")
+elif [ -z "$2" ] ; then
+    OUTPUTDIR="outputs"
+else
+  OUTPUTDIR=$2
+fi
+
 if $BUILD ; then
-  if $PROMPTING || [ -z "$2" ] ; then
+  if $PROMPTING || [ -z "$3" ] ; then
     DATAPATH=$(read -p "Please enter the path the data file: ")
   else
     DATAPATH=$2
   fi
 
-  if $PROMPTING || [ -z "$3" ] ; then
+  if $PROMPTING || [ -z "$4" ] ; then
     MODELPATH=$(read -p "Please enter the path to the model file: ")
   else
     MODELPATH=$3
   fi
 
-  if $PROMPTING || [ -z "$4" ] ; then
+  if $PROMPTING || [ -z "$5" ] ; then
     PARAMPATH=$(read -p "Please enter the path to the initial parameter guess file: ")
   else
     PARAMPATH=$4
   fi
 
-  if $PROMPTING || [ -z "$5" ] ; then
+  if $PROMPTING || [ -z "$6" ] ; then
     FUNCTIONS=$(read -p "Please enter the path to the file containing the data ingestion functions: ")
   else
     FUNCTIONS=$5
-  fi
-
-  if $PROMPTING ; then
-    OUTPUTDIR=$(read -p "Please enter the path to the outputs directory: ")
-  elif [ -z "$6" ] ; then
-      OUTPUTDIR="outputs"
-  else
-    OUTPUTDIR=$6
   fi
 
   if [ -z "$7" ] ; then
@@ -91,9 +91,11 @@ if $BUILD ; then
   else
     REGULARISATION=$8
   fi
+fi
 # ARGUMENT PARSING END #
 
 # WRANGLING START #
+if $BUILD ; then
   python data/wrangle_data.py -f "$DATAPATH"
   DATADIR=$(dirname "$DATAPATH")
 
@@ -127,7 +129,8 @@ fi
 for config in $DIR/*.config; do
   filebase=$(echo "$config" | awk -F "/" '{print $NF}')
   outputfile="$OUTPUTDIR/${filebase%.*}.out"
-  python main.py -a f -v -c $config -o $outputfile
+  # python main.py -a f -v -c $config -o $outputfile
+  ./lcurve.sh -8 2 0.25 $config $outputfile
 done
 # FITTING END #
 

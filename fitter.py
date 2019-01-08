@@ -121,7 +121,7 @@ def resample(data, seed):
 
 
 def generate_resampling_seed(context):
-    resampling_parameter = 0
+    resampling_parameter = 1
     total_length = len(context['data']['t'])
     n_points = total_length - resampling_parameter
     context['seed'] = sorted(np.random.choice(np.arange(total_length), size=n_points, replace=False))
@@ -136,7 +136,7 @@ def fitter(context):
     p_0 = []
     for param in context['parameters']:
         try:
-            float_of_p = float(param) * (0.5*np.random.rand()+0.75)
+            float_of_p = float(param) * (1 + 0.25*(np.random.rand() - 0.5))
             p_0.append(float_of_p)
         except TypeError as _:
             p_0.append(0)

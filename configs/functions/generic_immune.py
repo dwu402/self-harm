@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.interpolate import interp1d
-import ot
+# import ot
 
 import matplotlib.pyplot as plt
 
@@ -67,8 +67,8 @@ def error_fn(data, fit, parameters, regularisation, detailed=False):
     interpolation_penalty = len(data['t']) - len(ts_to_fit)
     fitted_points = np.column_stack((fit_x(ts_to_fit), fit_z(ts_to_fit)))
 
-    distance = np.linalg.norm(fitted_points - data_points[0:len(ts_to_fit)]) * np.exp(interpolation_penalty)
-
+    distance = np.linalg.norm(fitted_points - data_points[0:len(ts_to_fit)]) 
+    obj_fn_value = (distance + 0.025*interpolation_penalty) * np.exp(interpolation_penalty)
     # loss_matrix = ot.dist(data_points, fitted_points)
     # data_weights = np.ones((len(data_points),)) / len(data_points)
     # fit_weights = np.ones((len(fitted_points),)) / len(fitted_points)
@@ -81,8 +81,8 @@ def error_fn(data, fit, parameters, regularisation, detailed=False):
     parameter_distance = np.min(parameter_distances, axis=1)
     regularisation = np.linalg.norm(parameter_distance, ord=1)
     if detailed:
-        return distance, regularisation
-    return distance + beta*(regularisation)
+        return obj_fn_value, regularisation
+    return obj_fn_value + beta*(regularisation)
 
 
 def data_plot(data):

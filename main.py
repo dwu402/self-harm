@@ -6,6 +6,7 @@ import model
 import fitter
 import display
 
+
 def standard_integrate(context):
     """Integrates a model with the provided parameters"""
     results = model.integrate_model(context['model'],
@@ -13,6 +14,7 @@ def standard_integrate(context):
                                     context['time_span'],
                                     context['parameters'])
     return results
+
 
 def model_fit(context):
     """Perform parameter fitting on a model"""
@@ -26,6 +28,8 @@ def model_fit(context):
 def compare_data_and_model(context, model_results):
     """Shows the trajectory from parameters vs data"""
     canvas = display.new_canvas()
+    fitter.generate_resampling_seed(context)
+    print('Objective function: ' + str(fitter.wrap_function(context)(context['parameters']))) 
     display.plot_trajectory(model_results, canvas, show=False)
     display.show_data(context, canvas, show=True)
 
@@ -37,6 +41,7 @@ def output_results(model_context, fitting_results, verbose, output_file):
         display.write_results(fitting_results, output_file)
     if verbose > 1:
         show_trajectory_and_fitting_results(model_context, fitting_results)
+
 
 def show_trajectory_and_fitting_results(context, fitting_results):
     """WIP. Will show the fitting results next to the data"""
@@ -111,4 +116,4 @@ def main(action, verbose, config_file, output_file):
 
 if __name__ == "__main__":
     # disable pylint parsing returning error due to click argument mismatch
-    main() # pylint: disable=no-value-for-parameter
+    main()  # pylint: disable=no-value-for-parameter

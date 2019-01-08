@@ -1,0 +1,44 @@
+Time span of fitting:  [3, 26.25, 45]
+Initial values:  [0.0011104630000000001, 0, 0.39000000000000057]
+Optimization terminated successfully.
+         Current function value: 3.093108
+         Iterations: 1440
+         Function evaluations: 2097
+Optimization terminated successfully.
+         Current function value: 3.610203
+         Iterations: 2412
+         Function evaluations: 3520
+Optimization terminated successfully.
+         Current function value: 3.642098
+         Iterations: 2873
+         Function evaluations: 4166
+C:\Anaconda\lib\site-packages\scipy\integrate\_ode.py:1035: UserWarning: dopri5: larger nmax is needed
+  self.messages.get(idid, 'Unexpected idid=%s' % idid))
+Optimization terminated successfully.
+         Current function value: 6.206131
+         Iterations: 1390
+         Function evaluations: 2049
+Optimization terminated successfully.
+         Current function value: 4.802873
+         Iterations: 4432
+         Function evaluations: 6412
+Optimization terminated successfully.
+         Current function value: 3.155871
+         Iterations: 2219
+         Function evaluations: 3200
+Optimization terminated successfully.
+         Current function value: 8.548177
+         Iterations: 3117
+         Function evaluations: 4632
+Optimization terminated successfully.
+         Current function value: 3.969539
+         Iterations: 4001
+         Function evaluations: 5724
+Optimization terminated successfully.
+         Current function value: 3.555935
+         Iterations: 1552
+         Function evaluations: 2266
+Optimization terminated successfully.
+         Current function value: 4.427279
+         Iterations: 3161
+         Function evaluations: 4538

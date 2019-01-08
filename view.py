@@ -36,6 +36,7 @@ def box_results(data, axis):
 
 
 def show_results(plot_type, data, axis):
+    data = np.log(data)
     if plot_type == 'bar':
         bar_results(data, axis)
     elif plot_type =='box':

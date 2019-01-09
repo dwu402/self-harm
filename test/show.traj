@@ -1,7 +1,7 @@
 mf models/generic_immune_model.py
 pf test/mouse.sample
 # pf parameters/generic_immune_parameters.txt
-df data/auto-got-data-20181122Z154943/unique_key3.3.csv
+df data/auto-got-data-20181122Z154943/unique_key5.4.csv
 ts 5 25 40
 iv 0.027359383084243575 0 -0.18222222222222217
 pd configs/functions/generic_immune.py treat_data

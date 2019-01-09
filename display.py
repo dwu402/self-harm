@@ -2,6 +2,7 @@
 
 Includes plotting, writing to console and files"""
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def new_canvas():
@@ -30,6 +31,7 @@ def plot_trajectory(results, canvas=None, show=True):
     """Plotter for modelled trajectories (integrates based on parameters)"""
     # test only
     x = [r[0] for r in results['y']]
+    y = [r[1] for r in results['y']]
     z = [r[2] for r in results['y']]
     # test end
 

@@ -76,7 +76,7 @@ def error_fn(data, fit, parameters, regularisation, detailed=False):
     if behaviour == 'Survivor':
         asymptotic_penalty = final_value
     elif behaviour == 'Non-Survivor':
-        asymptotic_penalty = 1/(4+final_value)
+        asymptotic_penalty = np.exp(-final_value)
     else:
         raise TypeError('Status of Mouse is ' + behaviour + ', should be one of [Survivor, Non-Survivor]')
 

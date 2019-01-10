@@ -9,7 +9,8 @@ def select_data(raw_data):
     data_cols = {
         't': 'Day Post Infection',
         'x': 'PD',
-        'z': 'RBC'
+        'z': 'RBC',
+        'status': 'Status'
     }
     clean_data = dict.fromkeys(data_cols.keys())
     for key in data_cols:
@@ -44,7 +45,7 @@ def treat_data(context, raw_data):
     threshold_data(clean_data)
 
     # Modify the time span of integration to match the data
-    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*1.05, len(clean_data['t'])*3]
+    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*2, len(clean_data['t'])*6]
     context['initial_values'] = [clean_data['x'][0], 0, clean_data['z'][0]]
     context['data'] = clean_data
 
@@ -67,8 +68,19 @@ def error_fn(data, fit, parameters, regularisation, detailed=False):
     interpolation_penalty = len(data['t']) - len(ts_to_fit)
     fitted_points = np.column_stack((fit_x(ts_to_fit), fit_z(ts_to_fit)))
 
-    distance = np.linalg.norm(fitted_points - data_points[0:len(ts_to_fit)]) 
-    obj_fn_value = (distance + 0.025*interpolation_penalty) * np.exp(interpolation_penalty)
+    distance = np.linalg.norm(fitted_points - data_points[0:len(ts_to_fit)])
+
+    # aymsptotic penalty
+    behaviour = data['status'][-1]
+    final_value = np.linalg.norm([data['x'][-1], data['z'][-1]])
+    if behaviour == 'Survivor':
+        asymptotic_penalty = final_value
+    elif behaviour == 'Non-Survivor':
+        asymptotic_penalty = 1/(1+final_value)
+    else:
+        raise TypeError('Status of Mouse is ' + behaviour + ', should be one of [Survivor, Non-Survivor]')
+
+    obj_fn_value = (distance + 0.025*interpolation_penalty + asymptotic_penalty) * np.exp(interpolation_penalty)
     # loss_matrix = ot.dist(data_points, fitted_points)
     # data_weights = np.ones((len(data_points),)) / len(data_points)
     # fit_weights = np.ones((len(fitted_points),)) / len(fitted_points)

@@ -72,11 +72,11 @@ def error_fn(data, fit, parameters, regularisation, detailed=False):
 
     # aymsptotic penalty
     behaviour = data['status'][-1]
-    final_value = np.linalg.norm([data['x'][-1], data['z'][-1]])
+    final_value = np.linalg.norm([fit_x(fit['t'][-1]), fit_z(fit['t'][-1])], ord=1)
     if behaviour == 'Survivor':
         asymptotic_penalty = final_value
     elif behaviour == 'Non-Survivor':
-        asymptotic_penalty = 1/(1+final_value)
+        asymptotic_penalty = 1/(4+final_value)
     else:
         raise TypeError('Status of Mouse is ' + behaviour + ', should be one of [Survivor, Non-Survivor]')
 

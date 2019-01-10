@@ -51,8 +51,8 @@ class FitterReturnCollection:
         means = self.get_mean_parameters()
         variances = self.get_var_parameters()
 
-        for parameter in range(len(means)):
-            statistics.append(f"{means[parameter]} ~({np.sqrt(variances[parameter])})")
+        for parameter, value in enumerate(means):
+            statistics.append(f"{value} ~({np.sqrt(variances[parameter])})")
 
         return statistics
 

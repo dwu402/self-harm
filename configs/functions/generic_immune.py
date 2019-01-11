@@ -45,7 +45,7 @@ def treat_data(context, raw_data):
     threshold_data(clean_data)
 
     # Modify the time span of integration to match the data
-    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*2, len(clean_data['t'])*6]
+    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*2, len(clean_data['t'])*10]
     context['initial_values'] = [clean_data['x'][0], 0, clean_data['z'][0]]
     context['data'] = clean_data
 
@@ -72,7 +72,7 @@ def error_fn(data, fit, parameters, regularisation, detailed=False):
 
     # aymsptotic penalty
     behaviour = data['status'][-1]
-    final_value = np.linalg.norm([fit_x(fit['t'][-1]), fit_z(fit['t'][-1])], ord=1)
+    final_value = np.abs(fit_z(fit['t'][-1]))
     if behaviour == 'Survivor':
         asymptotic_penalty = final_value
     elif behaviour == 'Non-Survivor':

@@ -59,25 +59,25 @@ if $BUILD ; then
   if $PROMPTING || [ -z "$3" ] ; then
     DATAPATH=$(read -p "Please enter the path the data file: ")
   else
-    DATAPATH=$2
+    DATAPATH=$3
   fi
 
   if $PROMPTING || [ -z "$4" ] ; then
     MODELPATH=$(read -p "Please enter the path to the model file: ")
   else
-    MODELPATH=$3
+    MODELPATH=$4
   fi
 
   if $PROMPTING || [ -z "$5" ] ; then
     PARAMPATH=$(read -p "Please enter the path to the initial parameter guess file: ")
   else
-    PARAMPATH=$4
+    PARAMPATH=$5
   fi
 
   if $PROMPTING || [ -z "$6" ] ; then
     FUNCTIONS=$(read -p "Please enter the path to the file containing the data ingestion functions: ")
   else
-    FUNCTIONS=$5
+    FUNCTIONS=$6
   fi
 
   if [ -z "$7" ] ; then
@@ -100,6 +100,7 @@ if $BUILD ; then
   DATADIR=$(dirname "$DATAPATH")
 
   if [ ! -d "$DIR" ] ; then
+    echo "$DIR not found, creating..."
     mkdir $DIR
   fi
 

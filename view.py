@@ -39,7 +39,7 @@ def show_results(plot_type, data, axis):
     # data = np.log(data)
     if plot_type == 'bar':
         bar_results(data, axis)
-    elif plot_type =='box':
+    elif plot_type == 'box':
         box_results(data, axis)
     else:
         raise TypeError('Plot type' + str(type) + 'not recognised')
@@ -47,7 +47,7 @@ def show_results(plot_type, data, axis):
 
 @click.command()
 @click.option('-f', '--results-file', help='path to file that holds the results')
-@click.option('-t', '--plot-type', default='box' , help='type of plot')
+@click.option('-t', '--plot-type', default='box', help='type of plot')
 def main(results_file, plot_type):
     data = parse_outfile(results_file)
     fig, ax = plt.subplots()

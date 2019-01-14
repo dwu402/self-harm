@@ -8,7 +8,7 @@ python ./main.py --help
 
 | Flag |                                  |
 |------|----------------------------------|
-|  -f  | Whether or not to fit            |
+|  -a  | Action to take                   |
 |  -v  | Write fitting results to console |
 |  -vv | As above, and also plot          |
 |  -c  | Path to configuration file       |
@@ -22,7 +22,7 @@ We have, however, written a file to automatically retrieve the data files releva
 ```
 This will save the data files in a file named after the datetime you trigger the command.
 
-**Note** that this will only run on *nix machines (Linux, MacOS).
+**Note** that this will only run on \*nix machines (Linux, MacOS).
 
 ## Environment Setup
 In a virtual environment, you can run:
@@ -44,5 +44,10 @@ It will prompt for arguments, or they can specified as in the help
 ./just-run-it.sh --help
 ```
 
-## Visualisation Tools
-`./view.py` visualises the results of just-run-it as a bar graph
+## Result Summary Tools
+`./view.py` visualises the results of just-run-it as a box graph
+`./quick_quantify.py` produces basic summary statistics for a results file
+
+## Analysis Tools
+`lcurve.sh` runs an Lcurve analysis
+`lcurve.py` visualises the Lcurve analysis results of `lcurve.sh`

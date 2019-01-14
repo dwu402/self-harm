@@ -130,8 +130,8 @@ fi
 for config in $DIR/*.config; do
   filebase=$(echo "$config" | awk -F "/" '{print $NF}')
   outputfile="$OUTPUTDIR/${filebase%.*}.out"
-  # python main.py -a f -v -c $config -o $outputfile
-  ./lcurve.sh -8 2 0.25 $config $outputfile
+  python main.py -a f -v -c $config -o $outputfile
+  # ./lcurve.sh -8 2 0.25 $config $outputfile
 done
 # FITTING END #
 

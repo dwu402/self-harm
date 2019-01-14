@@ -136,7 +136,7 @@ def fitter(context):
     p_0 = []
     for param in context['parameters']:
         try:
-            float_of_p = float(param) * (1 + 0.25*(np.random.rand() - 0.5))
+            float_of_p = float(param) * (1 + 0.5*(np.random.rand() - 0.5))
             p_0.append(float_of_p)
         except TypeError as _:
             p_0.append(0)

@@ -32,11 +32,11 @@ def bar_results(data, axis):
 
 def box_results(data, axis):
     transposed_data = [list(i) for i in zip(*data)]
-    axis.boxplot(transposed_data)
+    axis.boxplot(transposed_data, showfliers=False)
 
 
 def show_results(plot_type, data, axis):
-    data = np.log(data)
+    # data = np.log(data)
     if plot_type == 'bar':
         bar_results(data, axis)
     elif plot_type =='box':

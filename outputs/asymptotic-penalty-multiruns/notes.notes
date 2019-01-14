@@ -1,0 +1,343 @@
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 8.274116
+         Iterations: 1175
+         Function evaluations: 1746
+Optimization terminated successfully.
+         Current function value: 2.246989
+         Iterations: 747
+         Function evaluations: 1111
+Optimization terminated successfully.
+         Current function value: 3.582596
+         Iterations: 1369
+         Function evaluations: 1975
+Optimization terminated successfully.
+         Current function value: 1.617657
+         Iterations: 1944
+         Function evaluations: 2826
+Optimization terminated successfully.
+         Current function value: 4.010938
+         Iterations: 2160
+         Function evaluations: 3136
+Optimization terminated successfully.
+         Current function value: 2.093059
+         Iterations: 1544
+         Function evaluations: 2253
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: larger nsteps is needed
+  self.messages.get(istate, unexpected_istate_msg)))
+Optimization terminated successfully.
+         Current function value: 1.865015
+         Iterations: 777
+         Function evaluations: 1169
+Optimization terminated successfully.
+         Current function value: 1.626701
+         Iterations: 1309
+         Function evaluations: 1945
+Optimization terminated successfully.
+         Current function value: 2.979672
+         Iterations: 1726
+         Function evaluations: 2483
+Optimization terminated successfully.
+         Current function value: 4.023567
+         Iterations: 1169
+         Function evaluations: 1760
+Fitting is successful
+Parameter Statistics
+['4.33044959416264 ~(9.690981063513444)', '3.146732388246437 ~(6.190894012632276)', '2.3062399804468905 ~(5.125067182551255)', '2.16910804581576 ~(1.1958149163501344)', '0.18477427488785153 ~(0.1263795054637333)', '0.08365976137944184 ~(0.2254458206598936)', '0.4660493463245947 ~(0.5058739301595914)', '6.325706329925869 ~(18.761325257635743)', '6.161882795046177 ~(10.811121658178243)', '0.04936039698641884 ~(0.14134699058788464)']
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.363711
+         Iterations: 2898
+         Function evaluations: 4117
+Optimization terminated successfully.
+         Current function value: 1.905968
+         Iterations: 2051
+         Function evaluations: 2940
+Optimization terminated successfully.
+         Current function value: 2.467350
+         Iterations: 1312
+         Function evaluations: 1933
+Optimization terminated successfully.
+         Current function value: 1.225269
+         Iterations: 1593
+         Function evaluations: 2306
+Optimization terminated successfully.
+         Current function value: 4.958487
+         Iterations: 1771
+         Function evaluations: 2546
+Optimization terminated successfully.
+         Current function value: 3.296571
+         Iterations: 2623
+         Function evaluations: 3761
+Optimization terminated successfully.
+         Current function value: 10.690774
+         Iterations: 2033
+         Function evaluations: 2915
+Optimization terminated successfully.
+         Current function value: 2.530502
+         Iterations: 3191
+         Function evaluations: 4546
+Optimization terminated successfully.
+         Current function value: 3.546248
+         Iterations: 2033
+         Function evaluations: 2950
+Optimization terminated successfully.
+         Current function value: 2.650029
+         Iterations: 2957
+         Function evaluations: 4202
+Fitting is successful
+Parameter Statistics
+['2.328333001213546 ~(2.6963676903126577)', '11.515180450634483 ~(19.39291571784936)', '4.151975628565543 ~(4.416714884749139)', '1.2822309730670292 ~(2.0388818623498595)', '0.34088487444861953 ~(0.26783101467172193)', '3.902093213667661 ~(3.990953043864095)', '1.2278654821515698 ~(0.845102484612437)', '14.995258526326978 ~(17.791831556617883)', '7.825846623552403 ~(5.259887561182683)', '0.03380983133677815 ~(0.04406973005194488)']
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 3.457739
+         Iterations: 1144
+         Function evaluations: 1672
+Optimization terminated successfully.
+         Current function value: 2.054052
+         Iterations: 2191
+         Function evaluations: 3170
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: larger nsteps is needed
+  self.messages.get(istate, unexpected_istate_msg)))
+Optimization terminated successfully.
+         Current function value: 2.387108
+         Iterations: 1558
+         Function evaluations: 2248
+Optimization terminated successfully.
+         Current function value: 2.395215
+         Iterations: 2076
+         Function evaluations: 3010
+Optimization terminated successfully.
+         Current function value: 1.429462
+         Iterations: 1690
+         Function evaluations: 2444
+Optimization terminated successfully.
+         Current function value: 2.722044
+         Iterations: 1595
+         Function evaluations: 2309
+Optimization terminated successfully.
+         Current function value: 2.424963
+         Iterations: 718
+         Function evaluations: 1085
+Optimization terminated successfully.
+         Current function value: 4.911530
+         Iterations: 1639
+         Function evaluations: 2356
+Optimization terminated successfully.
+         Current function value: 1.059436
+         Iterations: 2382
+         Function evaluations: 3441
+Optimization terminated successfully.
+         Current function value: 4.607703
+         Iterations: 1140
+         Function evaluations: 1677
+Fitting is successful
+Parameter Statistics
+['1.4672311580053665 ~(0.4028885585729999)', '2.672766812175846 ~(1.5882346273185182)', '0.514976638658228 ~(0.1524151246570025)', '1.013244615373462 ~(1.0422123230800897)', '0.13909344766702408 ~(0.10891468545604464)', '0.6636299764225619 ~(1.0811335027669449)', '0.8021309644285852 ~(0.7771949827561473)', '0.22950562780000006 ~(0.22500720822738707)', '3.1564758374782005 ~(1.2751954778387409)', '0.008406822313418041 ~(0.0072135418957428345)']
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.736906
+         Iterations: 2681
+         Function evaluations: 3841
+Optimization terminated successfully.
+         Current function value: 0.785967
+         Iterations: 2835
+         Function evaluations: 4022
+Optimization terminated successfully.
+         Current function value: 1.249584
+         Iterations: 1897
+         Function evaluations: 2709
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: larger nsteps is needed
+  self.messages.get(istate, unexpected_istate_msg)))
+Optimization terminated successfully.
+         Current function value: 0.696706
+         Iterations: 2401
+         Function evaluations: 3461
+Optimization terminated successfully.
+         Current function value: 1.287794
+         Iterations: 2642
+         Function evaluations: 3817
+Optimization terminated successfully.
+         Current function value: 0.988286
+         Iterations: 1348
+         Function evaluations: 1977
+models/generic_immune_model.py:19: RuntimeWarning: invalid value encountered in double_scalars
+  dxdt[2] = f*y*z - g*z - h*x*z - j*x - l*y
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: step size becomes too small
+  self.messages.get(istate, unexpected_istate_msg)))
+Optimization terminated successfully.
+         Current function value: 0.807664
+         Iterations: 2832
+         Function evaluations: 4120
+Optimization terminated successfully.
+         Current function value: 0.408768
+         Iterations: 4156
+         Function evaluations: 5946
+Optimization terminated successfully.
+         Current function value: 0.418502
+         Iterations: 3653
+         Function evaluations: 5198
+Optimization terminated successfully.
+         Current function value: 0.815456
+         Iterations: 2048
+         Function evaluations: 2898
+Fitting is successful
+Parameter Statistics
+['1.6161993177681508 ~(1.1288747062491187)', '2.841587691332115 ~(4.136796521024801)', '12.097827497174302 ~(17.202955294928973)', '42.4856308723371 ~(86.54286671810216)', '1.559917863824373 ~(2.048438324262483)', '1.7858156130525438 ~(3.1575407872426213)', '5.656518330756008 ~(9.221988707238616)', '6.453665657530268 ~(6.441965338849619)', '25.689574209956753 ~(26.70655645704996)', '0.09800800336011023 ~(0.11960568679741083)']
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 6.473637
+         Iterations: 1112
+         Function evaluations: 1618
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: larger nsteps is needed
+  self.messages.get(istate, unexpected_istate_msg)))
+models/generic_immune_model.py:19: RuntimeWarning: invalid value encountered in double_scalars
+  dxdt[2] = f*y*z - g*z - h*x*z - j*x - l*y
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: step size becomes too small
+  self.messages.get(istate, unexpected_istate_msg)))
+Optimization terminated successfully.
+         Current function value: 1.457875
+         Iterations: 2974
+         Function evaluations: 4259
+Optimization terminated successfully.
+         Current function value: 1.145645
+         Iterations: 2152
+         Function evaluations: 3105
+Optimization terminated successfully.
+         Current function value: 0.968472
+         Iterations: 1368
+         Function evaluations: 1958
+Optimization terminated successfully.
+         Current function value: 0.696883
+         Iterations: 1523
+         Function evaluations: 2161
+Optimization terminated successfully.
+         Current function value: 1.169219
+         Iterations: 1651
+         Function evaluations: 2437
+Optimization terminated successfully.
+         Current function value: 0.684254
+         Iterations: 1633
+         Function evaluations: 2399
+Optimization terminated successfully.
+         Current function value: 0.416245
+         Iterations: 2877
+         Function evaluations: 4058
+Optimization terminated successfully.
+         Current function value: 2.049488
+         Iterations: 6272
+         Function evaluations: 8961
+Optimization terminated successfully.
+         Current function value: 0.435778
+         Iterations: 1843
+         Function evaluations: 2675
+Fitting is successful
+Parameter Statistics
+['1.6375537865915988 ~(0.8392430099765814)', '8.346604513030796 ~(8.486631854125633)', '0.9766480999851053 ~(1.1427221550353655)', '14.944025940934358 ~(19.955302089003286)', '0.835253434606507 ~(1.0305886051240958)', '5.277979974294012 ~(8.499035231515974)', '0.5961522284856827 ~(0.6818229748656961)', '1.84221176431598 ~(2.6396376353704674)', '9.200969860823069 ~(7.634494820881167)', '0.027247053221901445 ~(0.018513355964137827)']
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.448071
+         Iterations: 1675
+         Function evaluations: 2402
+models/generic_immune_model.py:19: RuntimeWarning: invalid value encountered in double_scalars
+  dxdt[2] = f*y*z - g*z - h*x*z - j*x - l*y
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: step size becomes too small
+  self.messages.get(istate, unexpected_istate_msg)))
+Optimization terminated successfully.
+         Current function value: 1.384351
+         Iterations: 1891
+         Function evaluations: 2719
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: larger nsteps is needed
+  self.messages.get(istate, unexpected_istate_msg)))
+Optimization terminated successfully.
+         Current function value: 1.036128
+         Iterations: 1523
+         Function evaluations: 2234
+Optimization terminated successfully.
+         Current function value: 0.782233
+         Iterations: 2910
+         Function evaluations: 4130
+Optimization terminated successfully.
+         Current function value: 0.829288
+         Iterations: 2331
+         Function evaluations: 3341
+Optimization terminated successfully.
+         Current function value: 0.475704
+         Iterations: 1946
+         Function evaluations: 2816
+Optimization terminated successfully.
+         Current function value: 0.631145
+         Iterations: 5108
+         Function evaluations: 7183
+Optimization terminated successfully.
+         Current function value: 0.662771
+         Iterations: 1862
+         Function evaluations: 2623
+Optimization terminated successfully.
+         Current function value: 1.205427
+         Iterations: 1745
+         Function evaluations: 2534
+Optimization terminated successfully.
+         Current function value: 0.903951
+         Iterations: 2276
+         Function evaluations: 3238
+Fitting is successful
+Parameter Statistics
+['1.7945749786463883 ~(0.732820921476035)', '6.6056477671549585 ~(8.09049377194955)', '0.7827047664941968 ~(0.3716184974509776)', '5.068148832775475 ~(6.461935530742557)', '0.6806762586856817 ~(0.4754238383773828)', '7.7667631205988785 ~(10.421911259375749)', '1.8574897515131905 ~(2.1949987621906)', '2.758777997611668 ~(4.54127917071685)', '7.849858633108229 ~(2.574719404106662)', '0.024934369881899128 ~(0.021357392960452286)']
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.882390
+         Iterations: 1779
+         Function evaluations: 2591
+Optimization terminated successfully.
+         Current function value: 1.540875
+         Iterations: 1682
+         Function evaluations: 2452
+models/generic_immune_model.py:19: RuntimeWarning: invalid value encountered in double_scalars
+  dxdt[2] = f*y*z - g*z - h*x*z - j*x - l*y
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: step size becomes too small
+  self.messages.get(istate, unexpected_istate_msg)))
+Optimization terminated successfully.
+         Current function value: 3.071577
+         Iterations: 1121
+         Function evaluations: 1663
+/home/dwu402/.virtualenvs/scider/lib/python3.6/site-packages/scipy/integrate/_ode.py:1177: UserWarning: dopri5: larger nsteps is needed
+  self.messages.get(istate, unexpected_istate_msg)))
+Optimization terminated successfully.
+         Current function value: 0.424194
+         Iterations: 4153
+         Function evaluations: 5844
+Optimization terminated successfully.
+         Current function value: 0.779453
+         Iterations: 6876
+         Function evaluations: 9788
+Optimization terminated successfully.
+         Current function value: 0.218545
+         Iterations: 1422
+         Function evaluations: 2065
+Optimization terminated successfully.
+         Current function value: 0.957475
+         Iterations: 3344
+         Function evaluations: 4746
+Optimization terminated successfully.
+         Current function value: 0.332106
+         Iterations: 2402
+         Function evaluations: 3450
+Optimization terminated successfully.
+         Current function value: 0.849722
+         Iterations: 2250
+         Function evaluations: 3248
+Optimization terminated successfully.
+         Current function value: 0.159968
+         Iterations: 2892
+         Function evaluations: 4129
+Fitting is successful
+Parameter Statistics
+['1.6844455590050416 ~(0.38729905351500066)', '3.9383415097997343 ~(6.124748292920035)', '1.2653261860765306 ~(1.215076188674641)', '13.079946481968927 ~(19.495892005797334)', '0.402696977870992 ~(0.3959023855317727)', '151.55833599677572 ~(448.543883884307)', '120.99297647482676 ~(354.22160029541465)', '3.50793929366491 ~(8.67919177311335)', '232.2715100289955 ~(668.0501285762573)', '0.7309918606639157 ~(2.1381916548076494)']

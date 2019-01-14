@@ -32,7 +32,7 @@ def bar_results(data, axis):
 
 def box_results(data, axis):
     transposed_data = [list(i) for i in zip(*data)]
-    axis.boxplot(transposed_data, showfliers=False)
+    axis.boxplot(transposed_data, showfliers=True)
 
 
 def show_results(plot_type, data, axis):

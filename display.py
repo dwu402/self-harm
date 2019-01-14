@@ -30,9 +30,11 @@ def generic_plot(x, y, canvas=None, show=True, style='-'):
 def plot_trajectory(results, canvas=None, show=True):
     """Plotter for modelled trajectories (integrates based on parameters)"""
     # test only
+    t = results['t']
     x = [r[0] for r in results['y']]
     y = [r[1] for r in results['y']]
     z = [r[2] for r in results['y']]
+    all = results['y']
     # test end
 
     generic_plot(x, z, canvas, show, style='-')

@@ -28,8 +28,12 @@ def main(results_file):
         grouped_results = zip_longest(*temp, fillvalue="")
         grouped_results = np.array(list(grouped_results)).astype(np.float)
         fig, ax = plt.subplots()
-        ax.boxplot(grouped_results)
+        ax.boxplot([r[0] for r in grouped_results], positions=[1])
+        ax_twin = ax.twinx()
+        ax_twin.boxplot(np.array([r[1:] for r in grouped_results]), positions=[2,3])
+        ax.set_xlim(0, 4)
         plt.show()
+
 
 if __name__ == "__main__":
     main()  #pylint: disable=no-value-for-parameter

@@ -1,0 +1,3537 @@
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.105127
+         Iterations: 1873
+         Function evaluations: 2688
+Fitting is successful
+Parameter Statistics
+['1.2894380055811054 ~(0.0)', '2.8036013156978266 ~(0.0)', '0.3732347540709655 ~(0.0)', '0.04954962455359439 ~(0.0)', '0.01904827287757977 ~(0.0)', '1.7030013175915621 ~(0.0)', '2.1029321685363556 ~(0.0)', '1.5764012089963626e-09 ~(0.0)', '7.850952804312737 ~(0.0)', '0.030247842276015756 ~(0.0)']
+Objective function breakdown
+Residual:       1.1051273992822217
+Regularisation: 0.09187169010215689
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.318005
+         Iterations: 1190
+         Function evaluations: 1721
+Fitting is successful
+Parameter Statistics
+['1.8940246421980875 ~(0.0)', '1.204531850085255 ~(0.0)', '1.7559382341041676 ~(0.0)', '2.468789930333108e-07 ~(0.0)', '0.1774915924491274 ~(0.0)', '0.30986713929815757 ~(0.0)', '1.0362240814390622 ~(0.0)', '1.0532858067837546e-06 ~(0.0)', '2.71684058487192 ~(0.0)', '0.0017453458454495872 ~(0.0)']
+Objective function breakdown
+Residual:       1.318004923450221
+Regularisation: 0.7963325740675091
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 4.599339
+         Iterations: 1878
+         Function evaluations: 2745
+Fitting is successful
+Parameter Statistics
+['1.272114278856589 ~(0.0)', '0.4602644569921209 ~(0.0)', '0.9508816763402332 ~(0.0)', '2.46417863870366 ~(0.0)', '0.16067023946753933 ~(0.0)', '4.005714342628043e-05 ~(0.0)', '0.07761795540210126 ~(0.0)', '1.5953388857705803e-09 ~(0.0)', '1.0538616848612006 ~(0.0)', '0.0036044122114376837 ~(0.0)']
+Objective function breakdown
+Residual:       4.599339276925334
+Regularisation: 1.4337446808593994
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.079263
+         Iterations: 1139
+         Function evaluations: 1673
+Fitting is successful
+Parameter Statistics
+['1.1279977069356104 ~(0.0)', '0.7774236461598072 ~(0.0)', '0.8006634642512971 ~(0.0)', '1.0645700270066747 ~(0.0)', '0.08743861227564442 ~(0.0)', '6.956528975489202e-11 ~(0.0)', '0.3921900772147382 ~(0.0)', '0.00027990746107744313 ~(0.0)', '3.632283318436837 ~(0.0)', '0.008656636599939274 ~(0.0)']
+Objective function breakdown
+Residual:       1.0792633232224806
+Regularisation: 0.23178300423964587
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.125586
+         Iterations: 1170
+         Function evaluations: 1706
+Fitting is successful
+Parameter Statistics
+['1.603122918834977 ~(0.0)', '2.5993725265618117 ~(0.0)', '0.7176127614080756 ~(0.0)', '0.6396856980694162 ~(0.0)', '0.4265988651135929 ~(0.0)', '0.26323644710749006 ~(0.0)', '0.6825099360568356 ~(0.0)', '1.0601783629082084e-07 ~(0.0)', '3.0466955624324488 ~(0.0)', '0.0106208367967667 ~(0.0)']
+Objective function breakdown
+Residual:       1.125585481705982
+Regularisation: 0.5837785725098253
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 6.687447
+         Iterations: 1847
+         Function evaluations: 2672
+Fitting is successful
+Parameter Statistics
+['0.7574218884011369 ~(0.0)', '2.900911901166535 ~(0.0)', '0.24499261701082892 ~(0.0)', '3.0567037399678973 ~(0.0)', '0.28229779168400326 ~(0.0)', '1.6989586926768663e-09 ~(0.0)', '0.00855178815491963 ~(0.0)', '0.6915077406444494 ~(0.0)', '2.7915590768711644 ~(0.0)', '0.0010684498982488247 ~(0.0)']
+Objective function breakdown
+Residual:       6.687446744834028
+Regularisation: 3.2449110640401395
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.696262
+         Iterations: 904
+         Function evaluations: 1337
+Fitting is successful
+Parameter Statistics
+['1.318826878691348 ~(0.0)', '2.1403809407396928 ~(0.0)', '0.3024687253363997 ~(0.0)', '2.506870059338788 ~(0.0)', '0.008687389570158192 ~(0.0)', '1.4040764651099603e-10 ~(0.0)', '0.2929279885260784 ~(0.0)', '1.5291395375489058e-08 ~(0.0)', '2.0506542940252395 ~(0.0)', '0.004548424052977106 ~(0.0)']
+Objective function breakdown
+Residual:       1.6962620621331583
+Regularisation: 0.7036028681097765
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 5.830308
+         Iterations: 2184
+         Function evaluations: 3246
+Fitting is successful
+Parameter Statistics
+['0.6553139596339931 ~(0.0)', '108.41854395434902 ~(0.0)', '10.032567984819046 ~(0.0)', '367.8559747917226 ~(0.0)', '2.627452403531958 ~(0.0)', '6.051134151489558 ~(0.0)', '0.0027396868361207376 ~(0.0)', '137.330929387474 ~(0.0)', '65.83378329117903 ~(0.0)', '0.09336374075871412 ~(0.0)']
+Objective function breakdown
+Residual:       5.83030565394117
+Regularisation: 3.8053571849290364
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 7.782001
+         Iterations: 1330
+         Function evaluations: 1965
+Fitting is successful
+Parameter Statistics
+['0.8080298090902944 ~(0.0)', '2.622782485681054 ~(0.0)', '1.1487880447769174 ~(0.0)', '0.30291231903417043 ~(0.0)', '0.18520921833559162 ~(0.0)', '0.1131849923178589 ~(0.0)', '1.9133859113880727e-09 ~(0.0)', '2.2092111196957172e-08 ~(0.0)', '1.136923430968058 ~(0.0)', '0.0018404698015532174 ~(0.0)']
+Objective function breakdown
+Residual:       7.781994679739125
+Regularisation: 6.173877901521395
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 7.183208
+         Iterations: 452
+         Function evaluations: 695
+Fitting is successful
+Parameter Statistics
+['0.8019942349307838 ~(0.0)', '2.5298372026111826 ~(0.0)', '0.5599209688750688 ~(0.0)', '0.4037957577675082 ~(0.0)', '0.13424102723104 ~(0.0)', '5.15413610787412e-05 ~(0.0)', '6.601907334613655e-08 ~(0.0)', '1.217203865359102e-07 ~(0.0)', '1.2393982903916954 ~(0.0)', '0.00023906198132118902 ~(0.0)']
+Objective function breakdown
+Residual:       7.183203036244038
+Regularisation: 3.055397961356907
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.025249
+         Iterations: 1191
+         Function evaluations: 1733
+Fitting is successful
+Parameter Statistics
+['1.299539283529052 ~(0.0)', '1.4492738642685659 ~(0.0)', '0.6242805733044349 ~(0.0)', '0.5032565399500487 ~(0.0)', '0.05248128478273256 ~(0.0)', '2.544967206224651e-08 ~(0.0)', '0.38450281913984075 ~(0.0)', '1.5639524135354156e-09 ~(0.0)', '3.041823572457325 ~(0.0)', '0.0030664340098440026 ~(0.0)']
+Objective function breakdown
+Residual:       1.0252491399462225
+Regularisation: 0.055001539527884336
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 2.090204
+         Iterations: 1864
+         Function evaluations: 2682
+Fitting is successful
+Parameter Statistics
+['1.7418891004599852 ~(0.0)', '5.242698330317545 ~(0.0)', '2.061943103819755 ~(0.0)', '3.283282102214581e-09 ~(0.0)', '0.269850614777831 ~(0.0)', '4.205440081881298 ~(0.0)', '1.4812190365308155 ~(0.0)', '8.595015359498547 ~(0.0)', '14.121550713096944 ~(0.0)', '0.058023267612064236 ~(0.0)']
+Objective function breakdown
+Residual:       2.090196169987353
+Regularisation: 1.3739799329470275
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.100357
+         Iterations: 651
+         Function evaluations: 968
+Fitting is successful
+Parameter Statistics
+['1.30549392978917 ~(0.0)', '2.3595643802927126 ~(0.0)', '0.3618441030131305 ~(0.0)', '0.9076286800795901 ~(0.0)', '0.0063494154713732865 ~(0.0)', '2.669751110997254e-07 ~(0.0)', '0.35511470371151077 ~(0.0)', '1.2543493065855485e-09 ~(0.0)', '2.8005410610843775 ~(0.0)', '0.004315347158314169 ~(0.0)']
+Objective function breakdown
+Residual:       1.1003548369328868
+Regularisation: 0.20993655335965083
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 2.640980
+         Iterations: 1890
+         Function evaluations: 2713
+Fitting is successful
+Parameter Statistics
+['1.083508829790805 ~(0.0)', '0.6056997682475682 ~(0.0)', '0.42383691969359877 ~(0.0)', '2.9793252101533003 ~(0.0)', '3.165585011560045e-08 ~(0.0)', '0.00024263789629077367 ~(0.0)', '0.23835518549719534 ~(0.0)', '6.527764479961641e-09 ~(0.0)', '1.8656175516617637 ~(0.0)', '0.0011127200501390615 ~(0.0)']
+Objective function breakdown
+Residual:       2.6409742126971354
+Regularisation: 0.3273653450013212
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 3.863903
+         Iterations: 2842
+         Function evaluations: 4074
+Fitting is successful
+Parameter Statistics
+['0.5397366059573208 ~(0.0)', '0.015493082151948449 ~(0.0)', '7.349578914719453 ~(0.0)', '2.4433359293885406 ~(0.0)', '0.18350844026591456 ~(0.0)', '0.3094979706051899 ~(0.0)', '4.3325350400075396e-10 ~(0.0)', '8.44808422217993 ~(0.0)', '9.461695435095454 ~(0.0)', '0.023375674745078186 ~(0.0)']
+Objective function breakdown
+Residual:       3.8638670707308687
+Regularisation: 1.137671863301693
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 5.111466
+         Iterations: 464
+         Function evaluations: 720
+Fitting is successful
+Parameter Statistics
+['1.2765318464466437 ~(0.0)', '1.639645691284263 ~(0.0)', '0.779356510811809 ~(0.0)', '0.4346369291604465 ~(0.0)', '0.12102419240799323 ~(0.0)', '8.741776233675979e-07 ~(0.0)', '0.056959587246296337 ~(0.0)', '1.7848588814175517e-05 ~(0.0)', '1.344969406513611 ~(0.0)', '0.005816867319127971 ~(0.0)']
+Objective function breakdown
+Residual:       5.111385033153078
+Regularisation: 1.4356271079090126
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 3.586539
+         Iterations: 1431
+         Function evaluations: 2102
+Fitting is successful
+Parameter Statistics
+['6.7249684106269125 ~(0.0)', '4.669199429977006 ~(0.0)', '10.837697774046163 ~(0.0)', '1.2099875149547445e-10 ~(0.0)', '0.15461492233657081 ~(0.0)', '0.4732644648632937 ~(0.0)', '0.7499152414752386 ~(0.0)', '7.5672750690690425 ~(0.0)', '12.617510489285149 ~(0.0)', '0.03144076306424044 ~(0.0)']
+Objective function breakdown
+Residual:       3.586401845721122
+Regularisation: 1.3705122941256145
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 3.478720
+         Iterations: 713
+         Function evaluations: 1087
+Fitting is successful
+Parameter Statistics
+['1.736825652896085 ~(0.0)', '0.8427324547618914 ~(0.0)', '0.7445769903801964 ~(0.0)', '2.1379774165013803 ~(0.0)', '0.017843686594323345 ~(0.0)', '5.1756090432855024e-08 ~(0.0)', '0.18210050773116732 ~(0.0)', '3.856811405233893e-08 ~(0.0)', '0.9167670802090624 ~(0.0)', '0.005319760717168031 ~(0.0)']
+Objective function breakdown
+Residual:       3.4785215759104173
+Regularisation: 1.1133306187056973
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 7.957352
+         Iterations: 1035
+         Function evaluations: 1548
+Fitting is successful
+Parameter Statistics
+['0.21281060493377335 ~(0.0)', '1.9302696063925544 ~(0.0)', '2.241384656404521 ~(0.0)', '0.7801785181631964 ~(0.0)', '0.17403438745073818 ~(0.0)', '0.2492292274745595 ~(0.0)', '1.9402019961798295e-10 ~(0.0)', '5.2852120054689914e-08 ~(0.0)', '2.4980961112249496 ~(0.0)', '0.008108687986375422 ~(0.0)']
+Objective function breakdown
+Residual:       7.9556476092739565
+Regularisation: 5.389800183799373
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 6.915578
+         Iterations: 1124
+         Function evaluations: 1655
+Fitting is successful
+Parameter Statistics
+['0.6810043442633045 ~(0.0)', '0.9465922279621164 ~(0.0)', '1.4570972451922761 ~(0.0)', '0.31266417625775395 ~(0.0)', '0.1460889165214174 ~(0.0)', '3.251288365739038e-10 ~(0.0)', '0.012413239328488666 ~(0.0)', '1.1448086140976093e-09 ~(0.0)', '1.9623902380956284 ~(0.0)', '0.0025450208611862103 ~(0.0)']
+Objective function breakdown
+Residual:       6.914064101668728
+Regularisation: 2.6929379622973317
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.119029
+         Iterations: 1787
+         Function evaluations: 2568
+Fitting is successful
+Parameter Statistics
+['1.1704980849519342 ~(0.0)', '1.6076858197026758 ~(0.0)', '0.481665608752496 ~(0.0)', '0.4261801082640809 ~(0.0)', '2.6999102812752057e-09 ~(0.0)', '0.08234466623623782 ~(0.0)', '0.6259763450506111 ~(0.0)', '0.13690395356687704 ~(0.0)', '4.986876245883149 ~(0.0)', '0.0025622679978968277 ~(0.0)']
+Objective function breakdown
+Residual:       1.1180895624043587
+Regularisation: 0.9390833162248132
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 8.237649
+         Iterations: 1551
+         Function evaluations: 2283
+Fitting is successful
+Parameter Statistics
+['0.022715888018952173 ~(0.0)', '1.3481676298978202 ~(0.0)', '0.15290707798139366 ~(0.0)', '5.553066915231462 ~(0.0)', '0.35766058076026397 ~(0.0)', '1.8074440359826416 ~(0.0)', '8.677555714976463e-11 ~(0.0)', '3.1505796043474623e-10 ~(0.0)', '2.424225858531978 ~(0.0)', '0.0008362684394591622 ~(0.0)']
+Objective function breakdown
+Residual:       8.223191102755179
+Regularisation: 8.130433666458913
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 5.533943
+         Iterations: 1334
+         Function evaluations: 1976
+Fitting is successful
+Parameter Statistics
+['1.3512542076268377 ~(0.0)', '0.5410091970603996 ~(0.0)', '2.934750389795986 ~(0.0)', '3.5131870345733585e-09 ~(0.0)', '0.5011548485131285 ~(0.0)', '2.2930847515625006 ~(0.0)', '0.46408728399853216 ~(0.0)', '3.5918501379951797 ~(0.0)', '3.8364833855780973 ~(0.0)', '0.0240291048754036 ~(0.0)']
+Objective function breakdown
+Residual:       5.530565876832236
+Regularisation: 1.068096452819725
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.558878
+         Iterations: 819
+         Function evaluations: 1218
+Fitting is successful
+Parameter Statistics
+['1.7438596586145225 ~(0.0)', '1.7373681288228928 ~(0.0)', '0.9060124574708124 ~(0.0)', '0.03362335395978984 ~(0.0)', '0.08110357634013159 ~(0.0)', '0.0021844948967662116 ~(0.0)', '0.33637212586745374 ~(0.0)', '3.390541615240049e-07 ~(0.0)', '1.937694712992835 ~(0.0)', '0.0007401315537578124 ~(0.0)']
+Objective function breakdown
+Residual:       1.558687892061234
+Regularisation: 0.03387639321043022
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 8.104399
+         Iterations: 791
+         Function evaluations: 1187
+Fitting is successful
+Parameter Statistics
+['0.39970818771397776 ~(0.0)', '0.18777455269273463 ~(0.0)', '0.2369408947779059 ~(0.0)', '0.20113168334439505 ~(0.0)', '0.14370572030722228 ~(0.0)', '2.31101185531576 ~(0.0)', '1.801702598173835e-08 ~(0.0)', '1.4975391257336885 ~(0.0)', '2.7515231140341014 ~(0.0)', '0.0026779422779123476 ~(0.0)']
+Objective function breakdown
+Residual:       8.086016334372367
+Regularisation: 1.8382653903151003
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.049530
+         Iterations: 1697
+         Function evaluations: 2436
+Fitting is successful
+Parameter Statistics
+['1.415288939880916 ~(0.0)', '2.23313370483364 ~(0.0)', '0.4858123689151061 ~(0.0)', '0.16287718032737974 ~(0.0)', '0.016846850795326922 ~(0.0)', '0.0391183646708312 ~(0.0)', '0.45466297467720324 ~(0.0)', '2.3419571611573206e-08 ~(0.0)', '2.981752452662973 ~(0.0)', '0.0016979595092954493 ~(0.0)']
+Objective function breakdown
+Residual:       1.0491634325594794
+Regularisation: 0.020586877251051697
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.151272
+         Iterations: 1515
+         Function evaluations: 2199
+Fitting is successful
+Parameter Statistics
+['1.9845762822949677 ~(0.0)', '1.955004341344319 ~(0.0)', '1.6043213490980484 ~(0.0)', '2.2361287473168305 ~(0.0)', '1.1977825950795324 ~(0.0)', '1.3056268419967458 ~(0.0)', '2.4921048171709055 ~(0.0)', '0.11060017034470261 ~(0.0)', '3.665998417010326 ~(0.0)', '0.020655225485640687 ~(0.0)']
+Objective function breakdown
+Residual:       1.1509468576735156
+Regularisation: 0.010266477963294284
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 4.402036
+         Iterations: 2214
+         Function evaluations: 3254
+Fitting is successful
+Parameter Statistics
+['1.1728496962276238 ~(0.0)', '6.2190726924577415 ~(0.0)', '0.6452667871529596 ~(0.0)', '3.957353051374921 ~(0.0)', '0.512377606297385 ~(0.0)', '0.0448451979799804 ~(0.0)', '0.16094439634318394 ~(0.0)', '1.3091154488725993 ~(0.0)', '12.01660929414257 ~(0.0)', '0.030130671138462302 ~(0.0)']
+Objective function breakdown
+Residual:       4.389712433124062
+Regularisation: 0.21914256093196643
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 2.100836
+         Iterations: 4948
+         Function evaluations: 7009
+Fitting is successful
+Parameter Statistics
+['0.012303026803286656 ~(0.0)', '0.7920658219909271 ~(0.0)', '6.205531294788177 ~(0.0)', '34.89264150963514 ~(0.0)', '2.326328120926237 ~(0.0)', '13.383127113355577 ~(0.0)', '1.4255962985299133 ~(0.0)', '0.13451519212640278 ~(0.0)', '0.13794965657384572 ~(0.0)', '0.0031771886163980525 ~(0.0)']
+Objective function breakdown
+Residual:       2.1005930100835117
+Regularisation: 0.002431276815044057
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 2.102291
+         Iterations: 1766
+         Function evaluations: 2543
+Fitting is successful
+Parameter Statistics
+['1.332036424388015 ~(0.0)', '2.5985063802633013 ~(0.0)', '0.3181212019276393 ~(0.0)', '1.519885976578983 ~(0.0)', '0.08107335128332785 ~(0.0)', '1.6892403912873115e-11 ~(0.0)', '0.34244326242673573 ~(0.0)', '3.733665606841371e-11 ~(0.0)', '1.95697793599742 ~(0.0)', '0.011405132716278714 ~(0.0)']
+Objective function breakdown
+Residual:       2.014726450953219
+Regularisation: 0.4924123380910573
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 9.271829
+         Iterations: 1259
+         Function evaluations: 1860
+Fitting is successful
+Parameter Statistics
+['0.48806224880711724 ~(0.0)', '1.2711233350972946 ~(0.0)', '0.19766534912914185 ~(0.0)', '9.733839808075418e-08 ~(0.0)', '0.2640888693435221 ~(0.0)', '0.8737645098696626 ~(0.0)', '0.0006597770616684613 ~(0.0)', '0.6305416102489949 ~(0.0)', '1.329947762631166 ~(0.0)', '0.0013913816379901248 ~(0.0)']
+Objective function breakdown
+Residual:       8.596803428553368
+Regularisation: 2.1346172095212723
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.660831
+         Iterations: 993
+         Function evaluations: 1493
+Fitting is successful
+Parameter Statistics
+['1.0872521104446977 ~(0.0)', '3.94804204421471 ~(0.0)', '0.2061465125952862 ~(0.0)', '4.694331967818039 ~(0.0)', '0.1605651640162754 ~(0.0)', '1.8403967526696505e-08 ~(0.0)', '0.4080825205149561 ~(0.0)', '0.012901153778714876 ~(0.0)', '4.173215044655162 ~(0.0)', '0.009657586365645057 ~(0.0)']
+Objective function breakdown
+Residual:       1.291319625419373
+Regularisation: 0.6570945665879653
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 3.078982
+         Iterations: 2002
+         Function evaluations: 2857
+Fitting is successful
+Parameter Statistics
+['0.7857324794496833 ~(0.0)', '0.2515095427772599 ~(0.0)', '0.46953821681986097 ~(0.0)', '3.5907394457586816 ~(0.0)', '0.05700693468291365 ~(0.0)', '2.1721044280563469e-13 ~(0.0)', '0.472480265210663 ~(0.0)', '0.46004900566254264 ~(0.0)', '6.10807585229619 ~(0.0)', '0.0062006126888129055 ~(0.0)']
+Objective function breakdown
+Residual:       2.5028987324934655
+Regularisation: 0.5760828673829027
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 7.384324
+         Iterations: 760
+         Function evaluations: 1124
+Fitting is successful
+Parameter Statistics
+['0.7399255438361833 ~(0.0)', '0.3006676342580445 ~(0.0)', '2.004585874762052 ~(0.0)', '0.7311862885803031 ~(0.0)', '0.22712919003470505 ~(0.0)', '7.559327992045077e-09 ~(0.0)', '0.16266771050396683 ~(0.0)', '8.086850660890174e-07 ~(0.0)', '1.9149685345272642 ~(0.0)', '0.005679166610541174 ~(0.0)']
+Objective function breakdown
+Residual:       6.829803420941451
+Regularisation: 0.3118297019786146
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 2.965667
+         Iterations: 1244
+         Function evaluations: 1937
+Fitting is successful
+Parameter Statistics
+['3.0732471649552497 ~(0.0)', '6.387885429270458 ~(0.0)', '13.640495229011993 ~(0.0)', '43.62217680460509 ~(0.0)', '23.086587239322906 ~(0.0)', '5.915597324694418 ~(0.0)', '7.842586715047059 ~(0.0)', '41.32132227079954 ~(0.0)', '131.7632342610541 ~(0.0)', '0.3221377174926494 ~(0.0)']
+Objective function breakdown
+Residual:       2.959665937830129
+Regularisation: 0.0018976445897201312
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 6.879999
+         Iterations: 4077
+         Function evaluations: 5826
+Fitting is successful
+Parameter Statistics
+['1.050662213230405 ~(0.0)', '5.840513636560708 ~(0.0)', '0.8021119342510575 ~(0.0)', '4.138839390724 ~(0.0)', '0.49938931658736924 ~(0.0)', '0.18755205690216636 ~(0.0)', '0.18708048275925798 ~(0.0)', '1.586930069769533e-07 ~(0.0)', '5.1425049285124524 ~(0.0)', '0.008351710730608839 ~(0.0)']
+Objective function breakdown
+Residual:       6.081739690538417
+Regularisation: 0.14195277912363996
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 1.767519
+         Iterations: 994
+         Function evaluations: 1473
+Fitting is successful
+Parameter Statistics
+['1.1644296294167782 ~(0.0)', '0.5624069523368636 ~(0.0)', '0.6922778821558697 ~(0.0)', '2.0429193067370397 ~(0.0)', '0.14803302796501666 ~(0.0)', '0.02126109343994155 ~(0.0)', '0.5617302094797674 ~(0.0)', '1.3679764591995638e-07 ~(0.0)', '2.83396470436782 ~(0.0)', '1.169371493305043e-09 ~(0.0)']
+Objective function breakdown
+Residual:       1.6938111006861358
+Regularisation: 0.00737075440951225
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 5.978107
+         Iterations: 1583
+         Function evaluations: 2315
+Fitting is successful
+Parameter Statistics
+['0.9412781640938838 ~(0.0)', '1.9240790982433902 ~(0.0)', '0.38198786645655214 ~(0.0)', '0.2854465648201513 ~(0.0)', '0.1379770851391835 ~(0.0)', '2.411011150420835e-07 ~(0.0)', '0.303233083379513 ~(0.0)', '1.9518167797335444e-07 ~(0.0)', '2.1260127547359 ~(0.0)', '0.0017868732558252594 ~(0.0)']
+Objective function breakdown
+Residual:       5.600143237118392
+Regularisation: 0.021254443562408742
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 7.495372
+         Iterations: 2412
+         Function evaluations: 3444
+Fitting is successful
+Parameter Statistics
+['1.0273336509366575 ~(0.0)', '0.7510489520649983 ~(0.0)', '0.7868493511500088 ~(0.0)', '2.2456134278545518e-07 ~(0.0)', '0.03612657356483635 ~(0.0)', '0.045648399328023656 ~(0.0)', '0.5834854243964911 ~(0.0)', '5.7587344047069835e-08 ~(0.0)', '1.6496867916133842 ~(0.0)', '0.006760424182031627 ~(0.0)']
+Objective function breakdown
+Residual:       6.82080471553347
+Regularisation: 0.0213316893916945
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 11.531274
+         Iterations: 1456
+         Function evaluations: 2138
+Fitting is successful
+Parameter Statistics
+['0.12734877817085127 ~(0.0)', '1.2145685459190374 ~(0.0)', '1.729912882710269 ~(0.0)', '0.8103933387488451 ~(0.0)', '0.13243278294795569 ~(0.0)', '9.187473105171465e-09 ~(0.0)', '0.25677572405618954 ~(0.0)', '7.803400945728278e-08 ~(0.0)', '2.4096034304888367 ~(0.0)', '0.001581010961641017 ~(0.0)']
+Objective function breakdown
+Residual:       11.133656878564473
+Regularisation: 0.007070748732361269
+Time span of fitting:  [5, 32, 110]
+Initial values:  [0.046624082000000004, 0, -1.2299999999999995]
+Optimization terminated successfully.
+         Current function value: 2.243036
+         Iterations: 1584
+         Function evaluations: 2304
+Fitting is successful
+Parameter Statistics
+['1.8089248955788864 ~(0.0)', '2.2108885484813046 ~(0.0)', '0.7708070901883358 ~(0.0)', '0.12432620032764213 ~(0.0)', '0.11722682095675625 ~(0.0)', '0.5304225330583598 ~(0.0)', '1.1195640484661944 ~(0.0)', '3.4144550833005587e-08 ~(0.0)', '2.7590737185922753 ~(0.0)', '0.011515822358681073 ~(0.0)']
+Objective function breakdown
+Residual:       1.5429227657478684
+Regularisation: 0.007001136003159799
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 3.924558
+         Iterations: 1298
+         Function evaluations: 1900
+Fitting is successful
+Parameter Statistics
+['0.780529392502936 ~(0.0)', '0.3765276620944551 ~(0.0)', '1.7877609920945698 ~(0.0)', '0.398571752126865 ~(0.0)', '0.3575364054939608 ~(0.0)', '0.10118974141730924 ~(0.0)', '0.3465582390722422 ~(0.0)', '3.532507557879895e-09 ~(0.0)', '2.22016497761574 ~(0.0)', '0.0033855970996053537 ~(0.0)']
+Objective function breakdown
+Residual:       3.924558102072215
+Regularisation: 4.675081428960444
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 3.008023
+         Iterations: 1492
+         Function evaluations: 2144
+Fitting is successful
+Parameter Statistics
+['1.1694230515261692 ~(0.0)', '0.6651341370139014 ~(0.0)', '0.8585374671986592 ~(0.0)', '1.1458123841091612 ~(0.0)', '0.09189846890515674 ~(0.0)', '2.870566599510187e-09 ~(0.0)', '0.012536987792825404 ~(0.0)', '3.181136018811477e-08 ~(0.0)', '1.136486430520633 ~(0.0)', '0.00141534155637277 ~(0.0)']
+Objective function breakdown
+Residual:       3.0080232673724434
+Regularisation: 5.8615209658975695
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.918752
+         Iterations: 1436
+         Function evaluations: 2100
+Fitting is successful
+Parameter Statistics
+['0.1686416647010088 ~(0.0)', '0.0019834679423036353 ~(0.0)', '4.418755239071496 ~(0.0)', '0.21334191194708302 ~(0.0)', '0.31984665698977893 ~(0.0)', '1.3125967655574484e-07 ~(0.0)', '1.0546351346282225e-07 ~(0.0)', '0.672838578442321 ~(0.0)', '6.180437874959334 ~(0.0)', '0.010935499996281878 ~(0.0)']
+Objective function breakdown
+Residual:       2.9187516645400375
+Regularisation: 9.212253624915514
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.046806
+         Iterations: 2271
+         Function evaluations: 3289
+Fitting is successful
+Parameter Statistics
+['0.4319259240234102 ~(0.0)', '0.0737477573398479 ~(0.0)', '3.6127552678609014 ~(0.0)', '3.530815650294426 ~(0.0)', '0.2581505985914963 ~(0.0)', '2.607141849736197e-09 ~(0.0)', '0.12380838881590052 ~(0.0)', '0.0011531428436456445 ~(0.0)', '5.273130399308512 ~(0.0)', '0.014856197602027197 ~(0.0)']
+Objective function breakdown
+Residual:       2.046805933236763
+Regularisation: 3.1152346267911732
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.565088
+         Iterations: 2043
+         Function evaluations: 2975
+Fitting is successful
+Parameter Statistics
+['2.075844382108638 ~(0.0)', '0.27591017330053524 ~(0.0)', '8.841618764379191 ~(0.0)', '5.432669677790321 ~(0.0)', '1.1145624405978243 ~(0.0)', '1.0006442611491437 ~(0.0)', '9.303689325999162 ~(0.0)', '0.18151612749126683 ~(0.0)', '6.205064641857074 ~(0.0)', '0.046656141155297294 ~(0.0)']
+Objective function breakdown
+Residual:       1.565088265957587
+Regularisation: 1.4875350761532493
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.554902
+         Iterations: 2902
+         Function evaluations: 4190
+Fitting is successful
+Parameter Statistics
+['1.4079483374416295 ~(0.0)', '3.392290298287108 ~(0.0)', '0.9121550723758963 ~(0.0)', '0.9439806154898946 ~(0.0)', '0.051963294216101685 ~(0.0)', '0.03088477042076404 ~(0.0)', '3.787460400656749e-08 ~(0.0)', '1.1210401284295777e-06 ~(0.0)', '4.5278034845880715 ~(0.0)', '0.00870479306266588 ~(0.0)']
+Objective function breakdown
+Residual:       2.5548838942188175
+Regularisation: 104.00875981734478
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.717980
+         Iterations: 1059
+         Function evaluations: 1574
+Fitting is successful
+Parameter Statistics
+['1.0966576979567886 ~(0.0)', '2.517617724424487 ~(0.0)', '0.43872740706483726 ~(0.0)', '0.08583966370970555 ~(0.0)', '0.18646197584393934 ~(0.0)', '5.166173700901476e-07 ~(0.0)', '0.02977408187561351 ~(0.0)', '1.2997193276228122e-07 ~(0.0)', '1.7422384136119273 ~(0.0)', '0.009980707724671065 ~(0.0)']
+Objective function breakdown
+Residual:       2.7179781289477956
+Regularisation: 6.659892910612954
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 4.663552
+         Iterations: 819
+         Function evaluations: 1195
+Fitting is successful
+Parameter Statistics
+['0.3851240047853254 ~(0.0)', '1.7507984150432274 ~(0.0)', '1.3047038480836592 ~(0.0)', '1.7866604367455294e-06 ~(0.0)', '0.19204872745107704 ~(0.0)', '0.5933634167222592 ~(0.0)', '0.00025297882914072104 ~(0.0)', '1.1599115479707948e-06 ~(0.0)', '2.8117231402948173 ~(0.0)', '0.0019390984990188152 ~(0.0)']
+Objective function breakdown
+Residual:       4.663530199525757
+Regularisation: 38.888123476559684
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.022347
+         Iterations: 4851
+         Function evaluations: 6924
+Fitting is successful
+Parameter Statistics
+['0.607698891537722 ~(0.0)', '52.20770588576789 ~(0.0)', '36.79132048089727 ~(0.0)', '8.310202928687817 ~(0.0)', '2.0513982471114947 ~(0.0)', '3.682313572983538 ~(0.0)', '9.639586859087197e-11 ~(0.0)', '27.356567854598055 ~(0.0)', '2.520864618966492 ~(0.0)', '0.26332124506444765 ~(0.0)']
+Objective function breakdown
+Residual:       2.0223404258594946
+Regularisation: 6.284612675440952
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.255093
+         Iterations: 2045
+         Function evaluations: 2986
+Fitting is successful
+Parameter Statistics
+['0.7823236523877941 ~(0.0)', '0.1977130434243858 ~(0.0)', '1.4115209177388337 ~(0.0)', '3.544565116508868 ~(0.0)', '0.29248436396382327 ~(0.0)', '3.1163130521509323e-10 ~(0.0)', '0.10858865099462284 ~(0.0)', '0.21836182724717013 ~(0.0)', '4.020733400281698 ~(0.0)', '0.004166696541577785 ~(0.0)']
+Objective function breakdown
+Residual:       1.2550894894695204
+Regularisation: 2.0517367503190913
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.397601
+         Iterations: 2934
+         Function evaluations: 4247
+Fitting is successful
+Parameter Statistics
+['1.7894846752342395 ~(0.0)', '13.596649200347937 ~(0.0)', '0.32921528197133476 ~(0.0)', '23.170302894117356 ~(0.0)', '1.4253153804650402 ~(0.0)', '15.799318912724244 ~(0.0)', '3.5016960077884076 ~(0.0)', '2.805802329386913e-09 ~(0.0)', '6.134400558714592 ~(0.0)', '0.049218564354276434 ~(0.0)']
+Objective function breakdown
+Residual:       1.3975914714578626
+Regularisation: 3.088892568356623
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.536413
+         Iterations: 2335
+         Function evaluations: 3422
+Fitting is successful
+Parameter Statistics
+['1.0075097061392593 ~(0.0)', '20.603474893021463 ~(0.0)', '0.07342267838759192 ~(0.0)', '63.35917923429598 ~(0.0)', '0.5826443896664987 ~(0.0)', '6.3049059639476415 ~(0.0)', '0.7165515841868195 ~(0.0)', '0.3026159979416063 ~(0.0)', '5.573085253078168 ~(0.0)', '0.07296407107240475 ~(0.0)']
+Objective function breakdown
+Residual:       1.5364087408969402
+Regularisation: 0.7066081932081224
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.125348
+         Iterations: 2047
+         Function evaluations: 2961
+Fitting is successful
+Parameter Statistics
+['2.5498580134395983 ~(0.0)', '7.630235573705038 ~(0.0)', '5.156238623974786 ~(0.0)', '0.7353287241782356 ~(0.0)', '0.8540107178100149 ~(0.0)', '2.0185672291779273 ~(0.0)', '0.06909744203300733 ~(0.0)', '8.414750640331189 ~(0.0)', '5.694171673711571 ~(0.0)', '0.022517635899256927 ~(0.0)']
+Objective function breakdown
+Residual:       2.124556871585599
+Regularisation: 79.14967414495021
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 0.901255
+         Iterations: 1277
+         Function evaluations: 1877
+Fitting is successful
+Parameter Statistics
+['1.6250024776231888 ~(0.0)', '0.5305228744069724 ~(0.0)', '2.941216453804473 ~(0.0)', '1.4839092573195107 ~(0.0)', '0.4210373908642401 ~(0.0)', '0.06940080014932039 ~(0.0)', '0.4466981567429602 ~(0.0)', '3.5653076399837217e-09 ~(0.0)', '2.2348074949691155 ~(0.0)', '0.02203305348190934 ~(0.0)']
+Objective function breakdown
+Residual:       0.9012364372575298
+Regularisation: 1.057552714549865
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.378379
+         Iterations: 3961
+         Function evaluations: 5684
+Fitting is successful
+Parameter Statistics
+['0.13819787744599593 ~(0.0)', '0.8763827248311635 ~(0.0)', '4.364993014657438 ~(0.0)', '4.6380073346747485e-08 ~(0.0)', '0.42007254616932604 ~(0.0)', '1.518831665257702 ~(0.0)', '0.8181788850945497 ~(0.0)', '4.0448938149420215 ~(0.0)', '11.577579905869868 ~(0.0)', '0.03394391654507154 ~(0.0)']
+Objective function breakdown
+Residual:       2.378372263284758
+Regularisation: 0.2145435993632571
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.491370
+         Iterations: 1510
+         Function evaluations: 2206
+Fitting is successful
+Parameter Statistics
+['0.18411850751722791 ~(0.0)', '0.1258638074409248 ~(0.0)', '0.00022435405216354027 ~(0.0)', '0.5499945465618037 ~(0.0)', '0.06595328816523019 ~(0.0)', '4.023656839170387 ~(0.0)', '1.6761810484562397e-09 ~(0.0)', '1.316305641011101 ~(0.0)', '9.31254083376345 ~(0.0)', '0.006172289030990839 ~(0.0)']
+Objective function breakdown
+Residual:       2.490971947805678
+Regularisation: 7.07788795135309
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.519180
+         Iterations: 2012
+         Function evaluations: 2895
+Fitting is successful
+Parameter Statistics
+['1.6703011411249142 ~(0.0)', '3.2836783853273546 ~(0.0)', '0.7071811421396259 ~(0.0)', '0.017931627021389784 ~(0.0)', '0.23832822584495134 ~(0.0)', '1.8973001162910905 ~(0.0)', '1.4732484481371864 ~(0.0)', '0.6760015878789352 ~(0.0)', '5.115935573900922 ~(0.0)', '0.026190225590790227 ~(0.0)']
+Objective function breakdown
+Residual:       1.5189991393511066
+Regularisation: 1.8078260241429398
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.345860
+         Iterations: 1438
+         Function evaluations: 2128
+Fitting is successful
+Parameter Statistics
+['1.3227890401732958 ~(0.0)', '0.5210037121129786 ~(0.0)', '2.621685922159818 ~(0.0)', '0.0004958580288101359 ~(0.0)', '0.07796660873045734 ~(0.0)', '0.33728719272271157 ~(0.0)', '1.680075388902754 ~(0.0)', '0.47064992773626046 ~(0.0)', '6.474029168440615 ~(0.0)', '0.0004547271532808267 ~(0.0)']
+Objective function breakdown
+Residual:       1.345857678550588
+Regularisation: 0.013457103615352507
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 5.383639
+         Iterations: 870
+         Function evaluations: 1281
+Fitting is successful
+Parameter Statistics
+['0.7010879094723563 ~(0.0)', '1.3943141131278023 ~(0.0)', '0.3051892173402046 ~(0.0)', '1.1990350382612517e-05 ~(0.0)', '0.23151154681031644 ~(0.0)', '1.1049912412041576 ~(0.0)', '6.02065072603872e-06 ~(0.0)', '0.3296300168625453 ~(0.0)', '1.456117469285589 ~(0.0)', '0.0012333904521017853 ~(0.0)']
+Objective function breakdown
+Residual:       5.3771335889205885
+Regularisation: 20.571191518376473
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.096439
+         Iterations: 3969
+         Function evaluations: 5606
+Fitting is successful
+Parameter Statistics
+['1.5690413722600354 ~(0.0)', '1.2311119680500908 ~(0.0)', '1.3370557947953474 ~(0.0)', '1.236093021444817 ~(0.0)', '0.46855318672428536 ~(0.0)', '2.372731943037361 ~(0.0)', '6.539672275599885 ~(0.0)', '2.6075007459576187e-08 ~(0.0)', '9.499104945506168 ~(0.0)', '0.012789128719629566 ~(0.0)']
+Objective function breakdown
+Residual:       1.096407422183275
+Regularisation: 0.05541627280838608
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.735662
+         Iterations: 1706
+         Function evaluations: 2526
+Fitting is successful
+Parameter Statistics
+['0.3874445539589 ~(0.0)', '0.8851805619363593 ~(0.0)', '0.12224075566229427 ~(0.0)', '4.501373517682923 ~(0.0)', '0.3335965768600333 ~(0.0)', '0.3375434950165349 ~(0.0)', '6.032104093795655e-10 ~(0.0)', '1.0023167875637893 ~(0.0)', '6.517129587863435 ~(0.0)', '0.008021144388927263 ~(0.0)']
+Objective function breakdown
+Residual:       2.7288059903080626
+Regularisation: 6.856061457422304
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 0.826760
+         Iterations: 1592
+         Function evaluations: 2295
+Fitting is successful
+Parameter Statistics
+['1.332353771223534 ~(0.0)', '0.4557131027671571 ~(0.0)', '1.5794770893927081 ~(0.0)', '2.3173068328130966 ~(0.0)', '0.24673630164345556 ~(0.0)', '6.472972605196846e-09 ~(0.0)', '0.06472600557587577 ~(0.0)', '0.07645547756656168 ~(0.0)', '2.1568240616977272 ~(0.0)', '0.02209593392286148 ~(0.0)']
+Objective function breakdown
+Residual:       0.8187406846556837
+Regularisation: 4.509516271882199
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.357261
+         Iterations: 3817
+         Function evaluations: 5477
+Fitting is successful
+Parameter Statistics
+['1.5465582037042211 ~(0.0)', '13.343357413771828 ~(0.0)', '0.29950756287766434 ~(0.0)', '31.83126434684121 ~(0.0)', '1.4848476385796237 ~(0.0)', '9.049629247274869 ~(0.0)', '1.847134174494668 ~(0.0)', '1.619912582076812e-11 ~(0.0)', '4.776374128247527 ~(0.0)', '0.008457742497793443 ~(0.0)']
+Objective function breakdown
+Residual:       1.345873240256601
+Regularisation: 3.601146693463935
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.090508
+         Iterations: 3589
+         Function evaluations: 5074
+Fitting is successful
+Parameter Statistics
+['0.40256964719624067 ~(0.0)', '17.67083276095802 ~(0.0)', '4.307752984968879 ~(0.0)', '12.304934391635951 ~(0.0)', '1.1795248987517493 ~(0.0)', '5.658865924914205 ~(0.0)', '0.05813348237777669 ~(0.0)', '2.622182262607123 ~(0.0)', '4.08172737601272 ~(0.0)', '0.07017499501163277 ~(0.0)']
+Objective function breakdown
+Residual:       2.0698925822454792
+Regularisation: 3.6660299770060023
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.354836
+         Iterations: 3222
+         Function evaluations: 4595
+Fitting is successful
+Parameter Statistics
+['2.66353665527872 ~(0.0)', '6.274931955421543 ~(0.0)', '4.064187432763244 ~(0.0)', '1.471067132530861e-10 ~(0.0)', '0.23214123086463478 ~(0.0)', '1.8337052176704696 ~(0.0)', '0.8471838789179355 ~(0.0)', '6.589588252838318 ~(0.0)', '8.288536138903744 ~(0.0)', '0.046259962886130365 ~(0.0)']
+Objective function breakdown
+Residual:       2.344752311745959
+Regularisation: 1.0083609425201807
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.760717
+         Iterations: 3706
+         Function evaluations: 5270
+Fitting is successful
+Parameter Statistics
+['0.4449236664166329 ~(0.0)', '0.7313385177876004 ~(0.0)', '18.15977326050419 ~(0.0)', '5.45522833050525 ~(0.0)', '7.7276091974052346 ~(0.0)', '38.777690837569295 ~(0.0)', '5.785340535688187 ~(0.0)', '84.76500936113223 ~(0.0)', '4.13412214146299 ~(0.0)', '0.2376782615626759 ~(0.0)']
+Objective function breakdown
+Residual:       1.683058305758781
+Regularisation: 4.367082745940444
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 5.612813
+         Iterations: 1027
+         Function evaluations: 1522
+Fitting is successful
+Parameter Statistics
+['0.3611671278969803 ~(0.0)', '2.502963272604014 ~(0.0)', '0.9348369814267026 ~(0.0)', '0.00895229415982702 ~(0.0)', '0.11334988683726674 ~(0.0)', '0.9922327926571815 ~(0.0)', '0.12428474785079927 ~(0.0)', '2.4575347359061774e-07 ~(0.0)', '3.102097874348046 ~(0.0)', '0.0015335017515643746 ~(0.0)']
+Objective function breakdown
+Residual:       4.920967652275415
+Regularisation: 21.87808051828601
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.171977
+         Iterations: 3141
+         Function evaluations: 4509
+Fitting is successful
+Parameter Statistics
+['4.859330924812793e-09 ~(0.0)', '13.441501348540339 ~(0.0)', '1.6363568283492826 ~(0.0)', '2.9041786219237284 ~(0.0)', '0.881682675541622 ~(0.0)', '14.223042426071334 ~(0.0)', '0.19619865121259275 ~(0.0)', '16.485851502114862 ~(0.0)', '8.48742596645845 ~(0.0)', '0.09584831148181497 ~(0.0)']
+Objective function breakdown
+Residual:       2.125317016001983
+Regularisation: 0.8297403508125807
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 4.078141
+         Iterations: 1100
+         Function evaluations: 1621
+Fitting is successful
+Parameter Statistics
+['0.3674853346402952 ~(0.0)', '2.8546497963216284 ~(0.0)', '0.046336383376037016 ~(0.0)', '0.3334694039321875 ~(0.0)', '0.19452439213059952 ~(0.0)', '1.1180327149350164 ~(0.0)', '2.6007274746812443e-09 ~(0.0)', '0.5910666041129049 ~(0.0)', '4.344237076732333 ~(0.0)', '0.011619227548393514 ~(0.0)']
+Objective function breakdown
+Residual:       3.3154514143404312
+Regularisation: 7.626891359734659
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.563871
+         Iterations: 828
+         Function evaluations: 1234
+Fitting is successful
+Parameter Statistics
+['0.8610094344299584 ~(0.0)', '1.1260863908715033 ~(0.0)', '3.122858016165262 ~(0.0)', '3.887553788155907e-09 ~(0.0)', '0.10545090805348925 ~(0.0)', '0.3661711127315755 ~(0.0)', '0.5085278790902537 ~(0.0)', '2.061011883872926e-06 ~(0.0)', '6.572627394110012 ~(0.0)', '0.020784467011698022 ~(0.0)']
+Objective function breakdown
+Residual:       2.450168799322901
+Regularisation: 0.6393956923337922
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.058426
+         Iterations: 2914
+         Function evaluations: 4203
+Fitting is successful
+Parameter Statistics
+['5.94363061833952e-12 ~(0.0)', '2.587664818486526 ~(0.0)', '1.7937089292205162 ~(0.0)', '26.168233421035886 ~(0.0)', '2.6408480109942967 ~(0.0)', '21.879045745552737 ~(0.0)', '0.663345963763541 ~(0.0)', '8.176803559806114 ~(0.0)', '4.314486518403189 ~(0.0)', '0.03426922801454287 ~(0.0)']
+Objective function breakdown
+Residual:       1.9479361382386087
+Regularisation: 0.34939947410913674
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 7.392407
+         Iterations: 2206
+         Function evaluations: 3182
+Fitting is successful
+Parameter Statistics
+['0.8625671543128481 ~(0.0)', '0.4529850038004024 ~(0.0)', '0.3270140774462178 ~(0.0)', '3.1465461334551286 ~(0.0)', '0.11521714623510931 ~(0.0)', '4.341675218366276e-12 ~(0.0)', '0.16515485168015903 ~(0.0)', '0.0003433642073042064 ~(0.0)', '0.7604030538397466 ~(0.0)', '0.004729639769527562 ~(0.0)']
+Objective function breakdown
+Residual:       6.747792288529309
+Regularisation: 1.1463055723919682
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 1.649944
+         Iterations: 2196
+         Function evaluations: 3148
+Fitting is successful
+Parameter Statistics
+['2.43459469105848 ~(0.0)', '4.024247590432031 ~(0.0)', '0.8569581194565217 ~(0.0)', '0.04605529482152621 ~(0.0)', '0.10941679742011487 ~(0.0)', '2.9943251395322714 ~(0.0)', '3.3011881228124977 ~(0.0)', '2.2913497004150456e-08 ~(0.0)', '3.257742427751877 ~(0.0)', '0.002274781238868964 ~(0.0)']
+Objective function breakdown
+Residual:       1.6483303409991692
+Regularisation: 0.0016140598537126524
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 3.859700
+         Iterations: 3659
+         Function evaluations: 5225
+Fitting is successful
+Parameter Statistics
+['1.2129681583674357 ~(0.0)', '12.95801651965423 ~(0.0)', '0.13928869668378074 ~(0.0)', '88.37094300732244 ~(0.0)', '1.1379040580908497 ~(0.0)', '0.053570745302026934 ~(0.0)', '4.672559901749562 ~(0.0)', '1.9994923776497657 ~(0.0)', '25.596932695209816 ~(0.0)', '4.743706533893342e-14 ~(0.0)']
+Objective function breakdown
+Residual:       3.8591446697966365
+Regularisation: 0.0003122926953115323
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.416555
+         Iterations: 2852
+         Function evaluations: 4209
+Fitting is successful
+Parameter Statistics
+['1.0094259856365135 ~(0.0)', '5.833156523713164 ~(0.0)', '0.3523312971086051 ~(0.0)', '13.93854545809326 ~(0.0)', '1.3416035731368066 ~(0.0)', '0.002229629149085679 ~(0.0)', '0.8343239685750204 ~(0.0)', '0.2893907408605332 ~(0.0)', '6.843603270751069 ~(0.0)', '0.02466909122262652 ~(0.0)']
+Objective function breakdown
+Residual:       2.3202920333739403
+Regularisation: 0.03044109840422317
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 6.292502
+         Iterations: 1654
+         Function evaluations: 2390
+Fitting is successful
+Parameter Statistics
+['0.6552794455259773 ~(0.0)', '0.9366042980734994 ~(0.0)', '0.35779848925677193 ~(0.0)', '1.2910240608653678 ~(0.0)', '0.3352180578749625 ~(0.0)', '6.693299977023876e-10 ~(0.0)', '0.5039255580605394 ~(0.0)', '8.058076443848265e-10 ~(0.0)', '2.2097737530794066 ~(0.0)', '0.007046036697467978 ~(0.0)']
+Objective function breakdown
+Residual:       5.729173011103746
+Regularisation: 0.10017568372476966
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 7.049746
+         Iterations: 1768
+         Function evaluations: 2557
+Fitting is successful
+Parameter Statistics
+['0.7798928717057083 ~(0.0)', '0.23352152530347958 ~(0.0)', '1.8223551137515797 ~(0.0)', '0.005023760748954352 ~(0.0)', '0.0058895304884430694 ~(0.0)', '7.928468157654632e-10 ~(0.0)', '0.4119000694289985 ~(0.0)', '0.28325512151316296 ~(0.0)', '2.4786687717137026 ~(0.0)', '0.0009328143150550758 ~(0.0)']
+Objective function breakdown
+Residual:       6.1497277574813936
+Regularisation: 0.09000184282004238
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 2.775668
+         Iterations: 3355
+         Function evaluations: 4854
+Fitting is successful
+Parameter Statistics
+['10.944823128998646 ~(0.0)', '37.28581111682481 ~(0.0)', '11.920553364996362 ~(0.0)', '1.423803554043049e-10 ~(0.0)', '0.12193802555555844 ~(0.0)', '5.92877057386295 ~(0.0)', '2.647300952774225 ~(0.0)', '97.70361669422454 ~(0.0)', '15.511655517083891 ~(0.0)', '0.071751187687777 ~(0.0)']
+Objective function breakdown
+Residual:       2.7179369175699004
+Regularisation: 0.0032464707271871
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Warning: Maximum number of function evaluations has been exceeded.
+ final_simplex: (array([[ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296],
+       [ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+          2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+         50.67747004,  -0.10765296]]), array([3.50486045, 3.50534923, 3.50534923, 3.50534923, 3.50534923,
+       3.50534923, 3.50534923, 3.50534923, 3.50534923, 3.50534923,
+       3.50534923]))
+           fun: 3.5048604467361035
+       message: 'Maximum number of function evaluations has been exceeded.'
+          nfev: 100005
+           nit: 9467
+        status: 1
+       success: False
+             x: array([ -4.81918233,  10.34835246,  10.82929978,  -4.25021084,
+         2.26428705,   1.17507132,   1.18726505, -25.6065827 ,
+        50.67747004,  -0.10765296])
+Fitting unsuccessful
+Errors:
+['Fitting not successful\n']
+Parameter Statistics
+No results found.
+Fitting not complete
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 7.940566
+         Iterations: 1829
+         Function evaluations: 2677
+Fitting is successful
+Parameter Statistics
+['1.0852096862371314 ~(0.0)', '0.2772738161661529 ~(0.0)', '1.0630104323712861 ~(0.0)', '1.0733220951634346 ~(0.0)', '0.021908720326141023 ~(0.0)', '0.12736834917250667 ~(0.0)', '2.4224442068059098 ~(0.0)', '3.209864172042795e-11 ~(0.0)', '2.2836236762798388 ~(0.0)', '2.087003647145868e-12 ~(0.0)']
+Objective function breakdown
+Residual:       7.870356722146234
+Regularisation: 0.0012485204742278752
+Time span of fitting:  [6, 24, 70]
+Initial values:  [0.212730337, 0, 0.0]
+Optimization terminated successfully.
+         Current function value: 7.535170
+         Iterations: 1947
+         Function evaluations: 2804
+Fitting is successful
+Parameter Statistics
+['0.7816224724749254 ~(0.0)', '0.6134634923314055 ~(0.0)', '0.6250554982627263 ~(0.0)', '0.4296103527506525 ~(0.0)', '0.14977476834254966 ~(0.0)', '0.01683213220319326 ~(0.0)', '0.886181304055881 ~(0.0)', '0.3958875363125268 ~(0.0)', '3.0017918736123033 ~(0.0)', '1.7728928777964593e-10 ~(0.0)']
+Objective function breakdown
+Residual:       7.2722957823567524
+Regularisation: 0.002628744672742199
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.060453
+         Iterations: 3796
+         Function evaluations: 5451
+Fitting is successful
+Parameter Statistics
+['7.007703574002117e-11 ~(0.0)', '0.2873152623676667 ~(0.0)', '38.82181770924781 ~(0.0)', '11.740610757017961 ~(0.0)', '5.04464397309293 ~(0.0)', '8.071609137295283 ~(0.0)', '17.32790143652465 ~(0.0)', '43.53780859203102 ~(0.0)', '25.198625336633 ~(0.0)', '0.05548726216070779 ~(0.0)']
+Objective function breakdown
+Residual:       2.060452645411875
+Regularisation: 0.3150688756750633
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.811336
+         Iterations: 2362
+         Function evaluations: 3380
+Fitting is successful
+Parameter Statistics
+['1.474565758798809 ~(0.0)', '0.3425062445092845 ~(0.0)', '4.610896827266792 ~(0.0)', '0.024433936947710552 ~(0.0)', '0.05275355826896713 ~(0.0)', '0.18843419931793004 ~(0.0)', '1.820278542623821 ~(0.0)', '6.452424726735355e-07 ~(0.0)', '4.1363046078184595 ~(0.0)', '0.07572274444609413 ~(0.0)']
+Objective function breakdown
+Residual:       1.8113355488042961
+Regularisation: 0.18347946218063294
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.735388
+         Iterations: 1231
+         Function evaluations: 1827
+Fitting is successful
+Parameter Statistics
+['1.421685596327209 ~(0.0)', '1.4667388515471735 ~(0.0)', '0.45887904048950034 ~(0.0)', '11.266435487566199 ~(0.0)', '0.41960007153556395 ~(0.0)', '2.5108400163800525e-12 ~(0.0)', '0.16051463788108933 ~(0.0)', '0.5093068035655488 ~(0.0)', '4.46884261663763 ~(0.0)', '0.0023999575163071267 ~(0.0)']
+Objective function breakdown
+Residual:       1.735388133078955
+Regularisation: 0.48542616121719057
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.072359
+         Iterations: 1378
+         Function evaluations: 2020
+Fitting is successful
+Parameter Statistics
+['1.1492433473359231 ~(0.0)', '5.1876362781099274 ~(0.0)', '0.13689446536572225 ~(0.0)', '16.022623006198945 ~(0.0)', '0.09912788994636952 ~(0.0)', '2.2265401771709867e-11 ~(0.0)', '0.4491825926430913 ~(0.0)', '0.3534228006920799 ~(0.0)', '4.7716167548326 ~(0.0)', '0.011236037240640285 ~(0.0)']
+Objective function breakdown
+Residual:       2.072358830099719
+Regularisation: 3.5421126441452477
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.105886
+         Iterations: 2038
+         Function evaluations: 2904
+Fitting is successful
+Parameter Statistics
+['1.1813827930325194 ~(0.0)', '5.480562366425296 ~(0.0)', '0.2498151123784652 ~(0.0)', '0.7032375233985451 ~(0.0)', '0.11448935475637115 ~(0.0)', '2.6543970183255207e-09 ~(0.0)', '0.2951316606280917 ~(0.0)', '1.410300118576619 ~(0.0)', '8.84599053912709 ~(0.0)', '0.0667706040508271 ~(0.0)']
+Objective function breakdown
+Residual:       1.1058859815845212
+Regularisation: 0.7288448122542288
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.446433
+         Iterations: 1807
+         Function evaluations: 2573
+Fitting is successful
+Parameter Statistics
+['1.1324357186143879 ~(0.0)', '0.7441287754676675 ~(0.0)', '0.5226660341398764 ~(0.0)', '2.729589693207909 ~(0.0)', '0.08039555567168186 ~(0.0)', '9.159944831348852e-05 ~(0.0)', '0.2000188570345243 ~(0.0)', '0.6569596694656525 ~(0.0)', '3.900585098437056 ~(0.0)', '0.009472787024977147 ~(0.0)']
+Objective function breakdown
+Residual:       2.4464330210752
+Regularisation: 1.312715470957245
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.445931
+         Iterations: 1790
+         Function evaluations: 2580
+Fitting is successful
+Parameter Statistics
+['0.9672610048079477 ~(0.0)', '0.10006756159807922 ~(0.0)', '0.4830737056747686 ~(0.0)', '32.061973182231256 ~(0.0)', '1.0477240363267817 ~(0.0)', '1.6729561378670133e-12 ~(0.0)', '0.3848976742888144 ~(0.0)', '1.1985254895284596 ~(0.0)', '7.498662756290987 ~(0.0)', '0.014371087137695046 ~(0.0)']
+Objective function breakdown
+Residual:       1.4459306222738748
+Regularisation: 1.1430619157692334
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.763882
+         Iterations: 2490
+         Function evaluations: 3577
+Fitting is successful
+Parameter Statistics
+['2.9056778818609925 ~(0.0)', '0.34726123637663586 ~(0.0)', '22.3992975357654 ~(0.0)', '23.210163383839323 ~(0.0)', '3.9164706547746277 ~(0.0)', '2.3804095853015186 ~(0.0)', '7.4873199556413805 ~(0.0)', '23.120667236696494 ~(0.0)', '1.34564723048714e-08 ~(0.0)', '0.07552627593317077 ~(0.0)']
+Objective function breakdown
+Residual:       1.7638817355752427
+Regularisation: 0.9709765553626624
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.086979
+         Iterations: 1775
+         Function evaluations: 2583
+Fitting is successful
+Parameter Statistics
+['1.362406889240564 ~(0.0)', '0.17115330417974672 ~(0.0)', '3.3377501018107374 ~(0.0)', '3.1784267533515544 ~(0.0)', '0.1148093273294575 ~(0.0)', '5.487499255863966e-11 ~(0.0)', '0.4780402086216269 ~(0.0)', '0.5479996832435916 ~(0.0)', '5.313858474993651 ~(0.0)', '0.028761253127911054 ~(0.0)']
+Objective function breakdown
+Residual:       1.0869770203720175
+Regularisation: 1.5954453927374754
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 0.577054
+         Iterations: 2057
+         Function evaluations: 2925
+Fitting is successful
+Parameter Statistics
+['2.1001073431703245 ~(0.0)', '1.0269783223707396 ~(0.0)', '2.7346735235295547 ~(0.0)', '1.30713967314483 ~(0.0)', '0.6454243070990343 ~(0.0)', '0.1472762750526823 ~(0.0)', '0.6124576992217701 ~(0.0)', '0.17927101964502745 ~(0.0)', '2.8195863651453124 ~(0.0)', '0.015567002148827138 ~(0.0)']
+Objective function breakdown
+Residual:       0.5770525925462784
+Regularisation: 0.5904565384034338
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 0.820602
+         Iterations: 1604
+         Function evaluations: 2338
+Fitting is successful
+Parameter Statistics
+['1.552158686294936 ~(0.0)', '2.258957861350647 ~(0.0)', '0.928131699956891 ~(0.0)', '0.5645787678759654 ~(0.0)', '0.39246793574789185 ~(0.0)', '0.0069680526836063406 ~(0.0)', '0.24973114923265954 ~(0.0)', '0.7801410661083145 ~(0.0)', '5.492811288394833 ~(0.0)', '0.0005185996693864311 ~(0.0)']
+Objective function breakdown
+Residual:       0.8205988224081213
+Regularisation: 1.0335044831785074
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 5.487652
+         Iterations: 1449
+         Function evaluations: 2107
+Fitting is successful
+Parameter Statistics
+['0.7511924744833915 ~(0.0)', '0.7883673579859081 ~(0.0)', '0.5235152737497241 ~(0.0)', '9.506900116878008e-10 ~(0.0)', '0.21757978568657266 ~(0.0)', '2.662177287266048 ~(0.0)', '0.22266582306476237 ~(0.0)', '2.0812527445553384 ~(0.0)', '4.522117697481917 ~(0.0)', '0.006356619396523938 ~(0.0)']
+Objective function breakdown
+Residual:       5.487640035773723
+Regularisation: 2.1727980388970356
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 0.701723
+         Iterations: 2972
+         Function evaluations: 4199
+Fitting is successful
+Parameter Statistics
+['1.7788296456124486 ~(0.0)', '9.745724862499362 ~(0.0)', '0.311450527140695 ~(0.0)', '4.982287563033795 ~(0.0)', '0.6061408568750832 ~(0.0)', '0.7367501507263288 ~(0.0)', '0.40479610124993504 ~(0.0)', '0.6530674013108472 ~(0.0)', '4.754622088289825 ~(0.0)', '0.0065306281993049 ~(0.0)']
+Objective function breakdown
+Residual:       0.7016952562655442
+Regularisation: 2.726623748392366
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 5.321262
+         Iterations: 1331
+         Function evaluations: 1954
+Fitting is successful
+Parameter Statistics
+['1.0933035943442895 ~(0.0)', '0.14253096688089806 ~(0.0)', '1.1462374910779738 ~(0.0)', '3.111871530146994 ~(0.0)', '0.026751154389527458 ~(0.0)', '0.01626493120836262 ~(0.0)', '0.7055206631141239 ~(0.0)', '2.6593998120476967e-10 ~(0.0)', '1.2110491005081103 ~(0.0)', '0.01792010126542625 ~(0.0)']
+Objective function breakdown
+Residual:       5.320611403928221
+Regularisation: 36.585334085621504
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 4.219057
+         Iterations: 1470
+         Function evaluations: 2167
+Fitting is successful
+Parameter Statistics
+['0.5077614278800155 ~(0.0)', '1.7737423821305165 ~(0.0)', '0.11940789551896522 ~(0.0)', '7.102625577950871 ~(0.0)', '0.3174388696048943 ~(0.0)', '0.0012799388838403828 ~(0.0)', '1.804579774927463e-09 ~(0.0)', '6.173280835528134 ~(0.0)', '15.691276913630631 ~(0.0)', '0.06843522899664486 ~(0.0)']
+Objective function breakdown
+Residual:       4.218073584798267
+Regularisation: 31.08649709244591
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.466941
+         Iterations: 1291
+         Function evaluations: 1895
+Fitting is successful
+Parameter Statistics
+['1.6787653460727263 ~(0.0)', '0.5954492869943042 ~(0.0)', '2.1385836832938754 ~(0.0)', '0.4612264960969359 ~(0.0)', '0.026711241172870874 ~(0.0)', '1.0979730018710825e-08 ~(0.0)', '0.2594372250470746 ~(0.0)', '7.788197263906787e-08 ~(0.0)', '1.8075544167220357 ~(0.0)', '0.013153853718284602 ~(0.0)']
+Objective function breakdown
+Residual:       2.466910766437847
+Regularisation: 0.5363741201253024
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.322727
+         Iterations: 2953
+         Function evaluations: 4258
+Fitting is successful
+Parameter Statistics
+['0.2012111430511326 ~(0.0)', '1.1231402752806279e-10 ~(0.0)', '9.206501455223831 ~(0.0)', '28.872229525631727 ~(0.0)', '2.4187666933508174 ~(0.0)', '1.2903766260230645 ~(0.0)', '14.10051258204481 ~(0.0)', '23.80348095496037 ~(0.0)', '33.072662786005296 ~(0.0)', '0.14644080169720705 ~(0.0)']
+Objective function breakdown
+Residual:       2.322587144702464
+Regularisation: 1.3996980418350085
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.255163
+         Iterations: 2452
+         Function evaluations: 3487
+Fitting is successful
+Parameter Statistics
+['2.3673210671513916 ~(0.0)', '0.14134257298248204 ~(0.0)', '1.9106154213170317 ~(0.0)', '22.896854077721805 ~(0.0)', '0.8652835982429593 ~(0.0)', '0.021648105332887704 ~(0.0)', '0.7602152545688239 ~(0.0)', '1.1716311102120362e-10 ~(0.0)', '1.7032257512641775 ~(0.0)', '0.0005764833706931743 ~(0.0)']
+Objective function breakdown
+Residual:       1.2551381218812157
+Regularisation: 0.13877525245456565
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.074671
+         Iterations: 2266
+         Function evaluations: 3260
+Fitting is successful
+Parameter Statistics
+['1.3685315213214015 ~(0.0)', '7.6461559005626025 ~(0.0)', '0.17593889198756263 ~(0.0)', '17.601932621546077 ~(0.0)', '0.4587574963228292 ~(0.0)', '3.512067744893643e-11 ~(0.0)', '0.5217063304899333 ~(0.0)', '0.34515937024688714 ~(0.0)', '4.11073400448779 ~(0.0)', '0.028788394599486032 ~(0.0)']
+Objective function breakdown
+Residual:       2.074001512545294
+Regularisation: 2.11689497503471
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.230349
+         Iterations: 1270
+         Function evaluations: 1864
+Fitting is successful
+Parameter Statistics
+['1.9792167544523167 ~(0.0)', '0.5182011369625255 ~(0.0)', '2.2764092505559557 ~(0.0)', '4.724006095849573 ~(0.0)', '0.7266573781960777 ~(0.0)', '0.4760355163451383 ~(0.0)', '3.3918478259913085 ~(0.0)', '8.42885107786477e-09 ~(0.0)', '3.7731545634152037 ~(0.0)', '0.002943736853891528 ~(0.0)']
+Objective function breakdown
+Residual:       1.2303113948394224
+Regularisation: 0.06695571333948104
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 5.545394
+         Iterations: 2723
+         Function evaluations: 3884
+Fitting is successful
+Parameter Statistics
+['1.1802028090632857 ~(0.0)', '0.2192081472084533 ~(0.0)', '0.5613268055882482 ~(0.0)', '7.210456540704138 ~(0.0)', '0.3673272348730009 ~(0.0)', '0.005168931649311244 ~(0.0)', '0.34452471576010557 ~(0.0)', '2.5017540081052177e-09 ~(0.0)', '0.8816506248181168 ~(0.0)', '0.019994973778234768 ~(0.0)']
+Objective function breakdown
+Residual:       5.543778407694851
+Regularisation: 1.615847991956775
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.278959
+         Iterations: 894
+         Function evaluations: 1320
+Fitting is successful
+Parameter Statistics
+['2.145183891014187 ~(0.0)', '2.0005468172291474 ~(0.0)', '0.7097866070410355 ~(0.0)', '3.9824238925119513 ~(0.0)', '0.23748717909541062 ~(0.0)', '1.5281863917968157e-09 ~(0.0)', '0.18154208026946173 ~(0.0)', '9.192716943918082e-09 ~(0.0)', '1.6527084054536405 ~(0.0)', '0.013861903649707498 ~(0.0)']
+Objective function breakdown
+Residual:       2.2766598280602452
+Regularisation: 1.2930827422211517
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 0.807277
+         Iterations: 2827
+         Function evaluations: 4028
+Fitting is successful
+Parameter Statistics
+['1.4961251836935867 ~(0.0)', '0.19804800944332485 ~(0.0)', '2.522825630673797 ~(0.0)', '6.468633227978712 ~(0.0)', '0.5128179369610251 ~(0.0)', '1.5077726850368053e-10 ~(0.0)', '0.33289216685864315 ~(0.0)', '0.5600507126121737 ~(0.0)', '4.790947340009231 ~(0.0)', '0.015445143205174261 ~(0.0)']
+Objective function breakdown
+Residual:       0.8054200944104757
+Regularisation: 0.587317467650027
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 0.600988
+         Iterations: 1153
+         Function evaluations: 1687
+Fitting is successful
+Parameter Statistics
+['2.2159941072493297 ~(0.0)', '3.40311839308666 ~(0.0)', '0.8804476386403293 ~(0.0)', '1.1400296738793316e-06 ~(0.0)', '0.12659963662341098 ~(0.0)', '0.4378604654191597 ~(0.0)', '0.6011328430452838 ~(0.0)', '0.12894104097464235 ~(0.0)', '2.6430202773447538 ~(0.0)', '0.007356837454451212 ~(0.0)']
+Objective function breakdown
+Residual:       0.5981931091257479
+Regularisation: 0.4969210967322614
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.131889
+         Iterations: 1478
+         Function evaluations: 2131
+Fitting is successful
+Parameter Statistics
+['0.8443297846819044 ~(0.0)', '9.83785637756369 ~(0.0)', '2.41275153017755 ~(0.0)', '4.803207401209995e-09 ~(0.0)', '0.5237397315101944 ~(0.0)', '14.030606538087202 ~(0.0)', '1.3074225649059503 ~(0.0)', '7.868035840546263 ~(0.0)', '15.655619990797945 ~(0.0)', '0.020491091288287674 ~(0.0)']
+Objective function breakdown
+Residual:       2.1201073152032635
+Regularisation: 1.1781856802709725
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 0.865206
+         Iterations: 2240
+         Function evaluations: 3181
+Fitting is successful
+Parameter Statistics
+['1.4646904930921285 ~(0.0)', '1.367523825206542 ~(0.0)', '1.0574049245906014 ~(0.0)', '0.2218447923192091 ~(0.0)', '0.07402525669500236 ~(0.0)', '1.6974927843208376e-11 ~(0.0)', '0.23824903046320584 ~(0.0)', '0.8722087612476133 ~(0.0)', '5.677991186643922 ~(0.0)', '0.0016139228777695374 ~(0.0)']
+Objective function breakdown
+Residual:       0.8645266571688353
+Regularisation: 0.03818133164150395
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.324491
+         Iterations: 1078
+         Function evaluations: 1596
+Fitting is successful
+Parameter Statistics
+['0.6931986271519238 ~(0.0)', '2.0313212495360515 ~(0.0)', '0.22878574138784935 ~(0.0)', '1.4722567775937465 ~(0.0)', '0.04314113559751458 ~(0.0)', '2.4395550277440184e-10 ~(0.0)', '0.27040685367574363 ~(0.0)', '3.375583159760013 ~(0.0)', '14.67916442665626 ~(0.0)', '0.029388823068418418 ~(0.0)']
+Objective function breakdown
+Residual:       2.26279864030439
+Regularisation: 1.9508793273003537
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.302029
+         Iterations: 2174
+         Function evaluations: 3123
+Fitting is successful
+Parameter Statistics
+['2.306140100506198 ~(0.0)', '13.626103201735797 ~(0.0)', '5.9439212230457885 ~(0.0)', '0.27748337726283684 ~(0.0)', '0.31595759122794986 ~(0.0)', '6.656775265816474 ~(0.0)', '1.0851519131148288 ~(0.0)', '22.379754051229796 ~(0.0)', '16.29248448124543 ~(0.0)', '0.015910425962842485 ~(0.0)']
+Objective function breakdown
+Residual:       2.246382766263371
+Regularisation: 0.989548059939017
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.129862
+         Iterations: 3668
+         Function evaluations: 5234
+Fitting is successful
+Parameter Statistics
+['1.77960831660936 ~(0.0)', '27.683307829924107 ~(0.0)', '0.09119141202801737 ~(0.0)', '7.42281033590014 ~(0.0)', '0.25439936550534914 ~(0.0)', '7.217435149875907 ~(0.0)', '0.8931137555770312 ~(0.0)', '0.5254213180366911 ~(0.0)', '4.583531909173875 ~(0.0)', '0.025132572249903094 ~(0.0)']
+Objective function breakdown
+Residual:       0.9540390143089652
+Regularisation: 1.758228406577223
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 0.701471
+         Iterations: 2145
+         Function evaluations: 3034
+Fitting is successful
+Parameter Statistics
+['2.048221452861902 ~(0.0)', '7.923959562613549 ~(0.0)', '0.31861835863520094 ~(0.0)', '2.9681643359090254e-10 ~(0.0)', '0.06036009371463588 ~(0.0)', '1.0439270215229313 ~(0.0)', '0.6611525118229584 ~(0.0)', '0.10194716603121254 ~(0.0)', '2.916397487398308 ~(0.0)', '0.04919183965654655 ~(0.0)']
+Objective function breakdown
+Residual:       0.6936165751706781
+Regularisation: 0.044167526462619906
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 3.112721
+         Iterations: 2415
+         Function evaluations: 3433
+Fitting is successful
+Parameter Statistics
+['2.114078618994786 ~(0.0)', '6.964297681127091 ~(0.0)', '0.42327404890031245 ~(0.0)', '1.6154436322163765 ~(0.0)', '0.4775420383833563 ~(0.0)', '1.3853908140559108 ~(0.0)', '0.9454459730029258 ~(0.0)', '3.874079162735491e-10 ~(0.0)', '1.3477606158175446 ~(0.0)', '0.004824386319178623 ~(0.0)']
+Objective function breakdown
+Residual:       3.111655116225745
+Regularisation: 0.0033695245502977523
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 1.684245
+         Iterations: 926
+         Function evaluations: 1377
+Fitting is successful
+Parameter Statistics
+['1.6588050572521682 ~(0.0)', '3.2099467560378376 ~(0.0)', '0.42653078264234123 ~(0.0)', '2.4945676837030724 ~(0.0)', '0.1397174221141696 ~(0.0)', '1.665538570512726e-09 ~(0.0)', '0.21716710290882973 ~(0.0)', '0.33787813860576155 ~(0.0)', '3.105872811114251 ~(0.0)', '0.0038756725327742116 ~(0.0)']
+Objective function breakdown
+Residual:       1.5040728217772352
+Regularisation: 0.3203967888066139
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 4.131506
+         Iterations: 656
+         Function evaluations: 1065
+Fitting is successful
+Parameter Statistics
+['5.670672812941643 ~(0.0)', '16.642319528649587 ~(0.0)', '2.669847289994099 ~(0.0)', '0.5662740445717367 ~(0.0)', '0.21565821011761677 ~(0.0)', '4.95812967763243 ~(0.0)', '3.0685697524204034 ~(0.0)', '43.269070810670996 ~(0.0)', '32.236443717837744 ~(0.0)', '0.12202328599914469 ~(0.0)']
+Objective function breakdown
+Residual:       4.086460524273552
+Regularisation: 0.04504510093408082
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 5.814234
+         Iterations: 971
+         Function evaluations: 1450
+Fitting is successful
+Parameter Statistics
+['0.855533593091316 ~(0.0)', '0.2526144679720834 ~(0.0)', '1.6018889988705058 ~(0.0)', '0.15181969635380815 ~(0.0)', '0.027953794064484845 ~(0.0)', '0.14164222122079298 ~(0.0)', '1.3594485482488212 ~(0.0)', '7.513859030359952e-08 ~(0.0)', '2.2678092112965733 ~(0.0)', '0.00028347382568736995 ~(0.0)']
+Objective function breakdown
+Residual:       5.80508697886663
+Regularisation: 0.005143724488289876
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 0.817017
+         Iterations: 2672
+         Function evaluations: 3816
+Fitting is successful
+Parameter Statistics
+['2.2584159839672626 ~(0.0)', '1.4250410442629242 ~(0.0)', '2.113828274165077 ~(0.0)', '0.72577015932943 ~(0.0)', '0.3813383265207836 ~(0.0)', '0.21823394991396988 ~(0.0)', '0.7127968573690779 ~(0.0)', '4.513569373431148e-08 ~(0.0)', '2.2509155910319176 ~(0.0)', '0.009733538939528469 ~(0.0)']
+Objective function breakdown
+Residual:       0.6854221042634144
+Regularisation: 0.04161405755741257
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 3.255105
+         Iterations: 1138
+         Function evaluations: 1657
+Fitting is successful
+Parameter Statistics
+['1.428265122651671 ~(0.0)', '0.7293824635010162 ~(0.0)', '1.8095198435617832 ~(0.0)', '0.0002794860742525492 ~(0.0)', '0.039624837525082 ~(0.0)', '2.5458113050894717e-08 ~(0.0)', '0.2829627278532503 ~(0.0)', '4.298190589730062e-07 ~(0.0)', '2.353122107264823 ~(0.0)', '0.012802146337155533 ~(0.0)']
+Objective function breakdown
+Residual:       2.725916973285891
+Regularisation: 0.09410445195882247
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 2.300574
+         Iterations: 3265
+         Function evaluations: 4675
+Fitting is successful
+Parameter Statistics
+['2.0396358102398677 ~(0.0)', '1.1557712506630065 ~(0.0)', '3.3094323445236746 ~(0.0)', '6.6543815156260155 ~(0.0)', '2.9625650470823235 ~(0.0)', '7.0556417379181156 ~(0.0)', '15.257066229797411 ~(0.0)', '12.975256423508345 ~(0.0)', '27.417002416514418 ~(0.0)', '0.02552429140018909 ~(0.0)']
+Objective function breakdown
+Residual:       1.8271545000546179
+Regularisation: 0.0473419389012302
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 6.268061
+         Iterations: 6759
+         Function evaluations: 9681
+Fitting is successful
+Parameter Statistics
+['0.8950114114194374 ~(0.0)', '4.997486562224438 ~(0.0)', '0.3792504701477708 ~(0.0)', '4.209452864870153 ~(0.0)', '0.4819935980934798 ~(0.0)', '8.342815746630926 ~(0.0)', '2.841905441674971 ~(0.0)', '8.751766371023525e-08 ~(0.0)', '4.430722478281193 ~(0.0)', '0.016294947456392702 ~(0.0)']
+Objective function breakdown
+Residual:       6.265634230684708
+Regularisation: 0.00013646368862553553
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 7.891567
+         Iterations: 1609
+         Function evaluations: 2318
+Fitting is successful
+Parameter Statistics
+['0.7045050832167867 ~(0.0)', '1.0505392878086126 ~(0.0)', '0.25668895929684954 ~(0.0)', '3.6107202501511517e-10 ~(0.0)', '0.010983684039354805 ~(0.0)', '0.6076973409273083 ~(0.0)', '2.380561687698522 ~(0.0)', '1.4845089442223332e-09 ~(0.0)', '1.488095261479719 ~(0.0)', '0.00327413917823828 ~(0.0)']
+Objective function breakdown
+Residual:       7.818905669973971
+Regularisation: 0.0022977662484752947
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 3.171460
+         Iterations: 4596
+         Function evaluations: 6604
+Fitting is successful
+Parameter Statistics
+['13.370931946111257 ~(0.0)', '17.63295106028442 ~(0.0)', '4.513401058026275 ~(0.0)', '3.1158310647811085e-10 ~(0.0)', '0.0230951851706348 ~(0.0)', '20.68919512308699 ~(0.0)', '29.070792720860783 ~(0.0)', '38.046349737541284 ~(0.0)', '1.8119354110484136 ~(0.0)', '0.0032104360521972245 ~(0.0)']
+Objective function breakdown
+Residual:       3.1591989724092744
+Regularisation: 0.00021804017483531866
+Time span of fitting:  [6, 34, 80]
+Initial values:  [0.059070866, 0, 1.8899999999999988]
+Optimization terminated successfully.
+         Current function value: 5.817860
+         Iterations: 4276
+         Function evaluations: 6201
+Fitting is successful
+Parameter Statistics
+['2.4478194969753098 ~(0.0)', '6.931103376597812 ~(0.0)', '0.7411577292471503 ~(0.0)', '2.8827590903074665 ~(0.0)', '1.0452871630060288 ~(0.0)', '71.33536219830864 ~(0.0)', '49.77387314464691 ~(0.0)', '29.700854093145775 ~(0.0)', '62.612990770839716 ~(0.0)', '0.02222356970235194 ~(0.0)']
+Objective function breakdown
+Residual:       5.817852986344031
+Regularisation: 7.298570436994176e-08
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 1.290044
+         Iterations: 1859
+         Function evaluations: 2670
+Fitting is successful
+Parameter Statistics
+['1.6519036268628753 ~(0.0)', '2.391178089995459 ~(0.0)', '0.7625059528388246 ~(0.0)', '2.2932316665701106e-09 ~(0.0)', '0.2856338102529413 ~(0.0)', '12.43997352712467 ~(0.0)', '0.991647304154599 ~(0.0)', '5.5441200916862154 ~(0.0)', '3.2591402908084097 ~(0.0)', '0.013996266162183735 ~(0.0)']
+Objective function breakdown
+Residual:       1.290043609954353
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.570126
+         Iterations: 2543
+         Function evaluations: 3702
+Fitting is successful
+Parameter Statistics
+['0.9564010155152314 ~(0.0)', '22367.484689626166 ~(0.0)', '1.4143409526397072e-13 ~(0.0)', '39705.54194650985 ~(0.0)', '2275.039359292071 ~(0.0)', '11763.967325219422 ~(0.0)', '2670.7764099250285 ~(0.0)', '5838.542786186977 ~(0.0)', '35217.40455081229 ~(0.0)', '88.79400317129466 ~(0.0)']
+Objective function breakdown
+Residual:       0.5701256056249636
+Regularisation: 0.0077962400153965125
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.746620
+         Iterations: 3724
+         Function evaluations: 5525
+Fitting is successful
+Parameter Statistics
+['1.5238009123828369 ~(0.0)', '20476.803456737733 ~(0.0)', '0.2788498715836486 ~(0.0)', '8330.896412593913 ~(0.0)', '2601.462068047842 ~(0.0)', '2364.749915609619 ~(0.0)', '9764.22207911472 ~(0.0)', '396.299123480866 ~(0.0)', '38000.23059252511 ~(0.0)', '114.52075896529664 ~(0.0)']
+Objective function breakdown
+Residual:       0.7466196953615208
+Regularisation: 0.008595059627343887
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.586997
+         Iterations: 1716
+         Function evaluations: 2543
+Fitting is successful
+Parameter Statistics
+['0.958473312538128 ~(0.0)', '4.282463504853041e-11 ~(0.0)', '2.555188541999192 ~(0.0)', '58.622668265471745 ~(0.0)', '10.69723572854112 ~(0.0)', '32.59681810897415 ~(0.0)', '17.579648991133688 ~(0.0)', '42.499429683815045 ~(0.0)', '233.0048919748997 ~(0.0)', '0.10330427812643556 ~(0.0)']
+Objective function breakdown
+Residual:       0.586996968024032
+Regularisation: 0.004191300430987321
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.574462
+         Iterations: 3942
+         Function evaluations: 5664
+Fitting is successful
+Parameter Statistics
+['0.9582954217324174 ~(0.0)', '125.97983303384575 ~(0.0)', '5.411193378241751e-12 ~(0.0)', '37.44289173756802 ~(0.0)', '17.4041718406549 ~(0.0)', '129.48105822382757 ~(0.0)', '10.943035361488505 ~(0.0)', '26.243754895733446 ~(0.0)', '154.42972651731176 ~(0.0)', '0.19448462854997656 ~(0.0)']
+Objective function breakdown
+Residual:       0.5744616835028331
+Regularisation: 0.0027955261620154644
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.666283
+         Iterations: 1750
+         Function evaluations: 2531
+Fitting is successful
+Parameter Statistics
+['0.9506988447681153 ~(0.0)', '9.961180875959137e-09 ~(0.0)', '5.680138660118679 ~(0.0)', '1.5554112025821882 ~(0.0)', '0.18731868251943062 ~(0.0)', '1.4231636065408568 ~(0.0)', '1.1190044760349513 ~(0.0)', '13.57302942658119 ~(0.0)', '24.582632751927108 ~(0.0)', '0.12264008117581646 ~(0.0)']
+Objective function breakdown
+Residual:       0.6662830483548919
+Regularisation: 0.16316288250709096
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.569736
+         Iterations: 2878
+         Function evaluations: 4250
+Fitting is successful
+Parameter Statistics
+['0.9576348328424683 ~(0.0)', '11973.58855306296 ~(0.0)', '1.7232990780157967e-07 ~(0.0)', '15502.139648219218 ~(0.0)', '1006.7102749154658 ~(0.0)', '49031.40225082669 ~(0.0)', '2654.654488333319 ~(0.0)', '5889.362536233009 ~(0.0)', '35218.50521917741 ~(0.0)', '104.6100774591349 ~(0.0)']
+Objective function breakdown
+Residual:       0.56973643140259
+Regularisation: 0.007985487574690784
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.572817
+         Iterations: 1715
+         Function evaluations: 2549
+Fitting is successful
+Parameter Statistics
+['0.953448568488524 ~(0.0)', '33698.34544329346 ~(0.0)', '6.058236218270418e-13 ~(0.0)', '5120.375421051295 ~(0.0)', '2435.5871559893003 ~(0.0)', '27591.32167841863 ~(0.0)', '2561.6593639830917 ~(0.0)', '6072.1978733428205 ~(0.0)', '35820.991423584914 ~(0.0)', '90.22019791234041 ~(0.0)']
+Objective function breakdown
+Residual:       0.572817235012174
+Regularisation: 0.008195044981477115
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.571003
+         Iterations: 1809
+         Function evaluations: 2695
+Fitting is successful
+Parameter Statistics
+['0.9611105089895808 ~(0.0)', '1946.090659845913 ~(0.0)', '3.1407230590230693e-10 ~(0.0)', '6126.758051490673 ~(0.0)', '1461.7253186804237 ~(0.0)', '14705.932437784712 ~(0.0)', '2732.9075502559585 ~(0.0)', '5756.068717935141 ~(0.0)', '34768.558689459285 ~(0.0)', '283.89154613587425 ~(0.0)']
+Objective function breakdown
+Residual:       0.5710024984238243
+Regularisation: 0.007853759968513127
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.573775
+         Iterations: 2392
+         Function evaluations: 3673
+Fitting is successful
+Parameter Statistics
+['0.9667283188788383 ~(0.0)', '23667.28549321647 ~(0.0)', '2.4958437344908593e-06 ~(0.0)', '32278.461536006274 ~(0.0)', '4109.566023647823 ~(0.0)', '8961.202953914646 ~(0.0)', '3356.5696005241043 ~(0.0)', '7045.826578035279 ~(0.0)', '41987.479577935825 ~(0.0)', '107.63758169424051 ~(0.0)']
+Objective function breakdown
+Residual:       0.5737751361278142
+Regularisation: 0.01121928847191996
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.610871
+         Iterations: 1379
+         Function evaluations: 2106
+Fitting is successful
+Parameter Statistics
+['1.0372204574620034 ~(0.0)', '4.686889996195743 ~(0.0)', '345.3684262181306 ~(0.0)', '23190.93804614874 ~(0.0)', '4254.4528088233965 ~(0.0)', '5840.073389481104 ~(0.0)', '3503.1048450340472 ~(0.0)', '5369.163511798941 ~(0.0)', '35042.778459268746 ~(0.0)', '134.17712081443477 ~(0.0)']
+Objective function breakdown
+Residual:       0.6108714369649711
+Regularisation: 0.00739123884972139
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.801836
+         Iterations: 3563
+         Function evaluations: 5082
+Fitting is successful
+Parameter Statistics
+['1.1476852124021413 ~(0.0)', '0.1822537695878455 ~(0.0)', '6.803785606829891 ~(0.0)', '1.4749188276272767 ~(0.0)', '1.3539107380888171 ~(0.0)', '4.263398559419429 ~(0.0)', '1.3619879431501885 ~(0.0)', '14.502303570693652 ~(0.0)', '14.355588937345079 ~(0.0)', '0.05477395253290026 ~(0.0)']
+Objective function breakdown
+Residual:       0.8018336020343708
+Regularisation: 0.3716470009172398
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.745452
+         Iterations: 3695
+         Function evaluations: 5395
+Fitting is successful
+Parameter Statistics
+['1.5155725142314969 ~(0.0)', '49028.100794397236 ~(0.0)', '0.01761045872319674 ~(0.0)', '16636.906678139003 ~(0.0)', '397.26092374008 ~(0.0)', '19923.1168401606 ~(0.0)', '9658.479993081224 ~(0.0)', '486.8787770106155 ~(0.0)', '38056.7307662212 ~(0.0)', '25.339812043857204 ~(0.0)']
+Objective function breakdown
+Residual:       0.7454515710800677
+Regularisation: 0.008601951961230635
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.570564
+         Iterations: 2378
+         Function evaluations: 3548
+Fitting is successful
+Parameter Statistics
+['0.9624440419388329 ~(0.0)', '3607.596553510025 ~(0.0)', '6.382457183686103e-12 ~(0.0)', '19687.99102175086 ~(0.0)', '68.59402015037526 ~(0.0)', '6577.402669057818 ~(0.0)', '2645.924059366809 ~(0.0)', '5804.848386892412 ~(0.0)', '34408.640528242395 ~(0.0)', '146.37963753676019 ~(0.0)']
+Objective function breakdown
+Residual:       0.5705637587574481
+Regularisation: 0.008230692947509851
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.569722
+         Iterations: 3187
+         Function evaluations: 4650
+Fitting is successful
+Parameter Statistics
+['0.9578552669184079 ~(0.0)', '24532.641975245293 ~(0.0)', '1.7284486280618006e-08 ~(0.0)', '6298.552793667597 ~(0.0)', '517.8181008865184 ~(0.0)', '15627.441592371093 ~(0.0)', '2656.1122402189276 ~(0.0)', '5916.834080691258 ~(0.0)', '35303.4818231863 ~(0.0)', '58.451324849623745 ~(0.0)']
+Objective function breakdown
+Residual:       0.5697220951262011
+Regularisation: 0.008041339043644888
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 1.379987
+         Iterations: 2032
+         Function evaluations: 2918
+Fitting is successful
+Parameter Statistics
+['1.1169564632516509 ~(0.0)', '0.5230660886607121 ~(0.0)', '0.795323206417152 ~(0.0)', '1.3527391168546508 ~(0.0)', '0.13146026832145585 ~(0.0)', '6.954218561282931 ~(0.0)', '0.3891906330498902 ~(0.0)', '5.901473314017983 ~(0.0)', '5.48883611306844 ~(0.0)', '0.004814022130411527 ~(0.0)']
+Objective function breakdown
+Residual:       1.3799870565621533
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 1.048331
+         Iterations: 3310
+         Function evaluations: 4737
+Fitting is successful
+Parameter Statistics
+['1.427291114585292 ~(0.0)', '0.08368916286325104 ~(0.0)', '4.288701111020165 ~(0.0)', '7.333195457525537 ~(0.0)', '0.3772824817441689 ~(0.0)', '6.248735489025939e-09 ~(0.0)', '0.6779970815076619 ~(0.0)', '0.6635855281242069 ~(0.0)', '5.790084365358101 ~(0.0)', '0.005794671969692962 ~(0.0)']
+Objective function breakdown
+Residual:       1.0482998592179618
+Regularisation: 0.3119661658541183
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.774809
+         Iterations: 2032
+         Function evaluations: 2916
+Fitting is successful
+Parameter Statistics
+['1.1552645261020893 ~(0.0)', '0.0243447872015331 ~(0.0)', '3.171229728434567 ~(0.0)', '10.7575476270521 ~(0.0)', '0.08950912588145887 ~(0.0)', '0.04550155015291009 ~(0.0)', '1.2553741291908591 ~(0.0)', '3.352769989547942 ~(0.0)', '14.955586005475626 ~(0.0)', '0.007557372301483177 ~(0.0)']
+Objective function breakdown
+Residual:       0.7748087767639069
+Regularisation: 6.3436125107043156e-96
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 1.076244
+         Iterations: 3374
+         Function evaluations: 4811
+Fitting is successful
+Parameter Statistics
+['1.6819551200149756 ~(0.0)', '1.298709848767935 ~(0.0)', '2.6335947289810826 ~(0.0)', '0.013911198576451057 ~(0.0)', '0.921325170641853 ~(0.0)', '8.322044968915321 ~(0.0)', '1.1272686338014524 ~(0.0)', '9.673887054902636 ~(0.0)', '4.900173679560792 ~(0.0)', '0.01209743574840864 ~(0.0)']
+Objective function breakdown
+Residual:       1.0762443378343165
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.758351
+         Iterations: 2127
+         Function evaluations: 3072
+Fitting is successful
+Parameter Statistics
+['1.376915638772827 ~(0.0)', '5.528814143247478 ~(0.0)', '0.11897597343296212 ~(0.0)', '25.68748615250043 ~(0.0)', '0.014164060598482634 ~(0.0)', '3.6909310538754108 ~(0.0)', '1.1668446331481814 ~(0.0)', '5.7786803121752115 ~(0.0)', '13.806945014810344 ~(0.0)', '0.008022733490423014 ~(0.0)']
+Objective function breakdown
+Residual:       0.7583508194928442
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.361953
+         Iterations: 4842
+         Function evaluations: 6959
+Fitting is successful
+Parameter Statistics
+['0.9754184033968973 ~(0.0)', '0.1435912704122941 ~(0.0)', '6.291961599958464 ~(0.0)', '282.45031263094484 ~(0.0)', '25.989128061303326 ~(0.0)', '837.5475967462701 ~(0.0)', '14.756201708371464 ~(0.0)', '322.02032432670114 ~(0.0)', '343.22776256607597 ~(0.0)', '1.9983153318703897 ~(0.0)']
+Objective function breakdown
+Residual:       0.3619526260154753
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.569893
+         Iterations: 4399
+         Function evaluations: 6463
+Fitting is successful
+Parameter Statistics
+['0.9595233300115582 ~(0.0)', '3067.2843458527595 ~(0.0)', '0.006695369025106337 ~(0.0)', '20360.884502158427 ~(0.0)', '7528.231757147503 ~(0.0)', '4222.476585933498 ~(0.0)', '2676.066497932544 ~(0.0)', '5886.018260519295 ~(0.0)', '35174.512979152074 ~(0.0)', '349.3143340320879 ~(0.0)']
+Objective function breakdown
+Residual:       0.5698790945478066
+Regularisation: 0.008033651986226437
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.107458
+         Iterations: 5268
+         Function evaluations: 7552
+Fitting is successful
+Parameter Statistics
+['1.0051616698067134 ~(0.0)', '0.42599380568326395 ~(0.0)', '3.3667194639517697 ~(0.0)', '47.669153359438084 ~(0.0)', '8.928435656323554 ~(0.0)', '323.1090656787792 ~(0.0)', '1.8289554350482895 ~(0.0)', '194.70560825772904 ~(0.0)', '141.82834015147125 ~(0.0)', '0.7976005463315693 ~(0.0)']
+Objective function breakdown
+Residual:       0.1074579029708922
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.760140
+         Iterations: 1757
+         Function evaluations: 2571
+Fitting is successful
+Parameter Statistics
+['0.9520360162308569 ~(0.0)', '1.3066283572878087e-10 ~(0.0)', '22.11933882022667 ~(0.0)', '3.272307357194836 ~(0.0)', '2.9469343034744435 ~(0.0)', '0.9037727548054346 ~(0.0)', '1.2488660930740707 ~(0.0)', '7.441320982773163 ~(0.0)', '19.451551635131576 ~(0.0)', '0.10664115938245126 ~(0.0)']
+Objective function breakdown
+Residual:       0.7597281414324816
+Regularisation: 0.07326009223189182
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 1.443336
+         Iterations: 1165
+         Function evaluations: 1715
+Fitting is successful
+Parameter Statistics
+['1.7850995625428636 ~(0.0)', '1.225626270820225 ~(0.0)', '1.794059806008126 ~(0.0)', '2.7922373400633978e-08 ~(0.0)', '0.3190628869077706 ~(0.0)', '2.9570727376474073 ~(0.0)', '4.607047101950866 ~(0.0)', '0.7348105427338429 ~(0.0)', '3.8080372703893364 ~(0.0)', '0.00652548395597205 ~(0.0)']
+Objective function breakdown
+Residual:       1.443149201374669
+Regularisation: 0.018712243771418904
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.575307
+         Iterations: 2647
+         Function evaluations: 3822
+Fitting is successful
+Parameter Statistics
+['1.1941575432883034 ~(0.0)', '0.0015034891992066794 ~(0.0)', '26.866740263778016 ~(0.0)', '76.18320468214635 ~(0.0)', '5.537005760695723e-12 ~(0.0)', '0.074176692745346 ~(0.0)', '33.25190163299501 ~(0.0)', '8.1742961139686 ~(0.0)', '0.06649324886216817 ~(0.0)', '0.19370062630367815 ~(0.0)']
+Objective function breakdown
+Residual:       0.5753071794151727
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 1.149754
+         Iterations: 2497
+         Function evaluations: 3592
+Fitting is successful
+Parameter Statistics
+['1.5683185284796566 ~(0.0)', '0.14110735334452706 ~(0.0)', '5.030868334015059 ~(0.0)', '8.969063980101993 ~(0.0)', '1.0313225295633668 ~(0.0)', '0.7520375620203306 ~(0.0)', '0.8684453468704012 ~(0.0)', '7.385082474169535 ~(0.0)', '4.418225393396863 ~(0.0)', '0.011950913314114258 ~(0.0)']
+Objective function breakdown
+Residual:       1.148981026135869
+Regularisation: 0.024436158929823263
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.854934
+         Iterations: 3208
+         Function evaluations: 4595
+Fitting is successful
+Parameter Statistics
+['2.0613371084690093 ~(0.0)', '3.6074887050589552 ~(0.0)', '4.570647702089939 ~(0.0)', '4.677184446107477 ~(0.0)', '5.192245557051858 ~(0.0)', '124.16025461657816 ~(0.0)', '2.0140959883065974e-11 ~(0.0)', '86.95495463426568 ~(0.0)', '8.988791738744347 ~(0.0)', '0.07195326749399246 ~(0.0)']
+Objective function breakdown
+Residual:       0.854934484512905
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.370408
+         Iterations: 3215
+         Function evaluations: 4635
+Fitting is successful
+Parameter Statistics
+['0.9687329142872051 ~(0.0)', '1.74201757440873e-12 ~(0.0)', '96.50927230922964 ~(0.0)', '140.1774005708638 ~(0.0)', '0.2939720982471679 ~(0.0)', '0.01114369993810022 ~(0.0)', '49.30259592301514 ~(0.0)', '10.838952179792216 ~(0.0)', '132.2900210826045 ~(0.0)', '0.20091731939987617 ~(0.0)']
+Objective function breakdown
+Residual:       0.3704078783841198
+Regularisation: 5.185667387366963e-06
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.595887
+         Iterations: 2419
+         Function evaluations: 3629
+Fitting is successful
+Parameter Statistics
+['1.0153872601153013 ~(0.0)', '3542.858351599507 ~(0.0)', '0.020095324415055932 ~(0.0)', '4413.784183537697 ~(0.0)', '262.702421887195 ~(0.0)', '5085.230080420217 ~(0.0)', '1257.659987936002 ~(0.0)', '2086.4635576000665 ~(0.0)', '13534.729855022935 ~(0.0)', '34.281679122322714 ~(0.0)']
+Objective function breakdown
+Residual:       0.5954117386684751
+Regularisation: 0.002671222268358238
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 1.288260
+         Iterations: 942
+         Function evaluations: 1403
+Fitting is successful
+Parameter Statistics
+['5.735465739760228 ~(0.0)', '11.257057453192825 ~(0.0)', '2.263764823188855 ~(0.0)', '3.9429384959975824 ~(0.0)', '0.04478261534598624 ~(0.0)', '0.08660523567910103 ~(0.0)', '0.43786582919445866 ~(0.0)', '5.591906818808811 ~(0.0)', '9.760560096412377 ~(0.0)', '0.014223636569973486 ~(0.0)']
+Objective function breakdown
+Residual:       1.2882597299760778
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.639344
+         Iterations: 4910
+         Function evaluations: 7014
+Fitting is successful
+Parameter Statistics
+['1.4821062484156957 ~(0.0)', '0.1413630459819843 ~(0.0)', '983.7110730874389 ~(0.0)', '278.90402562156464 ~(0.0)', '123.03715108960711 ~(0.0)', '1.7518056362098575e-11 ~(0.0)', '201.52475624288155 ~(0.0)', '109.92393716289071 ~(0.0)', '1188.6533862089314 ~(0.0)', '1.4710938677495446 ~(0.0)']
+Objective function breakdown
+Residual:       0.6393308992557152
+Regularisation: 2.3680100988857027e-05
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 1.336743
+         Iterations: 1351
+         Function evaluations: 1974
+Fitting is successful
+Parameter Statistics
+['1.6716990063075543 ~(0.0)', '1.0257478255684784 ~(0.0)', '1.5211711107962267 ~(0.0)', '3.3587537453006117e-09 ~(0.0)', '0.07458049416576934 ~(0.0)', '2.0141044227670246 ~(0.0)', '0.7284629227953626 ~(0.0)', '2.5253367869429066 ~(0.0)', '2.9585774621875105 ~(0.0)', '0.028180945445140767 ~(0.0)']
+Objective function breakdown
+Residual:       1.3367434354127388
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.596070
+         Iterations: 4379
+         Function evaluations: 6271
+Fitting is successful
+Parameter Statistics
+['1.2967651296642646 ~(0.0)', '5.411986628876649 ~(0.0)', '0.19745917970730786 ~(0.0)', '64.02508292230834 ~(0.0)', '0.909097539315983 ~(0.0)', '6.151660857993923 ~(0.0)', '2.2961035848817417e-10 ~(0.0)', '22.45501582958506 ~(0.0)', '23.75797478489775 ~(0.0)', '0.15517930058402843 ~(0.0)']
+Objective function breakdown
+Residual:       0.5960697793062805
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Warning: Maximum number of iterations has been exceeded.
+ final_simplex: (array([[ 1.10537209e+00,  4.14694719e+00,  1.58393488e+00,
+        -4.71793193e+02,  1.20865546e+01,  2.76820680e+02,
+        -7.46783098e+00, -7.48567460e+01,  1.25352110e+02,
+         1.14350421e-01],
+       [ 1.10598544e+00,  4.16652186e+00,  1.58728189e+00,
+        -4.72919390e+02,  1.21152080e+01,  2.77459301e+02,
+        -7.48002237e+00, -7.50417163e+01,  1.25646726e+02,
+         1.14543104e-01],
+       [ 1.10613657e+00,  4.16985942e+00,  1.58596075e+00,
+        -4.72505306e+02,  1.21045903e+01,  2.77230942e+02,
+        -7.49265033e+00, -7.49775398e+01,  1.25532845e+02,
+         1.14416378e-01],
+       [ 1.10606055e+00,  4.16973551e+00,  1.58688085e+00,
+        -4.72792986e+02,  1.21119771e+01,  2.77384536e+02,
+        -7.48049406e+00, -7.50224931e+01,  1.25612342e+02,
+         1.14487335e-01],
+       [ 1.10636407e+00,  4.17436879e+00,  1.58488290e+00,
+        -4.72178969e+02,  1.20961699e+01,  2.77060992e+02,
+        -7.51525157e+00, -7.49282558e+01,  1.25439997e+02,
+         1.14314067e-01],
+       [ 1.10668357e+00,  4.18489562e+00,  1.58723070e+00,
+        -4.72958236e+02,  1.21160524e+01,  2.77493427e+02,
+        -7.51059223e+00, -7.50546085e+01,  1.25647229e+02,
+         1.14456953e-01],
+       [ 1.10673081e+00,  4.19098191e+00,  1.58770493e+00,
+        -4.73106018e+02,  1.21198564e+01,  2.77562735e+02,
+        -7.49980128e+00, -7.50790523e+01,  1.25688052e+02,
+         1.14449409e-01],
+       [ 1.10643175e+00,  4.17476583e+00,  1.58563535e+00,
+        -4.72430814e+02,  1.21025752e+01,  2.77209135e+02,
+        -7.51996011e+00, -7.49686887e+01,  1.25506105e+02,
+         1.14384881e-01],
+       [ 1.10677272e+00,  4.18548956e+00,  1.58662174e+00,
+        -4.72772444e+02,  1.21112599e+01,  2.77398692e+02,
+        -7.52376698e+00, -7.50260472e+01,  1.25594630e+02,
+         1.14411921e-01],
+       [ 1.10679142e+00,  4.19124642e+00,  1.58832784e+00,
+        -4.73314894e+02,  1.21251709e+01,  2.77685200e+02,
+        -7.50321855e+00, -7.51125349e+01,  1.25742996e+02,
+         1.14508180e-01],
+       [ 1.10692900e+00,  4.19363747e+00,  1.58730153e+00,
+        -4.72996533e+02,  1.21169916e+01,  2.77513579e+02,
+        -7.51704214e+00, -7.50634053e+01,  1.25654562e+02,
+         1.14415123e-01]]), array([0.46000809, 0.46001944, 0.46002447, 0.46003441, 0.46003802,
+       0.46004332, 0.46004517, 0.4600454 , 0.46004569, 0.46004864,
+       0.46004935]))
+           fun: 0.46000808763046086
+       message: 'Maximum number of iterations has been exceeded.'
+          nfev: 14027
+           nit: 10000
+        status: 2
+       success: False
+             x: array([ 1.10537209e+00,  4.14694719e+00,  1.58393488e+00, -4.71793193e+02,
+        1.20865546e+01,  2.76820680e+02, -7.46783098e+00, -7.48567460e+01,
+        1.25352110e+02,  1.14350421e-01])
+Fitting unsuccessful
+Errors:
+['Fitting not successful\n']
+Parameter Statistics
+No results found.
+Fitting not complete
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.588014
+         Iterations: 2660
+         Function evaluations: 3871
+Fitting is successful
+Parameter Statistics
+['0.9619538132166418 ~(0.0)', '175.65193807646656 ~(0.0)', '0.0035258535785403487 ~(0.0)', '69.69529330656462 ~(0.0)', '22.89549620419794 ~(0.0)', '71.60211474635291 ~(0.0)', '24.816163351283816 ~(0.0)', '55.24095380434957 ~(0.0)', '331.9449422998855 ~(0.0)', '0.40583665110624567 ~(0.0)']
+Objective function breakdown
+Residual:       0.57406193592214
+Regularisation: 0.002480978474099745
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.612765
+         Iterations: 4293
+         Function evaluations: 6133
+Fitting is successful
+Parameter Statistics
+['1.8346778299104034 ~(0.0)', '0.01601518042302562 ~(0.0)', '20.02741442115025 ~(0.0)', '35.49901013018703 ~(0.0)', '0.20722766244821916 ~(0.0)', '0.9284636543080057 ~(0.0)', '25.764481358137125 ~(0.0)', '93.18996515501524 ~(0.0)', '13.131661594351382 ~(0.0)', '0.2516661442720185 ~(0.0)']
+Objective function breakdown
+Residual:       0.6127649159930598
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.704812
+         Iterations: 1812
+         Function evaluations: 2613
+Fitting is successful
+Parameter Statistics
+['1.155186091285787 ~(0.0)', '5.200130023529273 ~(0.0)', '0.23634627827600357 ~(0.0)', '10.909503574724319 ~(0.0)', '0.7513235551336247 ~(0.0)', '0.26254986569766947 ~(0.0)', '1.841398932343588 ~(0.0)', '3.1366774290333863 ~(0.0)', '21.09265887280803 ~(0.0)', '0.022511975756164704 ~(0.0)']
+Objective function breakdown
+Residual:       0.7047632881991929
+Regularisation: 2.711469721756482e-06
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 1.215462
+         Iterations: 858
+         Function evaluations: 1291
+Fitting is successful
+Parameter Statistics
+['1.6853179336131705 ~(0.0)', '1.2065313849047246 ~(0.0)', '1.4039217829862374 ~(0.0)', '2.8824139985253176e-07 ~(0.0)', '0.12798851835574043 ~(0.0)', '1.6042552852888456 ~(0.0)', '2.017127080200747 ~(0.0)', '1.2195699996491904 ~(0.0)', '4.376117905092989 ~(0.0)', '0.011877962208030442 ~(0.0)']
+Objective function breakdown
+Residual:       1.2154619338053458
+Regularisation: 0.0
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.434183
+         Iterations: 3440
+         Function evaluations: 5042
+Fitting is successful
+Parameter Statistics
+['1.0177018773658033 ~(0.0)', '0.3009168010936618 ~(0.0)', '8.553060337033331 ~(0.0)', '55.67237216037809 ~(0.0)', '16.548481590319785 ~(0.0)', '25.124584548416898 ~(0.0)', '5.704823805295003 ~(0.0)', '153.71129383396635 ~(0.0)', '259.03239997965215 ~(0.0)', '0.0471550356389568 ~(0.0)']
+Objective function breakdown
+Residual:       0.4341060071775739
+Regularisation: 1.3690989350399982e-06
+Time span of fitting:  [3, 16, 40]
+Initial values:  [0.01010829, 0, 0.5999999999999996]
+Optimization terminated successfully.
+         Current function value: 0.664315
+         Iterations: 3512
+         Function evaluations: 5072
+Fitting is successful
+Parameter Statistics
+['1.4538495569107193 ~(0.0)', '7.005542353502672 ~(0.0)', '0.12337429458553112 ~(0.0)', '19.10094455400096 ~(0.0)', '1.0572571680135716e-10 ~(0.0)', '13.378430939649135 ~(0.0)', '1.774872446239028 ~(0.0)', '13.539320807576747 ~(0.0)', '23.95860138460231 ~(0.0)', '0.11350116920692921 ~(0.0)']
+Objective function breakdown
+Residual:       0.6643154237645925
+Regularisation: 0.0
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.578045
+         Iterations: 2121
+         Function evaluations: 3075
+Fitting is successful
+Parameter Statistics
+['1.4731934386585959 ~(0.0)', '6.640242815778922 ~(0.0)', '0.37133273453342874 ~(0.0)', '0.7037534509376719 ~(0.0)', '0.09070572266923918 ~(0.0)', '2.5082127742663456 ~(0.0)', '1.212978458447631 ~(0.0)', '0.1231134040846445 ~(0.0)', '9.404280817549528 ~(0.0)', '0.09882872625841824 ~(0.0)']
+Objective function breakdown
+Residual:       0.5780445969658695
+Regularisation: 0.0
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.675670
+         Iterations: 2317
+         Function evaluations: 3321
+Fitting is successful
+Parameter Statistics
+['1.504645038173515 ~(0.0)', '0.25833405062205517 ~(0.0)', '3.3111780274120677 ~(0.0)', '10.068839648633103 ~(0.0)', '1.340579431933726 ~(0.0)', '0.9470683357535988 ~(0.0)', '7.508035964743993 ~(0.0)', '6.1486520541782115 ~(0.0)', '31.695859856658622 ~(0.0)', '0.11347225392492719 ~(0.0)']
+Objective function breakdown
+Residual:       0.6756700177895408
+Regularisation: 0.10246146700650534
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.969172
+         Iterations: 3062
+         Function evaluations: 4455
+Fitting is successful
+Parameter Statistics
+['8.460224681772257 ~(0.0)', '2.8450836157781567 ~(0.0)', '20.8673478825512 ~(0.0)', '74.89956092476973 ~(0.0)', '5.29359376274765 ~(0.0)', '0.4064242772524294 ~(0.0)', '5.886087147078449 ~(0.0)', '3.3229357758122138 ~(0.0)', '4.495901136125051e-10 ~(0.0)', '0.11430985870039438 ~(0.0)']
+Objective function breakdown
+Residual:       1.9691721648126737
+Regularisation: 2.2945719552836827e-05
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.398287
+         Iterations: 2896
+         Function evaluations: 4118
+Fitting is successful
+Parameter Statistics
+['1.7610428937717524 ~(0.0)', '10.117109067899033 ~(0.0)', '0.3798424048739901 ~(0.0)', '8.415725671716869 ~(0.0)', '0.7938031492544041 ~(0.0)', '0.0020981795898051474 ~(0.0)', '0.008387919882693825 ~(0.0)', '0.2521457121330854 ~(0.0)', '3.950945523702046 ~(0.0)', '0.04146236496068245 ~(0.0)']
+Objective function breakdown
+Residual:       0.398287100319504
+Regularisation: 4.822496867449287e-06
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.546867
+         Iterations: 2336
+         Function evaluations: 3351
+Fitting is successful
+Parameter Statistics
+['1.7877477598724942 ~(0.0)', '0.36808490748250955 ~(0.0)', '2.233021965857438 ~(0.0)', '11.32581555684667 ~(0.0)', '1.464977638785545 ~(0.0)', '0.24458971167405225 ~(0.0)', '1.9297442982428081 ~(0.0)', '0.3740788618979878 ~(0.0)', '5.092225475711716 ~(0.0)', '0.004873614860105085 ~(0.0)']
+Objective function breakdown
+Residual:       0.5468674774290438
+Regularisation: 0.013367568123101534
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.534218
+         Iterations: 1423
+         Function evaluations: 2147
+Fitting is successful
+Parameter Statistics
+['4.308867518652167 ~(0.0)', '8.097150217446853 ~(0.0)', '7.45293246010095 ~(0.0)', '25.064105211018834 ~(0.0)', '0.6354109310837887 ~(0.0)', '1.847658827246099e-10 ~(0.0)', '0.723922098361111 ~(0.0)', '6.6908166666371525 ~(0.0)', '8.177237457058107 ~(0.0)', '0.13143000262481325 ~(0.0)']
+Objective function breakdown
+Residual:       1.53421804089985
+Regularisation: 0.0007766454144892612
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 3.759453
+         Iterations: 2255
+         Function evaluations: 3253
+Fitting is successful
+Parameter Statistics
+['1.2735693138255206 ~(0.0)', '0.5104073390291104 ~(0.0)', '3.0839679326125378 ~(0.0)', '0.5948436061864408 ~(0.0)', '0.6472808654763853 ~(0.0)', '0.0008325382923362937 ~(0.0)', '8.18375496689353e-08 ~(0.0)', '0.20535922231617432 ~(0.0)', '2.4483029201738664 ~(0.0)', '0.055075599931496605 ~(0.0)']
+Objective function breakdown
+Residual:       3.7594528590947696
+Regularisation: 1.3857144700448661e-05
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 3.774529
+         Iterations: 909
+         Function evaluations: 1365
+Fitting is successful
+Parameter Statistics
+['1.056592681828426 ~(0.0)', '2.879638227918355 ~(0.0)', '0.18493560591501673 ~(0.0)', '2.4102389086428353 ~(0.0)', '0.09278959745137398 ~(0.0)', '3.1604276512484066 ~(0.0)', '1.2144594307643738e-07 ~(0.0)', '1.5830310614214502 ~(0.0)', '6.067436353686174 ~(0.0)', '0.038735743325839636 ~(0.0)']
+Objective function breakdown
+Residual:       3.7745287819860236
+Regularisation: 0.0
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.401994
+         Iterations: 1400
+         Function evaluations: 2017
+Fitting is successful
+Parameter Statistics
+['1.8488818285808246 ~(0.0)', '1.4758603775325732 ~(0.0)', '1.7261288800497305 ~(0.0)', '0.09063257466488023 ~(0.0)', '0.0884720858731417 ~(0.0)', '0.2465021594736512 ~(0.0)', '0.5596426321302718 ~(0.0)', '0.12928877249985463 ~(0.0)', '4.072140333139165 ~(0.0)', '0.001934344196082652 ~(0.0)']
+Objective function breakdown
+Residual:       0.40199380363343884
+Regularisation: 0.23241019806121374
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.765169
+         Iterations: 2248
+         Function evaluations: 3239
+Fitting is successful
+Parameter Statistics
+['1.112230993864396 ~(0.0)', '5.155051980503362 ~(0.0)', '0.3912802318969727 ~(0.0)', '17.91719528814519 ~(0.0)', '0.7285712960273024 ~(0.0)', '2.958198580131276e-12 ~(0.0)', '0.07713339230411427 ~(0.0)', '1.3689409961768733 ~(0.0)', '10.927240630690271 ~(0.0)', '0.04216101856182254 ~(0.0)']
+Objective function breakdown
+Residual:       0.7651685718646105
+Regularisation: 3.484611191854061e-05
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 7.295709
+         Iterations: 833
+         Function evaluations: 1245
+Fitting is successful
+Parameter Statistics
+['0.8226796102282621 ~(0.0)', '0.5275168505358073 ~(0.0)', '0.4999814041490662 ~(0.0)', '2.149019967621427e-08 ~(0.0)', '0.2416707917625599 ~(0.0)', '2.4457545991958796 ~(0.0)', '4.2433756691721856e-08 ~(0.0)', '0.6751617956908864 ~(0.0)', '1.5273799312205953 ~(0.0)', '0.0017581692994978835 ~(0.0)']
+Objective function breakdown
+Residual:       7.295708401143901
+Regularisation: 0.1041018468309587
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.260931
+         Iterations: 2590
+         Function evaluations: 3674
+Fitting is successful
+Parameter Statistics
+['1.0373962066756033 ~(0.0)', '2.6172346281523495 ~(0.0)', '2.084860392631014 ~(0.0)', '2.361162174067413e-09 ~(0.0)', '2.252330634175218 ~(0.0)', '7.7259817501883425 ~(0.0)', '0.028778721016200152 ~(0.0)', '7.80969471124753 ~(0.0)', '15.56124136134045 ~(0.0)', '0.09510332418908687 ~(0.0)']
+Objective function breakdown
+Residual:       1.2609307410532096
+Regularisation: 0.0016481913975635559
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 6.985760
+         Iterations: 1130
+         Function evaluations: 1663
+Fitting is successful
+Parameter Statistics
+['0.8667827350450539 ~(0.0)', '0.3067022923997036 ~(0.0)', '0.8290458331163257 ~(0.0)', '6.748737520865271e-09 ~(0.0)', '0.026053098378206244 ~(0.0)', '1.8433736935588203 ~(0.0)', '1.642041046547154e-08 ~(0.0)', '1.2308018028030587 ~(0.0)', '1.522889413597822 ~(0.0)', '7.251483271029521e-05 ~(0.0)']
+Objective function breakdown
+Residual:       6.985757363180513
+Regularisation: 0.2777264637168551
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.240586
+         Iterations: 1206
+         Function evaluations: 1766
+Fitting is successful
+Parameter Statistics
+['1.7275661018729163 ~(0.0)', '0.18837996404653523 ~(0.0)', '1.492803086217115 ~(0.0)', '7.7752710454676075 ~(0.0)', '0.11621236822575459 ~(0.0)', '0.024283536296728837 ~(0.0)', '0.7308940660532283 ~(0.0)', '1.7662067342285466e-07 ~(0.0)', '2.7556997069640294 ~(0.0)', '0.0318995766922639 ~(0.0)']
+Objective function breakdown
+Residual:       1.2405864405214064
+Regularisation: 0.0
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.711700
+         Iterations: 1569
+         Function evaluations: 2276
+Fitting is successful
+Parameter Statistics
+['1.602607964301963 ~(0.0)', '9.880272454073955 ~(0.0)', '0.527184326359905 ~(0.0)', '9.023428424763896 ~(0.0)', '1.1894267931077869 ~(0.0)', '2.276741140403499 ~(0.0)', '0.4232428825296233 ~(0.0)', '0.9820294472308366 ~(0.0)', '7.487195965719382 ~(0.0)', '0.011610841300027052 ~(0.0)']
+Objective function breakdown
+Residual:       0.7117002946482417
+Regularisation: 0.0014417429617692892
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 7.333127
+         Iterations: 1663
+         Function evaluations: 2384
+Fitting is successful
+Parameter Statistics
+['0.8316884859330318 ~(0.0)', '0.2666336998340697 ~(0.0)', '0.7612365682240498 ~(0.0)', '3.930205292280625e-09 ~(0.0)', '0.020350265258409172 ~(0.0)', '2.0561923309661765 ~(0.0)', '2.386739772915768e-05 ~(0.0)', '1.2137664896115232 ~(0.0)', '1.3426095833903542 ~(0.0)', '0.002837852181768363 ~(0.0)']
+Objective function breakdown
+Residual:       7.333108647145643
+Regularisation: 0.32598462214051666
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.558724
+         Iterations: 1419
+         Function evaluations: 2086
+Fitting is successful
+Parameter Statistics
+['0.5736204739695073 ~(0.0)', '5.357743138218021 ~(0.0)', '0.20323286573026272 ~(0.0)', '193.22824354617524 ~(0.0)', '1.968762068902322 ~(0.0)', '20.33949705774378 ~(0.0)', '1.893247737168864e-11 ~(0.0)', '6.14702658433613 ~(0.0)', '29.06898731914891 ~(0.0)', '0.1668450261552114 ~(0.0)']
+Objective function breakdown
+Residual:       1.558724441598866
+Regularisation: 0.0
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.100482
+         Iterations: 2755
+         Function evaluations: 3926
+Fitting is successful
+Parameter Statistics
+['1.05886757217706 ~(0.0)', '13.096106474829957 ~(0.0)', '0.637846465058345 ~(0.0)', '92.41974206959765 ~(0.0)', '2.973600671435495 ~(0.0)', '3.9966092837078486 ~(0.0)', '1.837984818180145 ~(0.0)', '0.5589008975202365 ~(0.0)', '31.004204037910647 ~(0.0)', '0.023742903463931736 ~(0.0)']
+Objective function breakdown
+Residual:       1.1004819389695735
+Regularisation: 0.0022771738073395983
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.327706
+         Iterations: 2366
+         Function evaluations: 3368
+Fitting is successful
+Parameter Statistics
+['0.9084729807291915 ~(0.0)', '22.425519799267136 ~(0.0)', '0.17347654646312358 ~(0.0)', '40.93571117473452 ~(0.0)', '1.782214639154601 ~(0.0)', '28.38948674896373 ~(0.0)', '8.779128247390161e-12 ~(0.0)', '5.050197409308774 ~(0.0)', '18.517237770103826 ~(0.0)', '0.10292366890399854 ~(0.0)']
+Objective function breakdown
+Residual:       1.3277060484081136
+Regularisation: 0.0012008522798159155
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 2.932294
+         Iterations: 1665
+         Function evaluations: 2401
+Fitting is successful
+Parameter Statistics
+['0.9284995381671401 ~(0.0)', '0.5010417042903245 ~(0.0)', '0.8677364049194061 ~(0.0)', '0.008118338736551167 ~(0.0)', '0.041775541125911184 ~(0.0)', '3.0211874038402673 ~(0.0)', '1.3902390214532502e-07 ~(0.0)', '4.048925071547831 ~(0.0)', '9.133188871139648 ~(0.0)', '0.049878968534856294 ~(0.0)']
+Objective function breakdown
+Residual:       2.932293878865837
+Regularisation: 0.0
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.412571
+         Iterations: 1290
+         Function evaluations: 1874
+Fitting is successful
+Parameter Statistics
+['1.7987964597794432 ~(0.0)', '1.3232089966131766 ~(0.0)', '1.9215756069857197 ~(0.0)', '0.5598189845520649 ~(0.0)', '0.2849785193509185 ~(0.0)', '0.2260332861449569 ~(0.0)', '0.5544951363673123 ~(0.0)', '0.2348007458407918 ~(0.0)', '4.387350539409634 ~(0.0)', '0.023201731210030736 ~(0.0)']
+Objective function breakdown
+Residual:       0.41241497940150085
+Regularisation: 0.15580395583241088
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.489505
+         Iterations: 1785
+         Function evaluations: 2597
+Fitting is successful
+Parameter Statistics
+['1.541457162145249 ~(0.0)', '7.518002120649266 ~(0.0)', '0.2597252440561018 ~(0.0)', '0.9618457206697851 ~(0.0)', '0.014699408045998133 ~(0.0)', '0.39237099511741 ~(0.0)', '0.20376819213775837 ~(0.0)', '0.4813422647602521 ~(0.0)', '5.690217273775087 ~(0.0)', '0.01355932662296028 ~(0.0)']
+Objective function breakdown
+Residual:       0.48950502389818407
+Regularisation: 0.0
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.111933
+         Iterations: 918
+         Function evaluations: 1369
+Fitting is successful
+Parameter Statistics
+['2.1692359927662324 ~(0.0)', '6.625369931514301 ~(0.0)', '3.164278671283247 ~(0.0)', '9.667372623830319e-08 ~(0.0)', '0.7516819004933464 ~(0.0)', '4.057131796265744 ~(0.0)', '0.5210661143457641 ~(0.0)', '10.739296394370946 ~(0.0)', '11.52182075752664 ~(0.0)', '0.04610226263293704 ~(0.0)']
+Objective function breakdown
+Residual:       1.1119332693824238
+Regularisation: 2.1767300290187176e-06
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.505415
+         Iterations: 5155
+         Function evaluations: 7312
+Fitting is successful
+Parameter Statistics
+['1.6431744146537237 ~(0.0)', '3.134990046884058 ~(0.0)', '1.151865322768411 ~(0.0)', '1.8605403554957871 ~(0.0)', '0.9772647109536314 ~(0.0)', '0.5377940281035034 ~(0.0)', '0.6106754213260781 ~(0.0)', '0.5676904810622199 ~(0.0)', '6.547686818976316 ~(0.0)', '0.12231254035029207 ~(0.0)']
+Objective function breakdown
+Residual:       0.5050835609532697
+Regularisation: 0.05889826828138387
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.505200
+         Iterations: 1405
+         Function evaluations: 2055
+Fitting is successful
+Parameter Statistics
+['1.6415431259080369 ~(0.0)', '3.891949634519003 ~(0.0)', '0.7232358961628944 ~(0.0)', '0.635724057451396 ~(0.0)', '0.37056321874311915 ~(0.0)', '0.4795090158713765 ~(0.0)', '0.34385552505203076 ~(0.0)', '0.625814515276911 ~(0.0)', '6.00729971442394 ~(0.0)', '0.00728620853271076 ~(0.0)']
+Objective function breakdown
+Residual:       0.5051489517613037
+Regularisation: 0.005105417968987577
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.534585
+         Iterations: 1878
+         Function evaluations: 2686
+Fitting is successful
+Parameter Statistics
+['1.9853488247971174 ~(0.0)', '9.220014560810437 ~(0.0)', '0.38100082848820366 ~(0.0)', '3.176107688994378 ~(0.0)', '0.5219677121021131 ~(0.0)', '8.582528933823474 ~(0.0)', '3.481068686639685 ~(0.0)', '7.938709399226511e-08 ~(0.0)', '7.760181715483262 ~(0.0)', '0.027465932341600136 ~(0.0)']
+Objective function breakdown
+Residual:       0.5341245945871801
+Regularisation: 0.025872135111500473
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.519962
+         Iterations: 1746
+         Function evaluations: 2546
+Fitting is successful
+Parameter Statistics
+['1.690201089803847 ~(0.0)', '0.8809261870019303 ~(0.0)', '0.8261907275950937 ~(0.0)', '3.6427029145551515 ~(0.0)', '0.19237777401918021 ~(0.0)', '0.004147311980208419 ~(0.0)', '9.937634777510576e-09 ~(0.0)', '0.1287076119921573 ~(0.0)', '1.9389628642301115 ~(0.0)', '0.01020609332301465 ~(0.0)']
+Objective function breakdown
+Residual:       1.5199623858821836
+Regularisation: 1.664980045964224e-07
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.812670
+         Iterations: 2389
+         Function evaluations: 3369
+Fitting is successful
+Parameter Statistics
+['1.8330498072489658 ~(0.0)', '14.917204745685055 ~(0.0)', '1.2430075919812835 ~(0.0)', '27.106108271067455 ~(0.0)', '3.6067400469395263 ~(0.0)', '56.13164984708823 ~(0.0)', '2.489513263065491 ~(0.0)', '14.592172962759676 ~(0.0)', '14.163358315261679 ~(0.0)', '0.051699719300595415 ~(0.0)']
+Objective function breakdown
+Residual:       0.8125755678077489
+Regularisation: 0.0016853985024818977
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.602711
+         Iterations: 4895
+         Function evaluations: 6950
+Fitting is successful
+Parameter Statistics
+['1.5789910669449565 ~(0.0)', '9.145249017971867 ~(0.0)', '0.2766377338123148 ~(0.0)', '15.373264839879681 ~(0.0)', '0.5518775690887658 ~(0.0)', '6.044227388781123e-13 ~(0.0)', '0.014537570168784566 ~(0.0)', '0.3915867478975277 ~(0.0)', '4.566473687649578 ~(0.0)', '0.02241333651434911 ~(0.0)']
+Objective function breakdown
+Residual:       0.6027097421619311
+Regularisation: 9.423200331871562e-06
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.434339
+         Iterations: 3813
+         Function evaluations: 5383
+Fitting is successful
+Parameter Statistics
+['1.869694314439951 ~(0.0)', '19.18057493680618 ~(0.0)', '0.18173572904153068 ~(0.0)', '14.949801709269735 ~(0.0)', '0.5267534727242702 ~(0.0)', '12.738770798596464 ~(0.0)', '2.347616455845631 ~(0.0)', '2.440075781538121e-09 ~(0.0)', '7.048118218651696 ~(0.0)', '0.06332812066942745 ~(0.0)']
+Objective function breakdown
+Residual:       0.42792100343982126
+Regularisation: 0.03609230636892442
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.423002
+         Iterations: 2373
+         Function evaluations: 3399
+Fitting is successful
+Parameter Statistics
+['0.783548695858487 ~(0.0)', '10.437163722052082 ~(0.0)', '0.1519549659887537 ~(0.0)', '0.7739286988433172 ~(0.0)', '0.7613068872527581 ~(0.0)', '11.569066105209084 ~(0.0)', '4.10923740930326e-10 ~(0.0)', '4.8527742646391445 ~(0.0)', '21.7842804246225 ~(0.0)', '0.28479004349988046 ~(0.0)']
+Objective function breakdown
+Residual:       1.4228213697559857
+Regularisation: 0.0005721314978913009
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.434318
+         Iterations: 1806
+         Function evaluations: 2613
+Fitting is successful
+Parameter Statistics
+['1.7462743784381445 ~(0.0)', '16.617035708874525 ~(0.0)', '0.21038936898466654 ~(0.0)', '14.914193108146126 ~(0.0)', '0.601393895043036 ~(0.0)', '4.236874638966769 ~(0.0)', '0.8421712441546692 ~(0.0)', '0.2637053233997228 ~(0.0)', '5.801130314475207 ~(0.0)', '0.0574442988285567 ~(0.0)']
+Objective function breakdown
+Residual:       0.4301688619264945
+Regularisation: 0.007379085174370342
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.634680
+         Iterations: 3035
+         Function evaluations: 4380
+Fitting is successful
+Parameter Statistics
+['1.33159948239128 ~(0.0)', '1.9148439684034937 ~(0.0)', '1.4362085579775963 ~(0.0)', '1.7128670296415274 ~(0.0)', '0.7871416335519559 ~(0.0)', '0.331319752404772 ~(0.0)', '0.5939782731224141 ~(0.0)', '0.9234439967035613 ~(0.0)', '10.344964797950965 ~(0.0)', '0.022780148876283914 ~(0.0)']
+Objective function breakdown
+Residual:       0.6345867424070738
+Regularisation: 9.316327036787046e-05
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 5.525818
+         Iterations: 1478
+         Function evaluations: 2129
+Fitting is successful
+Parameter Statistics
+['1.3372038417357133 ~(0.0)', '0.8928716751247894 ~(0.0)', '0.895735529963424 ~(0.0)', '1.1273492980988332e-08 ~(0.0)', '0.060226087024507866 ~(0.0)', '2.9495290834863206 ~(0.0)', '2.868217646463694e-08 ~(0.0)', '1.7161754145613553 ~(0.0)', '1.9266807347334975 ~(0.0)', '0.00579246606724863 ~(0.0)']
+Objective function breakdown
+Residual:       5.525817941519476
+Regularisation: 0.0
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.712738
+         Iterations: 1755
+         Function evaluations: 2551
+Fitting is successful
+Parameter Statistics
+['1.3656550229903135 ~(0.0)', '2.4365045996885977 ~(0.0)', '0.4091162593097166 ~(0.0)', '7.070631167107645 ~(0.0)', '0.102063082268097 ~(0.0)', '1.9800898639321167e-10 ~(0.0)', '0.0014111694153787825 ~(0.0)', '0.7812510528834717 ~(0.0)', '6.05527313305942 ~(0.0)', '0.02541563751802322 ~(0.0)']
+Objective function breakdown
+Residual:       0.7127383622486636
+Regularisation: 2.8855096400369608e-08
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.562749
+         Iterations: 1655
+         Function evaluations: 2384
+Fitting is successful
+Parameter Statistics
+['1.3581458892570217 ~(0.0)', '0.7102014327392774 ~(0.0)', '1.924664248652719 ~(0.0)', '3.1917926017847735 ~(0.0)', '0.7272245192999438 ~(0.0)', '0.41869594652876224 ~(0.0)', '1.8164826224583321 ~(0.0)', '1.5456361689034583 ~(0.0)', '14.753409748808723 ~(0.0)', '0.013615664937545107 ~(0.0)']
+Objective function breakdown
+Residual:       0.5575823485149903
+Regularisation: 0.0009187716876999173
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 1.082326
+         Iterations: 1825
+         Function evaluations: 2629
+Fitting is successful
+Parameter Statistics
+['1.8860125049751906 ~(0.0)', '8.81688766265276 ~(0.0)', '0.2545348713291319 ~(0.0)', '0.977043993527638 ~(0.0)', '0.16374732002513476 ~(0.0)', '7.079021808636011 ~(0.0)', '2.9115158283985014 ~(0.0)', '0.47943829641971025 ~(0.0)', '7.565341813541648 ~(0.0)', '0.03123134993687964 ~(0.0)']
+Objective function breakdown
+Residual:       1.0820516423329822
+Regularisation: 2.741675885501762e-05
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 5.986509
+         Iterations: 1984
+         Function evaluations: 2911
+Fitting is successful
+Parameter Statistics
+['1.15006025554122 ~(0.0)', '0.6530270429773442 ~(0.0)', '0.8170870880820998 ~(0.0)', '1.514332168528452e-07 ~(0.0)', '0.0031483900408919535 ~(0.0)', '3.9439052507785872 ~(0.0)', '0.08385074256245106 ~(0.0)', '2.2571989182527106 ~(0.0)', '1.5620885048640836 ~(0.0)', '0.008381120273482347 ~(0.0)']
+Objective function breakdown
+Residual:       5.9865091784427
+Regularisation: 0.0
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.678776
+         Iterations: 2956
+         Function evaluations: 4202
+Fitting is successful
+Parameter Statistics
+['2.215981717017023 ~(0.0)', '38.73364599005086 ~(0.0)', '0.2482162675971501 ~(0.0)', '33.20662184768119 ~(0.0)', '1.5025917557115716 ~(0.0)', '34.43388301862932 ~(0.0)', '1.4426868191640663 ~(0.0)', '2.1346682388578215 ~(0.0)', '5.3450831056911525 ~(0.0)', '0.2260090260137757 ~(0.0)']
+Objective function breakdown
+Residual:       0.6653474989661547
+Regularisation: 0.00042465699703786653
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.570281
+         Iterations: 2362
+         Function evaluations: 3347
+Fitting is successful
+Parameter Statistics
+['2.122878750503061 ~(0.0)', '19.648387874909986 ~(0.0)', '0.36478994541633747 ~(0.0)', '19.558351210554278 ~(0.0)', '1.3111009681939867 ~(0.0)', '5.857847950410434 ~(0.0)', '0.6780397443312298 ~(0.0)', '0.196954311194232 ~(0.0)', '3.6893239073126405 ~(0.0)', '0.016342643121282096 ~(0.0)']
+Objective function breakdown
+Residual:       0.5680762468028835
+Regularisation: 3.920866591451724e-05
+Time span of fitting:  [4, 22, 80]
+Initial values:  [0.020081556, 0, 0.019999999999999574]
+Optimization terminated successfully.
+         Current function value: 0.509559
+         Iterations: 1744
+         Function evaluations: 2494
+Fitting is successful
+Parameter Statistics
+['1.5787311408060507 ~(0.0)', '3.7311925535910824 ~(0.0)', '0.6046650744549684 ~(0.0)', '0.37261315311897447 ~(0.0)', '0.1658065716559435 ~(0.0)', '5.620803739105068 ~(0.0)', '4.8094138670066044 ~(0.0)', '0.7008911581053694 ~(0.0)', '18.76099864600816 ~(0.0)', '0.014470757128276342 ~(0.0)']
+Objective function breakdown
+Residual:       0.5095590390104928
+Regularisation: 1.9020096515286854e-10
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.641653
+         Iterations: 1325
+         Function evaluations: 1917
+Fitting is successful
+Parameter Statistics
+['1.755636056124923 ~(0.0)', '2.835603779561018 ~(0.0)', '1.1449285466399148 ~(0.0)', '1.3898761820093162 ~(0.0)', '0.6731556441248793 ~(0.0)', '2.840886493688601 ~(0.0)', '3.9353759427953596 ~(0.0)', '1.0409997638826292e-09 ~(0.0)', '10.636842419958363 ~(0.0)', '0.0015627906458178789 ~(0.0)']
+Objective function breakdown
+Residual:       0.6416531390849691
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 1.021958
+         Iterations: 1194
+         Function evaluations: 1738
+Fitting is successful
+Parameter Statistics
+['1.1288242095105017 ~(0.0)', '3.7277060273452385 ~(0.0)', '0.4871654221157382 ~(0.0)', '4.22416376151162e-07 ~(0.0)', '0.4530141953351785 ~(0.0)', '4.069352925959791 ~(0.0)', '5.300152743245664e-10 ~(0.0)', '4.030834459001509 ~(0.0)', '12.015181033217107 ~(0.0)', '0.03593099080494593 ~(0.0)']
+Objective function breakdown
+Residual:       1.0219575959130835
+Regularisation: 3.8883477602772325e-24
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.552964
+         Iterations: 3147
+         Function evaluations: 4526
+Fitting is successful
+Parameter Statistics
+['2.0278643139659707 ~(0.0)', '26.305868248774757 ~(0.0)', '0.1890088153890595 ~(0.0)', '42.87814111424405 ~(0.0)', '0.918620626171906 ~(0.0)', '4.362681550286185 ~(0.0)', '0.5756666027557971 ~(0.0)', '3.171464591586238e-08 ~(0.0)', '3.4482423568818943 ~(0.0)', '0.057801921691784844 ~(0.0)']
+Objective function breakdown
+Residual:       0.552963862705086
+Regularisation: 0.004373508172346627
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.626272
+         Iterations: 1773
+         Function evaluations: 2559
+Fitting is successful
+Parameter Statistics
+['1.922331678563287 ~(0.0)', '2.698762928611603 ~(0.0)', '1.36661888235383 ~(0.0)', '0.683198452626206 ~(0.0)', '0.5367881597633872 ~(0.0)', '1.4645039605988255 ~(0.0)', '1.8534699659900036 ~(0.0)', '4.103922633328298e-10 ~(0.0)', '5.079988537914309 ~(0.0)', '0.03239334676837968 ~(0.0)']
+Objective function breakdown
+Residual:       0.6262718503371472
+Regularisation: 0.08052337278634346
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.518020
+         Iterations: 1679
+         Function evaluations: 2400
+Fitting is successful
+Parameter Statistics
+['2.0540270705950343 ~(0.0)', '3.190459884945624 ~(0.0)', '1.4542663085357885 ~(0.0)', '0.15775471353466294 ~(0.0)', '0.6104376957244019 ~(0.0)', '0.038626141571924844 ~(0.0)', '0.07105701382779438 ~(0.0)', '1.503594871296875e-07 ~(0.0)', '3.1705308291939156 ~(0.0)', '0.00815979660055597 ~(0.0)']
+Objective function breakdown
+Residual:       0.5180200268044499
+Regularisation: 8.18418119863364e-05
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.626957
+         Iterations: 1086
+         Function evaluations: 1620
+Fitting is successful
+Parameter Statistics
+['1.6505679945225498 ~(0.0)', '8.644744199274989 ~(0.0)', '0.2804803757452876 ~(0.0)', '3.8109142440930683 ~(0.0)', '0.20199858758369355 ~(0.0)', '4.194355448374107 ~(0.0)', '2.0948585479108877 ~(0.0)', '6.279392466111059e-09 ~(0.0)', '8.368371756256844 ~(0.0)', '0.00196585347571941 ~(0.0)']
+Objective function breakdown
+Residual:       0.6269566603883256
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.623689
+         Iterations: 2853
+         Function evaluations: 4032
+Fitting is successful
+Parameter Statistics
+['2.125583746477636 ~(0.0)', '0.9398365377226312 ~(0.0)', '10.410758759777904 ~(0.0)', '5.178363907086637 ~(0.0)', '3.650508231031405 ~(0.0)', '2.4204175449833762 ~(0.0)', '5.2245118569418665 ~(0.0)', '1.74040168724019 ~(0.0)', '5.246522645266537 ~(0.0)', '0.07436351656508736 ~(0.0)']
+Objective function breakdown
+Residual:       0.6236887173383138
+Regularisation: 0.005413460196613697
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.708268
+         Iterations: 1055
+         Function evaluations: 1554
+Fitting is successful
+Parameter Statistics
+['1.7554759436585587 ~(0.0)', '6.6519899696926466 ~(0.0)', '1.133407771666799 ~(0.0)', '11.275325483986983 ~(0.0)', '2.373425126104218 ~(0.0)', '5.56147578425038 ~(0.0)', '2.937822765245376 ~(0.0)', '1.2582794190181097e-07 ~(0.0)', '9.91944583896571 ~(0.0)', '0.007456807966380383 ~(0.0)']
+Objective function breakdown
+Residual:       0.7082678020506761
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.961720
+         Iterations: 2010
+         Function evaluations: 2882
+Fitting is successful
+Parameter Statistics
+['2.1525138744780086 ~(0.0)', '3.5047890838528097 ~(0.0)', '0.9148440743150764 ~(0.0)', '0.6774795337198709 ~(0.0)', '0.40842442835555914 ~(0.0)', '2.953449233479059 ~(0.0)', '3.4217611101042342 ~(0.0)', '7.661322555469961e-10 ~(0.0)', '4.812148443159003 ~(0.0)', '0.01184396260828248 ~(0.0)']
+Objective function breakdown
+Residual:       0.9617191170990346
+Regularisation: 0.9886827327408808
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.669479
+         Iterations: 2242
+         Function evaluations: 3222
+Fitting is successful
+Parameter Statistics
+['1.948224884640791 ~(0.0)', '3.096171151810201 ~(0.0)', '1.0497447118180272 ~(0.0)', '0.5493453540121851 ~(0.0)', '0.40056018488179423 ~(0.0)', '6.058482316111803 ~(0.0)', '7.119095569063184 ~(0.0)', '3.3337938548862835e-08 ~(0.0)', '11.813818503972808 ~(0.0)', '0.00493100183475436 ~(0.0)']
+Objective function breakdown
+Residual:       0.6694775493037817
+Regularisation: 0.8492946619904556
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.470051
+         Iterations: 1594
+         Function evaluations: 2316
+Fitting is successful
+Parameter Statistics
+['1.698550590005837 ~(0.0)', '1.9575874362755008 ~(0.0)', '0.9193258905173278 ~(0.0)', '2.3953612701834315 ~(0.0)', '0.12515976453288946 ~(0.0)', '0.12782090324627632 ~(0.0)', '0.3953152973396361 ~(0.0)', '3.130444351458041e-09 ~(0.0)', '3.9510668475730553 ~(0.0)', '0.0026647390413248317 ~(0.0)']
+Objective function breakdown
+Residual:       0.47005105866158536
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.388558
+         Iterations: 5772
+         Function evaluations: 8200
+Fitting is successful
+Parameter Statistics
+['1.5913322573946616 ~(0.0)', '0.1969226384390162 ~(0.0)', '1.040464317170795 ~(0.0)', '37.17806661566796 ~(0.0)', '1.7069784381544075 ~(0.0)', '0.30502072092086485 ~(0.0)', '6.445601539062904 ~(0.0)', '0.03645670511623163 ~(0.0)', '10.601450582294397 ~(0.0)', '0.008020686628105726 ~(0.0)']
+Objective function breakdown
+Residual:       0.38855827422064687
+Regularisation: 3.828660545557864e-16
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.688261
+         Iterations: 4180
+         Function evaluations: 5933
+Fitting is successful
+Parameter Statistics
+['2.3931931457346387 ~(0.0)', '60.08985401785366 ~(0.0)', '0.1699313207209725 ~(0.0)', '4.189382743992672 ~(0.0)', '1.5198746593725627 ~(0.0)', '42.69611599309435 ~(0.0)', '1.839440905197704 ~(0.0)', '7.40338198405442e-11 ~(0.0)', '3.292092717128368 ~(0.0)', '0.3554631269741969 ~(0.0)']
+Objective function breakdown
+Residual:       0.6882614578504794
+Regularisation: 0.00018596928572384245
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 1.057496
+         Iterations: 1511
+         Function evaluations: 2209
+Fitting is successful
+Parameter Statistics
+['0.8449009492480462 ~(0.0)', '1.3191154697745149 ~(0.0)', '0.966159944371719 ~(0.0)', '4.753523481426532 ~(0.0)', '0.613216585866569 ~(0.0)', '1.678679634293432e-09 ~(0.0)', '0.07532324112074669 ~(0.0)', '2.635558482145577 ~(0.0)', '16.664452903784014 ~(0.0)', '0.0031381928011873944 ~(0.0)']
+Objective function breakdown
+Residual:       1.0574955157078316
+Regularisation: 0.04751530509618898
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.608068
+         Iterations: 1659
+         Function evaluations: 2389
+Fitting is successful
+Parameter Statistics
+['1.8728163241926583 ~(0.0)', '0.7193236491022479 ~(0.0)', '14.565284484170315 ~(0.0)', '5.648600287044452 ~(0.0)', '4.1230016424208955 ~(0.0)', '8.075713856093472 ~(0.0)', '18.090726441513628 ~(0.0)', '9.424520704625765 ~(0.0)', '15.199648775453262 ~(0.0)', '0.09479119962110719 ~(0.0)']
+Objective function breakdown
+Residual:       0.6080675752007468
+Regularisation: 0.003524973933445934
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.631412
+         Iterations: 1902
+         Function evaluations: 2762
+Fitting is successful
+Parameter Statistics
+['1.8583498778634246 ~(0.0)', '3.2786001950154535 ~(0.0)', '0.9548503128204685 ~(0.0)', '0.4417725377897156 ~(0.0)', '0.33320785918754936 ~(0.0)', '2.6249870207210035 ~(0.0)', '2.758039862536407 ~(0.0)', '0.04932106821693277 ~(0.0)', '6.927681678744789 ~(0.0)', '0.002420574691539824 ~(0.0)']
+Objective function breakdown
+Residual:       0.631363264829295
+Regularisation: 0.8625753302856215
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.760082
+         Iterations: 4189
+         Function evaluations: 5965
+Fitting is successful
+Parameter Statistics
+['2.1077194609466714 ~(0.0)', '61214.06608176872 ~(0.0)', '1.0867167700990241 ~(0.0)', '82309.25790607097 ~(0.0)', '13876.23477102021 ~(0.0)', '111407.36209129449 ~(0.0)', '2.199487489845738e-13 ~(0.0)', '7.218454265373808 ~(0.0)', '4.695035574128222 ~(0.0)', '489.80099686919175 ~(0.0)']
+Objective function breakdown
+Residual:       0.7600819672817586
+Regularisation: 0.0023253351905889773
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.794938
+         Iterations: 5269
+         Function evaluations: 7474
+Fitting is successful
+Parameter Statistics
+['2.015054804402641 ~(0.0)', '32913.9243814815 ~(0.0)', '1.9246496793689563 ~(0.0)', '283389.7652768056 ~(0.0)', '13880.4042880735 ~(0.0)', '39213.26524639612 ~(0.0)', '2.375889979424877e-14 ~(0.0)', '4.84130866807871 ~(0.0)', '5.239042850734561 ~(0.0)', '485.0693203390341 ~(0.0)']
+Objective function breakdown
+Residual:       0.7949379207550735
+Regularisation: 0.0019481282371342588
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.878131
+         Iterations: 1691
+         Function evaluations: 2414
+Fitting is successful
+Parameter Statistics
+['1.4255286529196887 ~(0.0)', '9.94136226470461 ~(0.0)', '0.26868632944211357 ~(0.0)', '20.39767916575256 ~(0.0)', '0.8161134288712236 ~(0.0)', '12.74786410175143 ~(0.0)', '7.395724391577936 ~(0.0)', '4.924479833462716e-10 ~(0.0)', '32.25393158102504 ~(0.0)', '0.08693511353168594 ~(0.0)']
+Objective function breakdown
+Residual:       0.8781305702253566
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 1.165483
+         Iterations: 503
+         Function evaluations: 795
+Fitting is successful
+Parameter Statistics
+['0.745854228710912 ~(0.0)', '3.4915949761947775 ~(0.0)', '0.31800592010516676 ~(0.0)', '2.4500905528900208 ~(0.0)', '1.5517523313662676 ~(0.0)', '0.9765739805143745 ~(0.0)', '8.99642123557828e-08 ~(0.0)', '3.2086090886016065 ~(0.0)', '17.810698947879768 ~(0.0)', '0.028763185750597046 ~(0.0)']
+Objective function breakdown
+Residual:       1.165480721887187
+Regularisation: 0.0038836340384951675
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.758065
+         Iterations: 1507
+         Function evaluations: 2192
+Fitting is successful
+Parameter Statistics
+['1.4537136671015056 ~(0.0)', '9.643011030897139 ~(0.0)', '0.18053626592600402 ~(0.0)', '6.219988954878296 ~(0.0)', '0.048908486473468134 ~(0.0)', '13.640118060288657 ~(0.0)', '6.300723486446428 ~(0.0)', '1.006231828310578e-09 ~(0.0)', '25.11970067207886 ~(0.0)', '0.019315497182753938 ~(0.0)']
+Objective function breakdown
+Residual:       0.7580647778396625
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.519453
+         Iterations: 1098
+         Function evaluations: 1605
+Fitting is successful
+Parameter Statistics
+['1.9641639603774268 ~(0.0)', '5.176429553594902 ~(0.0)', '0.8805844665031393 ~(0.0)', '0.5055901296544876 ~(0.0)', '0.677043512119651 ~(0.0)', '5.349920944844411e-08 ~(0.0)', '0.012570990165260577 ~(0.0)', '0.216527114123327 ~(0.0)', '3.6442889368497573 ~(0.0)', '7.036487657816987e-05 ~(0.0)']
+Objective function breakdown
+Residual:       0.5194529600558194
+Regularisation: 8.829721848788117e-05
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.518101
+         Iterations: 2177
+         Function evaluations: 3107
+Fitting is successful
+Parameter Statistics
+['1.897674206770612 ~(0.0)', '3.1215711266808026 ~(0.0)', '1.2313319521931367 ~(0.0)', '0.5424351726086185 ~(0.0)', '0.5755545203328909 ~(0.0)', '0.0992947464257536 ~(0.0)', '0.060078302660144786 ~(0.0)', '0.3594120355700503 ~(0.0)', '3.8163060462459546 ~(0.0)', '0.009100919396834974 ~(0.0)']
+Objective function breakdown
+Residual:       0.5180997527242733
+Regularisation: 0.00035444522676475807
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.453883
+         Iterations: 1334
+         Function evaluations: 1953
+Fitting is successful
+Parameter Statistics
+['1.7158013088065092 ~(0.0)', '1.1301844531074212 ~(0.0)', '1.34109442444261 ~(0.0)', '2.3509084817846033 ~(0.0)', '0.1196727159959754 ~(0.0)', '0.10153697837239697 ~(0.0)', '0.43757483182878065 ~(0.0)', '1.3784803288102301e-09 ~(0.0)', '3.70592758390222 ~(0.0)', '0.01570532992014493 ~(0.0)']
+Objective function breakdown
+Residual:       0.45388320291685375
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 1.006477
+         Iterations: 922
+         Function evaluations: 1381
+Fitting is successful
+Parameter Statistics
+['1.646403974710493 ~(0.0)', '0.6129333504062271 ~(0.0)', '1.5583481813816964 ~(0.0)', '2.1301952728018776 ~(0.0)', '0.023194771011249515 ~(0.0)', '0.05239774502991388 ~(0.0)', '1.1613563197052106e-07 ~(0.0)', '1.074671745828521 ~(0.0)', '4.1680540106769 ~(0.0)', '0.001009533523427608 ~(0.0)']
+Objective function breakdown
+Residual:       1.006476769076754
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.626106
+         Iterations: 2885
+         Function evaluations: 4082
+Fitting is successful
+Parameter Statistics
+['1.4649326549344157 ~(0.0)', '1.371618640401226 ~(0.0)', '1.6302179156153227 ~(0.0)', '0.6647677146266039 ~(0.0)', '0.34629732770637434 ~(0.0)', '0.0725665818713438 ~(0.0)', '2.8550010641546047e-09 ~(0.0)', '1.354283982535367 ~(0.0)', '6.98978573783153 ~(0.0)', '0.02022738959959769 ~(0.0)']
+Objective function breakdown
+Residual:       0.6261058724789187
+Regularisation: 1.2394985972850442e-08
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 1.082332
+         Iterations: 849
+         Function evaluations: 1275
+Fitting is successful
+Parameter Statistics
+['0.9383017369282606 ~(0.0)', '6.829488581449496 ~(0.0)', '0.1652459987071716 ~(0.0)', '17.32452454495804 ~(0.0)', '0.3574308456722029 ~(0.0)', '7.571267904015148 ~(0.0)', '7.69523677702473e-09 ~(0.0)', '4.009930800532272 ~(0.0)', '14.776901950944252 ~(0.0)', '0.01826540259511075 ~(0.0)']
+Objective function breakdown
+Residual:       1.0823317691706753
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.456604
+         Iterations: 2214
+         Function evaluations: 3168
+Fitting is successful
+Parameter Statistics
+['1.7367861543647138 ~(0.0)', '1.0933630566678352 ~(0.0)', '1.4586302372968025 ~(0.0)', '2.0135075347499143 ~(0.0)', '0.1182064492461915 ~(0.0)', '0.13677625396281695 ~(0.0)', '0.5847032065292814 ~(0.0)', '3.276411514199039e-09 ~(0.0)', '3.8404910617359143 ~(0.0)', '0.012781076467581084 ~(0.0)']
+Objective function breakdown
+Residual:       0.45660406875481496
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.647902
+         Iterations: 2013
+         Function evaluations: 2889
+Fitting is successful
+Parameter Statistics
+['1.8902774283892951 ~(0.0)', '11.080124682486119 ~(0.0)', '0.4036822021350924 ~(0.0)', '9.076811328935342 ~(0.0)', '0.9231033329049305 ~(0.0)', '11.091335297800173 ~(0.0)', '3.4693891701136685 ~(0.0)', '9.085544033866291e-10 ~(0.0)', '8.228088201502935 ~(0.0)', '0.008773886770083193 ~(0.0)']
+Objective function breakdown
+Residual:       0.6466015802355195
+Regularisation: 0.013007745072714185
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.337457
+         Iterations: 7337
+         Function evaluations: 10363
+Fitting is successful
+Parameter Statistics
+['1.3840784021155361 ~(0.0)', '0.045473462059606326 ~(0.0)', '0.7499777181063529 ~(0.0)', '67.02820320255937 ~(0.0)', '0.9028270509779828 ~(0.0)', '3.2085487321280772 ~(0.0)', '237.49097508527535 ~(0.0)', '7.301346268738612 ~(0.0)', '515.584202387485 ~(0.0)', '1.0205953260755 ~(0.0)']
+Objective function breakdown
+Residual:       0.33745682450711945
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 1.086955
+         Iterations: 1956
+         Function evaluations: 2818
+Fitting is successful
+Parameter Statistics
+['0.9161264263845327 ~(0.0)', '6.482038169419027 ~(0.0)', '0.15408695943565998 ~(0.0)', '28.61105711917539 ~(0.0)', '0.3262503443398582 ~(0.0)', '5.763273277481952 ~(0.0)', '2.9781845288617244e-08 ~(0.0)', '3.7797388714566242 ~(0.0)', '15.1221124804997 ~(0.0)', '0.02892376702891015 ~(0.0)']
+Objective function breakdown
+Residual:       1.0869552899654404
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.468288
+         Iterations: 1893
+         Function evaluations: 2739
+Fitting is successful
+Parameter Statistics
+['1.5599796907094525 ~(0.0)', '1.4922185056307562 ~(0.0)', '0.8164233015132845 ~(0.0)', '3.499042992292026 ~(0.0)', '3.151624956377709e-08 ~(0.0)', '0.08680657880540556 ~(0.0)', '0.4367715232638594 ~(0.0)', '0.020167836745173574 ~(0.0)', '4.570253166232597 ~(0.0)', '0.0117909629189498 ~(0.0)']
+Objective function breakdown
+Residual:       0.468288190889894
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.996317
+         Iterations: 967
+         Function evaluations: 1455
+Fitting is successful
+Parameter Statistics
+['1.4764799406277154 ~(0.0)', '13.886700038214894 ~(0.0)', '0.14390660018362916 ~(0.0)', '37.71507760184153 ~(0.0)', '0.5487492856427789 ~(0.0)', '3.6296811951750714 ~(0.0)', '5.0616608816925845 ~(0.0)', '3.045064096819193e-09 ~(0.0)', '20.67343883878017 ~(0.0)', '0.004838005936551762 ~(0.0)']
+Objective function breakdown
+Residual:       0.9963165819143773
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 1.139345
+         Iterations: 1121
+         Function evaluations: 1637
+Fitting is successful
+Parameter Statistics
+['0.8471032517634949 ~(0.0)', '3.8637339337021714 ~(0.0)', '0.2394043505391085 ~(0.0)', '5.379381607780666 ~(0.0)', '0.4187373216883278 ~(0.0)', '10.991838070318462 ~(0.0)', '3.3729649476946028e-09 ~(0.0)', '5.369947509987295 ~(0.0)', '16.427888058383136 ~(0.0)', '0.08512555833920113 ~(0.0)']
+Objective function breakdown
+Residual:       1.1393449724441904
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.491877
+         Iterations: 984
+         Function evaluations: 1439
+Fitting is successful
+Parameter Statistics
+['1.601214322524081 ~(0.0)', '1.3189419601373917 ~(0.0)', '0.7248113995346072 ~(0.0)', '5.81409644701866 ~(0.0)', '0.015145097234470389 ~(0.0)', '0.028884139824131624 ~(0.0)', '0.15290159465381775 ~(0.0)', '1.0202283177347021e-07 ~(0.0)', '3.6173059759414894 ~(0.0)', '0.006148187837106741 ~(0.0)']
+Objective function breakdown
+Residual:       0.4918773318058236
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.812176
+         Iterations: 1786
+         Function evaluations: 2576
+Fitting is successful
+Parameter Statistics
+['2.036731606817367 ~(0.0)', '1.0049390239766178 ~(0.0)', '1.635247799859443 ~(0.0)', '1.670462210289534 ~(0.0)', '0.09909321498069165 ~(0.0)', '0.16038415315934157 ~(0.0)', '0.718039394336681 ~(0.0)', '2.9627004120424592e-08 ~(0.0)', '2.366158191508571 ~(0.0)', '0.013497981936004218 ~(0.0)']
+Objective function breakdown
+Residual:       0.8121757162000063
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.589436
+         Iterations: 2802
+         Function evaluations: 4033
+Fitting is successful
+Parameter Statistics
+['1.830983919771382 ~(0.0)', '14.37176120581007 ~(0.0)', '0.18400113304949814 ~(0.0)', '2.8905080265698224 ~(0.0)', '0.10939096773520571 ~(0.0)', '7.994585318575752 ~(0.0)', '2.0763108257308707 ~(0.0)', '3.13226133211888e-10 ~(0.0)', '6.1626648090351 ~(0.0)', '0.01101058200572114 ~(0.0)']
+Objective function breakdown
+Residual:       0.5894362365485795
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.988141
+         Iterations: 4288
+         Function evaluations: 6209
+Fitting is successful
+Parameter Statistics
+['1.4960289965662295 ~(0.0)', '9.24749313548989 ~(0.0)', '1968.3568391527465 ~(0.0)', '44424.73002126806 ~(0.0)', '5983.673620717942 ~(0.0)', '64246.61846727002 ~(0.0)', '14233.416152618021 ~(0.0)', '90.9907593196784 ~(0.0)', '43908.66341679168 ~(0.0)', '291.1173884260333 ~(0.0)']
+Objective function breakdown
+Residual:       0.921402960298799
+Regularisation: 0.003752955540392098
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.687327
+         Iterations: 2017
+         Function evaluations: 2958
+Fitting is successful
+Parameter Statistics
+['1.8282344981284369 ~(0.0)', '3.6746708567146555 ~(0.0)', '1.6726362896260043 ~(0.0)', '1.9387731211939507 ~(0.0)', '1.3237410419011664 ~(0.0)', '0.2489733493211234 ~(0.0)', '1.6954045377004768e-08 ~(0.0)', '0.9669510968575838 ~(0.0)', '5.256136671414387 ~(0.0)', '0.008492510566252186 ~(0.0)']
+Objective function breakdown
+Residual:       0.680963061644408
+Regularisation: 0.00020125656987757788
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 0.476498
+         Iterations: 1933
+         Function evaluations: 2804
+Fitting is successful
+Parameter Statistics
+['1.4960934882831185 ~(0.0)', '0.6630347286086632 ~(0.0)', '1.2444854270630006 ~(0.0)', '3.708386606265061 ~(0.0)', '0.04877183870176279 ~(0.0)', '0.08822976958647888 ~(0.0)', '0.6295381057861668 ~(0.0)', '0.3820141751205982 ~(0.0)', '5.646899222992211 ~(0.0)', '0.0021103576590962314 ~(0.0)']
+Objective function breakdown
+Residual:       0.4764975120555868
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.024863526, 0, 0.47999999999999954]
+Optimization terminated successfully.
+         Current function value: 1.458509
+         Iterations: 2337
+         Function evaluations: 3352
+Fitting is successful
+Parameter Statistics
+['2.047311990369792 ~(0.0)', '7.984501454769864 ~(0.0)', '0.5621026957432195 ~(0.0)', '7.544273597271756e-09 ~(0.0)', '0.9419201476336284 ~(0.0)', '12.609151073480707 ~(0.0)', '2.69022797310925 ~(0.0)', '1.665087749563114 ~(0.0)', '5.630540516962407 ~(0.0)', '0.0009001927885159501 ~(0.0)']
+Objective function breakdown
+Residual:       1.4269526551883596
+Regularisation: 0.00031556272218407976
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.000981
+         Iterations: 2485
+         Function evaluations: 3532
+Fitting is successful
+Parameter Statistics
+['2.03679317318137 ~(0.0)', '8.646428136977475 ~(0.0)', '0.8784619609826265 ~(0.0)', '6.12480631932876 ~(0.0)', '1.908477555774354 ~(0.0)', '18.532492026071438 ~(0.0)', '4.364482272514533 ~(0.0)', '2.7241077094207737 ~(0.0)', '11.725417793455904 ~(0.0)', '0.007886121774817931 ~(0.0)']
+Objective function breakdown
+Residual:       1.0009812704066967
+Regularisation: 0.013480275344441916
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.942302
+         Iterations: 3295
+         Function evaluations: 4688
+Fitting is successful
+Parameter Statistics
+['1.6848271626731006 ~(0.0)', '6.392468746194021 ~(0.0)', '0.3497092017036791 ~(0.0)', '7.511765537629237 ~(0.0)', '0.6075249224789645 ~(0.0)', '4.5128173771242945 ~(0.0)', '6.11113576641751 ~(0.0)', '1.4671136165390912e-08 ~(0.0)', '18.71021209631467 ~(0.0)', '0.027613856049451303 ~(0.0)']
+Objective function breakdown
+Residual:       0.942302036590881
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.602742
+         Iterations: 2875
+         Function evaluations: 4105
+Fitting is successful
+Parameter Statistics
+['1.432854789534593 ~(0.0)', '7.116899623337168 ~(0.0)', '0.2306072735786541 ~(0.0)', '1.99015926529922e-09 ~(0.0)', '0.29912544718708667 ~(0.0)', '14.478362664933185 ~(0.0)', '0.9016895621430865 ~(0.0)', '3.977972665994087 ~(0.0)', '12.612045731988244 ~(0.0)', '0.03802444394166564 ~(0.0)']
+Objective function breakdown
+Residual:       1.602742171090268
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.695049
+         Iterations: 2031
+         Function evaluations: 2937
+Fitting is successful
+Parameter Statistics
+['1.82016974688018 ~(0.0)', '3.9143876312129207 ~(0.0)', '0.6853252122574593 ~(0.0)', '1.4659595237352367 ~(0.0)', '0.5241253851389656 ~(0.0)', '6.838420914868195 ~(0.0)', '7.131716072532115 ~(0.0)', '0.23434919403232662 ~(0.0)', '17.11628274257547 ~(0.0)', '0.005123137495566591 ~(0.0)']
+Objective function breakdown
+Residual:       0.6950493176223163
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.464776
+         Iterations: 2237
+         Function evaluations: 3213
+Fitting is successful
+Parameter Statistics
+['1.709903173994539 ~(0.0)', '2.171703314485768 ~(0.0)', '0.6662324993660036 ~(0.0)', '5.1177840714498135 ~(0.0)', '0.5803501730586762 ~(0.0)', '1.112354079707903 ~(0.0)', '4.776120065525239 ~(0.0)', '1.646961851381084e-09 ~(0.0)', '11.478425294668298 ~(0.0)', '0.017995604921824015 ~(0.0)']
+Objective function breakdown
+Residual:       0.4647760277966496
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.845678
+         Iterations: 1180
+         Function evaluations: 1751
+Fitting is successful
+Parameter Statistics
+['1.0048260509682045 ~(0.0)', '2.6798895512639733 ~(0.0)', '0.2565110844777516 ~(0.0)', '6.887802196047144 ~(0.0)', '0.26563281652749227 ~(0.0)', '6.172696024132619 ~(0.0)', '2.012346053459009e-08 ~(0.0)', '3.465284675347487 ~(0.0)', '12.301612362704187 ~(0.0)', '0.032444966032340525 ~(0.0)']
+Objective function breakdown
+Residual:       1.8456775762641267
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.846168
+         Iterations: 1478
+         Function evaluations: 2158
+Fitting is successful
+Parameter Statistics
+['1.7655818179291003 ~(0.0)', '5.170153034950166 ~(0.0)', '0.40960033808648005 ~(0.0)', '0.0037335328335933865 ~(0.0)', '0.11499812637773321 ~(0.0)', '5.982871336760461 ~(0.0)', '3.4901080608084256 ~(0.0)', '1.415856997918735 ~(0.0)', '13.108238655144579 ~(0.0)', '0.025585060213066252 ~(0.0)']
+Objective function breakdown
+Residual:       0.8461679007298534
+Regularisation: 0.9547340433787169
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.353984
+         Iterations: 1113
+         Function evaluations: 1624
+Fitting is successful
+Parameter Statistics
+['1.9457961680755833 ~(0.0)', '1.3600356585014008 ~(0.0)', '1.2569392830461585 ~(0.0)', '1.4053032505213707 ~(0.0)', '0.21328152277427875 ~(0.0)', '0.15368863934233704 ~(0.0)', '0.4796847543619908 ~(0.0)', '0.177653139173039 ~(0.0)', '2.8245640088832484 ~(0.0)', '0.03149700786826762 ~(0.0)']
+Objective function breakdown
+Residual:       0.3539838879460673
+Regularisation: 6.665970318765754e-60
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 3.474892
+         Iterations: 2473
+         Function evaluations: 3568
+Fitting is successful
+Parameter Statistics
+['4.156057312557551 ~(0.0)', '0.9458006394347146 ~(0.0)', '4.832219150586266 ~(0.0)', '11.793150378504853 ~(0.0)', '0.6805794669805075 ~(0.0)', '0.044390288798869 ~(0.0)', '4.72717033194064e-12 ~(0.0)', '5.253228366142434 ~(0.0)', '4.081780208915433 ~(0.0)', '0.0018261825966185228 ~(0.0)']
+Objective function breakdown
+Residual:       3.474892256720779
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.171742
+         Iterations: 2493
+         Function evaluations: 3567
+Fitting is successful
+Parameter Statistics
+['2.0860615641898974 ~(0.0)', '0.9581422997332729 ~(0.0)', '2.2759602404933688 ~(0.0)', '2.058369337316678 ~(0.0)', '0.6668928856101037 ~(0.0)', '0.842830716666255 ~(0.0)', '3.259111312559185 ~(0.0)', '0.10098227271876976 ~(0.0)', '4.797530965452842 ~(0.0)', '0.008774981650981738 ~(0.0)']
+Objective function breakdown
+Residual:       0.1717404657460622
+Regularisation: 0.9327605349074877
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.238905
+         Iterations: 3962
+         Function evaluations: 5609
+Fitting is successful
+Parameter Statistics
+['2.132825459891552 ~(0.0)', '0.5930741265400628 ~(0.0)', '3.3687870572621814 ~(0.0)', '0.9445572877681544 ~(0.0)', '0.12082602348001958 ~(0.0)', '0.20401086731235446 ~(0.0)', '1.3903899179363157 ~(0.0)', '7.80759118832621e-09 ~(0.0)', '3.0919663841083964 ~(0.0)', '0.0026928568487144043 ~(0.0)']
+Objective function breakdown
+Residual:       0.23890497798339685
+Regularisation: 3.12664128556082e-09
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 3.186646
+         Iterations: 1393
+         Function evaluations: 2024
+Fitting is successful
+Parameter Statistics
+['0.9339831261870198 ~(0.0)', '0.042343155573683185 ~(0.0)', '1.0514484737093721 ~(0.0)', '1.335576722013957e-07 ~(0.0)', '0.15660421029138938 ~(0.0)', '1.8611530618403496 ~(0.0)', '1.6741359249850742e-07 ~(0.0)', '1.5693098839204938 ~(0.0)', '4.420108317565703 ~(0.0)', '0.012829425123648793 ~(0.0)']
+Objective function breakdown
+Residual:       3.1866455327489316
+Regularisation: 0.05979779606031959
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.868047
+         Iterations: 1404
+         Function evaluations: 2074
+Fitting is successful
+Parameter Statistics
+['0.9708658171544948 ~(0.0)', '2.8848753395897364 ~(0.0)', '0.2233340104682447 ~(0.0)', '8.025932047201016 ~(0.0)', '0.3179738937033919 ~(0.0)', '16.3628872626763 ~(0.0)', '5.661893071929029e-09 ~(0.0)', '5.127388373565747 ~(0.0)', '12.913528246943219 ~(0.0)', '0.07214428378978155 ~(0.0)']
+Objective function breakdown
+Residual:       1.8680474015668416
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.941600
+         Iterations: 3493
+         Function evaluations: 5030
+Fitting is successful
+Parameter Statistics
+['1.6671565748312371 ~(0.0)', '14.893168572253071 ~(0.0)', '0.21086707335699056 ~(0.0)', '42.46157046746005 ~(0.0)', '1.0480617759598827 ~(0.0)', '7.146406599873602 ~(0.0)', '3.995478456827929 ~(0.0)', '2.1782491618446233e-10 ~(0.0)', '15.047637383125974 ~(0.0)', '0.13059679548845976 ~(0.0)']
+Objective function breakdown
+Residual:       0.9416002647570089
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.305923
+         Iterations: 3461
+         Function evaluations: 4955
+Fitting is successful
+Parameter Statistics
+['2.1317485759617663 ~(0.0)', '2.9074766225268602 ~(0.0)', '0.8561956802202603 ~(0.0)', '0.0025943833339776633 ~(0.0)', '0.04435268661312599 ~(0.0)', '2.667507682152511 ~(0.0)', '3.6698273464269384 ~(0.0)', '8.381193619621048e-09 ~(0.0)', '5.795930659707196 ~(0.0)', '0.00890537358073157 ~(0.0)']
+Objective function breakdown
+Residual:       0.30589382598614906
+Regularisation: 0.9166728190964492
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.549686
+         Iterations: 1591
+         Function evaluations: 2352
+Fitting is successful
+Parameter Statistics
+['1.0494480752005164 ~(0.0)', '0.7592754409853835 ~(0.0)', '0.30452448315738645 ~(0.0)', '13.55946016155665 ~(0.0)', '0.1981135380482579 ~(0.0)', '0.018669829003952 ~(0.0)', '1.878925323758363e-08 ~(0.0)', '1.738027175471538 ~(0.0)', '10.194219653402811 ~(0.0)', '0.018204313345136745 ~(0.0)']
+Objective function breakdown
+Residual:       1.549685834787559
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.183257
+         Iterations: 3603
+         Function evaluations: 5122
+Fitting is successful
+Parameter Statistics
+['1.4383212019440688 ~(0.0)', '0.3694141327584808 ~(0.0)', '2.0357251764863715 ~(0.0)', '3.244440949588533 ~(0.0)', '0.39601021364761313 ~(0.0)', '0.15180771313686187 ~(0.0)', '0.5957730615541103 ~(0.0)', '2.132186032521588 ~(0.0)', '10.637407019815608 ~(0.0)', '0.0027020321464152524 ~(0.0)']
+Objective function breakdown
+Residual:       1.1832567777409166
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.697542
+         Iterations: 2601
+         Function evaluations: 3702
+Fitting is successful
+Parameter Statistics
+['1.7821651478274416 ~(0.0)', '11.133543846259965 ~(0.0)', '0.1924493311780504 ~(0.0)', '9.116040569679233 ~(0.0)', '0.2849794086530179 ~(0.0)', '6.814919184466698 ~(0.0)', '3.4500444019456133 ~(0.0)', '5.073718701732778e-09 ~(0.0)', '9.986704692918867 ~(0.0)', '0.041009691323036584 ~(0.0)']
+Objective function breakdown
+Residual:       0.6975419914954919
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 2.877828
+         Iterations: 747
+         Function evaluations: 1126
+Fitting is successful
+Parameter Statistics
+['1.1291679193474669 ~(0.0)', '0.4910885104553331 ~(0.0)', '1.0859715982265974 ~(0.0)', '2.6283558147694004e-06 ~(0.0)', '0.08074354126386879 ~(0.0)', '1.5122171246053029 ~(0.0)', '7.968664575638073e-08 ~(0.0)', '1.4875888988697326 ~(0.0)', '3.877984965442106 ~(0.0)', '0.011198524396562458 ~(0.0)']
+Objective function breakdown
+Residual:       2.877808261561474
+Regularisation: 0.06388692536761835
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.261312
+         Iterations: 2474
+         Function evaluations: 3523
+Fitting is successful
+Parameter Statistics
+['1.83186092080871 ~(0.0)', '0.21574270239878912 ~(0.0)', '2.096108453903911 ~(0.0)', '6.7306451550768385 ~(0.0)', '0.17940823716194265 ~(0.0)', '0.11161438879202537 ~(0.0)', '2.0316488528405996 ~(0.0)', '0.21018137941613269 ~(0.0)', '5.043984342694513 ~(0.0)', '0.018658551831902865 ~(0.0)']
+Objective function breakdown
+Residual:       0.2613120076289712
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.203783
+         Iterations: 4605
+         Function evaluations: 6516
+Fitting is successful
+Parameter Statistics
+['2.030039470277862 ~(0.0)', '0.45110332828820876 ~(0.0)', '2.7768416919699836 ~(0.0)', '3.136952390300706 ~(0.0)', '0.3380404676691705 ~(0.0)', '0.1351170690706777 ~(0.0)', '1.1421133671560177 ~(0.0)', '0.0419506958945121 ~(0.0)', '2.9417293784546947 ~(0.0)', '0.010132288012855005 ~(0.0)']
+Objective function breakdown
+Residual:       0.2037834860013197
+Regularisation: 2.0159793875967737e-07
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.357303
+         Iterations: 2126
+         Function evaluations: 3012
+Fitting is successful
+Parameter Statistics
+['1.945624243253368 ~(0.0)', '2.4344859671866512 ~(0.0)', '0.8691497697758004 ~(0.0)', '1.714277104808892 ~(0.0)', '0.3707674756923155 ~(0.0)', '1.2329063326070684 ~(0.0)', '2.795898797750922 ~(0.0)', '2.4153883473839215e-08 ~(0.0)', '5.996796606644795 ~(0.0)', '0.00044064819113842597 ~(0.0)']
+Objective function breakdown
+Residual:       0.35730270087402854
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 3.967540
+         Iterations: 642
+         Function evaluations: 1020
+Fitting is successful
+Parameter Statistics
+['0.8139089139468951 ~(0.0)', '1.4091516953495524 ~(0.0)', '0.28877724153814044 ~(0.0)', '9.86909563798302 ~(0.0)', '0.07899301958801226 ~(0.0)', '5.180942703874255 ~(0.0)', '4.0280168261804526e-07 ~(0.0)', '2.501445704607625 ~(0.0)', '4.965950361324989 ~(0.0)', '0.01836965308011075 ~(0.0)']
+Objective function breakdown
+Residual:       3.967539777381312
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 3.690776
+         Iterations: 1113
+         Function evaluations: 1667
+Fitting is successful
+Parameter Statistics
+['1.2366160702696023 ~(0.0)', '1.7820148476035316 ~(0.0)', '0.3228888792253873 ~(0.0)', '3.1830632322270684 ~(0.0)', '0.07909767480144159 ~(0.0)', '1.8153931877638678 ~(0.0)', '1.2719824966467254e-08 ~(0.0)', '0.7327685226209504 ~(0.0)', '2.2846762084202856 ~(0.0)', '0.002839620927791854 ~(0.0)']
+Objective function breakdown
+Residual:       3.6907757629531917
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 2.373387
+         Iterations: 5004
+         Function evaluations: 7109
+Fitting is successful
+Parameter Statistics
+['3.6442483287629114e-13 ~(0.0)', '10.672538275543104 ~(0.0)', '3.4223119617940436 ~(0.0)', '68.49816392180628 ~(0.0)', '0.6184565439164079 ~(0.0)', '11.31453136660523 ~(0.0)', '0.30429279547339727 ~(0.0)', '18.53504915613975 ~(0.0)', '50.497328962649036 ~(0.0)', '0.17485614035313995 ~(0.0)']
+Objective function breakdown
+Residual:       2.370357057495799
+Regularisation: 0.3029540785387889
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.860480
+         Iterations: 2596
+         Function evaluations: 3729
+Fitting is successful
+Parameter Statistics
+['4.163669489496456 ~(0.0)', '8.403322122912355 ~(0.0)', '6.289088838206105 ~(0.0)', '3.768196259475189e-07 ~(0.0)', '0.6098101326999351 ~(0.0)', '4.889765257045511 ~(0.0)', '1.2577111383159956 ~(0.0)', '9.281512401644118 ~(0.0)', '0.773139126816756 ~(0.0)', '0.020364115786167217 ~(0.0)']
+Objective function breakdown
+Residual:       1.8604803365931706
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 2.235945
+         Iterations: 2181
+         Function evaluations: 3169
+Fitting is successful
+Parameter Statistics
+['2.5111789810999614 ~(0.0)', '24.077312943931247 ~(0.0)', '9.07488129640577 ~(0.0)', '1.2056084546989565 ~(0.0)', '0.23061458622012582 ~(0.0)', '5.520524273356713 ~(0.0)', '0.5197931851444153 ~(0.0)', '6.0005788491318155 ~(0.0)', '17.96709684934691 ~(0.0)', '0.07676742299031492 ~(0.0)']
+Objective function breakdown
+Residual:       2.2320005255486857
+Regularisation: 0.12472729645063191
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.378459
+         Iterations: 2003
+         Function evaluations: 2898
+Fitting is successful
+Parameter Statistics
+['1.7984946096803796 ~(0.0)', '0.6243833773466001 ~(0.0)', '1.2842122037845964 ~(0.0)', '3.7212427224526747 ~(0.0)', '0.234793944309746 ~(0.0)', '0.13416465613459538 ~(0.0)', '0.9431317462456386 ~(0.0)', '0.2524946326290064 ~(0.0)', '3.729218441893846 ~(0.0)', '0.00740489047768916 ~(0.0)']
+Objective function breakdown
+Residual:       0.37845940594878064
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.532155
+         Iterations: 1732
+         Function evaluations: 2536
+Fitting is successful
+Parameter Statistics
+['2.234655206366088 ~(0.0)', '0.29287456482450014 ~(0.0)', '6.041136376147557 ~(0.0)', '5.309130910983034 ~(0.0)', '0.7461045254483619 ~(0.0)', '0.4018147175500099 ~(0.0)', '4.4054880443472335 ~(0.0)', '1.873261594883566e-06 ~(0.0)', '5.066406735576928 ~(0.0)', '0.002798634648488188 ~(0.0)']
+Objective function breakdown
+Residual:       0.4552532780415381
+Regularisation: 0.7690186052392732
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.408328
+         Iterations: 1606
+         Function evaluations: 2356
+Fitting is successful
+Parameter Statistics
+['1.6469065242703702 ~(0.0)', '7.129803714588343 ~(0.0)', '0.6068690744080807 ~(0.0)', '6.409692305120338 ~(0.0)', '1.5031069552639753 ~(0.0)', '21.239847024255084 ~(0.0)', '2.5699750052577492 ~(0.0)', '4.962957128261776 ~(0.0)', '15.035578181553028 ~(0.0)', '0.13600752947649875 ~(0.0)']
+Objective function breakdown
+Residual:       1.4083278740774925
+Regularisation: 5.703710175326486e-07
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.463677
+         Iterations: 3132
+         Function evaluations: 4424
+Fitting is successful
+Parameter Statistics
+['2.202304800964252 ~(0.0)', '4.594654296336425 ~(0.0)', '0.9789640303297273 ~(0.0)', '1.734035111510979 ~(0.0)', '0.9706487421461385 ~(0.0)', '3.6748924465392996 ~(0.0)', '3.1873885781348417 ~(0.0)', '3.920352693817533e-09 ~(0.0)', '5.568209942990929 ~(0.0)', '0.002178037774282446 ~(0.0)']
+Objective function breakdown
+Residual:       0.45570778019406644
+Regularisation: 0.025199995544918773
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.329813
+         Iterations: 2572
+         Function evaluations: 3625
+Fitting is successful
+Parameter Statistics
+['1.8577906597383747 ~(0.0)', '1.1445492153654249 ~(0.0)', '1.573018571358368 ~(0.0)', '2.7919171455636387 ~(0.0)', '0.7822870135876585 ~(0.0)', '1.0282321517732904 ~(0.0)', '3.5913712965331364 ~(0.0)', '0.5570356559867918 ~(0.0)', '8.055247569673513 ~(0.0)', '0.008192559059748963 ~(0.0)']
+Objective function breakdown
+Residual:       0.32943391389863486
+Regularisation: 0.0006741576451927334
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.702853
+         Iterations: 3196
+         Function evaluations: 4546
+Fitting is successful
+Parameter Statistics
+['2.11697552499917 ~(0.0)', '1.629386440852798 ~(0.0)', '6.282584157161856 ~(0.0)', '9.48400395871894 ~(0.0)', '6.820484021914503 ~(0.0)', '49.319911912906086 ~(0.0)', '70.50345385451959 ~(0.0)', '20.129865484683094 ~(0.0)', '78.74553164850678 ~(0.0)', '0.2645181128792309 ~(0.0)']
+Objective function breakdown
+Residual:       0.6034505504267226
+Regularisation: 0.09940226091084313
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 2.290224
+         Iterations: 896
+         Function evaluations: 1358
+Fitting is successful
+Parameter Statistics
+['1.0579026997655179 ~(0.0)', '1.439539939531777 ~(0.0)', '0.3445926492085377 ~(0.0)', '2.5893545661253032 ~(0.0)', '0.26844262604287106 ~(0.0)', '4.313354127900049 ~(0.0)', '8.638867778672797e-08 ~(0.0)', '2.0124750008271173 ~(0.0)', '7.153126077346734 ~(0.0)', '0.0390378472825408 ~(0.0)']
+Objective function breakdown
+Residual:       2.2902240432048946
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 3.121841
+         Iterations: 1983
+         Function evaluations: 2872
+Fitting is successful
+Parameter Statistics
+['0.9651285926233047 ~(0.0)', '0.6148198830920141 ~(0.0)', '0.2857589106680996 ~(0.0)', '3.7522482515804247 ~(0.0)', '0.030199499632455773 ~(0.0)', '5.43126054177346 ~(0.0)', '5.610660169883449e-09 ~(0.0)', '2.10916460140399 ~(0.0)', '5.185544888266943 ~(0.0)', '0.03325570464517851 ~(0.0)']
+Objective function breakdown
+Residual:       3.1218412942370497
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.110600
+         Iterations: 2832
+         Function evaluations: 4048
+Fitting is successful
+Parameter Statistics
+['1.395840660699409 ~(0.0)', '1.2015009808857964 ~(0.0)', '1.0896766195026246 ~(0.0)', '1.3476890998749704 ~(0.0)', '0.2368071975804647 ~(0.0)', '1.4006120821002617 ~(0.0)', '4.211147092284293 ~(0.0)', '2.255227854861709 ~(0.0)', '25.965215914890006 ~(0.0)', '0.019676626788843334 ~(0.0)']
+Objective function breakdown
+Residual:       1.110599690668283
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.918993
+         Iterations: 2108
+         Function evaluations: 3045
+Fitting is successful
+Parameter Statistics
+['1.7521167036563354 ~(0.0)', '0.7955603137620402 ~(0.0)', '0.6777858045896259 ~(0.0)', '5.114143202190388 ~(0.0)', '0.001963597973383421 ~(0.0)', '0.007970640420243695 ~(0.0)', '1.765163178392803e-07 ~(0.0)', '0.014703203792864728 ~(0.0)', '1.6649893729507343 ~(0.0)', '0.008968635364561293 ~(0.0)']
+Objective function breakdown
+Residual:       0.9189926466073418
+Regularisation: 2.5248188327475648e-39
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 1.348110
+         Iterations: 1532
+         Function evaluations: 2260
+Fitting is successful
+Parameter Statistics
+['1.6510265782752929 ~(0.0)', '4.283367205272303 ~(0.0)', '1.2021325923133834 ~(0.0)', '2.2423703477074692 ~(0.0)', '1.8308588321640396 ~(0.0)', '16.919725428496477 ~(0.0)', '0.7734817242974714 ~(0.0)', '6.44463625388655 ~(0.0)', '7.28265276018549 ~(0.0)', '0.054776182619002904 ~(0.0)']
+Objective function breakdown
+Residual:       1.348110432635107
+Regularisation: 0.0
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 0.464865
+         Iterations: 1005
+         Function evaluations: 1468
+Fitting is successful
+Parameter Statistics
+['2.3878274967861057 ~(0.0)', '2.0777862856203306 ~(0.0)', '1.5340244535863024 ~(0.0)', '0.051419592734205974 ~(0.0)', '0.13856704064054154 ~(0.0)', '0.10365669716008896 ~(0.0)', '0.12280558711178968 ~(0.0)', '0.007294643476236385 ~(0.0)', '1.5788960664448117 ~(0.0)', '0.023299946948447732 ~(0.0)']
+Objective function breakdown
+Residual:       0.4475871890978525
+Regularisation: 0.0005463761251161298
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 4.742541
+         Iterations: 564
+         Function evaluations: 859
+Fitting is successful
+Parameter Statistics
+['0.930996321338668 ~(0.0)', '0.26693620126942313 ~(0.0)', '0.48291035038396213 ~(0.0)', '1.0187967069496107 ~(0.0)', '0.20129668261044942 ~(0.0)', '2.7548353866849387 ~(0.0)', '9.832567097748598e-07 ~(0.0)', '0.3940848982162225 ~(0.0)', '1.4999589383127416 ~(0.0)', '0.002345787272737 ~(0.0)']
+Objective function breakdown
+Residual:       4.74253676932411
+Regularisation: 7.615230988704095e-08
+Time span of fitting:  [4, 18, 60]
+Initial values:  [0.021712763, 0, -0.16999999999999993]
+Optimization terminated successfully.
+         Current function value: 2.563685
+         Iterations: 868
+         Function evaluations: 1299
+Fitting is successful
+Parameter Statistics
+['1.0942828957041186 ~(0.0)', '2.385422206547786 ~(0.0)', '0.2124316702522852 ~(0.0)', '14.73174988871055 ~(0.0)', '0.35603669206175415 ~(0.0)', '6.273031116469177 ~(0.0)', '1.2450014128805122e-09 ~(0.0)', '1.9174279316027132 ~(0.0)', '6.306366150461455 ~(0.0)', '0.03675431098768715 ~(0.0)']
+Objective function breakdown
+Residual:       2.5636847543206147
+Regularisation: 0.0

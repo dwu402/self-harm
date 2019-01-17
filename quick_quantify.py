@@ -51,7 +51,7 @@ def read_summary(summary_file):
 
 
 def remove_bad_results(summary_notes, results):
-    thresholds = np.quantile(summary_notes, 0.25, axis=0)
+    thresholds = np.quantile(summary_notes, 0.75, axis=0)
     threshold = thresholds[0]
     acceptable_indices = [i for i, val in enumerate(summary_notes) if val[0] < threshold]
     return [val for i, val in enumerate(results) if i in acceptable_indices]
@@ -69,7 +69,7 @@ def compute_statistics(results, summary_notes):
         results = remove_bad_results(summary_notes, results)
     p_separated_list = [list(i) for i in zip(*results)]
     means = [np.mean(val) for val in p_separated_list]
-    stds = [np.std(val) for val in p_separated_list]
+    stds = [np.std(val)/len(val) for val in p_separated_list]
     return zip(means, stds)
 
 

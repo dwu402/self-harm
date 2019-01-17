@@ -80,7 +80,7 @@ def error_fn(data, fit, parameters, regularisation, detailed=False):
     else:
         raise TypeError('Status of Mouse is ' + behaviour + ', should be one of [Survivor, Non-Survivor]')
 
-    obj_fn_value = (distance + 0.025*interpolation_penalty) * np.exp(interpolation_penalty) + 0.0001*asymptotic_penalty
+    obj_fn_value = (distance + 0.025*interpolation_penalty) * np.exp(interpolation_penalty)
     # loss_matrix = ot.dist(data_points, fitted_points)
     # data_weights = np.ones((len(data_points),)) / len(data_points)
     # fit_weights = np.ones((len(fitted_points),)) / len(fitted_points)
@@ -88,10 +88,12 @@ def error_fn(data, fit, parameters, regularisation, detailed=False):
     # distance = ot.emd2(data_weights, fit_weights, loss_matrix) * np.exp(interpolation_penalty)
 
     # regularise by allowing the parameter to take values close to 0, 1 or -1
-    ps = np.array(parameters)
-    parameter_distances = np.abs(np.column_stack((ps, ps-1, ps+1)))
-    parameter_distance = np.min(parameter_distances, axis=1)
-    regularisation = np.linalg.norm(parameter_distance, ord=1)
+    # ps = np.array(parameters)
+    # parameter_distances = np.abs(np.column_stack((ps, ps-1, ps+1)))
+    # parameter_distance = np.min(parameter_distances, axis=1)
+    # regularisation = np.linalg.norm(parameter_distance, ord=1)
+
+    regularisation = asymptotic_penalty
     if detailed:
         return obj_fn_value, regularisation
     return obj_fn_value + beta*(regularisation)

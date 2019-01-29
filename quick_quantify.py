@@ -111,7 +111,7 @@ def display_statistics(statistics, output_file):
         print(output_string, file=output_stream)
 
 
-def read_comparison_file(output_file):
+def read_output_file(output_file):
     with open(output_file) as of_handle:
         outputs = of_handle.read()
     chunks = filter(None, outputs.split('---'))
@@ -125,7 +125,7 @@ def read_comparison_file(output_file):
 
 
 def display_comparison(output_file):
-    comparisons = read_comparison_file(output_file)
+    comparisons = read_output_file(output_file)
     comparisons = np.array(comparisons).astype('float')
     xs = np.arange(0,9)
     plt.rc('axes', prop_cycle=cycler('color', ['g','g','g','r','r','r']))
@@ -137,7 +137,26 @@ def display_comparison(output_file):
     ax.set_title('Mean values for each parameter')
     ax.set_xticks(np.arange(0, 9))
     ax.set_xticklabels(['r','k','p','s','d','f','g','j','l'])
-    ax.set_yscale("log", nonposy='clip')
+    # ax.set_yscale("log", nonposy='clip')
+
+
+def do_quirky(output_file):
+    results = read_output_file(output_file)
+    results = np.array(results).astype('float')
+    plt.rc('axes', prop_cycle=cycler('color', ['g','g','g','r','r','r']))
+    fig, ax = plt.subplots()
+    for result in results:
+        # solve gamma
+        s_over_d = result[3][0]/result[4][0]
+        gamma_poly = np.array([1, -s_over_d, 0, 1])
+        gamma = np.roots(gamma_poly)
+        gamma = max(gamma[np.isreal(gamma)])
+
+        eigens = [result[0][0] - result[1][0]*gamma, # r-kY
+                  3*result[4][0]/(1+gamma**3) - result[4][0], #3d/1+Y^3 - d
+                  result[5][0]*gamma - result[6][0] #fY-g
+                 ]
+        ax.plot(eigens, 'o')
 
 
 @click.command()
@@ -145,8 +164,9 @@ def display_comparison(output_file):
 @click.option('-s', '--summary-file', default=None, help='file that contains the summary notes')
 @click.option('-g', '--graphical', is_flag=True, help='plot the results instead of printing')
 @click.option('-c', '--compare', is_flag=True, help='compare the results between different runs')
+@click.option('-q', '--quirky', is_flag=True, help='weird flag, meant for testing')
 @click.option('-o', '--output-file', default=None, help='output file')
-def main(results_file, summary_file, graphical, compare, output_file):
+def main(results_file, summary_file, graphical, compare, quirky, output_file):
     glob_path, isdir = generate_glob(results_file)
     if not isdir or not summary_file:
         summary_notes = [[]]*len(glob_path)
@@ -160,13 +180,15 @@ def main(results_file, summary_file, graphical, compare, output_file):
     for index, result_file in enumerate(glob_path):
         results = read_results(result_file)
         trimmed_data = trim_data(results, summary_notes[index])
-        if graphical and not compare:
+        if graphical:
             plot_data(trimmed_data)
         else:
             statistics = compute_statistics(trimmed_data)
             display_statistics(statistics, output_file)
     if compare:
         display_comparison(output_file)
+    if quirky:
+        do_quirky(output_file)
     plt.show()
 
 

@@ -1,6 +1,7 @@
 numpy>=1.15.0
 scipy
 matplotlib
+seaborn
 pandas
 click
 xlrd

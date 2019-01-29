@@ -51,7 +51,7 @@ def read_summary(summary_file):
 
 
 def remove_bad_results(summary_notes, results):
-    thresholds = np.quantile(summary_notes, 0.75, axis=0)
+    thresholds = np.percentile(summary_notes, 25, axis=0)
     threshold = thresholds[0]
     acceptable_indices = [i for i, val in enumerate(summary_notes) if val[0] < threshold]
     return [val for i, val in enumerate(results) if i in acceptable_indices]
@@ -64,13 +64,17 @@ def standard_deviation(sample, mean):
     return np.sqrt(variance/len(sample))
 
 
-def compute_statistics(results, summary_notes):
-    if summary_notes != []:
-        results = remove_bad_results(summary_notes, results)
+def compute_statistics(results):
     p_separated_list = [list(i) for i in zip(*results)]
     means = [np.mean(val) for val in p_separated_list]
-    stds = [np.std(val)/len(val) for val in p_separated_list]
+    stds = [np.std(val) for val in p_separated_list]
     return zip(means, stds)
+
+
+def trim_data(results, summary_notes):
+    if summary_notes != []:
+        return remove_bad_results(summary_notes, results)
+    return results
 
 
 def plot_statistics(statistics):
@@ -80,6 +84,17 @@ def plot_statistics(statistics):
     h = [p[0] for p in stats]
     e = [p[1] for p in stats]
     ax.bar(x, h, yerr=e)
+
+
+def plot_data(data):
+    fig, ax = plt.subplots()
+    p_list = np.array(data)
+    ax.violinplot(p_list, showmedians=True, showextrema=False)
+    # specific to the immune system
+    ax.set_xticks(np.arange(1, 10))
+    ax.set_xticklabels(['r','k','p','s','d','f','g','j','l'])
+    # ax.set_yscale("log", nonposy='clip')
+    # ax.set_ylim(0, 10)
 
 
 def display_statistics(statistics, output_file):
@@ -105,10 +120,11 @@ def main(results_file, summary_file, graphical, output_file):
         summary_notes = read_summary(summary_file)
     for index, result_file in enumerate(glob_path):
         results = read_results(result_file)
-        statistics = compute_statistics(results, summary_notes[index])
+        trimmed_data = trim_data(results, summary_notes[index])
         if graphical:
-            plot_statistics(statistics)
+            plot_data(trimmed_data)
         else:
+            statistics = compute_statistics(trimmed_data)
             display_statistics(statistics, output_file)
     plt.show()
 

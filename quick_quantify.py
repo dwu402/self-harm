@@ -12,13 +12,15 @@ from cycler import cycler
 
 
 def generate_glob(file_path):
+    """Returns a glob of all readable files, and whether or not it is a directory"""
     if path.isdir(file_path):
-        return glob(path.join(file_path,'*.out')), True
+        return glob(path.join(file_path, '*.out')), True
     if path.isfile(file_path):
         return glob(file_path), False
     raise TypeError('Unknown file/directory type')
 
 def read_results(results_file):
+    """Reads in a file that is pseudo-YAML delimited"""
     with open(results_file) as outfile:
         contents = outfile.read()
     runs = filter(None, contents.split('---'))
@@ -28,6 +30,7 @@ def read_results(results_file):
 
 
 def split_by(pattern, string, clean=False):
+    """Split a string by a regex. Clean split returns a filter object without empty strings"""
     split_string = re.compile(pattern).split(string)
     if clean:
         return filter(None, split_string)
@@ -35,6 +38,7 @@ def split_by(pattern, string, clean=False):
 
 
 def read_summary(summary_file):
+    """Reads the stdout file that contains objective function value information"""
     if not summary_file:
         return None
     summary_notes = []
@@ -54,6 +58,7 @@ def read_summary(summary_file):
 
 
 def remove_bad_results(summary_notes, results):
+    """Removes a proportion of results based on objective function values"""
     thresholds = np.percentile(summary_notes, 25, axis=0)
     threshold = thresholds[0]
     acceptable_indices = [i for i, val in enumerate(summary_notes) if val[0] < threshold]
@@ -61,13 +66,13 @@ def remove_bad_results(summary_notes, results):
 
 
 def standard_deviation(sample, mean):
-    variance = 0
-    for x in sample:
-        variance += (x-mean)**2
-    return np.sqrt(variance/len(sample))
+    """Shitty implementation of the standard deviation"""
+    variance = sum([(s-mean)**2 for s in sample])/len(sample)
+    return np.sqrt(variance)
 
 
 def compute_statistics(results):
+    """Returns the mean and std deviation of a list"""
     p_separated_list = [list(i) for i in zip(*results)]
     means = [np.mean(val) for val in p_separated_list]
     stds = [np.std(val)/len(val) for val in p_separated_list]
@@ -75,12 +80,14 @@ def compute_statistics(results):
 
 
 def trim_data(results, summary_notes):
+    """Wrapper for removing unanted results"""
     if summary_notes != []:
         return remove_bad_results(summary_notes, results)
     return results
 
 
 def plot_statistics(statistics):
+    """Plotting function, unused"""
     fig, ax = plt.subplots()
     stats = list(statistics)
     x = np.arange(len(stats))
@@ -90,6 +97,7 @@ def plot_statistics(statistics):
 
 
 def plot_data(data):
+    """Other plotting function"""
     fig, ax = plt.subplots()
     p_list = np.array(data)
     ax.violinplot(p_list, showmedians=True, showextrema=False)
@@ -101,6 +109,7 @@ def plot_data(data):
 
 
 def display_statistics(statistics, output_file):
+    """Writes the calcualted stats to stdout or file, as specified"""
     if output_file is not None:
         output_stream = open(output_file, 'a')
     else:
@@ -112,6 +121,7 @@ def display_statistics(statistics, output_file):
 
 
 def read_output_file(output_file):
+    """Reads the output file of this program for furhter analysis"""
     with open(output_file) as of_handle:
         outputs = of_handle.read()
     chunks = filter(None, outputs.split('---'))
@@ -124,10 +134,11 @@ def read_output_file(output_file):
     return comparison_stats
 
 
-def display_comparison(output_file):
+def display_comparison(output_file, xlabels):
+    """Plots the comparison between different groups of stats calculated"""
     comparisons = read_output_file(output_file)
     comparisons = np.array(comparisons).astype('float')
-    xs = np.arange(0,9)
+    xs = np.arange(0,len(xlabels))
     plt.rc('axes', prop_cycle=cycler('color', ['g','g','g','r','r','r']))
     fig, ax = plt.subplots()
     for stat in comparisons:
@@ -135,28 +146,40 @@ def display_comparison(output_file):
         stdvs = np.array([j[1] for j in stat])
         ax.errorbar(xs, means, yerr=stdvs, fmt="o")
     ax.set_title('Mean values for each parameter')
-    ax.set_xticks(np.arange(0, 9))
-    ax.set_xticklabels(['r','k','p','s','d','f','g','j','l'])
+    ax.set_xticks(np.arange(0, len(xlabels)))
+    ax.set_xticklabels(xlabels)
     # ax.set_yscale("log", nonposy='clip')
 
 
 def do_quirky(output_file):
+    """Looking at eigenvalues (plotter)"""
     results = read_output_file(output_file)
     results = np.array(results).astype('float')
     plt.rc('axes', prop_cycle=cycler('color', ['g','g','g','r','r','r']))
     fig, ax = plt.subplots()
     for result in results:
-        # solve gamma
-        s_over_d = result[3][0]/result[4][0]
-        gamma_poly = np.array([1, -s_over_d, 0, 1])
-        gamma = np.roots(gamma_poly)
-        gamma = max(gamma[np.isreal(gamma)])
-
-        eigens = [result[0][0] - result[1][0]*gamma, # r-kY
-                  3*result[4][0]/(1+gamma**3) - result[4][0], #3d/1+Y^3 - d
-                  result[5][0]*gamma - result[6][0] #fY-g
-                 ]
+        eigens = compute_eigenvalues([r[0] for r in result])
         ax.plot(eigens, 'o')
+
+
+def compute_eigenvalues(p_list):
+    """Implementation to calculate the eigenvalues of the generic immune model from a lsit of the parameters"""
+    characteristic_polynomial = np.array([1, -p_list[3]/p_list[4], 0, 1])
+    gammas = np.roots(characteristic_polynomial)
+    gamma_max = np.real(max(gammas[np.isreal(gammas)]))
+
+    return [p_list[0] - p_list[1]*gamma_max,
+            3*p_list[4]/(1+gamma_max**3) - p_list[4],
+            p_list[5]*gamma_max - p_list[6]]
+
+
+def compute_eigen_stats(results):
+    """Go throught the individual results and calcuate the eigenvalues for further analysis"""
+    eigenvalues = [compute_eigenvalues(result) for result in results]
+    sorted_list = [list(i) for i in zip(*eigenvalues)]
+    means = [np.mean(val) for val in sorted_list]
+    stds = [np.std(val)/len(val) for val in sorted_list]
+    return zip(means, stds)
 
 
 @click.command()
@@ -174,6 +197,11 @@ def main(results_file, summary_file, graphical, compare, quirky, output_file):
         summary_notes = read_summary(summary_file)
     if compare and not output_file:
         output_file = "comparison_summary.results"
+    if quirky:
+        xlabels = ['r-kY', '3d/(1+Y^2)', 'fY-g']
+        compare = True
+    else:
+        xlabels = list('rkpsdfgjl')
     if output_file:
         f = open(output_file, 'w')
         f.close()
@@ -183,12 +211,13 @@ def main(results_file, summary_file, graphical, compare, quirky, output_file):
         if graphical:
             plot_data(trimmed_data)
         else:
-            statistics = compute_statistics(trimmed_data)
+            if quirky:
+                statistics = compute_eigen_stats(trimmed_data)
+            else:
+                statistics = compute_statistics(trimmed_data)
             display_statistics(statistics, output_file)
     if compare:
-        display_comparison(output_file)
-    if quirky:
-        do_quirky(output_file)
+        display_comparison(output_file, xlabels)
     plt.show()
 
 

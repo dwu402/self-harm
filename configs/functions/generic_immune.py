@@ -31,7 +31,7 @@ def scale_data(data):
 
 def threshold_data(data):
     """Throw out data that is below a certain RBC threshold"""
-    threshold_value = 0.01
+    threshold_value = 1e5
     values = list(data['x'])
     accepted_values = [v > threshold_value for v in values]
     for col in data.keys():
@@ -41,8 +41,8 @@ def threshold_data(data):
 def treat_data(context, raw_data):
     """Select, scale and treshold data; define context based on data"""
     clean_data = select_data(raw_data)
-    scale_data(clean_data)
     threshold_data(clean_data)
+    scale_data(clean_data)
 
     # Modify the time span of integration to match the data
     context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*2, len(clean_data['t'])*10]

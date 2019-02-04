@@ -151,6 +151,16 @@ def display_comparison(output_file, xlabels):
     # ax.set_yscale("log", nonposy='clip')
 
 
+def compute_eigens(params):
+    gamma_poly = np.array([1, -params[3]/params[4], 0, 1])
+    gamma = np.roots(gamma_poly)
+    gamma = max(gamma[np.isreal(gamma)])
+    return [params[0] - params[1]*gamma,
+            3*params[4]/(1+gamma*3) - params[4],
+            params[5]*gamma - params[6],
+           ]
+
+
 def do_quirky(output_file):
     """Looking at eigenvalues (plotter)"""
     results = read_output_file(output_file)
@@ -158,7 +168,9 @@ def do_quirky(output_file):
     plt.rc('axes', prop_cycle=cycler('color', ['g','g','g','r','r','r']))
     fig, ax = plt.subplots()
     for result in results:
-        eigens = compute_eigenvalues([r[0] for r in result])
+        params = [r[0] for r in result]
+        # solve gamma
+        eigens = compute_eigens(params)
         ax.plot(eigens, 'o')
 
 

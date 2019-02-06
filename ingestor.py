@@ -76,19 +76,23 @@ def get_model(context):
 
 def get_data(context):
     """Return the data for fitting from an arbitrary file"""
-    data_file = context['data_file']
-    check_file(data_file)
-    df_extension = data_file.split('.')[-1].lower()
-    if df_extension == 'xlsx':
-        raw_data = pd.read_excel(data_file)
-    elif df_extension == "csv":
-        raw_data = pd.read_csv(data_file)
+    if not context['mulitple_data_files']:
+        data_files = [context['data_file']]
     else:
-        error_string = "Filetype not supported: " + str(df_extension)
-        raw_data = []
-        raise TypeError(error_string)
+        data_files = [context['data_file']]
+    for data_file in data_files:
+        check_file(data_file)
+        df_extension = data_file.split('.')[-1].lower()
+        if df_extension == 'xlsx':
+            raw_data = pd.read_excel(data_file)
+        elif df_extension == "csv":
+            raw_data = pd.read_csv(data_file)
+        else:
+            error_string = "Filetype not supported: " + str(df_extension)
+            raw_data = []
+            raise TypeError(error_string)
 
-    context['parse_data'](context, raw_data)
+        context['parse_data'](context, raw_data)
 
 def fn_from_file(file, function_name):
     """Helper function to get a function from a py file"""
@@ -117,7 +121,13 @@ def get_config(context, config_file):
             elif config_type in ['pf', 'parameter_file']:
                 context['parameter_file'] = str(config_values[0])
             elif config_type in ['df', 'data_file']:
-                context['data_file'] = str(config_values[0])
+                if 'data_file' not in context.keys():
+                    context['data_file'] = str(config_values[0])
+                    context['multiple_data_files'] = False
+                else:
+                    context['data_file'] = [context['data_file']]
+                    context['data_file'].append(str(config_values[0]))
+                    context['multiple_data_files'] = True
             elif config_type in ['pd', 'parse_data']:
                 context['parse_data'] = fn_from_file(config_values[0], config_values[1])
             elif config_type in ['ef', 'error_function']:

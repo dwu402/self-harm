@@ -45,12 +45,23 @@ def treat_data(context, raw_data):
     scale_data(clean_data)
 
     # Modify the time span of integration to match the data
-    context['time_span'] = [clean_data['t'][0], clean_data['t'][-1]*2, len(clean_data['t'])*10]
-    context['initial_values'] = [clean_data['x'][0], 0, clean_data['z'][0]]
-    context['data'] = clean_data
+    time_span = [clean_data['t'][0], clean_data['t'][-1]*2, len(clean_data['t'])*10]
+    initial_values = [clean_data['x'][0], 0, clean_data['z'][0]]
 
-    print("Time span of fitting: ", context['time_span'])
-    print("Initial values: ", context['initial_values'])
+    if not context['multiple_data_files']:
+        context['time_span'] = time_span
+        context['initial_values'] = initial_values
+        context['data'] = clean_data
+    else:
+        for key in ['time_span', 'initial_values', 'data']:
+            if key not in context.keys():
+                context[key] = []
+        context['time_span'].append(time_span)
+        context['initial_values'].append(initial_values)
+        context['data'].append(clean_data)
+
+    print("Time span of fitting: ", time_span)
+    print("Initial values: ", initial_values)
 
 
 def error_fn(data, fit, parameters, regularisation, detailed=False):

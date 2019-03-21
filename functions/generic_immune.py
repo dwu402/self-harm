@@ -1,5 +1,6 @@
 import numpy as np
 from scipy.interpolate import interp1d
+import pandas as pd
 
 def parse(context, raw_datasets):
     threshold_value = 1e-5
@@ -25,8 +26,10 @@ def parse(context, raw_datasets):
         # create the context updates
         updates['initial_values'].append([dataset['x'].iloc[0], 0, dataset['z'].iloc[0]])
         dataset['t'] = dataset['t'] - dataset['t'].iloc[0]
-        updates['time_span'].append([0, dataset['t'].iloc[-1]*2, dataset['t'].iloc[-1]*2])
-        #updates['smoothed_data'].append(smooth_data(context, dataset))
+        updates['time_span'].append([0, dataset['t'].iloc[-1], dataset['t'].iloc[-1]])
+
+        dataset['y']  = pd.Series([v for v in dataset[['x', 'z']].values], index = dataset.index)
+    updates['observation_vector'] = np.array([0, 2])
 
     return clean_datasets, updates
 

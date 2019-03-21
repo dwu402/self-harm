@@ -3,7 +3,7 @@ import numpy as np
 def model(t, state, parameters):
 
     x, y, z = state
-    r, k, p, s, d, f, g, j, l = np.fabs(parameters)
+    r, k, p, s, d, f, g, j, l = parameters
 
     return [
         r*x - k*x*y,

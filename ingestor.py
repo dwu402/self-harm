@@ -51,7 +51,7 @@ def initialise_context():
         },
         'fitting_configuration':{
             'refits': 0,
-            'regularisation_parameter': 0,
+            'regularisation_parameter': [],
             'resampling_parameter': 0,
             'error_function': None,
         },
@@ -124,7 +124,7 @@ def parse_config_file(context):
         elif config_type in ['rf', 'refits']:
             context['fitting_configuration']['refits'] = float(config_values[0])
         elif config_type in ['rg', 'regularisation']:
-            context['fitting_configuration']['regularisation_parameter'] = float(config_values[0])
+            context['fitting_configuration']['regularisation_parameter'] = [float(val) for val in config_values]
         elif config_type in ['rs', 'resample']:
             context['fitting_configuration']['resampling_parameter'] = int(config_values[0])
         elif config_type in ['vf', 'visualisation-function']:

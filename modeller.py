@@ -53,13 +53,13 @@ class Model():
 
     # We calculate expensive stuff later when called
     def get_basis_jacobian(self):
-        if not self.basis_jacobian:
+        if self.basis_jacobian is None:
             self.basis_jacobian = ca.vcat(
                 [ca.diag(ca.jacobian(self.basis[:, i], self.ts)) for i in range(self.K)]
             ).reshape((self.n, self.K))
         return self.basis_jacobian
 
     def get_xdash(self):
-        if not self.xdash:
-            self.xdash = [self.get_basis_jacobian@ci for ci in self.cs]
+        if self.xdash is None:
+            self.xdash = [self.get_basis_jacobian()@ci for ci in self.cs]
         return self.xdash

@@ -16,7 +16,7 @@ def main(run_file, action, output_file, verbose):
     solver = fitter.Fitter()
     solver.construct_objectives(context, model)
     solver.construct_problems()
-    for rho in np.linspace(*context['fitting_configuration']['regularisation_parameter'], 20):
+    for rho in np.logspace(*context['fitting_configuration']['regularisation_parameter'], 20):
         solver.solve(rho)
     solver.visualise()
 

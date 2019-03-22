@@ -44,7 +44,7 @@ class InnerObjective():
         self.collocation_matrix = ca.MX.sym("H", self.m, model.n)
 
         self.rho = ca.MX.sym("rho")
-        self.default_rho = context['fitting_configuration']['regularisation_parameter'][0]
+        self.default_rho = 10**(context['fitting_configuration']['regularisation_parameter'][0])
 
         self.input_list = [model.ts, *model.cs, *model.ps, self.collocation_matrix,
                            self.observation_number, *self.observations, self.rho]
@@ -230,6 +230,7 @@ class Fitter():
             plotting_array.append((float(rho), fun_sum))
         plotting_array = np.array(plotting_array)
         plt.plot(*plotting_array.T, 'o')
+        plt.show()
 
 class Problem():
     def __init__(self, guess, c_0=None):

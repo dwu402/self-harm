@@ -136,7 +136,7 @@ class CCache():
         if key not in self.results.keys():
             return None
         else:
-            return self.results.pop(key)
+            return self.results[key]
 
 
 class Fitter():
@@ -232,6 +232,10 @@ class Fitter():
         plt.plot(*plotting_array.T, 'o')
         plt.show()
 
+    def write(self, output_file):
+        with open(output_file, "w") as ofh:
+            ofh.write(self.solutions)
+
 class Problem():
     def __init__(self, guess, c_0=None):
         self.function = None
@@ -244,14 +248,14 @@ class Problem():
 
     def make(self, inn_solver, eval_fn, jac_fn):
         def f_evl(p, rho=None):
-            key = "y".join(map(str, p))
+            key = "y".join(map(str, p)) + "r" + str(rho)
             sol = self.cache.get(key)
             if sol is None:
                 sol = inn_solver(p, self.cache.recent, rho)
                 self.cache.add(key, sol)
             return float(eval_fn(sol.x, p, rho))
         def j_evl(p, rho=None):
-            key = "y".join(map(str, p))
+            key = "y".join(map(str, p)) + "r" + str(rho)
             sol = self.cache.get(key)
             if sol is None:
                 sol = inn_solver(p, self.cache.recent, rho)

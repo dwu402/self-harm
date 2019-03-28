@@ -3,3 +3,4 @@ data/auto-got-*
 .ipynb_checkpoints*
 .spyproject*
 .vscode*
+_ignore_*

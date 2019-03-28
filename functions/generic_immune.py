@@ -2,6 +2,8 @@ import numpy as np
 from scipy.interpolate import interp1d
 import pandas as pd
 
+def parse_royal(context, raw_datasets):
+    return parse(context, raw_datasets, select_data_royal)
 
 def parse_torres(context, raw_datasets):
     return parse(context, raw_datasets, select_data_torres)
@@ -44,6 +46,16 @@ def select_data_torres(data):
         'PD': 'x',
         'RBC': 'z',
         'Status': 'status'
+    }
+    return data[data_cols.keys()].rename(columns=data_cols)
+
+def select_data_royal(data):
+    """Map the data columns to model state variables"""
+    data_cols = {
+        'day': 't',
+        'parasite': 'x',
+        'rbc': 'z',
+        'weight': 'w',
     }
     return data[data_cols.keys()].rename(columns=data_cols)
 

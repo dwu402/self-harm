@@ -13,6 +13,7 @@ def argsplit(arg, n):
     return [arg[delims[i]:delims[i+1]] for i in range(n)]
 
 class InnerObjective():
+    """Object that contains the ability to create the inner objective function"""
     def __init__(self):
         self.m = 0
         self.observations = None
@@ -33,10 +34,10 @@ class InnerObjective():
         self._obj_fn2 = None
 
     def generate_objective(self, context, model):
+        """Create the casadi objects that represent the inner objective function and its jacobian"""
+        self.m = max(len(dataset['t']) for dataset in context.datasets)
 
-        self.m = max(len(dataset['t']) for dataset in context['datasets'])
-
-        self.observation_vector = np.array(context['observation_vector'])
+        self.observation_vector = np.array(context.fitting_configuration['observation_vector'])
         self.observation_number = ca.MX.sym("m")
 
         self.observations = [ca.MX.sym("y_"+str(i), self.m, 1)
@@ -44,16 +45,16 @@ class InnerObjective():
         self.collocation_matrix = ca.MX.sym("H", self.m, model.n)
 
         self.rho = ca.MX.sym("rho")
-        self.default_rho = 10**(context['fitting_configuration']['regularisation_parameter'][0])
+        self.default_rho = 10**(context.fitting_configuration['regularisation_parameter'][0])
 
         self.input_list = [model.ts, *model.cs, *model.ps, self.collocation_matrix,
                            self.observation_number, *self.observations, self.rho]
-
 
         self.create_inner_criterion(model)
         self.calculate_inner_jacobian(model)
 
     def create_inner_criterion(self, model):
+        """Creates the inner objective function casadi object and function"""
         self._obj_1 = sum(ca.norm_2(self.observations[i] - self.collocation_matrix@model.xs[j])**2
                           for i, j in enumerate(self.observation_vector))/self.observation_number
 
@@ -155,12 +156,12 @@ class Fitter():
         self._inner_objective = InnerObjective()
 
     def construct_objectives(self, context, model):
-        self.initial_guess = context['initial_parameters']
+        self.initial_guess = context.initial_parameters
         self.initial_basis_coefs = 0.5 * np.ones(model.K * model.s)
         self._inner_objective.generate_objective(context, model)
         self.create_outer_jacobian(model)
         self.create_regularisation(model)
-        for dataset in context['datasets']:
+        for dataset in context.datasets:
             obj_fn, obj_jac = self._inner_objective.create_objective_functions(model, dataset)
             self.objective_functions.append(self.wrap(obj_fn, obj_jac))
             self.outer_objectives.append(self.outer_function(dataset, model))
@@ -189,7 +190,6 @@ class Fitter():
                                           rho, self.regularisation)
         return J
 
-    """TODO: write this to be the outer objective function"""
     @staticmethod
     def wrap(obj_fn, obj_jac):
         # create a function that solves the inner optimization problem
@@ -269,5 +269,5 @@ class Problem():
         return optimize.minimize(self.function, self.initial_guess, args=rho,
                                  method="L-BFGS-B", jac=self.jacobian, bounds=self.bounds,
                                  options={
-                                    "maxls": 1000,
+                                     "maxls": 1000,
                                  })

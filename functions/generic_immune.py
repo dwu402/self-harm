@@ -2,18 +2,20 @@ import numpy as np
 from scipy.interpolate import interp1d
 import pandas as pd
 
-def parse_royal(context, raw_datasets):
-    return parse(context, raw_datasets, select_data_royal)
+def parse_royal(raw_datasets):
+    return parse(raw_datasets, select_data_royal)
 
-def parse_torres(context, raw_datasets):
-    return parse(context, raw_datasets, select_data_torres)
+def parse_torres(raw_datasets):
+    return parse(raw_datasets, select_data_torres)
 
-def parse(context, raw_datasets, selection_function):
+def parse(raw_datasets, selection_function):
     threshold_value = 1e-5
     clean_datasets = []
     updates = {'initial_values': [],
                'time_span': [],
-               'observation_vector': None,
+               'fitting_configuration': {'weightings': [],
+                                         'observation_vector': None,
+                                        },
               }
 
     for data in raw_datasets:
@@ -34,8 +36,10 @@ def parse(context, raw_datasets, selection_function):
         dataset['t'] = dataset['t'] - dataset['t'].iloc[0]
         updates['time_span'].append([0, dataset['t'].iloc[-1], dataset['t'].iloc[-1]])
 
-        dataset['y']  = pd.Series([v for v in dataset[['x', 'z']].values], index = dataset.index)
-    updates['observation_vector'] = np.array([0, 2])
+        dataset['y'] = pd.Series([v for v in dataset[['x', 'z']].values], index=dataset.index)
+        updates['fitting_configuration']['weightings'].append([1/max(dataset['x']), -1/min(dataset['z'])])
+
+    updates['fitting_configuration']['observation_vector'] = np.array([0, 2])
 
     return clean_datasets, updates
 
@@ -66,7 +70,7 @@ def knots_from_data(ts, n, context):
     """Selects the knots based on data weightings"""
 
     # select data and calculate 2nd derivatives
-    dataset = context['datasets'][0]
+    dataset = context.datasets[0]
     xdiffs = np.gradient(np.gradient(dataset['x'], dataset['t']), dataset['t'])
     zdiffs = np.gradient(np.gradient(dataset['z'], dataset['t']), dataset['t'])
 

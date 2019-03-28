@@ -244,7 +244,7 @@ class Problem():
         self.cache = CCache()
         # intialize the cache
         self.cache.recent = c_0
-        self.bounds = optimize.Bounds(np.zeros(len(guess)), [100.0]*len(guess))
+        self.bounds = optimize.Bounds(np.zeros(len(guess)), [np.inf]*len(guess))
 
     def make(self, inn_solver, eval_fn, jac_fn):
         def f_evl(p, rho=None):

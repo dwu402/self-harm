@@ -47,7 +47,8 @@ def initialise_context():
         'modelling_configuration':{
             'grid_size': 0,
             'basis_number': 0,
-            'model_form': None
+            'model_form': None,
+            'knot_function': None,
         },
         'fitting_configuration':{
             'refits': 0,
@@ -121,6 +122,8 @@ def parse_config_file(context):
             context['modelling_configuration']['grid_size'] = int(config_values[0])
         elif config_type in ['bn', 'basis-number']:
             context['modelling_configuration']['basis_number'] = int(config_values[0])
+        elif config_type in ['kf', 'knot-function']:
+            context['modelling_configuration']['knot_function'] = fn_from_file(config_values[0], config_values[1])
         elif config_type in ['rf', 'refits']:
             context['fitting_configuration']['refits'] = float(config_values[0])
         elif config_type in ['rg', 'regularisation']:

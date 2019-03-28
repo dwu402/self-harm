@@ -35,7 +35,10 @@ class Model():
         time_limits = get_time_limits(context)
         self.ts = ca.MX.sym("t", self.n, 1)
         self.observation_times = np.linspace(*time_limits, self.n)
-        knots = casbasis.choose_knots(self.observation_times, self.K-2)
+        if context['modelling_configuration']['knot_function'] is None:
+            knots = casbasis.choose_knots(self.observation_times, self.K-2)
+        else:
+            knots = context['modelling_configuration']['knot_function'](self.observation_times, self.K-2, context)
         basis_fns = casbasis.basis_functions(knots)
         self.basis = ca.vcat([b(self.ts) for b in basis_fns]).reshape((self.n, self.K))
 

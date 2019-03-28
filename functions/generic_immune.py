@@ -61,3 +61,27 @@ def select_data_royal(data):
 
 def visualise():
     return
+
+def knots_from_data(ts, n, context):
+    """Selects the knots based on data weightings"""
+
+    # select data and calculate 2nd derivatives
+    dataset = context['datasets'][0]
+    xdiffs = np.gradient(np.gradient(dataset['x'], dataset['t']), dataset['t'])
+    zdiffs = np.gradient(np.gradient(dataset['z'], dataset['t']), dataset['t'])
+
+    # rank the relative importance of each datapoint
+    ntimes = len(dataset['t'])
+    importance = sorted(range(ntimes), key=lambda i: np.abs(zdiffs * xdiffs)[i], reverse=True)
+
+    # ensure that 0 and -1 are in the knot vector
+    temp_knots = importance[:n]
+    if 0 in temp_knots[-2:]:
+        temp_knots.remove(0)
+    if (ntimes-1) in temp_knots[-2:]:
+        temp_knots.remove(ntimes-1)
+    knot_indices = [0] + sorted(temp_knots[:-2]) + [-1]
+
+    # match the times for knots
+    corresponding_times = dataset['t'].iloc[knot_indices]
+    return [min(ts, key=lambda t: np.abs(t-tk)) for tk in corresponding_times]

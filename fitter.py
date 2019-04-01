@@ -20,6 +20,7 @@ class InnerObjective():
         self.collocation_matrix = None
         self.observation_vector = None
         self.observation_number = 0
+        self.weightings = None
         self.rho = None
         self.default_rho = 0
         self.input_list = None
@@ -39,6 +40,7 @@ class InnerObjective():
 
         self.observation_vector = np.array(context.fitting_configuration['observation_vector'])
         self.observation_number = ca.MX.sym("m")
+        self.weightings = np.array(context.fitting_configuration['weightings'][0])
 
         self.observations = [ca.MX.sym("y_"+str(i), self.m, 1)
                              for i in range(len(self.observation_vector))]
@@ -55,7 +57,8 @@ class InnerObjective():
 
     def create_inner_criterion(self, model):
         """Creates the inner objective function casadi object and function"""
-        self._obj_1 = sum(ca.norm_2(self.observations[i] - self.collocation_matrix@model.xs[j])**2
+        self._obj_1 = sum(self.weightings[i] * ca.norm_2(self.observations[i]
+                                                         - self.collocation_matrix@model.xs[j])**2
                           for i, j in enumerate(self.observation_vector))/self.observation_number
 
         self._obj_fn1 = ca.Function("obj1", self.input_list, [self._obj_1])
@@ -146,6 +149,7 @@ class Fitter():
         self.jacobian = None
         self.jacobian_function = None
         self.regularisation = None
+        self.regularisation_derivative = None
         self.outer_objectives = []
         self.outer_jacobians = []
         self.problems = []
@@ -160,24 +164,27 @@ class Fitter():
         self.initial_basis_coefs = 0.5 * np.ones(model.K * model.s)
         self._inner_objective.generate_objective(context, model)
         self.create_outer_jacobian(model)
-        self.create_regularisation(model)
+        self.create_regularisation(context, model)
         for dataset in context.datasets:
             obj_fn, obj_jac = self._inner_objective.create_objective_functions(model, dataset)
             self.objective_functions.append(self.wrap(obj_fn, obj_jac))
             self.outer_objectives.append(self.outer_function(dataset, model))
             self.outer_jacobians.append(self.outer_jacobian_function(dataset, model))
 
-    def create_regularisation(self, model):
-        size = len(model.ps)
-        self.regularisation = np.zeros((1, size))
+    def create_regularisation(self, context, model):
+        alpha = context.fitting_configuration['regularisation_parameter'][2]
+        theta0 = context.fitting_configuration['regularisation_parameter'][3] # typically 1
+        self.regularisation = lambda p: alpha * np.dot(p-theta0, p-theta0)
+        self.regularisation_derivative = lambda p: 2*alpha*(p-theta0)
 
     def outer_function(self, dataset, model):
         def H(c, p, rho=None):
             if rho is None:
                 rho = self._inner_objective.default_rho
-            return self._inner_objective._obj_fn1(model.observation_times, *argsplit(c, model.s),
+            return (self._inner_objective._obj_fn1(model.observation_times, *argsplit(c, model.s),
                                                   *p, self._inner_objective.generate_collocation_matrix(dataset, model),
                                                   len(dataset['t']), *self._inner_objective.pad_observations(dataset['y']), rho)
+                    + self.regularisation(p))
         return H
 
     def outer_jacobian_function(self, dataset, model):
@@ -187,7 +194,7 @@ class Fitter():
             return self.jacobian_function(model.observation_times, *argsplit(c, model.s), *p,
                                           self._inner_objective.generate_collocation_matrix(dataset, model),
                                           len(dataset['t']), *self._inner_objective.pad_observations(dataset['y']),
-                                          rho, self.regularisation)
+                                          rho, self.regularisation_derivative(p))
         return J
 
     @staticmethod

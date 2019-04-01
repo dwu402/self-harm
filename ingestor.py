@@ -176,3 +176,18 @@ class Context():
             attribute_dict = self.__getattribute__(attribute)
             attribute_dict.update(value)
             self.__setattr__(attribute, attribute_dict)
+
+
+"""Backwards compatability"""
+# DEPRECATED FUNCTIONS
+def initialise_context():
+    warnings.warn("DEPRECATED FUNCTION. Consider using the new API")
+    return Context()
+
+def read_run_file(context, run_file_name):
+    if isinstance(context, Context):
+        warnings.warn("DEPRECATED FUNCTION. Consider using the new API")
+        context.read_run_file(run_file_name)
+        context.setup()
+    else:
+        raise TypeError("Unhandled context type {}".format(type(context)))

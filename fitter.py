@@ -230,13 +230,13 @@ class Fitter():
         for problem in self.problems:
             self.solutions[str(rho)].append(problem.solve(rho))
 
-    def visualise(self):
+    def visualise(self, **args):
         plotting_array = []
-        for rho in self.solutions:
-            fun_sum = sum(float(solution.fun) for solution in self.solutions[rho])
+        for rho, val in self.solutions.items():
+            fun_sum = np.mean([float(solution.fun) for solution in val])
             plotting_array.append((float(rho), fun_sum))
         plotting_array = np.array(plotting_array)
-        plt.plot(*plotting_array.T, 'o')
+        plt.plot(*plotting_array.T, 'o', **args)
         plt.show()
 
     def write(self, output_file):

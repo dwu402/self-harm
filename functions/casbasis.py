@@ -10,7 +10,7 @@ def basis_functions(x, k=3):
     for i in range(n):
         c = np.zeros(n)
         c[i] = 1
-        basis.append(ca.Function.bspline('b' + str(i), [knots], c, [k], 1, dict()))
+        basis.append(ca.Function.bspline('basis' + str(i), [knots], c, [k], 1, dict()))
 
     return basis
 

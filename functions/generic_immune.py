@@ -84,7 +84,7 @@ def knots_from_data(ts, n, context):
         temp_knots.remove(0)
     if (ntimes-1) in temp_knots[-2:]:
         temp_knots.remove(ntimes-1)
-    knot_indices = [0] + sorted(temp_knots[:-2]) + [-1]
+    knot_indices = [0] + sorted(temp_knots[:n-2]) + [-1]
 
     # match the times for knots
     corresponding_times = dataset['t'].iloc[knot_indices]

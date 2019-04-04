@@ -170,13 +170,11 @@ class Context():
     def update(self, attribute, value):
         if attribute not in dir(self):
             raise AttributeError(f"{attribute} not a valid attribute")
-        if not isinstance(self.__getattribute__(attribute), dict):
+        this_attr = self.__getattribute__(attribute)
+        if not isinstance(this_attr, dict):
             self.__setattr__(attribute, value)
         else:
-            attribute_dict = self.__getattribute__(attribute)
-            attribute_dict.update(value)
-            self.__setattr__(attribute, attribute_dict)
-
+            this_attr.update(value)
 
 """Backwards compatability"""
 # DEPRECATED FUNCTIONS

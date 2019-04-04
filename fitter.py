@@ -2,6 +2,7 @@ import numpy as np
 import casadi as ca
 from scipy import optimize
 from matplotlib import pyplot as plt
+from multiprocessing import Pool
 
 def argsplit(arg, n):
     try:
@@ -11,6 +12,9 @@ def argsplit(arg, n):
         raise E
     delims = [int(i*len(arg)/n) for i in range(n)] + [len(arg)]
     return [arg[delims[i]:delims[i+1]] for i in range(n)]
+
+def tokey(root, branches):
+    return f"{'y'.join(map(str, branches))}r{root}"
 
 class InnerObjective():
     """Object that contains the ability to create the inner objective function"""
@@ -52,8 +56,10 @@ class InnerObjective():
         self.input_list = [model.ts, *model.cs, *model.ps, self.collocation_matrix,
                            self.observation_number, *self.observations, self.rho]
 
-        self.create_inner_criterion(model)
-        self.calculate_inner_jacobian(model)
+        if self.inner_criterion is None:
+            self.create_inner_criterion(model)
+        if self.inner_jacobian is None:
+            self.calculate_inner_jacobian(model)
 
     def create_inner_criterion(self, model):
         """Creates the inner objective function casadi object and function"""
@@ -223,12 +229,17 @@ class Fitter():
             self.problems.append(new_problem)
 
 
-    def solve(self, rho=None):
+    def solve(self, rho=None, ncpus=2):
         if rho is None:
             rho = self._inner_objective.default_rho
-        self.solutions[str(rho)] = []
-        for problem in self.problems:
-            self.solutions[str(rho)].append(problem.solve(rho))
+        if str(rho) not in self.solutions.keys():
+            self.solutions[str(rho)] = []
+        with Pool(processes=ncpus) as pool:
+            pool.map(self.__solve, zip([rho]*len(self.problems), self.problems))
+
+    def __solve(self, problem_statement):
+        rho, problem = problem_statement
+        self.solutions[str(rho)].append(problem.solve(rho))
 
     def visualise(self, **args):
         plotting_array = []
@@ -255,14 +266,14 @@ class Problem():
 
     def make(self, inn_solver, eval_fn, jac_fn):
         def f_evl(p, rho=None):
-            key = "y".join(map(str, p)) + "r" + str(rho)
+            key = tokey(rho, p)
             sol = self.cache.get(key)
             if sol is None:
                 sol = inn_solver(p, self.cache.recent, rho)
                 self.cache.add(key, sol)
             return float(eval_fn(sol.x, p, rho))
         def j_evl(p, rho=None):
-            key = "y".join(map(str, p)) + "r" + str(rho)
+            key = tokey(rho, p)
             sol = self.cache.get(key)
             if sol is None:
                 sol = inn_solver(p, self.cache.recent, rho)

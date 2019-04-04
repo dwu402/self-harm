@@ -1,8 +1,10 @@
+import copy
 import numpy as np
 import casadi as ca
 from scipy import optimize
 from matplotlib import pyplot as plt
 from multiprocessing import Pool
+import modeller
 
 def argsplit(arg, n):
     try:
@@ -38,20 +40,20 @@ class InnerObjective():
         self._obj_2 = None
         self._obj_fn2 = None
 
-    def generate_objective(self, context, model):
+    def generate_objective(self, config, dataset, model):
         """Create the casadi objects that represent the inner objective function and its jacobian"""
-        self.m = max(len(dataset['t']) for dataset in context.datasets)
+        self.m = len(dataset['t'])
 
-        self.observation_vector = np.array(context.fitting_configuration['observation_vector'])
+        self.observation_vector = np.array(config['observation_vector'])
         self.observation_number = ca.MX.sym("m")
-        self.weightings = np.array(context.fitting_configuration['weightings'][0])
+        self.weightings = np.array(config['weightings'][0])
 
         self.observations = [ca.MX.sym("y_"+str(i), self.m, 1)
                              for i in range(len(self.observation_vector))]
         self.collocation_matrix = ca.MX.sym("H", self.m, model.n)
 
         self.rho = ca.MX.sym("rho")
-        self.default_rho = 10**(context.fitting_configuration['regularisation_parameter'][0])
+        self.default_rho = 10**(config['regularisation_parameter'][0])
 
         self.input_list = [model.ts, *model.cs, *model.ps, self.collocation_matrix,
                            self.observation_number, *self.observations, self.rho]
@@ -132,6 +134,118 @@ class InnerObjective():
                            ).reshape(-1,)
         return obj_func, obj_jac
 
+class Fitter():
+    def __init__(self, context=None):
+        self.models = []
+        self.inner_objectives = []
+        self.regularisation = None
+        self.regularisation_derivative = None
+        self.problems = []
+        self.solutions = dict()
+
+        self.__initial_guess = None
+        self.__initial_basis_coefs = []
+        self.__inner_evaluation_functions = []
+        self.__outer_objectives = []
+        self.__outer_jacobian_objects = []
+        self.__outer_jacobians = []
+
+        if context is not None:
+            self.parse_context(context)
+            self.construct_models(context)
+            self.construct_objectives(context)
+            self.construct_problems()
+
+    def parse_context(self, context):
+        self.__initial_guess = context.initial_parameters
+
+    def construct_models(self, context):
+        """Creates a model that encapsualtes the basis for each dataset"""
+        for idx, dataset in enumerate(context.datasets):
+            config = self.__encapsulate_model_config(idx, context, dataset)
+            self.models.append(modeller.Model(config))
+
+    def construct_objectives(self, context):
+        """Creates the outer objective functions and jacobians for solving"""
+        self.create_regularisation(context.fitting_configuration)
+        for idx, (dataset, model) in enumerate(zip(context.datasets, self.models)):
+            inner_objective = InnerObjective()
+            self.inner_objectives.append(inner_objective)
+            inner_objective.generate_objective(context.fitting_configuration, dataset, model)
+            obj_fn, obj_jac = inner_objective.create_objective_functions(model, dataset)
+            self.__inner_evaluation_functions.append(self.wrap(obj_fn, obj_jac))
+            self.__outer_objectives.append(self.wrap_outer_objective(dataset, model, inner_objective))
+            self.__outer_jacobian_objects.append(self.create_jacobian_object(model, inner_objective))
+            self.__outer_jacobians.append(self.wrap_outer_jacobian(dataset, model, inner_objective,
+                                                                   self.__outer_jacobian_objects[idx]))
+            self.__initial_basis_coefs.append(0.5 * np.ones(model.K * model.s))
+
+    def construct_problems(self):
+        """Creates the objects that contain the problems to solve"""
+        for pars in zip(self.__inner_evaluation_functions, self.__outer_objectives,
+                        self.__outer_jacobians, self.__initial_basis_coefs):
+            new_problem = Problem(self.__initial_guess, pars[-1])
+            new_problem.make(*pars[:-1])
+            self.problems.append(new_problem)
+
+    @staticmethod
+    def __encapsulate_model_config(idx, context, dataset):
+        """Creates a configuration to pass to the model object"""
+        config = copy.copy(context.modelling_configuration)
+        config['model'] = context.model
+        config['dataset'] = dataset
+        config['time_span'] = context.time_span[idx]
+        return config
+
+    @staticmethod
+    def wrap(obj_fn, obj_jac):
+        """Creates a function that solves the inner optimization problem"""
+        def wrapd_fn(p, c0, rho=None):
+            return optimize.minimize(obj_fn, c0, args=(p, rho), method="BFGS", jac=obj_jac)
+        return wrapd_fn
+
+    def create_regularisation(self, config):
+        alpha, theta0 = config['regularisation_parameter'][2:]
+        self.regularisation = lambda p: alpha * np.dot(p-theta0, p-theta0)
+        self.regularisation_derivative = lambda p: 2*alpha*(p-theta0)
+
+    def wrap_outer_objective(self, dataset, model, inner_objective):
+        def H(c, p, rho=None):
+            if rho is None:
+                rho = inner_objective.default_rho
+            return (inner_objective._obj_fn1(model.observation_times, *argsplit(c, model.s),
+                                             *p, inner_objective.generate_collocation_matrix(dataset, model),
+                                             len(dataset['t']), *inner_objective.pad_observations(dataset['y']), rho)
+                    + self.regularisation(p))
+        return H
+
+    def create_jacobian_object(self, model, inner_objective):
+        dHdp = ca.MX.sym("outer_partial_p", 1, len(model.ps))
+        dHdc = ca.hcat([ca.gradient(inner_objective._obj_1, ci) for ci in model.cs]).reshape((1, 3*model.K))
+        d2Jdc2 = ca.hcat([ca.jacobian(inner_objective.inner_jacobian, ci) for ci in model.cs]).reshape((3*model.K, 3*model.K))
+        d2Jdcdp = ca.hcat([ca.jacobian(inner_objective.inner_jacobian, pi) for pi in model.ps]).reshape((3*model.K, len(model.ps)))
+
+        jacobian = dHdp - dHdc@ca.solve(d2Jdc2, d2Jdcdp)
+        return ca.Function('outer_jac',
+                           inner_objective.input_list + [dHdp],
+                           [jacobian])
+
+    def wrap_outer_jacobian(self, dataset, model, inner_objective, jacobian_function):
+        def dH(c, p, rho=None):
+            if rho is None:
+                rho = inner_objective.default_rho
+            return jacobian_function(model.observation_times, *argsplit(c, model.s), *p,
+                                     inner_objective.generate_collocation_matrix(dataset, model),
+                                     len(dataset['t']), *inner_objective.pad_observations(dataset['y']),
+                                     rho, self.regularisation_derivative(p))
+        return dH
+
+    def solve(self, rho=None):
+        rhokey = str(rho)
+        if str(rho) not in self.solutions.keys():
+            self.solutions[rhokey] = []
+        for problem in self.problems:
+            self.solutions[rhokey].append(problem.solve(rho))
 
 class CCache():
     def __init__(self):
@@ -147,112 +261,6 @@ class CCache():
             return None
         else:
             return self.results[key]
-
-
-class Fitter():
-    def __init__(self):
-        self.objective_functions = []
-        self.jacobian = None
-        self.jacobian_function = None
-        self.regularisation = None
-        self.regularisation_derivative = None
-        self.outer_objectives = []
-        self.outer_jacobians = []
-        self.problems = []
-        self.solutions = dict()
-        self.initial_guess = None
-        self.initial_basis_coefs = None
-
-        self._inner_objective = InnerObjective()
-
-    def construct_objectives(self, context, model):
-        self.initial_guess = context.initial_parameters
-        self.initial_basis_coefs = 0.5 * np.ones(model.K * model.s)
-        self._inner_objective.generate_objective(context, model)
-        self.create_outer_jacobian(model)
-        self.create_regularisation(context, model)
-        for dataset in context.datasets:
-            obj_fn, obj_jac = self._inner_objective.create_objective_functions(model, dataset)
-            self.objective_functions.append(self.wrap(obj_fn, obj_jac))
-            self.outer_objectives.append(self.outer_function(dataset, model))
-            self.outer_jacobians.append(self.outer_jacobian_function(dataset, model))
-
-    def create_regularisation(self, context, model):
-        alpha = context.fitting_configuration['regularisation_parameter'][2]
-        theta0 = context.fitting_configuration['regularisation_parameter'][3] # typically 1
-        self.regularisation = lambda p: alpha * np.dot(p-theta0, p-theta0)
-        self.regularisation_derivative = lambda p: 2*alpha*(p-theta0)
-
-    def outer_function(self, dataset, model):
-        def H(c, p, rho=None):
-            if rho is None:
-                rho = self._inner_objective.default_rho
-            return (self._inner_objective._obj_fn1(model.observation_times, *argsplit(c, model.s),
-                                                  *p, self._inner_objective.generate_collocation_matrix(dataset, model),
-                                                  len(dataset['t']), *self._inner_objective.pad_observations(dataset['y']), rho)
-                    + self.regularisation(p))
-        return H
-
-    def outer_jacobian_function(self, dataset, model):
-        def J(c, p, rho=None):
-            if rho is None:
-                rho = self._inner_objective.default_rho
-            return self.jacobian_function(model.observation_times, *argsplit(c, model.s), *p,
-                                          self._inner_objective.generate_collocation_matrix(dataset, model),
-                                          len(dataset['t']), *self._inner_objective.pad_observations(dataset['y']),
-                                          rho, self.regularisation_derivative(p))
-        return J
-
-    @staticmethod
-    def wrap(obj_fn, obj_jac):
-        # create a function that solves the inner optimization problem
-        def wrapd_fn(p, c0, rho=None):
-            return optimize.minimize(obj_fn, c0, args=(p, rho), method="BFGS", jac=obj_jac)
-        return wrapd_fn
-
-    def create_outer_jacobian(self, model):
-        dHdp = ca.MX.sym("outer_partial_p", 1, len(model.ps))
-        dHdc = ca.hcat([ca.gradient(self._inner_objective._obj_1, ci) for ci in model.cs]).reshape((1, 3*model.K))
-        d2Jdc2 = ca.hcat([ca.jacobian(self._inner_objective.inner_jacobian, ci) for ci in model.cs]).reshape((3*model.K, 3*model.K))
-        d2Jdcdp = ca.hcat([ca.jacobian(self._inner_objective.inner_jacobian, pi) for pi in model.ps]).reshape((3*model.K, len(model.ps)))
-
-        jacobian = dHdp - dHdc@ca.solve(d2Jdc2, d2Jdcdp)
-        self.jacobian = jacobian
-        self.jacobian_function = ca.Function('outer_jac',
-                                             self._inner_objective.input_list + [dHdp],
-                                             [jacobian])
-
-    def construct_problems(self):
-        for pars in zip(self.objective_functions, self.outer_objectives, self.outer_jacobians):
-            new_problem = Problem(self.initial_guess, self.initial_basis_coefs,)
-            new_problem.make(*pars)
-            self.problems.append(new_problem)
-
-
-    def solve(self, rho=None, ncpus=2):
-        if rho is None:
-            rho = self._inner_objective.default_rho
-        if str(rho) not in self.solutions.keys():
-            self.solutions[str(rho)] = []
-        with Pool(processes=ncpus) as pool:
-            pool.map(self.__solve, zip([rho]*len(self.problems), self.problems))
-
-    def __solve(self, problem_statement):
-        rho, problem = problem_statement
-        self.solutions[str(rho)].append(problem.solve(rho))
-
-    def visualise(self, **args):
-        plotting_array = []
-        for rho, val in self.solutions.items():
-            fun_sum = np.mean([float(solution.fun) for solution in val])
-            plotting_array.append((float(rho), fun_sum))
-        plotting_array = np.array(plotting_array)
-        plt.plot(*plotting_array.T, 'o', **args)
-        plt.show()
-
-    def write(self, output_file):
-        with open(output_file, "w") as ofh:
-            ofh.write(self.solutions)
 
 class Problem():
     def __init__(self, guess, c_0=None):

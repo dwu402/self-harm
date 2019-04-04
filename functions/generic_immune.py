@@ -26,10 +26,9 @@ def parse(raw_datasets, selection_function):
         thresholded_data = selected_data[acceptable_vals]
         clean_datasets.append(thresholded_data.reset_index())
 
-    ics_z = np.array([dataset['z'] for dataset in clean_datasets]).flatten()
     for dataset in clean_datasets:
         # shift initial conditions
-        dataset['z'] = dataset['z'] - max(ics_z)
+        dataset['z'] = dataset['z'] - max(dataset['z'])
 
         # create the context updates
         updates['initial_values'].append([dataset['x'].iloc[0], 0, dataset['z'].iloc[0]])
@@ -66,11 +65,10 @@ def select_data_royal(data):
 def visualise():
     return
 
-def knots_from_data(ts, n, context):
+def knots_from_data(ts, n, dataset):
     """Selects the knots based on data weightings"""
 
-    # select data and calculate 2nd derivatives
-    dataset = context.datasets[0]
+    # calculate 2nd derivatives
     xdiffs = np.gradient(np.gradient(dataset['x'], dataset['t']), dataset['t'])
     zdiffs = np.gradient(np.gradient(dataset['z'], dataset['t']), dataset['t'])
 

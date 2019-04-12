@@ -2,8 +2,6 @@ import copy
 import numpy as np
 import casadi as ca
 from scipy import optimize
-from matplotlib import pyplot as plt
-from multiprocessing import Pool
 import modeller
 
 def argsplit(arg, n):

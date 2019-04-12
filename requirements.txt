@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+casadi
+jupyter
+notebook
+pandas
+click

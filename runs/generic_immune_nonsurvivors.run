@@ -1,5 +1,5 @@
 mf models/generic_immune.py
-cf configurations/generic_immune.conf
+cf configurations/small_immune.conf
 df data/auto-got-data-20181122Z154943/mouse6.1.csv
 df data/auto-got-data-20181122Z154943/mouse6.2.csv
 df data/auto-got-data-20181122Z154943/mouse6.9.csv

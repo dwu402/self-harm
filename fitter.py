@@ -294,4 +294,6 @@ class Problem():
                                  method="L-BFGS-B", jac=self.jacobian, bounds=self.bounds,
                                  options={
                                      "maxls": 1000,
+                                     "gtol": 1e-06,
+                                     "maxcor": 15,
                                  })

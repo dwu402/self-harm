@@ -3,6 +3,7 @@ import numpy as np
 import casadi as ca
 from scipy import optimize
 import modeller
+import pickle
 
 def argsplit(arg, n):
     try:
@@ -138,6 +139,7 @@ class Fitter():
         self.inner_objectives = []
         self.regularisation = None
         self.regularisation_derivative = None
+        self.dcdp = []
         self.problems = []
         self.solutions = dict()
 
@@ -173,7 +175,8 @@ class Fitter():
             obj_fn, obj_jac = inner_objective.create_objective_functions(model, dataset)
             self.__inner_evaluation_functions.append(self.wrap(obj_fn, obj_jac))
             self.__outer_objectives.append(self.wrap_outer_objective(dataset, model, inner_objective))
-            self.__outer_jacobian_objects.append(self.create_jacobian_object(model, inner_objective))
+            self.dcdp.append(self.create_dcdp_object(dataset, model, inner_objective))
+            self.__outer_jacobian_objects.append(self.create_jacobian_object(model, inner_objective, self.dcdp[-1][0]))
             self.__outer_jacobians.append(self.wrap_outer_jacobian(dataset, model, inner_objective,
                                                                    self.__outer_jacobian_objects[idx]))
             self.__initial_basis_coefs.append(0.5 * np.ones(model.K * model.s))
@@ -217,13 +220,24 @@ class Fitter():
                     + self.regularisation(p))
         return H
 
-    def create_jacobian_object(self, model, inner_objective):
-        dHdp = ca.MX.sym("outer_partial_p", 1, len(model.ps))
-        dHdc = ca.hcat([ca.gradient(inner_objective._obj_1, ci) for ci in model.cs]).reshape((1, 3*model.K))
-        d2Jdc2 = ca.hcat([ca.jacobian(inner_objective.inner_jacobian, ci) for ci in model.cs]).reshape((3*model.K, 3*model.K))
-        d2Jdcdp = ca.hcat([ca.jacobian(inner_objective.inner_jacobian, pi) for pi in model.ps]).reshape((3*model.K, len(model.ps)))
+    def create_dcdp_object(self, dataset, model, inner_objective):
+        d2Jdc2 = ca.hcat([ca.jacobian(inner_objective.inner_jacobian, ci) for ci in model.cs]).reshape((model.s*model.K, model.s*model.K))
+        d2Jdcdp = ca.hcat([ca.jacobian(inner_objective.inner_jacobian, pi) for pi in model.ps]).reshape((model.s*model.K, len(model.ps)))
+        dcdp = ca.solve(d2Jdc2, d2Jdcdp)
+        dcdp_fn = ca.Function('dcdp', inner_objective.input_list, [dcdp])
+        def dcdp_wrapper(c, p, rho=None):
+            if rho is None:
+                rho = inner_objective.default_rho
+            return dcdp_fn(model.observation_times, *argsplit(c, model.s), *p,
+                           inner_objective.generate_collocation_matrix(dataset, model),
+                           len(dataset['t']), *inner_objective.pad_observations(dataset['y']), rho)
+        return dcdp, dcdp_wrapper
 
-        jacobian = dHdp - dHdc@ca.solve(d2Jdc2, d2Jdcdp)
+    def create_jacobian_object(self, model, inner_objective, dcdp_obj):
+        dHdp = ca.MX.sym("outer_partial_p", 1, len(model.ps))
+        dHdc = ca.hcat([ca.gradient(inner_objective._obj_1, ci) for ci in model.cs]).reshape((1, model.s*model.K))
+
+        jacobian = dHdp - dHdc@dcdp_obj
         return ca.Function('outer_jac',
                            inner_objective.input_list + [dHdp],
                            [jacobian])
@@ -244,6 +258,10 @@ class Fitter():
             self.solutions[rhokey] = []
         for problem in self.problems:
             self.solutions[rhokey].append(problem.solve(rho))
+
+    def write(self, file="fitter.out"):
+        with open(file, 'wb') as f:
+            pickle.dump(file=f, obj=[self.solutions] + [p.cache.results for p in self.problems])
 
 class CCache():
     def __init__(self):
@@ -297,3 +315,18 @@ class Problem():
                                      "gtol": 1e-06,
                                      "maxcor": 15,
                                  })
+
+
+class FitReader():
+    def __init__(self, file=None):
+        self.file = file
+        self.solutions = None
+        self.problem_cache = None
+        if file:
+            self.read()
+
+    def read(self):
+        with open(self.file, 'rb') as f:
+            obj = pickle.load(f)
+            self.solutions = obj[0]
+            self.problem_cache = obj[1:]

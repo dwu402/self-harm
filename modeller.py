@@ -15,6 +15,7 @@ class Model():
         self.observation_times = None
         self.basis = None
         self.basis_jacobian = None
+        self.getx = None
         self.xdash = None
         self.model = None
 
@@ -46,6 +47,15 @@ class Model():
         self.model = ca.Function("model",
                                  [self.ts, *self.cs, *self.ps],
                                  [ca.hcat(configuration['model'](self.ts, self.xs, self.ps))])
+
+    # method to expose calculation of the trajectory
+    def get_x(self, *cs):
+        if self.getx is None:
+            self.getx = ca.Function("getx",
+                                    [self.ts, *self.cs],
+                                    self.xs)
+        return self.getx(self.observation_times, *cs)
+
 
     # We calculate expensive stuff later when called
     def get_basis_jacobian(self):

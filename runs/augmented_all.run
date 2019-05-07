@@ -1,0 +1,4 @@
+mf models/generic_immune.py
+cf configurations/minimal_immune.conf
+df data/auto-got-data-20181122Z154943/augmented-useful.csv
+df data/auto-got-data-20181122Z154943/mouse3.3.csv

@@ -4,3 +4,4 @@ data/auto-got-*
 .spyproject*
 .vscode*
 _ignore_*
+out/*

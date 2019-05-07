@@ -48,7 +48,8 @@ def select_data_torres(data):
         'Day Post Infection': 't',
         'PD': 'x',
         'RBC': 'z',
-        'Status': 'status'
+        'Cd79b': 'yy',
+        # 'Status': 'status'
     }
     return data[data_cols.keys()].rename(columns=data_cols)
 
@@ -62,8 +63,8 @@ def select_data_royal(data):
     }
     return data[data_cols.keys()].rename(columns=data_cols)
 
-def visualise():
-    return
+def visualise(ax, dataset):
+    ax.plot(dataset['x'], dataset['z'], 'o')
 
 def knots_from_data(ts, n, dataset):
     """Selects the knots based on data weightings"""
@@ -87,3 +88,16 @@ def knots_from_data(ts, n, dataset):
     # match the times for knots
     corresponding_times = dataset['t'].iloc[knot_indices]
     return [min(ts, key=lambda t: np.abs(t-tk)) for tk in corresponding_times]
+
+def behaviour_penalty(p):
+    K = 100
+    # fr/k -g, stability condition for type 2 equilibria
+    x = p[7]*p[0]/p[1] - p[8]
+    # prevent blowup of the exponential calculation
+    if x <= 0:
+        penalty = 1/(1+K**x)
+        dpendx = -np.log(K)*(K**x)*penalty
+    else:
+        penalty = 1-1/(1+K**(-x))
+        dpendx = -np.log(K)*K**(-x)/(K**(-x)+1)**2
+    return penalty, np.array([p[7]/p[1]*dpendx, -p[7]*p[0]/(p[1]**2)*dpendx, 0, 0, 0, 0, 0, p[0]/p[1]*dpendx, -dpendx, 0, 0, 0,])

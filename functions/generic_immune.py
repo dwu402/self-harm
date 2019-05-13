@@ -8,6 +8,9 @@ def parse_royal(raw_datasets):
 def parse_torres(raw_datasets):
     return parse(raw_datasets, select_data_torres)
 
+def parse_test(raw_datasets):
+    return parse(raw_datasets, select_data_test)
+
 def parse(raw_datasets, selection_function):
     threshold_value = 1e-5
     clean_datasets = []
@@ -48,7 +51,7 @@ def select_data_torres(data):
         'Day Post Infection': 't',
         'PD': 'x',
         'RBC': 'z',
-        'Cd79b': 'yy',
+        'Cd79b': 'w',
         # 'Status': 'status'
     }
     return data[data_cols.keys()].rename(columns=data_cols)
@@ -60,6 +63,15 @@ def select_data_royal(data):
         'parasite': 'x',
         'rbc': 'z',
         'weight': 'w',
+    }
+    return data[data_cols.keys()].rename(columns=data_cols)
+
+def select_data_test(data):
+    data_cols = {
+        'TIME': 't',
+        'X': 'x',
+        'Z': 'z',
+        'Y': 'w',
     }
     return data[data_cols.keys()].rename(columns=data_cols)
 

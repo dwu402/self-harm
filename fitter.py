@@ -70,9 +70,18 @@ class InnerObjective():
 
         self._obj_fn1 = ca.Function("obj1", self.input_list, [self._obj_1])
 
-        self._obj_2 = sum(ca.norm_2(model.get_xdash()[i] -
+        self._obj_2 = sum(ca.norm_fro(model.get_xdash()[:,i] -
                                     model.model(model.ts, *model.cs, *model.ps)[:, i])**2
                           for i in range(model.s))/model.n
+
+        # nv1 = ca.hcat([ca.norm_fro(model.get_xdash()[i, :])  for i in range(model.n)])
+        # nv2 = ca.hcat([ca.norm_fro(model.model(model.ts, *model.cs, *model.ps)[i, :])
+        #                for i in range(model.n)])
+        # xv1 = model.get_xdash()
+        # xv2 = model.model(model.ts, *model.cs, *model.ps)
+        # self._obj_2 = sum(2*ca.atan2(ca.norm_fro(nv2[i]@xv1[i, :] - nv1[i]@xv2[i, :]),
+        #                              ca.norm_fro(nv2[i]@xv1[i, :] + nv1[i]@xv2[i, :]))
+        #                   for i in range(model.n))/model.n
 
         self._obj_fn2 = ca.Function("obj2", self.input_list, [self._obj_2])
 

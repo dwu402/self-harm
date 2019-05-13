@@ -67,5 +67,5 @@ class Model():
 
     def get_xdash(self):
         if self.xdash is None:
-            self.xdash = [self.get_basis_jacobian()@ci for ci in self.cs]
+            self.xdash = self.get_basis_jacobian()@ca.hcat(self.cs)
         return self.xdash

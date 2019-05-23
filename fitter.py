@@ -213,7 +213,8 @@ class Fitter():
         return wrapd_fn
 
     def create_regularisation(self, config):
-        alpha, theta0 = config['regularisation_parameter'][2:]
+        alpha = config['regularisation_parameter'][2]
+        theta0 = config['regularisation_value']
         self.regularisation = lambda p: alpha * np.dot(p-theta0, p-theta0)
         self.regularisation_derivative = lambda p: 2*alpha*(p-theta0)
 

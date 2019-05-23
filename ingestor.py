@@ -2,7 +2,7 @@ from pathlib import Path
 from importlib import util as importutil
 import warnings
 import pandas as pd
-
+import numpy as np
 
 def check_file(file_name):
     """Checks to see if a file exists"""
@@ -135,6 +135,8 @@ class Context():
                 self.fitting_configuration['refits'] = float(config_values[0])
             elif config_type in ['rg', 'regularisation']:
                 self.fitting_configuration['regularisation_parameter'] = [float(val) for val in config_values]
+            elif config_type in ['rv', 'regularisation-value']:
+                self.fitting_configuration['regularisation_value'] = np.array([float(val) for val in config_values])
             elif config_type in ['rs', 'resample']:
                 self.fitting_configuration['resampling_parameter'] = int(config_values[0])
             elif config_type in ['vf', 'visualisation-function']:

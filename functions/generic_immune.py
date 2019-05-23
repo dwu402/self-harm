@@ -89,17 +89,23 @@ def knots_from_data(ts, n, dataset):
     ntimes = len(dataset['t'])
     importance = sorted(range(ntimes), key=lambda i: np.abs(zdiffs * xdiffs)[i], reverse=True)
 
-    # ensure that 0 and -1 are in the knot vector
-    temp_knots = importance[:n]
-    if 0 in temp_knots[-2:]:
-        temp_knots.remove(0)
-    if (ntimes-1) in temp_knots[-2:]:
-        temp_knots.remove(ntimes-1)
-    knot_indices = [0] + sorted(temp_knots[:n-2]) + [-1]
+    if n <= ntimes:
+        # ensure that 0 and -1 are in the knot vector
+        temp_knots = importance[:n]
+        if 0 in temp_knots[-2:]:
+            temp_knots.remove(0)
+        if (ntimes-1) in temp_knots[-2:]:
+            temp_knots.remove(ntimes-1)
+        knot_indices = [0] + sorted(temp_knots[:n-2]) + [-1]
 
-    # match the times for knots
-    corresponding_times = dataset['t'].iloc[knot_indices]
-    return [min(ts, key=lambda t: np.abs(t-tk)) for tk in corresponding_times]
+        # match the times for knots
+        corresponding_times = dataset['t'].iloc[knot_indices]
+        return [min(ts, key=lambda t: np.abs(t-tk)) for tk in corresponding_times]
+    else:
+        corresponding_times = dataset['t'].iloc[importance[:n%ntimes]]
+        add_knots = [min(ts, key=lambda t: np.abs(t-tk)) for tk in corresponding_times]
+        all_times = list(np.linspace(0, ts[-1], ntimes*(n//ntimes)))
+        return sorted(all_times + add_knots)
 
 def behaviour_penalty(p):
     K = 100

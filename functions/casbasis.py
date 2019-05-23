@@ -27,5 +27,6 @@ def diff(basis_function):
     return lambda t: basis_function.jacobian()(t, basis_function(t))
 
 def choose_knots(x, num_knots):
+    """ Default knot chooser """
     indexing = np.linspace(0, len(x)-1, num_knots)
     return [x[int(idx)] for idx in indexing]

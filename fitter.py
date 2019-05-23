@@ -6,6 +6,7 @@ import modeller
 import pickle
 
 def argsplit(arg, n):
+    """ Used for splitting the values of c into 3 c vectors for the model """
     try:
         assert len(arg)%n == 0
     except Exception as E:
@@ -15,10 +16,15 @@ def argsplit(arg, n):
     return [arg[delims[i]:delims[i+1]] for i in range(n)]
 
 def tokey(root, branches):
+    """ rho/p hasher """
     return f"{'y'.join(map(str, branches))}r{root}"
 
 class InnerObjective():
-    """Object that contains the ability to create the inner objective function"""
+    """Object that contains the ability to create the inner objective function
+
+    This represents:
+    J(c|theta) = ||y-g(Phi*c)||^2 + lambda*||D(Phi*c) - f(Phi*c, theta)||^2
+    """
     def __init__(self):
         self.m = 0
         self.observations = None
@@ -98,6 +104,9 @@ class InnerObjective():
 
 
     def generate_collocation_matrix(self, dataset, model):
+        """ Generate the matrix that represents the observation model, g
+
+        This is a matrix, where the time points are mapped onto the finer time grid"""
         colloc_matrix_numerical = np.zeros((self.m, model.n))
         for i, d_t in enumerate(dataset['t']):
             j = np.argmin(np.fabs(model.observation_times - d_t))
@@ -106,6 +115,7 @@ class InnerObjective():
         return colloc_matrix_numerical
 
     def pad_observations(self, observations):
+        """ Pad observations with zeros """
         observations_shaped = np.vstack(observations).T
 
         assert len(observations_shaped) == len(self.observation_vector)
@@ -117,6 +127,7 @@ class InnerObjective():
         return padded_observations
 
     def create_objective_functions(self, model, dataset):
+        """ Return callable function objects that represent the objective and jacobian """
         def obj_func(c, p, rho=None):
             if rho is None:
                 rho = self.default_rho
@@ -143,6 +154,7 @@ class InnerObjective():
         return obj_func, obj_jac
 
 class Fitter():
+    """ Class that solves the outer objective problems """
     def __init__(self, context=None):
         self.models = []
         self.inner_objectives = []
@@ -165,6 +177,7 @@ class Fitter():
             self.construct_problems()
 
     def parse_context(self, context):
+        """ Parse in any relevant, static information """
         self.__initial_guess = context.initial_parameters
 
     def construct_models(self, context):
@@ -213,12 +226,17 @@ class Fitter():
         return wrapd_fn
 
     def create_regularisation(self, config):
+        """ this is the L-regularisation of the objective function
+
+        alpha*||theta - theta_0||^2
+        """
         alpha = config['regularisation_parameter'][2]
         theta0 = config['regularisation_value']
         self.regularisation = lambda p: alpha * np.dot(p-theta0, p-theta0)
         self.regularisation_derivative = lambda p: 2*alpha*(p-theta0)
 
     def wrap_outer_objective(self, dataset, model, inner_objective):
+        """ Wraps the inner objective for c-optimisation, given p, rho """
         def H(c, p, rho=None):
             if rho is None:
                 rho = inner_objective.default_rho
@@ -242,6 +260,7 @@ class Fitter():
     #     return dcdp, dcdp_wrapper
 
     def create_jacobian_object(self, model, inner_objective):
+        """ Create the jacobian object and function of the outer objective """
         regularisation = ca.MX.sym("outer_partial_p", 1, len(model.ps))
         # dHdc = ca.hcat([ca.gradient(inner_objective._obj_1, ci) for ci in model.cs]).reshape((1, model.s*model.K))
         dJdp = ca.hcat([ca.gradient(inner_objective.inner_criterion, pi) for pi in model.ps]).reshape((1, len(model.ps)))
@@ -251,6 +270,7 @@ class Fitter():
                            [jacobian])
 
     def wrap_outer_jacobian(self, dataset, model, inner_objective, jacobian_function):
+        """ Wraps the outer objective for p-optimisation, given the optimal c, and rho """
         def dH(c, p, rho=None):
             if rho is None:
                 rho = inner_objective.default_rho
@@ -272,6 +292,7 @@ class Fitter():
             pickle.dump(file=f, obj=[self.solutions] + [p.cache.results for p in self.problems])
 
 class CCache():
+    """ Memoization helper object """
     def __init__(self):
         self.recent = []
         self.results = dict()
@@ -287,6 +308,7 @@ class CCache():
             return self.results[key]
 
 class Problem():
+    """ Representation of an outer objective problem """
     def __init__(self, guess, c_0=None):
         self.function = None
         self.jacobian = None
@@ -297,6 +319,7 @@ class Problem():
         self.bounds = optimize.Bounds(np.zeros(len(guess)), [np.inf]*len(guess))
 
     def make(self, inn_solver, eval_fn, jac_fn):
+        """ Construct wrapper functions that solve the inner objective problem """
         def f_evl(p, rho=None):
             key = tokey(rho, p)
             sol = self.cache.get(key)
@@ -326,6 +349,7 @@ class Problem():
 
 
 class FitReader():
+    """ unpickler """
     def __init__(self, file=None):
         self.file = file
         self.solutions = None

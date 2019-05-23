@@ -2,6 +2,7 @@ import numpy as np
 from scipy.interpolate import interp1d
 import pandas as pd
 
+# these parsing functions map the data selection functions
 def parse_royal(raw_datasets):
     return parse(raw_datasets, select_data_royal)
 
@@ -12,6 +13,15 @@ def parse_test(raw_datasets):
     return parse(raw_datasets, select_data_test)
 
 def parse(raw_datasets, selection_function):
+    """ Generic Data Parser for the Immune System Datasets
+
+    Effects
+    -------
+    Removes data points with low values of x
+    Shifts values of z, so they are negative
+    Constructs a new field, y, that conatins the stacked values of x and z
+    Creates the observation vector [1, 0, 1]
+    """
     threshold_value = 1e-5
     clean_datasets = []
     updates = {'initial_values': [],
@@ -79,7 +89,14 @@ def visualise(ax, dataset):
     ax.plot(dataset['x'], dataset['z'], 'o')
 
 def knots_from_data(ts, n, dataset):
-    """Selects the knots based on data weightings"""
+    """Selects the knots based on data weightings
+
+    If n < number of data points, creates a sparse basis, where the knots are poistioned at the
+    points where the 2nd derivative is maximised
+
+    If n > number of data points, creates a dense basis. Similar to above, selects points where the
+    2nd derivative is maximised, the uniformly disperses knot locations over t
+    """
 
     # calculate 2nd derivatives
     xdiffs = np.gradient(np.gradient(dataset['x'], dataset['t']), dataset['t'])

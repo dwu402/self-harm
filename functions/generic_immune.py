@@ -22,7 +22,7 @@ def parse(raw_datasets, selection_function):
     Constructs a new field, y, that conatins the stacked values of x and z
     Creates the observation vector [1, 0, 1]
     """
-    threshold_value = 1e-5
+    threshold_value = 1e-1
     clean_datasets = []
     updates = {'initial_values': [],
                'time_span': [],
@@ -36,7 +36,7 @@ def parse(raw_datasets, selection_function):
         # threshold out low pathogen levels
         vals = selected_data['x']
         acceptable_vals = [v > threshold_value for v in vals]
-        thresholded_data = selected_data[acceptable_vals]
+        thresholded_data = selected_data.iloc[acceptable_vals.index(True):]
         clean_datasets.append(thresholded_data.reset_index())
 
     for dataset in clean_datasets:

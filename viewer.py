@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 from fitter import tokey, argsplit
 from casadi import Function, hessian
 
-class View():
+class DataPlotter():
     def __init__(self, context):
         self.figure = None
         self.canvas = None
@@ -20,7 +20,7 @@ class View():
             self.view_function(self.canvas, data)
         self.figure.show()
 
-class Display():
+class Plotter():
     def __init__(self, context=None, fitter=None):
         self.context = context
         self.fitter = fitter

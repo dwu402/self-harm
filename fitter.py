@@ -289,7 +289,15 @@ class Fitter():
 
     def write(self, file="fitter.out"):
         with open(file, 'wb') as f:
-            pickle.dump(file=f, obj=[self.solutions] + [p.cache.results for p in self.problems])
+            pickle.dump(file=f, obj=[[[str(p) for p in m.ps] for m in self.models]] +
+                        [self.solutions] +
+                        [p.cache.results for p in self.problems])
+
+    def read(self, file):
+        reader = FitReader(file)
+        self.solutions = reader.solutions
+        for myp, rp in zip(self.problems, reader.problem_cache):
+            myp.cache.results = rp
 
 class CCache():
     """ Memoization helper object """
@@ -352,13 +360,19 @@ class FitReader():
     """ unpickler """
     def __init__(self, file=None):
         self.file = file
+        self.ps = []
         self.solutions = None
         self.problem_cache = None
         if file:
             self.read()
 
-    def read(self):
+    def read(self, old=False):
         with open(self.file, 'rb') as f:
             obj = pickle.load(f)
-            self.solutions = obj[0]
-            self.problem_cache = obj[1:]
+            if old or not isinstance(obj[0], list):
+                self.solutions = obj[0]
+                self.problem_cache = obj[1:]
+            else:
+                self.ps = obj[0]
+                self.solutions = obj[1]
+                self.problem_cache = obj[2:]

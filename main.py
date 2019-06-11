@@ -11,13 +11,13 @@ import numpy as np
 @click.option('-v', '--verbose', is_flag=True, help="verbosity flag")
 def main(run_file, action, output_file, verbose):
     context = ingestor.Context(run_file)
-    model = modeller.Model(context)
-    solver = fitter.Fitter()
-    solver.construct_objectives(context, model)
-    solver.construct_problems()
-    for rho in np.logspace(*context.fitting_configuration['regularisation_parameter'][:2], 20):
+    solver = fitter.Fitter(context)
+    for rho in np.logspace(*context.fitting_configuration['regularisation_parameter'][:2], num=20):
         solver.solve(rho)
-    solver.visualise()
+        # update the initial iterate from previous rho's value
+        for idx, problem in enumerate(solver.problems):
+            problem.initial_guess = solver.solutions[str(rho)][idx].x
+    solver.write(output_file)
 
 if __name__ == "__main__":
     main() # pylint: disable=no-value-for-parameter

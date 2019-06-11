@@ -109,9 +109,9 @@ def knots_from_data(ts, n, dataset):
     if n <= ntimes:
         # ensure that 0 and -1 are in the knot vector
         temp_knots = importance[:n]
-        if 0 in temp_knots[-2:]:
+        if 0 in temp_knots:
             temp_knots.remove(0)
-        if (ntimes-1) in temp_knots[-2:]:
+        if (ntimes-1) in temp_knots:
             temp_knots.remove(ntimes-1)
         knot_indices = [0] + sorted(temp_knots[:n-2]) + [-1]
 
@@ -121,8 +121,11 @@ def knots_from_data(ts, n, dataset):
     else:
         corresponding_times = dataset['t'].iloc[importance[:n%ntimes]]
         add_knots = [min(ts, key=lambda t: np.abs(t-tk)) for tk in corresponding_times]
-        all_times = list(np.linspace(0, ts[-1], ntimes*(n//ntimes)))
-        return sorted(all_times + add_knots)
+        candidates = np.linspace(0, dataset['t'].iloc[-1], n)
+        # replace all closest candidates with important knots
+        for k in add_knots:
+            candidates[np.argmin(np.abs(candidates - k))] = k
+        return list(candidates)
 
 def behaviour_penalty(p):
     K = 100

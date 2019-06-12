@@ -65,11 +65,11 @@ class Plotter():
         """Helper method to get parameter values"""
         return self.fitter.solutions[str(target_rho)][problem].x
 
-    def print_solution(self, target_rho, problem=0, label_vector=None):
+    def print_solution(self, target_rho, problem=0, labels=None):
         """Prints the parameter values"""
-        if not label_vector:
-            label_vector = [str(p).replace('_', '') for p in self.fitter.models[problem].ps]
-        for param, pval in zip(label_vector, self.p_of(target_rho, problem)):
+        if not labels:
+            labels = [str(p).replace('_', '') for p in self.fitter.models[problem].ps]
+        for param, pval in zip(labels, self.p_of(target_rho, problem)):
             print(f"par {param}={pval}")
 
     def draw_solution(self, target_rho, problem=0, plane='t', datakeys=None):
@@ -110,16 +110,16 @@ class Plotter():
             if datakeys:
                 plt.xlabel(datakeys[0])
                 plt.ylabel(datakeys[1])
-                plt.legend(['Spline', 'Data', 'Gradients'])
+                plt.legend(['Spline', 'Data', 'Gradients'], loc="best", bbox_to_anchor=(1.01, 1))
             else:
                 plt.xlabel(f"state variable {xaxis}")
                 plt.ylabel(f"state variable {yaxis}")
-                plt.legend(['Spline', 'Gradients'])
+                plt.legend(['Spline', 'Gradients'], loc="best", bbox_to_anchor=(1.01, 1))
             plt.show()
         else:
             raise AssertionError("plane argument is incorrect")
 
-    def draw_lcurve(self, problem=0):
+    def draw_lcurve(self, problem=0, target_rho=None):
         """Plots the Lcurve for the inner objective function"""
         times = self.fitter.models[problem].observation_times
         datafit_fn = lambda r, v: self.fitter.inner_objectives[problem]._obj_fn1(
@@ -154,11 +154,14 @@ class Plotter():
         dfield_values = np.array([[r, dfield_fn(r, v)] for r, v in zip(self.rhos, self.sol_objs)])
 
         plt.loglog(datafit_values[:, 1], dfield_values[:, 1], '--o', linewidth=0.25)
+        if target_rho:
+            idx = np.argmin(np.abs(np.array(self.rhos)-target_rho))
+            plt.plot(datafit_values[idx, 1], dfield_values[idx, 1], 'ro')
         plt.xlabel("Data Fit")
         plt.ylabel("Diff Field")
         plt.show()
 
-    def draw_confidence(self, target_rho, problem=0, label_vector=None):
+    def draw_confidence(self, target_rho, problem=0, labels=None):
         """Plots the confidence interval estiamtes based on 'Fisher information' (curvature)"""
         ps_end = self.p_of(target_rho, problem)
         fisher = []
@@ -183,8 +186,8 @@ class Plotter():
         plt.bar(pidx, ps_end)
         plt.errorbar(pidx, ps_end, yerr=3*np.sqrt(1/np.array(fisher)), capsize=7, markeredgewidth=2,
                      linestyle='None', ecolor='k', color='k')
-        if label_vector:
-            plt.xticks(pidx, label_vector)
+        if labels:
+            plt.xticks(pidx, labels)
         else:
             plt.xticks(pidx, [str(p).replace('_', '') for p in self.fitter.models[problem].ps])
         plt.title("Confidence Interval Estimates using Fisher Information")
@@ -220,4 +223,25 @@ class Plotter():
             axis = plt.subplot(111)
         for err in errs:
             axis.plot(self.context.datasets[problem]['t'], err)
+        plt.show()
+
+    def draw_basis(self, target_rho, problem=0, labels=None):
+        bfn = Function('basis_fns', [self.fitter.models[problem].ts],
+                       [self.fitter.models[problem].basis])
+        getx = Function("getx", [self.fitter.models[problem].ts,
+                                 *self.fitter.models[problem].cs],
+                        self.fitter.models[problem].xs)
+        problem_obj = self.fitter.problems[problem]
+        c_end = problem_obj.cache.results[tokey(target_rho, self.p_of(target_rho, problem))].x
+        times = self.fitter.models[problem].observation_times
+        xs_end = np.array([np.array(i) for i in getx(times, *argsplit(c_end, self.nState))])
+        plt.plot(self.fitter.models[problem].observation_times,
+                 np.abs(np.hstack([x/max(abs(x)) for x in xs_end])),
+                 linewidth=5)
+        plt.plot(self.fitter.models[problem].observation_times,
+                 bfn(self.fitter.models[problem].observation_times), '--')
+        for t in self.context.datasets[problem]['t']:
+            plt.axvline(x=t, color='m', linewidth=0.25, linestyle='--')
+        if labels:
+            plt.legend(labels, loc="best", bbox_to_anchor=(1.01, 1))
         plt.show()

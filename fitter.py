@@ -76,8 +76,8 @@ class InnerObjective():
 
         self._obj_fn1 = ca.Function("obj1", self.input_list, [self._obj_1])
 
-        self._obj_2 = sum(ca.norm_fro(model.get_xdash()[:,i] -
-                                    model.model(model.ts, *model.cs, *model.ps)[:, i])**2
+        self._obj_2 = sum(ca.norm_fro(model.get_xdash()[:, i] -
+                                      model.model(model.ts, *model.cs, *model.ps)[:, i])**2
                           for i in range(model.s))/model.n
 
         # nv1 = ca.hcat([ca.norm_fro(model.get_xdash()[i, :])  for i in range(model.n)])
@@ -240,9 +240,10 @@ class Fitter():
         def H(c, p, rho=None):
             if rho is None:
                 rho = inner_objective.default_rho
-            return (inner_objective.inner_criterion_fn(model.observation_times, *argsplit(c, model.s),
-                                             *p, inner_objective.generate_collocation_matrix(dataset, model),
-                                             len(dataset['t']), *inner_objective.pad_observations(dataset['y']), rho)
+            return (inner_objective.inner_criterion_fn(
+                        model.observation_times, *argsplit(c, model.s),
+                        *p, inner_objective.generate_collocation_matrix(dataset, model),
+                        len(dataset['t']), *inner_objective.pad_observations(dataset['y']), rho)
                     + self.regularisation(p))
         return H
 

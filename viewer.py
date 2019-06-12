@@ -3,6 +3,18 @@ from matplotlib import pyplot as plt
 from fitter import tokey, argsplit
 from casadi import Function, hessian
 
+def setup_canvas():
+    """Setups up the style and colours available when plotting"""
+    # style settings
+    plt.style.use('seaborn-notebook')
+    plt.rc('text', usetex=True)
+    plt.rc('font', family='serif')
+    plt.rcParams['figure.figsize'] = [15, 10]
+    # include more colours
+    from cycler import cycler
+    new_colours = cycler(color=["k", "m"])
+    plt.rcParams['axes.prop_cycle'] = plt.rcParams['axes.prop_cycle'].concat(new_colours)
+
 class DataPlotter():
     def __init__(self, context):
         self.figure = None
@@ -35,12 +47,13 @@ class Plotter():
         self.sol_objs = self.fitter.solutions.values()
         self.nState = self.context.modelling_configuration['model_form']['state']
 
-    def show_parameter_values(self, problem=0):
+    def show_parameter_values(self, problem=0, labels=None):
         """Shows the parameter values at each rho value for a given problem (data set)"""
         vals = [val[problem].x for val in self.sol_objs]
         plt.plot(self.rhos, vals, 'X-')
-        plt.legend([str(p).replace('_', '') for p in self.fitter.models[problem].ps], loc="best",
-                   bbox_to_anchor=(1.01, 1))
+        if not labels:
+            labels = [str(p).replace('_', '') for p in self.fitter.models[problem].ps]
+        plt.legend(labels, loc="best", bbox_to_anchor=(1.01, 1))
         plt.xscale('log')
         plt.yscale('log', nonposy="mask")
         plt.show()
@@ -119,7 +132,7 @@ class Plotter():
         else:
             raise AssertionError("plane argument is incorrect")
 
-    def draw_lcurve(self, problem=0, target_rho=None):
+    def draw_lcurve(self, problem=0, target_rho=None, optimal=False):
         """Plots the Lcurve for the inner objective function"""
         times = self.fitter.models[problem].observation_times
         datafit_fn = lambda r, v: self.fitter.inner_objectives[problem]._obj_fn1(
@@ -157,11 +170,32 @@ class Plotter():
         if target_rho:
             idx = np.argmin(np.abs(np.array(self.rhos)-target_rho))
             plt.plot(datafit_values[idx, 1], dfield_values[idx, 1], 'ro')
+        if optimal:
+            closest_idx, _ = self.optimise_lcurve(datafit_values, dfield_values)
+            plt.plot(datafit_values[closest_idx, 1], dfield_values[closest_idx, 1], 'mo')
         plt.xlabel("Data Fit")
         plt.ylabel("Diff Field")
         plt.show()
 
-    def draw_confidence(self, target_rho, problem=0, labels=None):
+    def optimise_lcurve(self, datafit, gradientfit, origin=None):
+        if origin is None:
+            origin = np.array([0,0])
+        else:
+            origin = np.array(origin)
+        xy = np.array(list(zip(datafit[:, 1], gradientfit[:, 1])))
+        distances = [np.linalg.norm(xyi - origin) for xyi in xy]
+        gmdistances = [2*np.sqrt(np.prod(xyi)) for xyi in xy]
+        totals = 1/np.sum([gmdistances, distances], axis=0)
+        closest_idx = np.argmax(totals)
+        closest_rho = self.rhos[closest_idx]
+        print(f"{closest_rho}\n is the closest")
+        return closest_idx, closest_rho
+
+    @staticmethod
+    def __ignore(array, indices):
+        return np.array([elem for i, elem in enumerate(array) if i not in indices])
+
+    def draw_confidence(self, target_rho, problem=0, labels=None, ignore=None, verbose=False):
         """Plots the confidence interval estiamtes based on 'Fisher information' (curvature)"""
         ps_end = self.p_of(target_rho, problem)
         fisher = []
@@ -182,10 +216,17 @@ class Plotter():
                 ),
                 target_rho
             )))
+        if verbose:
+            print(fisher)
         pidx = range(len(ps_end))
         plt.bar(pidx, ps_end)
-        plt.errorbar(pidx, ps_end, yerr=3*np.sqrt(1/np.array(fisher)), capsize=7, markeredgewidth=2,
-                     linestyle='None', ecolor='k', color='k')
+        if ignore is None:
+            plt.errorbar(pidx, ps_end, yerr=3*np.sqrt(1/np.array(fisher)), capsize=7,
+                         markeredgewidth=2, linestyle='None', ecolor='k', color='k')
+        else:
+            plt.errorbar(self.__ignore(pidx, ignore), self.__ignore(ps_end, ignore),
+                         yerr=3*np.sqrt(1/self.__ignore(np.array(fisher), ignore)),
+                         capsize=7, markeredgewidth=2, linestyle='None', ecolor='k', color='k')
         if labels:
             plt.xticks(pidx, labels)
         else:

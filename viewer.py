@@ -3,13 +3,21 @@ from matplotlib import pyplot as plt
 from fitter import tokey, argsplit
 from casadi import Function, hessian
 
-def setup_canvas():
+def setup_canvas(size=False,ipy=False):
     """Setups up the style and colours available when plotting"""
     # style settings
     plt.style.use('seaborn-notebook')
     plt.rc('text', usetex=True)
     plt.rc('font', family='serif')
-    plt.rcParams['figure.figsize'] = [15, 10]
+    if size is True:
+        plt.rcParams['figure.figsize'] = [15, 10]
+    elif size:
+        plt.rcParams['figure.figsize'] = size
+    if ipy:
+        plt.rcParams['figure.dpi'] = 72
+        plt.rcParams['figure.subplot.bottom'] = 0.125
+        plt.rcParams['figure.facecolor'] = (1, 1, 1, 0)
+        plt.rcParams['figure.edgecolor'] = (1, 1, 1, 0)
     # include more colours
     from cycler import cycler
     new_colours = cycler(color=["k", "m"])
@@ -47,15 +55,24 @@ class Plotter():
         self.sol_objs = self.fitter.solutions.values()
         self.nState = self.context.modelling_configuration['model_form']['state']
 
+    @staticmethod
+    def _new_figure(with_axes=True):
+        fig = plt.figure()
+        if not with_axes:
+            return fig
+        ax = fig.add_subplot(1, 1, 1)
+        return fig, ax
+
     def show_parameter_values(self, problem=0, labels=None):
         """Shows the parameter values at each rho value for a given problem (data set)"""
         vals = [val[problem].x for val in self.sol_objs]
-        plt.plot(self.rhos, vals, 'X-')
+        fig, ax = self._new_figure()
+        ax.plot(self.rhos, vals, 'X-')
         if not labels:
             labels = [str(p).replace('_', '') for p in self.fitter.models[problem].ps]
-        plt.legend(labels, loc="best", bbox_to_anchor=(1.01, 1))
-        plt.xscale('log')
-        plt.yscale('log', nonposy="mask")
+        ax.legend(labels, loc="best", bbox_to_anchor=(1.01, 1))
+        ax.set_xscale('log')
+        ax.set_yscale('log', nonposy="mask")
         plt.show()
 
     def show_iterations(self, problem=0, low=5):
@@ -64,14 +81,15 @@ class Plotter():
                                for rho, val in zip(self.rhos, self.sol_objs)])
         fevs_list = np.array([[rho, val[problem].nfev]
                               for rho, val in zip(self.rhos, self.sol_objs)])
-        plt.semilogx(*iters_list.T, *fevs_list.T)
-        low_iters = np.array([[k, v] for k,v in iters_list if v < low])
-        plt.plot(*low_iters.T, 'ro')
-        plt.legend(["niters", "nfev", "low iter"],
-                   loc="best", bbox_to_anchor=(1.01, 1))
-        plt.title("Algorithm evaluations")
-        plt.xlabel(r"$\rho$")
-        plt.ylabel("Number")
+        fig, ax = self._new_figure()
+        ax.semilogx(*iters_list.T, *fevs_list.T)
+        low_iters = np.array([[k, v] for k, v in iters_list if v < low])
+        ax.plot(*low_iters.T, 'ro')
+        ax.legend(["niters", "nfev", "low iter"],
+                  loc="best", bbox_to_anchor=(1.01, 1))
+        ax.set_title("Algorithm evaluations")
+        ax.set_xlabel(r"$\rho$")
+        ax.set_ylabel("Number")
         plt.show()
 
     def p_of(self, target_rho, problem):
@@ -95,16 +113,17 @@ class Plotter():
         times = self.fitter.models[problem].observation_times
         xs_end = np.array([np.array(i) for i in getx(times, *argsplit(c_end, self.nState))])
         data_values = self.context.datasets[problem]['y']
+        fig, ax = self._new_figure()
         if plane == 't':
             # time series plot
             nT = len(times)
-            plt.plot(times, xs_end.reshape(self.nState, nT).T,
+            ax.plot(times, xs_end.reshape(self.nState, nT).T,
                      self.context.datasets[problem]['t'],
                      np.array([list(x) for x in data_values]), 'o')
-            plt.legend([f"x {i}" for i in range(self.nState)] +
+            ax.legend([f"x {i}" for i in range(self.nState)] +
                        [f"data {i}" for i, _ in enumerate(data_values)],
                        loc="best", bbox_to_anchor=(1.01, 1))
-            plt.xlabel('time, t')
+            ax.set_xlabel('time, t')
             plt.show()
         elif len(plane) == 2:
             xaxis, yaxis = plane
@@ -112,22 +131,22 @@ class Plotter():
                                                          self.p_of(target_rho, problem))
                                       for i, t in enumerate(times)])
             spline_dfield = spline_dfield.reshape(spline_dfield.shape[:2])
-            plt.plot(xs_end[xaxis], xs_end[yaxis], 'o-')
+            ax.plot(xs_end[xaxis], xs_end[yaxis], 'o-')
             if datakeys:
-                plt.plot(self.context.datasets[problem][datakeys[0]],
+                ax.plot(self.context.datasets[problem][datakeys[0]],
                          self.context.datasets[problem][datakeys[1]],
-                         alpha=0.55)
-            plt.quiver(xs_end[xaxis], xs_end[yaxis], spline_dfield[:, xaxis], spline_dfield[:, yaxis],
+                         'o-', alpha=0.55)
+            ax.quiver(xs_end[xaxis], xs_end[yaxis], spline_dfield[:, xaxis], spline_dfield[:, yaxis],
                        scale=None, angles='xy', headwidth=3, headlength=4.5, headaxislength=4,
                        width=0.0025)
             if datakeys:
-                plt.xlabel(datakeys[0])
-                plt.ylabel(datakeys[1])
-                plt.legend(['Spline', 'Data', 'Gradients'], loc="best", bbox_to_anchor=(1.01, 1))
+                ax.set_xlabel(datakeys[0])
+                ax.set_ylabel(datakeys[1])
+                ax.legend(['Spline', 'Data', 'Gradients'], loc="best", bbox_to_anchor=(1.01, 1))
             else:
-                plt.xlabel(f"state variable {xaxis}")
-                plt.ylabel(f"state variable {yaxis}")
-                plt.legend(['Spline', 'Gradients'], loc="best", bbox_to_anchor=(1.01, 1))
+                ax.set_xlabel(f"state variable {xaxis}")
+                ax.set_ylabel(f"state variable {yaxis}")
+                ax.legend(['Spline', 'Gradients'], loc="best", bbox_to_anchor=(1.01, 1))
             plt.show()
         else:
             raise AssertionError("plane argument is incorrect")
@@ -166,15 +185,16 @@ class Plotter():
         datafit_values = np.array([[r, datafit_fn(r, v)] for r, v in zip(self.rhos, self.sol_objs)])
         dfield_values = np.array([[r, dfield_fn(r, v)] for r, v in zip(self.rhos, self.sol_objs)])
 
-        plt.loglog(datafit_values[:, 1], dfield_values[:, 1], '--o', linewidth=0.25)
+        fig, ax = self._new_figure()
+        ax.loglog(datafit_values[:, 1], dfield_values[:, 1], '--o', linewidth=0.25)
         if target_rho:
             idx = np.argmin(np.abs(np.array(self.rhos)-target_rho))
-            plt.plot(datafit_values[idx, 1], dfield_values[idx, 1], 'ro')
+            ax.plot(datafit_values[idx, 1], dfield_values[idx, 1], 'ro')
         if optimal:
             closest_idx, _ = self.optimise_lcurve(datafit_values, dfield_values)
-            plt.plot(datafit_values[closest_idx, 1], dfield_values[closest_idx, 1], 'mo')
-        plt.xlabel("Data Fit")
-        plt.ylabel("Diff Field")
+            ax.plot(datafit_values[closest_idx, 1], dfield_values[closest_idx, 1], 'mo')
+        ax.set_xlabel("Data Fit")
+        ax.set_ylabel("Diff Field")
         plt.show()
 
     def optimise_lcurve(self, datafit, gradientfit, origin=None):
@@ -219,18 +239,21 @@ class Plotter():
         if verbose:
             print(fisher)
         pidx = range(len(ps_end))
-        plt.bar(pidx, ps_end)
+        fig, ax = self._new_figure()
+        ax.bar(pidx, ps_end)
         if ignore is None:
-            plt.errorbar(pidx, ps_end, yerr=3*np.sqrt(1/np.array(fisher)), capsize=7,
-                         markeredgewidth=2, linestyle='None', ecolor='k', color='k')
+            ax.errorbar(pidx, ps_end, yerr=3*np.sqrt(1/np.array(fisher)), capsize=7,
+                        markeredgewidth=2, linestyle='None', ecolor='k', color='k')
         else:
-            plt.errorbar(self.__ignore(pidx, ignore), self.__ignore(ps_end, ignore),
-                         yerr=3*np.sqrt(1/self.__ignore(np.array(fisher), ignore)),
-                         capsize=7, markeredgewidth=2, linestyle='None', ecolor='k', color='k')
+            ax.errorbar(self.__ignore(pidx, ignore), self.__ignore(ps_end, ignore),
+                        yerr=3*np.sqrt(1/self.__ignore(np.array(fisher), ignore)),
+                        capsize=7, markeredgewidth=2, linestyle='None', ecolor='k', color='k')
         if labels:
-            plt.xticks(pidx, labels)
+            ax.set_xticks(pidx)
+            ax.set_xticklabels(labels)
         else:
-            plt.xticks(pidx, [str(p).replace('_', '') for p in self.fitter.models[problem].ps])
+            ax.set_xticks(pidx)
+            ax.set_xticklabels([str(p).replace('_', '') for p in self.fitter.models[problem].ps])
         plt.title("Confidence Interval Estimates using Fisher Information")
         plt.show()
 
@@ -254,14 +277,15 @@ class Plotter():
             scales = [np.mean(err) + 1.96*np.std(err) for err in errs]
             circles = [i0 + iscl*fn(np.linspace(0, 2*np.pi, 50))
                        for i0, iscl, fn in zip(i0s, scales, [np.cos, np.sin])]
-            _, axes = plt.subplots(nrows=2, ncols=1)
-            axis = axes[0]
-            axes[1].plot(*i0s)
-            axes[1].plot(*[self.context.datasets[problem][datakey]
-                           for datakey in indexkeys.values()], 'o--', alpha=0.55)
-            axes[1].plot(circles[0], circles[1], 'ko', alpha=0.2)
+            fig = self._new_figure()
+            axis = fig.add_subplot(2, 1, 1)
+            daxis = fig.add_subplot(2, 1, 2)
+            daxis.plot(*i0s)
+            daxis.plot(*[self.context.datasets[problem][datakey]
+                         for datakey in indexkeys.values()], 'o--', alpha=0.55)
+            daxis.plot(circles[0], circles[1], 'ko', alpha=0.2)
         else:
-            axis = plt.subplot(111)
+            fig, axis = self._new_figure()
         for err in errs:
             axis.plot(self.context.datasets[problem]['t'], err)
         plt.show()
@@ -276,13 +300,14 @@ class Plotter():
         c_end = problem_obj.cache.results[tokey(target_rho, self.p_of(target_rho, problem))].x
         times = self.fitter.models[problem].observation_times
         xs_end = np.array([np.array(i) for i in getx(times, *argsplit(c_end, self.nState))])
-        plt.plot(self.fitter.models[problem].observation_times,
-                 np.abs(np.hstack([x/max(abs(x)) for x in xs_end])),
-                 linewidth=5)
-        plt.plot(self.fitter.models[problem].observation_times,
-                 bfn(self.fitter.models[problem].observation_times), '--')
+        fig, ax = self._new_figure()
+        ax.plot(self.fitter.models[problem].observation_times,
+                np.abs(np.hstack([x/max(abs(x)) for x in xs_end])),
+                linewidth=5)
+        ax.plot(self.fitter.models[problem].observation_times,
+                bfn(self.fitter.models[problem].observation_times), '--')
         for t in self.context.datasets[problem]['t']:
-            plt.axvline(x=t, color='m', linewidth=0.25, linestyle='--')
+            ax.axvline(x=t, color='m', linewidth=0.25, linestyle='--')
         if labels:
-            plt.legend(labels, loc="best", bbox_to_anchor=(1.01, 1))
+            ax.legend(labels, loc="best", bbox_to_anchor=(1.01, 1))
         plt.show()

@@ -28,9 +28,8 @@ class InnerObjective():
     def __init__(self):
         self.m = 0
         self.observations = None
-        self.collocation_matrix = None
+        self.collocation_matrices = None
         self.observation_vector = None
-        self.observation_number = 0
         self.weightings = None
         self.rho = None
         self.default_rho = 0
@@ -50,18 +49,17 @@ class InnerObjective():
         self.m = len(dataset['t'])
 
         self.observation_vector = np.array(config['observation_vector'])
-        self.observation_number = ca.MX.sym("m")
         self.weightings = np.array(config['weightings'][0])
 
         self.observations = [ca.MX.sym("y_"+str(i), self.m, 1)
                              for i in range(len(self.observation_vector))]
-        self.collocation_matrix = ca.MX.sym("H", self.m, model.n)
+        self.collocation_matrices = ca.MX.sym("H", self.m, model.n, len(self.observation_vector))
 
         self.rho = ca.MX.sym("rho")
         self.default_rho = 10**(config['regularisation_parameter'][0])
 
-        self.input_list = [model.ts, *model.cs, *model.ps, self.collocation_matrix,
-                           self.observation_number, *self.observations, self.rho]
+        self.input_list = [model.ts, *model.cs, *model.ps, *self.collocation_matrices,
+                           *self.observations, self.rho]
 
         if self.inner_criterion is None:
             self.create_inner_criterion(model)
@@ -70,9 +68,11 @@ class InnerObjective():
 
     def create_inner_criterion(self, model):
         """Creates the inner objective function casadi object and function"""
-        self._obj_1 = sum(self.weightings[i] * ca.norm_2(self.observations[i]
-                                                         - self.collocation_matrix@model.xs[j])**2
-                          for i, j in enumerate(self.observation_vector))/self.observation_number
+        self._obj_1 = sum(w * ca.norm_2(ov - (cm@model.xs[j]))**2
+                          for j, ov, w, cm in zip(self.observation_vector,
+                                                  self.observations,
+                                                  self.weightings,
+                                                  self.collocation_matrices))
 
         self._obj_fn1 = ca.Function("obj1", self.input_list, [self._obj_1])
 
@@ -107,14 +107,17 @@ class InnerObjective():
         """ Generate the matrix that represents the observation model, g
 
         This is a matrix, where the time points are mapped onto the finer time grid"""
-        colloc_matrix_numerical = np.zeros((self.m, model.n))
-        for i, d_t in enumerate(dataset['t']):
-            j = np.argmin(np.fabs(model.observation_times - d_t))
-            colloc_matrix_numerical[i, j] = 1
+        observation_counts = self.count_observations(dataset['y'])
+        colloc_matrix_numerical = [np.zeros((self.m, model.n)) for i in observation_counts]
+        for k, count in enumerate(observation_counts):
+            for i, d_t in enumerate(dataset['t']):
+                if i < count:
+                    j = np.argmin(np.fabs(model.observation_times - d_t))
+                    colloc_matrix_numerical[k][i, j] = 1
 
         return colloc_matrix_numerical
 
-    def pad_observations(self, observations):
+    def true_pad_observations(self, observations):
         """ Pad observations with zeros """
         observations_shaped = np.vstack(observations).T
 
@@ -126,6 +129,20 @@ class InnerObjective():
 
         return padded_observations
 
+    def pad_observations(self, observations, convert=True):
+        """Transposes pandas array to numpy array"""
+        arr = np.stack(observations.to_numpy()).T
+        for arr_row in arr:
+            if len(arr_row) < self.m:
+                arr = np.pad(arr, ((0, 0), (0, self.m-len(arr[0]))), 'constant', constant_values=0)
+        if convert:
+            arr = np.nan_to_num(arr, copy=True)
+        return arr
+
+    def count_observations(self, observations):
+        nparray = self.pad_observations(observations, convert=False)
+        return np.array([len(obs[np.isfinite(obs)]) for obs in nparray])
+
     def create_objective_functions(self, model, dataset):
         """ Return callable function objects that represent the objective and jacobian """
         def obj_func(c, p, rho=None):
@@ -133,8 +150,7 @@ class InnerObjective():
                 rho = self.default_rho
             return float(self.inner_criterion_fn(model.observation_times, *argsplit(c, model.s),
                                                  *p,
-                                                 self.generate_collocation_matrix(dataset, model),
-                                                 len(dataset['t']),
+                                                 *self.generate_collocation_matrix(dataset, model),
                                                  *self.pad_observations(dataset['y']),
                                                  rho
                                                 )
@@ -145,8 +161,7 @@ class InnerObjective():
                 rho = self.default_rho
             return np.array(self.inner_jacobian_fn(model.observation_times, *argsplit(c, model.s),
                                                    *p,
-                                                   self.generate_collocation_matrix(dataset, model),
-                                                   len(dataset['t']),
+                                                   *self.generate_collocation_matrix(dataset, model),
                                                    *self.pad_observations(dataset['y']),
                                                    rho
                                                   )
@@ -242,8 +257,8 @@ class Fitter():
                 rho = inner_objective.default_rho
             return (inner_objective.inner_criterion_fn(
                         model.observation_times, *argsplit(c, model.s),
-                        *p, inner_objective.generate_collocation_matrix(dataset, model),
-                        len(dataset['t']), *inner_objective.pad_observations(dataset['y']), rho)
+                        *p, *inner_objective.generate_collocation_matrix(dataset, model),
+                        *inner_objective.pad_observations(dataset['y']), rho)
                     + self.regularisation(p))
         return H
 
@@ -276,8 +291,8 @@ class Fitter():
             if rho is None:
                 rho = inner_objective.default_rho
             return jacobian_function(model.observation_times, *argsplit(c, model.s), *p,
-                                     inner_objective.generate_collocation_matrix(dataset, model),
-                                     len(dataset['t']), *inner_objective.pad_observations(dataset['y']),
+                                     *inner_objective.generate_collocation_matrix(dataset, model),
+                                     *inner_objective.pad_observations(dataset['y']),
                                      rho, self.regularisation_derivative(p))
         return dH
 

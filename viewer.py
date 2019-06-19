@@ -73,7 +73,7 @@ class Plotter():
             labels = [str(p).replace('_', '') for p in self.fitter.models[problem].ps]
         ax.legend(labels, loc="best", bbox_to_anchor=(1.01, 1))
         ax.set_xscale('log')
-        ax.set_yscale('log', nonposy="mask")
+        ax.set_yscale('symlog', linthresh=1e-6)
         plt.show()
 
     def show_iterations(self, problem=0, low=5):
@@ -160,10 +160,9 @@ class Plotter():
             *argsplit(self.fitter.problems[problem].cache.results[tokey(r, v[problem].x)].x,
                       self.nState),
             *v[problem].x,
-            self.fitter.inner_objectives[problem].generate_collocation_matrix(
+            *self.fitter.inner_objectives[problem].generate_collocation_matrix(
                 self.context.datasets[problem], self.fitter.models[problem]
             ),
-            len(self.context.datasets[problem]['t']),
             *self.fitter.inner_objectives[problem].pad_observations(
                 self.context.datasets[problem]['y']
             ),
@@ -174,10 +173,9 @@ class Plotter():
             *argsplit(self.fitter.problems[problem].cache.results[tokey(r, v[problem].x)].x,
                       self.nState),
             *v[problem].x,
-            self.fitter.inner_objectives[problem].generate_collocation_matrix(
+            *self.fitter.inner_objectives[problem].generate_collocation_matrix(
                 self.context.datasets[problem], self.fitter.models[problem]
             ),
-            len(self.context.datasets[problem]['t']),
             *self.fitter.inner_objectives[problem].pad_observations(
                 self.context.datasets[problem]['y']
             ),
@@ -228,10 +226,9 @@ class Plotter():
                 *argsplit(self.fitter.problems[problem].cache.results[tokey(target_rho, ps_end)].x,
                           self.nState),
                 *ps_end,
-                self.fitter.inner_objectives[problem].generate_collocation_matrix(
+                *self.fitter.inner_objectives[problem].generate_collocation_matrix(
                     self.context.datasets[problem], self.fitter.models[problem]
                 ),
-                len(self.context.datasets[problem]['t']),
                 *self.fitter.inner_objectives[problem].pad_observations(
                     self.context.datasets[problem]['y']
                 ),

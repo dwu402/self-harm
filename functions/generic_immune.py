@@ -48,10 +48,20 @@ def parse(raw_datasets, selection_function):
         dataset['t'] = dataset['t'] - dataset['t'].iloc[0]
         updates['time_span'].append([0, dataset['t'].iloc[-1], dataset['t'].iloc[-1]])
 
-        dataset['y'] = pd.Series([v for v in dataset[['x', 'z']].values], index=dataset.index)
-        updates['fitting_configuration']['weightings'].append([1/max(dataset['x']), -1/min(dataset['z'])])
+        smooshed_values = []
+        for i, val in enumerate(dataset[['x', 'z']].values):
+            if i == 0:
+                smooshed_values.append(np.hstack([val, 1]))
+            else:
+                smooshed_values.append(np.hstack([val, np.nan]))
 
-    updates['fitting_configuration']['observation_vector'] = np.array([0, 2])
+        dataset['y'] = pd.Series(smooshed_values, index=dataset.index)
+        updates['fitting_configuration']['weightings'].append([1/max(dataset['x']),
+                                                               -1/min(dataset['z']),
+                                                               1]
+                                                             )
+
+    updates['fitting_configuration']['observation_vector'] = np.array([0, 2, 1])
 
     return clean_datasets, updates
 
@@ -61,7 +71,7 @@ def select_data_torres(data):
         'Day Post Infection': 't',
         'PD': 'x',
         'RBC': 'z',
-        'Cd79b': 'w',
+        'Nkg7': 'w',
         # 'Status': 'status'
     }
     return data[data_cols.keys()].rename(columns=data_cols)
@@ -86,7 +96,7 @@ def select_data_test(data):
     return data[data_cols.keys()].rename(columns=data_cols)
 
 def visualise(ax, dataset):
-    ax.plot(dataset['x'], dataset['z'], 'o')
+    ax.plot(dataset['t'], dataset['w'], 'o-')
 
 def knots_from_data(ts, n, dataset):
     """Selects the knots based on data weightings

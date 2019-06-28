@@ -1,5 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
+from functools import lru_cache
 from fitter import tokey, argsplit
 from casadi import Function, hessian
 
@@ -73,7 +74,7 @@ class Plotter():
             labels = [str(p).replace('_', '') for p in self.fitter.models[problem].ps]
         ax.legend(labels, loc="best", bbox_to_anchor=(1.01, 1))
         ax.set_xscale('log')
-        ax.set_yscale('symlog', linthresh=1e-6)
+        ax.set_yscale('log', nonposy='mask')
         plt.show()
 
     def show_iterations(self, problem=0, low=5):
@@ -190,11 +191,15 @@ class Plotter():
             idx = np.argmin(np.abs(np.array(self.rhos)-target_rho))
             ax.plot(datafit_values[idx, 1], dfield_values[idx, 1], 'ro')
         if optimal:
-            closest_idx, _ = self.optimise_lcurve(datafit_values, dfield_values)
+            closest_idx, closest_rho = self.optimise_lcurve(datafit_values, dfield_values)
             ax.plot(datafit_values[closest_idx, 1], dfield_values[closest_idx, 1], 'mo')
+        else:
+            closest_rho = None
         ax.set_xlabel("Data Fit")
         ax.set_ylabel("Diff Field")
         plt.show()
+
+        return closest_rho
 
     def optimise_lcurve(self, datafit, gradientfit, origin=None):
         if origin is None:
@@ -214,13 +219,16 @@ class Plotter():
     def __ignore(array, indices):
         return np.array([elem for i, elem in enumerate(array) if i not in indices])
 
-    def draw_confidence(self, target_rho, problem=0, labels=None, ignore=None, verbose=False):
-        """Plots the confidence interval estiamtes based on 'Fisher information' (curvature)"""
+    @lru_cache(maxsize=128)
+    def make_confidence(self, parameter, problem=0):
+        H, g = hessian(self.fitter.inner_objectives[problem].inner_criterion, parameter)
+        return Function('hfn', self.fitter.inner_objectives[problem].input_list, [H])
+
+    def calculate_confidence(self, target_rho, problem=0):
         ps_end = self.p_of(target_rho, problem)
         fisher = []
         for p in self.fitter.models[problem].ps:
-            H, g = hessian(self.fitter.inner_objectives[problem].inner_criterion, p)
-            hfn = Function('hfn', self.fitter.inner_objectives[problem].input_list, [H])
+            hfn = self.make_confidence(p, problem)
             fisher.append(float(hfn(
                 self.fitter.models[problem].observation_times,
                 *argsplit(self.fitter.problems[problem].cache.results[tokey(target_rho, ps_end)].x,
@@ -234,6 +242,12 @@ class Plotter():
                 ),
                 target_rho
             )))
+        return fisher
+
+    def draw_confidence(self, target_rho, problem=0, labels=None, ignore=None, verbose=False):
+        """Plots the confidence interval estiamtes based on 'Fisher information' (curvature)"""
+        ps_end = self.p_of(target_rho, problem)
+        fisher = self.calculate_confidence(target_rho, problem)
         if verbose:
             print(fisher)
         pidx = range(len(ps_end))
@@ -255,8 +269,26 @@ class Plotter():
         plt.title("Confidence Interval Estimates using Fisher Information")
         plt.show()
 
+    def validate_on_confidence(self, problem=0):
+        distances = []
+        was_inf = []
+        for rho in self.rhos:
+            fisher = 3*np.sqrt(1/np.array(self.calculate_confidence(rho, problem)))
+            distances.append(max(fisher[[not (nn or nf) for nn, nf in zip(np.isnan(fisher), np.isinf(fisher))]]))
+            was_inf.append(any(np.isinf(fisher)))
+        was_real = [not w for w in was_inf]
+        plt.loglog(np.array(self.rhos)[was_real], np.array(distances)[was_real], 'bo')
+        plt.loglog(np.array(self.rhos)[was_inf], np.array(distances)[was_inf], 'ro')
+        plt.title(r"Maximum $3\sigma$ Confidence Interval Size (ignoring inf)")
+        plt.xlabel(r"$\rho$")
+        plt.legend(['bounded intervals', 'unidentifiable'], loc="best", bbox_to_anchor=(1.01, 1))
+        plt.show()
+
     def draw_error(self, indexkeys, target_rho, problem=0):
-        """Plots a representation of how much data fit error there is"""
+        """Plots a representation of how much data fit error there is
+
+        indexkeys: {index: datakey}
+        """
         getx = Function("getx", [self.fitter.models[problem].ts,
                                  *self.fitter.models[problem].cs],
                         self.fitter.models[problem].xs)
@@ -264,10 +296,10 @@ class Plotter():
         c_end = problem_obj.cache.results[tokey(target_rho, self.p_of(target_rho, problem))].x
         times = self.fitter.models[problem].observation_times
         xs_end = np.array([np.array(i) for i in getx(times, *argsplit(c_end, self.nState))])
-        collocator = self.fitter.inner_objectives[problem].generate_collocation_matrix(
+        collocators = self.fitter.inner_objectives[problem].generate_collocation_matrix(
             self.context.datasets[problem], self.fitter.models[problem]
         )
-        observables = [collocator@xs_end[i] for i in indexkeys.keys()]
+        observables = [collocators[i]@xs_end[i] for i in indexkeys.keys()]
         errs = [np.abs(observable.T - np.array(self.context.datasets[problem][datakey])).reshape(-1,)
                 for observable, datakey in zip(observables, indexkeys.values())]
         if len(indexkeys) == 2:

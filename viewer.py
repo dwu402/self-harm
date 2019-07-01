@@ -138,7 +138,8 @@ class Plotter():
                 ax.plot(self.context.datasets[problem][datakeys[0]],
                         self.context.datasets[problem][datakeys[1]],
                         'o-', alpha=0.55)
-            ax.quiver(xs_end[xaxis], xs_end[yaxis], spline_dfield[:, xaxis], spline_dfield[:, yaxis],
+            ax.quiver(xs_end[xaxis], xs_end[yaxis],
+                      spline_dfield[:, xaxis], spline_dfield[:, yaxis],
                       scale=None, angles='xy', headwidth=3, headlength=4.5, headaxislength=4,
                       width=0.0025)
             if datakeys:
@@ -269,19 +270,35 @@ class Plotter():
         plt.title("Confidence Interval Estimates using Fisher Information")
         plt.show()
 
-    def validate_on_confidence(self, problem=0):
+    def validate_on_confidence(self, problem=0, method='absolute'):
+        r""" Implemented methods:
+            absolute: ||e||_\infty
+            relative: ||e/x||_\infty
+            uniform: ||e/(1+x)||_\infty
+        """
         distances = []
         was_inf = []
+        was_nan = []
         for rho in self.rhos:
-            fisher = 3*np.sqrt(1/np.array(self.calculate_confidence(rho, problem)))
-            distances.append(max(fisher[[not (nn or nf) for nn, nf in zip(np.isnan(fisher), np.isinf(fisher))]]))
-            was_inf.append(any(np.isinf(fisher)))
-        was_real = [not w for w in was_inf]
+            intervals = 3*np.sqrt(1/np.array(self.calculate_confidence(rho, problem)))
+            if method == "absolute":
+                error = intervals
+            elif method == "relative":
+                error = intervals/self.p_of(rho, problem)
+            elif method == "uniform":
+                error = intervals/(1+self.p_of(rho, problem))
+            distances.append(max(error[[not (nn or nf)
+                                        for nn, nf in zip(np.isnan(error), np.isinf(error))]]))
+            was_inf.append(any(np.isinf(error)))
+            was_nan.append(any(np.isnan(error)))
+        was_real = [(not wi and not wn) for wi, wn in zip(was_inf, was_nan)]
         plt.loglog(np.array(self.rhos)[was_real], np.array(distances)[was_real], 'bo')
-        plt.loglog(np.array(self.rhos)[was_inf], np.array(distances)[was_inf], 'ro')
-        plt.title(r"Maximum $3\sigma$ Confidence Interval Size (ignoring inf)")
+        plt.loglog(np.array(self.rhos)[was_inf], np.array(distances)[was_inf], 'rX')
+        plt.loglog(np.array(self.rhos)[was_nan], np.array(distances)[was_nan], 'md')
+        plt.title(r"Maximum $3\sigma$ Confidence Interval Size (ignoring infs)")
         plt.xlabel(r"$\rho$")
-        plt.legend(['bounded intervals', 'unidentifiable'], loc="best", bbox_to_anchor=(1.01, 1))
+        plt.legend(['bounded intervals', 'unidentifiable', 'does not minimize'],
+                   loc="best", bbox_to_anchor=(1.01, 1))
         plt.show()
 
     def draw_error(self, indexkeys, target_rho, problem=0):
@@ -299,7 +316,9 @@ class Plotter():
         collocators = self.fitter.inner_objectives[problem].generate_collocation_matrix(
             self.context.datasets[problem], self.fitter.models[problem]
         )
-        observables = [collocators[i]@xs_end[i] for i in indexkeys.keys()]
+        collocator_index_map = {v: i for i, v in
+                                enumerate(self.context.fitting_configuration['observation_vector'])}
+        observables = [collocators[collocator_index_map[i]]@xs_end[i] for i in indexkeys.keys()]
         errs = [np.abs(observable.T - np.array(self.context.datasets[problem][datakey])).reshape(-1,)
                 for observable, datakey in zip(observables, indexkeys.values())]
         if len(indexkeys) == 2:
@@ -316,6 +335,7 @@ class Plotter():
             fig, axis = self.new_figure()
         for err in errs:
             axis.plot(self.context.datasets[problem]['t'], err)
+            axis.legend(indexkeys.values())
         plt.show()
 
     def draw_basis(self, target_rho, problem=0, labels=None):

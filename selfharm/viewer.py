@@ -1,7 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 from functools import lru_cache
-from fitter import tokey, argsplit
+from .fitter import tokey, argsplit
 from casadi import Function, hessian
 
 def setup_canvas(size=False,ipy=False):

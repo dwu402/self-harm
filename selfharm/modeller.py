@@ -1,6 +1,6 @@
 import numpy as np
 import casadi as ca
-from functions import casbasis
+from .functions import casbasis
 
 
 class Model():

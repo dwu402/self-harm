@@ -5,3 +5,6 @@ data/auto-got-*
 .vscode*
 _ignore_*
 out/*
+build/*
+dist/*
+*.egg-info/*

@@ -1,6 +1,11 @@
 # self-harm, an ODE parameterisation tool
 Based on the generalised profiling / parameter cascading techniques in Ramsay and Hooker's _Dynamic Data Analysis_, this is a tool for parameterising arbitrary ODE systems.
 
+## Setup
+```bash
+python setup.py install
+```
+
 ## Usage
 ```bash
 python main.py -a ACTION_TYPE -f RUN_FILE [-o OUTPUT_FILE]

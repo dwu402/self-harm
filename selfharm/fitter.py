@@ -2,7 +2,7 @@ import copy
 import numpy as np
 import casadi as ca
 from scipy import optimize
-import modeller
+from . import modeller
 import pickle
 
 def argsplit(arg, n):

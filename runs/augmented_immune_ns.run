@@ -1,6 +1,0 @@
-mf models/generic_immune.py
-cf configurations/small_immune.conf
-df data/auto-got-data-20190701Z181034/augmented-nonsurvivors.csv
-df data/auto-got-data-20190701Z181034/mouse6.1.csv
-df data/auto-got-data-20190701Z181034/mouse6.2.csv
-df data/auto-got-data-20190701Z181034/mouse6.9.csv

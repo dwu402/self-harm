@@ -1,3 +1,0 @@
-mf models/fixedxy_immune.py
-cf configurations/small_fixed.conf
-df data/auto-got-data-20190701Z181034/mouse6.2.csv

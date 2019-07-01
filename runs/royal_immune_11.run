@@ -1,3 +1,0 @@
-mf models/generic_immune.py
-cf configurations/minimal_royal.conf
-df data/auto-got-royal/mouse11.csv

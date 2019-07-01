@@ -1,3 +1,0 @@
-mf models/generic_immune.py
-cf configurations/minimal_immune.conf
-df data/auto-got-data-20190701Z181034/mouse4.3.csv

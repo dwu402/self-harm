@@ -9,5 +9,5 @@ setup(
     description="Generalised Profiling for Parameter Estimation of ODEs",
     author="David Wu",
     author_email="dwu402@aucklanduni.ac.nz",
-    packages=['selfharm']
+    packages=['selfharm', 'selfharm.functions']
 )

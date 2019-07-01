@@ -168,6 +168,7 @@ class InnerObjective():
                            ).reshape(-1,)
         return obj_func, obj_jac
 
+
 class Fitter():
     """ Class that solves the outer objective problems """
     def __init__(self, context=None):
@@ -296,12 +297,14 @@ class Fitter():
                                      rho, self.regularisation_derivative(p))
         return dH
 
-    def solve(self, rho=None):
+    def solve(self, rho=None, propagate=False):
         rhokey = str(rho)
         if str(rho) not in self.solutions.keys():
             self.solutions[rhokey] = []
-        for problem in self.problems:
+        for i, problem in enumerate(self.problems):
             self.solutions[rhokey].append(problem.solve(rho))
+            if propagate:
+                problem.initial_guess = self.solutions[rhokey][i].x
 
     def write(self, file="fitter.out"):
         with open(file, 'wb') as f:

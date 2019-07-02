@@ -292,12 +292,13 @@ class Plotter():
             was_inf.append(any(np.isinf(error)))
             was_nan.append(any(np.isnan(error)))
         was_real = [(not wi and not wn) for wi, wn in zip(was_inf, was_nan)]
-        plt.loglog(np.array(self.rhos)[was_real], np.array(distances)[was_real], 'bo')
-        plt.loglog(np.array(self.rhos)[was_inf], np.array(distances)[was_inf], 'rX')
-        plt.loglog(np.array(self.rhos)[was_nan], np.array(distances)[was_nan], 'md')
-        plt.title(r"Maximum $3\sigma$ Confidence Interval Size (ignoring infs)")
-        plt.xlabel(r"$\rho$")
-        plt.legend(['bounded intervals', 'unidentifiable', 'does not minimize'],
+        fig, ax = self.new_figure()
+        ax.loglog(np.array(self.rhos)[was_real], np.array(distances)[was_real], 'bo')
+        ax.loglog(np.array(self.rhos)[was_inf], np.array(distances)[was_inf], 'rX')
+        ax.loglog(np.array(self.rhos)[was_nan], np.array(distances)[was_nan], 'md')
+        ax.set_title(r"Maximum $3\sigma$ Confidence Interval Size (ignoring infs)")
+        ax.set_xlabel(r"$\rho$")
+        ax.legend(['bounded intervals', 'unidentifiable', 'does not minimize'],
                    loc="best", bbox_to_anchor=(1.01, 1))
         plt.show()
 

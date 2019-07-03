@@ -1,3 +1,4 @@
+import warnings
 import numpy as np
 from matplotlib import pyplot as plt
 from functools import lru_cache
@@ -359,4 +360,60 @@ class Plotter():
             ax.axvline(x=t, color='m', linewidth=0.25, linestyle='--')
         if labels:
             ax.legend(labels, loc="best", bbox_to_anchor=(1.01, 1))
+        plt.show()
+
+    @staticmethod
+    def __replace(iterable, location, value):
+        return np.array(list(iterable[:location]) + [value] + list(iterable[location+1:]))
+
+    def generate_profile(self, target_rho, problem=0, parameter=0, irange=None, lower=None, upper=None, axes=None):
+        """ Generate the parameter profile around the optimal solution for a given parameter """
+        initial_estimate = self.fitter.solutions[str(target_rho)][problem].x
+        interest_parameter = initial_estimate[parameter]
+        # Construct the range for profiling
+        if lower is None and upper is None:
+            if irange is None:
+                raise TypeError("generate_profile expects either irange or lower and upper")
+            parameter_range = np.linspace(interest_parameter-irange/2, interest_parameter+irange/2)
+        elif lower is not None and upper is not None:
+            if lower > interest_parameter or upper < interest_parameter:
+                warnings.warn("Interest parameter is outside the lower/upper range")
+            parameter_range = np.linspace(lower, upper)
+        # Solve over the profile
+        profile = [self.fitter.problems[problem].function(self.__replace(initial_estimate, parameter, p)) for p in parameter_range]
+        # Plotting
+        if axes is None:
+            fig, axes = self.new_figure()
+        axes.plot(parameter_range, profile)
+        axes.axvline(interest_parameter)
+    
+    @staticmethod
+    def __make_plot_grid(number):
+        """ Intelligently determine num rows and num columns for a given number of subplots requirement """
+        n1 = np.ceil(np.sqrt(number))
+        n2 = np.ceil(number/n1)
+        return int(n1), int(n2)
+
+    @staticmethod
+    def __isiterable(obj):
+        try:
+            iter(obj)
+            return True
+        except TypeError:
+            return False
+
+    def generate_all_profiles(self, target_rho, problem=0, irange=None, lower=None, upper=None):
+        """ Generate profiles over all parameters """
+        num_params = self.context.modelling_configuration['model_form']['parameters']
+        # setup plotting canvas
+        num_rows, num_cols = self.__make_plot_grid(num_params)
+        fig, axes = self.new_figure(with_axes={"nrows":num_rows, "ncols":num_cols})
+        for i, ax in zip(range(num_params), axes.flatten()):
+            if self.__isiterable(irange):
+                self.generate_profile(target_rho, problem=problem, parameter=i, irange=irange[i], axes=ax)
+            elif self.__isiterable(lower) and self.__isiterable(upper):
+                self.generate_profile(target_rho, problem=problem, parameter=i, lower=lower[i], upper=upper[i], axes=ax)
+            else:
+                self.generate_profile(target_rho, problem=problem, parameter=i, irange=irange, lower=lower, upper=upper, axes=ax)
+        fig.suptitle("Parameter Profiles (Objective Function)")
         plt.show()

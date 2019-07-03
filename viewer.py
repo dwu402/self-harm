@@ -242,8 +242,9 @@ class Plotter():
                 *self.fitter.inner_objectives[problem].pad_observations(
                     self.context.datasets[problem]['y']
                 ),
-                target_rho
-            )))
+                target_rho)
+                + 2*self.context.fitting_configuration['regularisation_parameter'][2]
+            ))
         return fisher
 
     def draw_confidence(self, target_rho, problem=0, labels=None, ignore=None, verbose=False):

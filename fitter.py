@@ -4,6 +4,7 @@ import casadi as ca
 from scipy import optimize
 import modeller
 import pickle
+from functions.clustering import find_paried_distances as fpd
 
 def argsplit(arg, n):
     """ Used for splitting the values of c into 3 c vectors for the model """
@@ -31,6 +32,7 @@ class InnerObjective():
         self.collocation_matrices = None
         self.observation_vector = None
         self.weightings = None
+        self.densities = None
         self.rho = None
         self.default_rho = 0
         self.input_list = None
@@ -51,6 +53,9 @@ class InnerObjective():
         self.observation_vector = np.array(config['observation_vector'])
         self.weightings = np.array(config['weightings'][0])
 
+        y_as_np = np.stack(dataset['y'].to_numpy())
+        self.densities = fpd(y_as_np[:,0], y_as_np[:,1])
+
         self.observations = [ca.MX.sym("y_"+str(i), self.m, 1)
                              for i in range(len(self.observation_vector))]
         self.collocation_matrices = ca.MX.sym("H", self.m, model.n, len(self.observation_vector))
@@ -68,7 +73,7 @@ class InnerObjective():
 
     def create_inner_criterion(self, model):
         """Creates the inner objective function casadi object and function"""
-        self._obj_1 = sum(w * ca.norm_2(ov - (cm@model.xs[j]))**2
+        self._obj_1 = sum(w * ca.norm_2(self.densities*(ov - (cm@model.xs[j])))**2
                           for j, ov, w, cm in zip(self.observation_vector,
                                                   self.observations,
                                                   self.weightings,
@@ -79,15 +84,6 @@ class InnerObjective():
         self._obj_2 = sum(ca.norm_fro(model.get_xdash()[:, i] -
                                       model.model(model.ts, *model.cs, *model.ps)[:, i])**2
                           for i in range(model.s))/model.n
-
-        # nv1 = ca.hcat([ca.norm_fro(model.get_xdash()[i, :])  for i in range(model.n)])
-        # nv2 = ca.hcat([ca.norm_fro(model.model(model.ts, *model.cs, *model.ps)[i, :])
-        #                for i in range(model.n)])
-        # xv1 = model.get_xdash()
-        # xv2 = model.model(model.ts, *model.cs, *model.ps)
-        # self._obj_2 = sum(2*ca.atan2(ca.norm_fro(nv2[i]@xv1[i, :] - nv1[i]@xv2[i, :]),
-        #                              ca.norm_fro(nv2[i]@xv1[i, :] + nv1[i]@xv2[i, :]))
-        #                   for i in range(model.n))/model.n
 
         self._obj_fn2 = ca.Function("obj2", self.input_list, [self._obj_2])
 

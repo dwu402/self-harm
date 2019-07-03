@@ -379,14 +379,21 @@ class Plotter():
             if lower > interest_parameter or upper < interest_parameter:
                 warnings.warn("Interest parameter is outside the lower/upper range")
             parameter_range = np.linspace(lower, upper)
-        # Solve over the profile
-        profile = [self.fitter.problems[problem].function(self.__replace(initial_estimate, parameter, p)) for p in parameter_range]
+        # Reset value of the nuisance spline parameters
+        original_spline_ps = self.fitter.problems[problem].cache.get(tokey(target_rho, initial_estimate)).x
+        # Solve over profile
+        profile = []
+        for p in parameter_range:
+            self.fitter.problems[problem].cache.recent = original_spline_ps
+            modded_ps = self.__replace(initial_estimate, parameter, p)
+            profile.append(self.fitter.problems[problem].function(modded_ps))
         # Plotting
         if axes is None:
             fig, axes = self.new_figure()
         axes.plot(parameter_range, profile)
         axes.axvline(interest_parameter)
-    
+        axes.plot(interest_parameter, self.fitter.problems[problem].cache.get(tokey(target_rho, initial_estimate)).fun, 'ro')
+
     @staticmethod
     def __make_plot_grid(number):
         """ Intelligently determine num rows and num columns for a given number of subplots requirement """

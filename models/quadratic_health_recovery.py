@@ -3,11 +3,11 @@ import numpy as np
 def model(t, state, parameters):
 
     x, y, z = state
-    a, r, k, p, c, s, m, d, f, g, j, l = parameters
+    a, r, k, p, m, s, c, d, f, g, j, l = parameters
 
     return [
         a*x**2 - r*x - k*x*y,
-        p*x/(c**2+x**2) + s*(y**3)/(m**3+y**3) - d*y,
+        p*x/(m**2+x**2) + s*(y**3)/(c**3+y**3) - d*y,
         f*z*(y+l*z) - g*z**2 - j*x
     ]
 

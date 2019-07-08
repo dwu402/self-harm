@@ -425,3 +425,26 @@ class Plotter():
                 self.generate_profile(target_rho, problem=problem, parameter=i, irange=irange, lower=lower, upper=upper, axes=ax)
         fig.suptitle("Parameter Profiles (Objective Function)")
         plt.show()
+
+    def compare_parameters(self, target_rho, categories=None, labels=None):
+        """Plots all parameters on a bar graph next to each other
+            categories: integer bins
+        """
+        from cycler import cycler
+
+        all_params = np.stack([s.x for s in self.fitter.solutions[str(target_rho)]])
+        num_problems, num_params = all_params.shape
+        fig, ax = self.new_figure()
+        if categories:
+            colour_list = [x['color'] for x in list(plt.rcParams['axes.prop_cycle'])]
+            colours = cycler(color=[colour_list[i%len(colour_list)] for i in categories])
+            ax.set_prop_cycle(colours)
+        rel_locs = np.linspace(-0.3, 0.3, num_problems)
+        width = 0.6/num_problems
+        for delta, problem_params in zip(rel_locs, all_params):
+            locs = np.array(range(num_params)) + delta
+            ax.bar(locs, problem_params, width)
+        if labels:
+            ax.set_xticks(range(num_params))
+            ax.set_xticklabels(labels[:num_params])
+        plt.show()

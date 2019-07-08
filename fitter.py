@@ -24,7 +24,17 @@ class InnerObjective():
     """Object that contains the ability to create the inner objective function
 
     This represents:
-    J(c|theta) = ||y-g(Phi*c)||^2 + lambda*||D(Phi*c) - f(Phi*c, theta)||^2
+    J(c|theta) = ||w*p*(y-H*Phi*c)||^2 + lambda*||D(Phi*c) - f(Phi*c, theta)||^2
+    where:
+      w = weightings on state (diagonal)
+      p = data density (diagonal)
+      y = stacked data vector
+      H = collocation matrix/observation model
+      Phi = spline basis
+      c = spline coefficients
+      D = differential operator
+      f = process model
+      theta = process parameters
     """
     def __init__(self):
         self.m = 0

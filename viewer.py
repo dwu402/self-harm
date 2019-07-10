@@ -393,7 +393,10 @@ class Plotter():
             fig, axes = self.new_figure()
         axes.plot(parameter_range, profile)
         axes.axvline(interest_parameter)
-        axes.plot(interest_parameter, self.fitter.problems[problem].cache.get(tokey(target_rho, initial_estimate)).fun, 'ro')
+        axes.plot(interest_parameter,
+                  (self.fitter.problems[problem].cache.get(tokey(target_rho, initial_estimate)).fun
+                   - self.fitter.regularisation(initial_estimate)),
+                  'ro')
 
     @staticmethod
     def __make_plot_grid(number):

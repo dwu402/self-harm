@@ -369,7 +369,7 @@ class Plotter():
 
     def generate_profile(self, target_rho, problem=0, parameter=0, irange=None, lower=None, upper=None, axes=None):
         """ Generate the parameter profile around the optimal solution for a given parameter """
-        initial_estimate = self.fitter.solutions[str(target_rho)][problem].x
+        initial_estimate = self.p_of(target_rho, problem)
         interest_parameter = initial_estimate[parameter]
         # Construct the range for profiling
         if lower is None and upper is None:
@@ -387,7 +387,7 @@ class Plotter():
         for p in parameter_range:
             self.fitter.problems[problem].cache.recent = original_spline_ps
             modded_ps = self.__replace(initial_estimate, parameter, p)
-            profile.append(self.fitter.problems[problem].function(modded_ps))
+            profile.append(self.fitter.problems[problem].function(modded_ps, rho=target_rho))
         # Plotting
         if axes is None:
             fig, axes = self.new_figure()

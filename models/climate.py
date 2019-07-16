@@ -7,7 +7,7 @@ import casadi as ca
 
 # for now use a sinusoid fit of Auckland mean humidity data
 HUMIDITY_DATA = (np.array((79.3, 79.8, 80.3, 83.0, 85.8, 89.8, 88.9, 86.2, 81.3, 78.5, 77.2, 77.6)) *
-                 2.541e6 * np.exp(-5415.0 / 291.15)* 18/29 / 100)
+                 2.541e6 * np.exp(-5415.0 / (25 + 273.15))* 18/29 / 100)
 Q0 = HUMIDITY_DATA[0]
 HUMIDITY_FUNCTION = lambda t, a, c, d: a*np.sin(2*np.pi*t-c)+d
 COEFS, _ = optimize.curve_fit(HUMIDITY_FUNCTION,

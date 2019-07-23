@@ -16,20 +16,32 @@ COEFS, _ = optimize.curve_fit(HUMIDITY_FUNCTION,
 DQ = lambda t: 2*COEFS[0]*np.pi*np.cos(2*np.pi*t-COEFS[1])
 
 
-def model(t, state, parameters):
+def model(t, state, parameters, switches):
 
     s, i, r, q, l = state
     mu, gm, rmin, rmax, al, v, a = parameters
-    # vacc = lambda t: v if t%1 > 0.25 and t%1 < 0.5 else 0
-    vacc = lambda t: 10/4*v*ca.mod(t,1)*(1-ca.mod(t, 1)**2)**4
-    # vacc = lambda t: 0.25*v
-    lm = rmin + (rmax-rmin)*np.exp(-a*q)
+
+    # switch humidity model
+    if not switches[0]:
+        dq = DQ
+    else:
+        dq = lambda t: 0
+
+    # switch vaccination rate model
+    if switches[1] == 0:
+        vacc = lambda t: 10/4*v*ca.mod(t,1)*(1-ca.mod(t, 1)**2)**4
+    elif switches[1] > 0:
+        vacc = lambda t: 0.25*v
+    elif switches[1] < 0:
+        vacc = lambda t: v if t%1 > 0.25 and t%1 < 0.5 else 0
+
+    bt = (rmin + (rmax-rmin)*np.exp(-a*q))*(mu+al)
     return [
-        mu + gm*r - (mu + lm*i + vacc(t))*s,
-        lm*i*s - (mu + al)*i,
+        mu + gm*r - (mu + bt*i + vacc(t))*s,
+        bt*i*s - (mu + al)*i,
         al*i + vacc(t)*s - (mu + gm)*r,
-        DQ(t),
-        lm - l,
+        dq(t),
+        bt - l,
     ]
 
 def model_form():

@@ -7,7 +7,7 @@ import numpy as np
 # dI/dt = beta*S*I - alpha*I - mu*I + Di * Nabla^2 I
 # dR/dt = alpha*I - gamma*R - mu*R + Dr * Nabla^2 R
 
-# No flux boundaries (Nabla u on boundaries = 0)
+# Neumann boundaries (Nabla u on boundaries = 0)
 
 def model(t, state, parameters):
 
@@ -16,6 +16,7 @@ def model(t, state, parameters):
     R = state[18:]
     mu, r0, gamma, v, alpha, ds, di, dr = parameters
 
+    # using ghost point method for applying Neumann conditions
     D = np.array([
         [-4, 2, 0, 2, 0, 0, 0, 0, 0],
         [1, -4, 1, 0, 2, 0, 0, 0, 0],

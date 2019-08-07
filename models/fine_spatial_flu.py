@@ -9,28 +9,28 @@ import numpy as np
 
 # No flux boundaries (Nabla u on boundaries = 0)
 
-GRIDDING = 7
+N = 21
 
 # Build diffusion matrix
-D = np.diag([-4]*(GRIDDING**2))
+D = np.diag([-4]*(N**2))
 # points above, below, right, left
-D += np.diag([1]*(GRIDDING**2-GRIDDING), k=GRIDDING)
-D += np.diag([1]*(GRIDDING**2-GRIDDING), k=-GRIDDING)
-D += np.diag([1]*(GRIDDING**2-1), k=1)
-D += np.diag([1]*(GRIDDING**2-1), k=-1)
+D += np.diag([1]*(N**2-N), k=N)
+D += np.diag([1]*(N**2-N), k=-N)
+D += np.diag([1]*(N**2-1), k=1)
+D += np.diag([1]*(N**2-1), k=-1)
 # boundaries bottom, top, left (x2), right (x2)
-D[np.arange(GRIDDING), np.arange(GRIDDING, 2*GRIDDING)] = 2
-D[np.arange(GRIDDING**2-GRIDDING, GRIDDING**2), np.arange(GRIDDING**2-GRIDDING*2, GRIDDING**2-GRIDDING)] = 2
-D[np.arange(0, GRIDDING**2, GRIDDING), np.arange(1, GRIDDING**2, GRIDDING)] = 2
-D[np.arange(GRIDDING, GRIDDING**2, GRIDDING), np.arange(GRIDDING-1, GRIDDING**2-1, GRIDDING)] = 0
-D[np.arange(GRIDDING-1, GRIDDING**2, GRIDDING), np.arange(GRIDDING-2, GRIDDING**2, GRIDDING)] = 2
-D[np.arange(GRIDDING-1, GRIDDING**2-GRIDDING, GRIDDING), np.arange(GRIDDING, GRIDDING**2, GRIDDING)] = 0
+D[np.arange(N), np.arange(N, 2*N)] = 2
+D[np.arange(N**2-N, N**2), np.arange(N**2-N*2, N**2-N)] = 2
+D[np.arange(0, N**2, N), np.arange(1, N**2, N)] = 2
+D[np.arange(N, N**2, N), np.arange(N-1, N**2-1, N)] = 0
+D[np.arange(N-1, N**2, N), np.arange(N-2, N**2, N)] = 2
+D[np.arange(N-1, N**2-N, N), np.arange(N, N**2, N)] = 0
 
 def model(t, state, parameters):
 
-    S = state[:GRIDDING**2]
-    I = state[GRIDDING**2:2*GRIDDING**2]
-    R = state[2*GRIDDING**2:]
+    S = state[:N**2]
+    I = state[N**2:2*N**2]
+    R = state[2*N**2:]
     mu, r0, gamma, v, alpha, ds, di, dr = parameters
 
     return np.array([
@@ -41,17 +41,17 @@ def model(t, state, parameters):
 
 def model_form():
     return {
-        "state": 3*GRIDDING**2,
+        "state": 3*N**2,
         "parameters": 8,
     }
 
 def default_ic():
     infected_fraction = 1e-5
-    centre = int(GRIDDING//2)
-    s = [1]*GRIDDING**2
-    i = [0]*GRIDDING**2
-    r = [0]*GRIDDING**2
-    s[centre + GRIDDING*centre] = 1-infected_fraction
-    i[centre + GRIDDING*centre] = infected_fraction
+    centre = int(N//2)
+    s = [1]*N**2
+    i = [0]*N**2
+    r = [0]*N**2
+    s[centre + N*centre] = 1-infected_fraction
+    i[centre + N*centre] = infected_fraction
 
     return np.hstack([s, i, r])

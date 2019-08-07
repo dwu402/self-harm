@@ -33,11 +33,11 @@ def model(t, state, parameters):
     R = state[2*N**2:]
     mu, r0, gamma, v, alpha, ds, di, dr = parameters
 
-    return np.array([
+    return np.hstack([
         mu - mu*S - r0*(mu+alpha)*S*I + gamma*R - v*S + ds*D@S,
         r0*(mu+alpha)*S*I - alpha*I - mu*I + di*D@I,
         alpha*I + v*S - gamma*R - mu*R + dr*D@R,
-    ]).flatten()
+    ])
 
 def model_form():
     return {

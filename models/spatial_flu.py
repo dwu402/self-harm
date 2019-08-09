@@ -30,8 +30,8 @@ def model(t, state, parameters):
     ])
 
     return np.array([
-        mu - mu*S - r0*(mu+alpha)*S*I + gamma*R - v*S + ds*D@S,
-        r0*(mu+alpha)*S*I - alpha*I - mu*I + di*D@I,
+        mu*(S+I+R) - mu*S - r0*(mu+alpha)*S*I/(S+I+R) + gamma*R - v*S + ds*D@S,
+        r0*(mu+alpha)*S*I/(S+I+R) - alpha*I - mu*I + di*D@I,
         alpha*I + v*S - gamma*R - mu*R + dr*D@R,
     ]).flatten()
 

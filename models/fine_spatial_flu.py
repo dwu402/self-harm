@@ -34,8 +34,8 @@ def model(t, state, parameters):
     mu, r0, gamma, v, alpha, ds, di, dr = parameters
 
     return np.hstack([
-        mu - mu*S - r0*(mu+alpha)*S*I + gamma*R - v*S + ds*D@S,
-        r0*(mu+alpha)*S*I - alpha*I - mu*I + di*D@I,
+        mu*(S+I+R) - mu*S - r0*(mu+alpha)*S*I/(S+I+R) + gamma*R - v*S + ds*D@S,
+        r0*(mu+alpha)*S*I/(S+I+R) - alpha*I - mu*I + di*D@I ,
         alpha*I + v*S - gamma*R - mu*R + dr*D@R,
     ])
 
@@ -46,12 +46,13 @@ def model_form():
     }
 
 def default_ic():
+    total = 100000
     infected_fraction = 1e-5
     centre = int(N//2)
-    s = [1]*N**2
+    s = [total]*N**2
     i = [0]*N**2
     r = [0]*N**2
-    s[centre + N*centre] = 1-infected_fraction
-    i[centre + N*centre] = infected_fraction
+    s[centre + N*centre] = total*(1-infected_fraction)
+    i[centre + N*centre] = total*infected_fraction
 
     return np.hstack([s, i, r])
